@@ -25,6 +25,13 @@ where $x$ is the event, $p(x)$ is the probability of the event occurring and $I(
 The following is a plot of $- \log p(x)$ where $p(x)$ is bounded between 0 and 1.
 
 ![Light mode only] <iframe src="https://www.desmos.com/calculator/u6v7rqes2e?embed" width="700" height="500" style="border: 1px solid #ccc" frameborder=0></iframe> {: .light }
+_(Click  and drag across the plot to see how the value changes)_
+
+The x-axis of the plot represents $p(x)$. This means the self-information $I(x)$ and $p(x)$ are exponentially related.
+
+One important detail to point out is that the base of the logarithm. Normally in machine learning natural log is used, but in digital communication theory base-2 log  is used. But changing the base on scales the relation by a constant factor.
+
+Now to make things concrete consider the two extremes. Suppose, you a event will occur with 100% certainty which means the probability of that event $x$ occurring is $p(x)=1$. This results in a self information of $I(x)=0$.
 
 # References
 
