@@ -8,11 +8,14 @@ math: true
 
 # Quantifying information
 
-lorem ipsum dolor sit amet, consectetur adipiscing
-ddbundle instal
-dwdwdwdwdwdwdsdsscscsc
+The idea of quantifying information was first introduced by Claude E. Shanon [1] in his historical paper "A Mathematical Theory of Communication". The basic idea was quite simple and formed with first principle thinking. Shanon came with the following formula to quantify information:-
 
+$$
+I(x)=-\log p(x)
+$$
 
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
+where $x$ is the event, $p(x)$ is the probability of the event occurring and $I(x)$ is the information (self-information) quantity of that event. This might seem random but the reason the formula looks like this because it fulfills three key intutions about information should be quantified.
 
-dwdwdccdcdw
+# References
+
+[1] Shannon, C.E., 1948. A mathematical theory of communication. *The Bell system technical journal*, 27(3), pp.379-423.
