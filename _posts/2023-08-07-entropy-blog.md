@@ -1,6 +1,6 @@
 ---
 title: Entropy 
-date: 2023-08-08 12:00:00 -500
+date: 2023-08-07 12:00:00 -500
 categories: [fundamentals]
 tags: [entropy, information_theory]
 math: true
@@ -18,4 +18,10 @@ I am gonna assume readers are familiar with the concept of "Expectation" in the 
 
 # Averaging Self-Information
 
-Entropy quantifies the information associated with an entire probability distribution.
+Entropy quantifies the information associated with an entire probability distribution by taking the weighted average of self-information of each event. Mathematically that is represented by the following equation:
+
+$$
+H(p)=\mathbb{E}_{X \sim p}[I(x)]=-\mathbb{E}_{X \sim p}[\log p(x)]
+$$
+
+The equation follows the definition I mentioned above. We are essentially taking the expectation over a probability distribution.
