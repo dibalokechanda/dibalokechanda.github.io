@@ -1,5 +1,5 @@
 ---
-title: Entropy : The fundamentals
+title: Entropy 
 date: 2023-08-08 12:00:00 -500
 categories: [fundamentals]
 tags: [entropy, information_theory]
