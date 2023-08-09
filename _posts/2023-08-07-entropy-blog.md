@@ -49,4 +49,4 @@ Let's describe it with an example. Suppose you are making a 100$ bet. There are 
 
 The answer is pretty obvious. You are going to choose the coin toss. The reason is the distribution range is lower compared to the range of the distribution for a die roll.
 
-![Probability Mass Function for a coin toss vs a die roll](..\assets\img\favicons\entropy_pmf.png)
+![Probability Mass Function for a coin toss vs a die roll](..\assets\img\entropy_pmf.png)
