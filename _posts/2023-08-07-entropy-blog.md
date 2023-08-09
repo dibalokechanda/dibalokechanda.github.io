@@ -78,6 +78,7 @@ For State-1, the computation of entropy is given below:
  $$H_{\text{state-1}}(p)=-4\times\frac{1}{4}\times \log(\frac{1}{4})=1.39$$ 
 
  For State-2, the computation of entropy is given below:
+ 
  $$H_{\text{state-2}}(p)=-3\times\frac{1}{8}\times \log(\frac{1}{8})-\frac{5}{8}\times \log(\frac{5}{8})=1.07$$ 
 
  Entropy can capture this "uncertainty" or "the amount of flatness" in a distribution.
