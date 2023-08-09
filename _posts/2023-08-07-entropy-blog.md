@@ -50,3 +50,7 @@ Let's describe it with an example. Suppose you are making a 100$ bet. There are 
 The answer is pretty obvious. You are going to choose the coin toss. The reason is the distribution range is lower compared to the range of the distribution for a die roll.
 
 ![pmf_entropy_range](https://i.ibb.co/gD9NHPg/entropy-pmf.png)
+
+Entropy can capture this "more uncertainty" in the die roll. The larger the range the larger the value of entropy. For the above example with a $\log-e$ base entropy for the coin toss is $$H_{\text{coin-toss}}(p)=-0.5 \log 0.5-0.5 \log 0.5=0.693$$ But for the die roll entropy is $$H_{\text{die-roll}}(p)=-6\times\frac{1}{6}\times \log(\frac{1}{6})=1.79$$ which is larger compared to the entropy of coin toss.
+
+#### Flatness of Distribution
