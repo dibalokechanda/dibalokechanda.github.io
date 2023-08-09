@@ -30,7 +30,7 @@ $$
 H(p)= - \sum_{x \in \mathcal{X}} p(x) \log p(x)
 $$
 
-For continuous cases, the summation turns into integration which is given by the following equation:-
+For continuous cases, the summation turns into integration which is given by the following equation:
 
 $$
 H(p)=-\int_{x \in \mathcal{X}} p(x) \log p(x) d x
@@ -49,4 +49,4 @@ Let's describe it with an example. Suppose you are making a 100$ bet. There are 
 
 The answer is pretty obvious. You are going to choose the coin toss. The reason is the distribution range is lower compared to the range of the distribution for a die roll.
 
-![Probability Mass Function for a coin toss vs a die roll](..\assets\img\entropy_pmf.png)
+![pmf_entropy_range](https://i.ibb.co/gD9NHPg/entropy-pmf.png)
