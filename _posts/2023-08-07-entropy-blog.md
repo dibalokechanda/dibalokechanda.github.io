@@ -70,17 +70,23 @@ Let's take another example to describe how the flatness of distribution is captu
 
 ![pmf_entropy_flatness_1](https://i.ibb.co/Dp8BpwT/chrome-0-SWw-MAor-Lq.png)
 
-Based on the PMF which state would you chose? If you are like most people you are going to choose "State-2". The reason is living in "State-1" looks like a nightmare because of the uncertainty in weather. In contrast, the weather for "State-2" is much less uncertain and mostly sunny.
+Based on the PMF which state would you choose? If you are like most people you are going to choose "State-2". The reason is living in "State-1" looks like a nightmare because of the uncertainty in weather. In contrast, the weather for "State-2" is much less uncertain and mostly sunny.
 
 
 For State-1, the computation of entropy is given below:
 
+
  $$H_{\text{state-1}}(p)=-4\times\frac{1}{4}\times \log(\frac{1}{4})=1.39$$ 
 
+
  For State-2, the computation of entropy is given below:
+
  
  $$H_{\text{state-2}}(p)=-3\times\frac{1}{8}\times \log(\frac{1}{8})-\frac{5}{8}\times \log(\frac{5}{8})=1.07$$ 
+
 
  Entropy can capture this "uncertainty" or "the amount of flatness" in a distribution.
 
  Even though the examples given are for univariate discrete distributions, this core idea is generalized for higher dimensional discrete and continuous distributions.
+
+ ![Entropy_two](https://i.ibb.co/FmgH6JL/chrome-i-DS4k-SVMVz.png)
