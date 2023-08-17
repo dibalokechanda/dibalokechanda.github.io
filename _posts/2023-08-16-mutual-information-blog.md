@@ -1,6 +1,6 @@
 ---
 title: Mutual Information
-date: 2023-08-17 12:00:00 -500
+date: 2023-08-16 12:00:00 -500
 categories: [fundamentals]
 tags: [entropy, information_theory]
 math: true
