@@ -10,7 +10,8 @@ toc: true
 To understand the concept of mutual information first, we need to understand joint entropy and conditional entropy.
 
 ![image_3_blue_1_brown](https://i.ibb.co/vwVcyC8/chrome-b-WRWGz5-VBh.png)
- (*Image taken from [3Blue1Brown](https://www.youtube.com/@3blue1brown) video-[Solving Wordle using information theory](https://youtu.be/v68zYyaEmEA?t=708)*)
+
+ *Image taken from [3Blue1Brown](https://www.youtube.com/@3blue1brown) video-[Solving Wordle using information theory](https://youtu.be/v68zYyaEmEA?t=708)*
 
 
 
@@ -35,7 +36,71 @@ Now this equation essentially takes in a joint probability distribution $p(x,y)$
 We can easily tell as the distribution is completely flat, which means it has a high joint entropy. We can compute it as follows (with $\log-e$ base) :
 
 $$
- H(X,Y)= - 12 \times \frac{1}{12} \times log(\frac{1}{12})=2.485
+ H(X,Y)= - 12 \times \frac{1}{12} \times \log(\frac{1}{12})=2.485
 $$
 
-Now suppose we change the flatness of the distribution
+Now suppose we change the distribution by using a biased coin with a higher probability for "head" and the modified joint probability distribution is shown below:
+
+![join_pmf_biased](https://i.ibb.co/s2NMBjb/chrome-w3i-JVqr-OA7.png)
+
+It is apparent that there is a reduction in uncertainty which means a reduction in entropy. The computed entropy value for the modified joint distribution is given below:
+
+$$
+ H(X,Y)= - 6 \times \frac{1}{8} \times \log (\frac{1}{8})  - 6 \times \frac{1}{24} \times \log (\frac{1}{24})=2.354
+$$
+
+The generalized version of the entropy formula for $n$ number of random variables $X_{1}, X_{2}, \cdots ,X_{n}$ is given below:
+
+$$
+H(X_1, X_{2}, \cdots, X_n ) = -\sum_{x_1 \in X_1, \ x_2 \in X_2, \cdots, \  x_n \in X_n} p(x_1, x_2,\cdots, x_n) \log p(x_1, x_2, \cdots, x_n)
+$$
+
+which might look scary but essentially utilizes the same concept.
+
+# Conditional Entropy
+
+Conditional entropy captures the expected information content in a conditional distribution. Let's explain it with the same example given above.
+
+Suppose we are given the fact that coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
+
+![conditional_distribution](https://i.ibb.co/njXdWRj/chrome-bbs-Pl0-Gt-A3.png)
+
+The figure above shows a visualization of the joint distribution of a fair coin toss and a fair die roll. After applying the condition, we get a smaller distribution $p(Y|X=H)$. We get the values after applying the following formula: 
+
+$$
+
+p(Y|X=H)= \frac{p(X=H,Y)}{p(X=H)}
+
+
+$$
+
+Based on the conditional distribution we can compute the entropy as follows:
+
+$$
+\begin{align*}
+H(Y|X=H) & = - \sum_{y \ \in Y} p(Y=y|X=H) \log p(Y=y|X=H) \\
+
+        &= - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
+
+        &= 1.792
+
+\end{align*}
+$$
+
+Conditioning decreased the entropy by a significant amount which makes sense. Because we are already given the fact that $X=H$, we gained a lot of information, in other words, our uncertainty decreased by a significant amount.
+
+The same thing can be done if $X=T$ and we compute the entropy as follows:
+
+
+$$
+\begin{align*}
+H(Y|X=T) & = - \sum_{y \ \in Y} p(Y=y|X=T) \log p(Y=y|X=T) \\
+
+        &= - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
+
+        &= 1.792
+
+\end{align*}
+$$
+
+But there is a slight issue, we are considering one case at a time. The actual formula for conditional entropy generalizes for any possible outcome.
