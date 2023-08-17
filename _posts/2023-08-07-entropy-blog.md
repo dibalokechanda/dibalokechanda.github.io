@@ -27,13 +27,13 @@ $$
 The equation follows the definition I mentioned above. We are essentially taking the expectation of self-information over a probability distribution. As per the expectation formula, we can rewrite the equation as follows for discrete distributions *i.e.* for PMFs:
 
 $$
-H(p)= - \sum_{x \in \mathcal{X}} p(x) \log p(x)
+H(p)= - \sum_{x \in X} p(x) \log p(x)
 $$
 
 For continuous cases, the summation turns into integration which is given by the following equation:
 
 $$
-H(p)=-\int_{x \in \mathcal{X}} p(x) \log p(x) d x
+H(p)=-\int_{x \in X} p(x) \log p(x) d x
 $$
 
 Another important thing to note here, these equations can be generalized for high-dimensional distributions.
