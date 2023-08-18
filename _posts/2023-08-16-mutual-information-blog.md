@@ -71,7 +71,7 @@ Conditional entropy captures the expected information content in a conditional d
 Suppose we are given the fact that coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
 
 ![conditional_distribution_1](https://i.ibb.co/Rj5Bjw1/chrome-Ch-MTVFVw-Ap.png)
-*Conditioning on random variable X (considering "Head" comes up)
+*Conditioning on random variable X (considering "Head" comes up)*
 
 
 After applying the condition, we get a smaller distribution $p(Y|X=H)$. We get the values after applying the following formula: 
@@ -113,9 +113,12 @@ $$
 
 
 ![conditional_distribution_2](https://i.ibb.co/QM03Z11/chrome-SLTu2-PFOv8.png)
-*Conditioning on random variable X (considering "Tail" comes up)
+*Conditioning on random variable X (considering "Tail" comes up)*
 
-But there is a slight issue, we are considering one case at a time, either "Head" or "Tail". We need to consider both the case of "Head" and "Tail" at once. One naive approach would be to add both $H(Y|X=H)$ and $H(Y|X=T)$ to get $H(Y|X)$. Though it seems reasonable, the issue with this approach is we are discarding the probability associated with a specific random variable. The right approach is to take the weighted average of them. 
+But there is a slight issue, we are considering one case at a time, either "Head" or "Tail".
+
+We need to consider both the case of "Head" and "Tail" at once. One naive approach would be to add both $H(Y|X=H)$ and $H(Y|X=T)$ to get $H(Y|X)$.
+Though it seems reasonable, the issue with this approach is we are discarding the probability associated with a specific random variable. The right approach is to take the weighted average of them. 
 
 
 $$
