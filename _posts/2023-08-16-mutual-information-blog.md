@@ -134,7 +134,7 @@ $$
 
 
 
-In a similar manner $H(X | Y)$ can be written as follows: 
+In a similar we can write: 
 
 
 
