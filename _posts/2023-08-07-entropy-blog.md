@@ -21,19 +21,19 @@ I am gonna assume readers are familiar with the concept of "Expectation" in the 
 Entropy quantifies the information associated with an entire probability distribution by taking the weighted average of self-information of each event. Mathematically that is represented by the following equation:
 
 $$
-H(p)=\mathbb{E}_{X \sim p}[I(x)]=-\mathbb{E}_{X \sim p}[\log p(x)]
+\boxed{H(p)=\mathbb{E}_{X \sim p}[I(x)]=-\mathbb{E}_{X \sim p}[\log p(x)]}
 $$
 
 The equation follows the definition I mentioned above. We are essentially taking the expectation of self-information over a probability distribution. As per the expectation formula, we can rewrite the equation as follows for discrete distributions *i.e.* for PMFs:
 
 $$
-H(p)= - \sum_{x \in X} p(x) \log p(x)
+\boxed{H(p)= - \sum_{x \in X} p(x) \log p(x)}
 $$
 
 For continuous cases, the summation turns into integration which is given by the following equation:
 
 $$
-H(p)=-\int_{x \in X} p(x) \log p(x) d x
+\boxed{H(p)=-\int_{x \in X} p(x) \log p(x) dx}
 $$
 
 Another important thing to note here, these equations can be generalized for high-dimensional distributions.

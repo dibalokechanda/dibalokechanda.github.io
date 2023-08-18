@@ -12,7 +12,7 @@ toc: true
 The idea of quantifying information was first introduced by Claude E. Shanon [[1]](https://dl.acm.org/doi/pdf/10.1145/584091.584093) in his historical paper "A Mathematical Theory of Communication". The basic idea was quite simple and formed with first principle thinking. Shanon came up with the following formula to quantify information:
 
 $$
-I(x)=-\log p(x)
+\boxed{I(x)=-\log p(x)}
 $$
 
 > Information is a non-negative quantity _i.e._ $I(x)\geq0$

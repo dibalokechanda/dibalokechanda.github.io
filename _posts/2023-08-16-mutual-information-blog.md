@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-To understand the concept of mutual information first, we need to understand joint entropy and conditional entropy.
+To understand the concept of mutual information first, we need to understand joint entropy, conditional entropy and marginal entropy.
 
 ![image_3_blue_1_brown](https://i.ibb.co/vwVcyC8/chrome-b-WRWGz5-VBh.png)
 
@@ -20,18 +20,19 @@ To understand the concept of mutual information first, we need to understand joi
 Joint Entropy is nothing but the entropy of a joint distribution. The joint distribution can be constructed with multiple random variables. But to keep it simple, let's consider a joint distribution of two random variables $X$ and $Y$. In addition, let's keep the discussion limited to discrete random variables as that is easier to visualize and reason with. The joint entropy $H(X,Y)$ is given by the following equation:
 
 $$
-H(X, Y) = -\sum_{x \in X} \sum_{y \in Y} p(x, y) \log p(x, y)
+\boxed{H(X, Y) = -\sum_{x \in \mathcal{X}} \sum_{y \in \mathcal{Y}} p(x, y) \log p(x, y)}
 $$
 
 Sometimes the double summation is replaced by a single summation and written as follows:-
 
 $$
-H(X, Y) = -\sum_{x \in X, \ y \in Y} p(x, y) \log p(x, y)
+\boxed{H(X, Y) = -\sum_{x \in \mathcal{X}, \ y \in \mathcal{Y}} p(x, y) \log p(x, y)}
 $$
 
 Now this equation essentially takes in a joint probability distribution $p(x,y)$ and spits out a single number that represents the expected information quantity in that joint distribution. Let's start with a simple example, a joint distribution of a fair coin toss and a fair die roll. The assumption that needs to be made here the coin toss and die roll are independent of each other. The visualization of the distribution is shown below:
 
 ![joint_pmf](https://i.ibb.co/C5ZV4Mf/chrome-a-MM4-Ni3hk-N.png)
+
 
 We can easily tell as the distribution is completely flat, which means it has a high joint entropy. We can compute it as follows (with $\log-e$ base) :
 
@@ -41,7 +42,11 @@ $$
 
 Now suppose we change the distribution by using a biased coin with a higher probability for "head" and the modified joint probability distribution is shown below:
 
+
 ![join_pmf_biased](https://i.ibb.co/s2NMBjb/chrome-w3i-JVqr-OA7.png)
+
+
+
 
 The computed entropy value for the modified joint distribution is given below:
 
@@ -49,10 +54,12 @@ $$
  H(X,Y)= - 6 \times \frac{1}{8} \times \log (\frac{1}{8})  - 6 \times \frac{1}{24} \times \log (\frac{1}{24})=2.354
 $$
 
-The generalized version of the entropy formula for $n$ number of random variables $X_{1}, X_{2}, \cdots ,X_{n}$ is given below:
+As expected this is lower compared to the fair coin version.
+
+We can generalize this concept for higher dimensional PMFs. The generalized version of the entropy formula for $n$ number of random variables $X_{1}, X_{2}, \cdots ,X_{n}$ is given below:
 
 $$
-H(X_1, X_{2}, \cdots, X_n ) = -\sum_{x_1 \in X_1, \ x_2 \in X_2, \cdots, \  x_n \in X_n} p(x_1, x_2,\cdots, x_n) \log p(x_1, x_2, \cdots, x_n)
+H(X_1, X_{2}, \cdots, X_n ) = -\sum_{x_1 \in \mathcal{X}_1, \ x_2 \in \mathcal{X}_2, \cdots, \  x_n \in \mathcal{X}_n} p(x_1, x_2,\cdots, x_n) \log p(x_1, x_2, \cdots, x_n)
 $$
 
 which might look complex but essentially utilizes the same concept.
@@ -64,6 +71,8 @@ Conditional entropy captures the expected information content in a conditional d
 Suppose we are given the fact that coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
 
 ![conditional_distribution_1](https://i.ibb.co/Rj5Bjw1/chrome-Ch-MTVFVw-Ap.png)
+
+
 
 
 
@@ -80,7 +89,7 @@ Based on the conditional distribution we can compute the entropy as follows:
 
 $$
 \begin{align*}
-H(Y|X=H) & = - \sum_{y \ \in Y} p(Y=y|X=H) \log p(Y=y|X=H) \\
+H(Y|X=H) & = - \sum_{y \ \in \mathcal{Y}} p(Y=y|X=H) \log p(Y=y|X=H) \\
 
          & = - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
 
@@ -89,14 +98,14 @@ H(Y|X=H) & = - \sum_{y \ \in Y} p(Y=y|X=H) \log p(Y=y|X=H) \\
 \end{align*}
 $$
 
-Conditioning decreased the entropy by a significant amount which makes sense. Because we are already given the fact that $X=H$, we gained a lot of information, in other words, our uncertainty decreased by a significant amount.
+
 
 The same thing can be done if $X=T$ and we compute the entropy as follows:
 
 
 $$
 \begin{align*}
-H(Y|X=T) & = - \sum_{y \ \in Y} p(Y=y|X=T) \log p(Y=y|X=T) \\
+H(Y|X=T) & = - \sum_{y \ \in \mathcal{Y}} p(Y=y|X=T) \log p(Y=y|X=T) \\
 
          & = - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
 
@@ -112,8 +121,8 @@ But there is a slight issue, we are considering one case at a time, either "Head
 $$
 \begin{align*}
 
-  H(Y|X) & = \sum_{x \in X}p(X=x) \ H(Y|X=x)\\
-         & = \sum_{x \in X}p(X=x) \sum_{y \ \in Y} - p(Y=y|X=x) \log p(Y=y|X=x)
+  H(Y|X) & = \sum_{x \in \mathcal{X}}p(X=x) \ H(Y|X=x)\\
+         & = \sum_{x \in \mathcal{X}}p(X=x) \sum_{y \ \in \mathcal{Y}} - p(Y=y|X=x) \log p(Y=y|X=x)
  \end{align*} 
 $$
 
@@ -121,10 +130,10 @@ Which can be rewritten as follows:
 
 $$
 \begin{align*}
- H(Y|X) & = -\sum_{x \in X}p(X=x) \sum_{y \ \in Y}  p(Y=y|X=x) \log p(Y=y|X=x) \\
-        & =- \sum_{x \in X}\sum_{y \ \in Y} p(X=x) \ p(Y=y|X=x) \log p(Y=y|X=x) \\
-        & =-  \sum_{x \in X}\sum_{y \ \in Y} p(X=x,Y=y)\log p(Y=y|X=x) \\
-        & = - \sum_{x \in X}\sum_{y \ \in Y} p(X,Y)\log p(Y|X) 
+ H(Y|X) & = -\sum_{x \in \mathcal{X}}p(X=x) \sum_{y \ \in \mathcal{Y}}  p(Y=y|X=x) \log p(Y=y|X=x) \\
+        & =- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x) \ p(Y=y|X=x) \log p(Y=y|X=x) \\
+        & =-  \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x,Y=y)\log p(Y=y|X=x) \\
+        & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X,Y)\log p(Y|X)} 
 \end{align*}
 $$
 
@@ -133,12 +142,12 @@ In a similar manner $H(X|Y)$ can be written as follows:
 $$
 \begin{align*}
 
-  H(X|Y) & = \sum_{y \in Y}p(Y=y) \ H(X|Y=y)\\
-         & = \sum_{y \in Y}p(Y=y) \sum_{x \ \in X} - p(X=x|Y=y) \log p(X=x|Y=y) \\
-         & = -\sum_{y \in Y}p(Y=y) \sum_{x \ \in X}  p(X=x|Y=y) \log p(X=x|Y=y) \\
-         & =- \sum_{x \in X}\sum_{y \ \in Y} p(Y=y) \ p(X=x|Y=y) \log p(X=x|Y=y) \\
-         & =-  \sum_{x \in X}\sum_{y \ \in Y} p(X=x,Y=y)\log p(Y=y|X=x) \\
-         & = - \sum_{x \in X}\sum_{y \ \in Y} p(X,Y)\log p(X|Y) 
+  H(X|Y) & = \sum_{y \in \mathcal{Y}}p(Y=y) \ H(X|Y=y)\\
+         & = \sum_{y \in \mathcal{Y}}p(Y=y) \sum_{x \ \in \mathcal{X}} - p(X=x|Y=y) \log p(X=x|Y=y) \\
+         & = -\sum_{y \in \mathcal{Y}}p(Y=y) \sum_{x \ \in \mathcal{X}}  p(X=x|Y=y) \log p(X=x|Y=y) \\
+         & =- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(Y=y) \ p(X=x|Y=y) \log p(X=x|Y=y) \\
+         & =-  \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x,Y=y)\log p(Y=y|X=x) \\
+         & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X,Y)\log p(X|Y)} 
 
  \end{align*} 
 $$
