@@ -154,3 +154,8 @@ $$
 
  \end{align*} 
 $$
+
+
+# Marginal Entropy
+
+Marginal entropy is the entropy associated with a marginal distribution.
