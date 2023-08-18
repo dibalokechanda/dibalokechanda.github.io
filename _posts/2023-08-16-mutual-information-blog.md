@@ -43,7 +43,7 @@ Now suppose we change the distribution by using a biased coin with a higher prob
 
 ![join_pmf_biased](https://i.ibb.co/s2NMBjb/chrome-w3i-JVqr-OA7.png)
 
-It is apparent that there is a reduction in uncertainty which means a reduction in entropy. The computed entropy value for the modified joint distribution is given below:
+The computed entropy value for the modified joint distribution is given below:
 
 $$
  H(X,Y)= - 6 \times \frac{1}{8} \times \log (\frac{1}{8})  - 6 \times \frac{1}{24} \times \log (\frac{1}{24})=2.354
@@ -55,7 +55,7 @@ $$
 H(X_1, X_{2}, \cdots, X_n ) = -\sum_{x_1 \in X_1, \ x_2 \in X_2, \cdots, \  x_n \in X_n} p(x_1, x_2,\cdots, x_n) \log p(x_1, x_2, \cdots, x_n)
 $$
 
-which might look scary but essentially utilizes the same concept.
+which might look complex but essentially utilizes the same concept.
 
 # Conditional Entropy
 
@@ -63,7 +63,9 @@ Conditional entropy captures the expected information content in a conditional d
 
 Suppose we are given the fact that coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
 
-![conditional_distribution](https://i.ibb.co/njXdWRj/chrome-bbs-Pl0-Gt-A3.png)
+![conditional_distribution_1](https://i.ibb.co/Rj5Bjw1/chrome-Ch-MTVFVw-Ap.png)
+
+
 
 The figure above shows a visualization of the joint distribution of a fair coin toss and a fair die roll. After applying the condition, we get a smaller distribution $p(Y|X=H)$. We get the values after applying the following formula: 
 
@@ -80,9 +82,9 @@ $$
 \begin{align*}
 H(Y|X=H) & = - \sum_{y \ \in Y} p(Y=y|X=H) \log p(Y=y|X=H) \\
 
-        &= - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
+         & = - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
 
-        &= 1.792
+         & = 1.792
 
 \end{align*}
 $$
@@ -96,11 +98,47 @@ $$
 \begin{align*}
 H(Y|X=T) & = - \sum_{y \ \in Y} p(Y=y|X=T) \log p(Y=y|X=T) \\
 
-        &= - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
+         & = - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
 
-        &= 1.792
+         & = 1.792
 
 \end{align*}
 $$
+![conditional_distribution_2](https://i.ibb.co/QM03Z11/chrome-SLTu2-PFOv8.png)
 
-But there is a slight issue, we are considering one case at a time. The actual formula for conditional entropy generalizes for any possible outcome.
+But there is a slight issue, we are considering one case at a time, either "Head" or "Tail". We need to consider both the case of "Head" and "Tail" at once. One naive approach would be to add both $H(Y|X=H)$ and $H(Y|X=T)$ to get $H(Y|X)$. Though it seems reasonable, the issue with this approach is we are discarding the probability associated with a specific random variable. The right approach is to take the weighted average of them. 
+
+
+$$
+\begin{align*}
+
+  H(Y|X) & = \sum_{x \in X}p(X=x) \ H(Y|X=x)\\
+         & = \sum_{x \in X}p(X=x) \sum_{y \ \in Y} - p(Y=y|X=x) \log p(Y=y|X=x)
+ \end{align*} 
+$$
+
+Which can be rewritten as follows:
+
+$$
+\begin{align*}
+ H(Y|X) & = -\sum_{x \in X}p(X=x) \sum_{y \ \in Y}  p(Y=y|X=x) \log p(Y=y|X=x) \\
+        & =- \sum_{x \in X}\sum_{y \ \in Y} p(X=x) \ p(Y=y|X=x) \log p(Y=y|X=x) \\
+        & =-  \sum_{x \in X}\sum_{y \ \in Y} p(X=x,Y=y)\log p(Y=y|X=x) \\
+        & = - \sum_{x \in X}\sum_{y \ \in Y} p(X,Y)\log p(Y|X) 
+\end{align*}
+$$
+
+In a similar manner $H(X|Y)$ can be written as follows: 
+
+$$
+\begin{align*}
+
+  H(X|Y) & = \sum_{y \in Y}p(Y=y) \ H(X|Y=y)\\
+         & = \sum_{y \in Y}p(Y=y) \sum_{x \ \in X} - p(X=x|Y=y) \log p(X=x|Y=y) \\
+         & = -\sum_{y \in Y}p(Y=y) \sum_{x \ \in X}  p(X=x|Y=y) \log p(X=x|Y=y) \\
+         & =- \sum_{x \in X}\sum_{y \ \in Y} p(Y=y) \ p(X=x|Y=y) \log p(X=x|Y=y) \\
+         & =-  \sum_{x \in X}\sum_{y \ \in Y} p(X=x,Y=y)\log p(Y=y|X=x) \\
+         & = - \sum_{x \in X}\sum_{y \ \in Y} p(X,Y)\log p(X|Y) 
+
+ \end{align*} 
+$$
