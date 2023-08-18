@@ -73,24 +73,19 @@ Suppose we are given the fact that coin toss results in "head", which means we w
 ![conditional_distribution_1](https://i.ibb.co/Rj5Bjw1/chrome-Ch-MTVFVw-Ap.png)
 *Conditioning on random variable X (considering "Head" comes up)*
 
-
-After applying the condition, we get a smaller distribution $p(Y|X=H)$. We get the values after applying the following formula: 
+We get the values after applying the following formula: 
 
 $$
-
 p(Y|X=H)= \frac{p(X=H,Y)}{p(X=H)}
-
-
 $$
+
 
 Based on the conditional distribution we can compute the entropy as follows:
 
 $$
 \begin{align*}
 H(Y|X=H) & = - \sum_{y \ \in \mathcal{Y}} p(Y=y|X=H) \log p(Y=y|X=H) \\
-
          & = - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
-
          & = 1.792
 \end{align*}
 $$
@@ -103,9 +98,7 @@ The same thing can be done if $X=T$ and we compute the entropy as follows:
 $$
 \begin{align*}
 H(Y|X=T) & = - \sum_{y \ \in \mathcal{Y}} p(Y=y|X=T) \log p(Y=y|X=T) \\
-
          & = - 6 \times \frac{1}{6} \times \log \frac{1}{6} \\
-
          & = 1.792
 \end{align*}
 $$
@@ -123,7 +116,6 @@ Though it seems reasonable, the issue with this approach is we are discarding th
 
 $$
 \begin{align*}
-
   H(Y|X) & = \sum_{x \in \mathcal{X}}p(X=x) \ H(Y|X=x)\\
          & = \sum_{x \in \mathcal{X}}p(X=x) \sum_{y \ \in \mathcal{Y}} - p(Y=y|X=x) \log p(Y=y|X=x)
  \end{align*} 
@@ -140,18 +132,20 @@ $$
 \end{align*}
 $$
 
-In a similar manner $H(X|Y)$ can be written as follows: 
+
+
+In a similar manner $H(X | Y)$ can be written as follows: 
+
+
 
 $$
 \begin{align*}
-
   H(X|Y) & = \sum_{y \in \mathcal{Y}}p(Y=y) \ H(X|Y=y)\\
          & = \sum_{y \in \mathcal{Y}}p(Y=y) \sum_{x \ \in \mathcal{X}} - p(X=x|Y=y) \log p(X=x|Y=y) \\
          & = -\sum_{y \in \mathcal{Y}}p(Y=y) \sum_{x \ \in \mathcal{X}}  p(X=x|Y=y) \log p(X=x|Y=y) \\
          & =- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(Y=y) \ p(X=x|Y=y) \log p(X=x|Y=y) \\
          & =-  \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x,Y=y)\log p(Y=y|X=x) \\
          & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X,Y)\log p(X|Y)} 
-
  \end{align*} 
 $$
 
