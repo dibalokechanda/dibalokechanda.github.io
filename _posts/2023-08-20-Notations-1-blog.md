@@ -28,4 +28,4 @@ The notation $p(x)$  is used as a general placeholder for probability distributi
 
 # Other Notations
 
-- $\log$ : Assume natural logarithm or  $\log$ base-$e$
+- $\log$ : Assume natural logarithm or  $\log$ base-$e$. Most resources you will come across for these topics, tend to use base-$2$ logarithm, but in the machine learning domain, it is common practice to use a base-$e$ logarithm.
