@@ -1,5 +1,5 @@
 ---
-title: Mutual Information
+title: Joint, Conditional and Marginal Entropy
 date: 2023-08-16 12:00:00 -500
 categories: [fundamentals]
 tags: [entropy, information_theory]
@@ -178,7 +178,7 @@ $$
 
 This subsection will dive deeper into key properties and relations associated with joint entropy, conditional entropy and marginal entropy before moving into details about mutual information which is the key topic of this article.
 
-- **Conditioning always reduces entropy:** When we apply conditioning to a specific random variable, it kind of eliminates some possible set of possibilities. Intuitively, it reduces uncertainty about the distribution prior to conditioning. Formally, it can be represented as below:
+- <u>**Conditioning always reduces entropy:**</u> When we apply conditioning to a specific random variable, it kind of eliminates some possible set of possibilities. Intuitively, it reduces uncertainty about the distribution before conditioning. Formally, it can be represented as below:
 
 $$
 H(X \mid Y) \leq H(X)
@@ -193,10 +193,15 @@ H(X,Y)=H(X)+H(Y)
 
 $$
 
-which is also easy to understand.
+which is also easy to understand. This insinuates there is no "mutual information" shared between two random variables in other words the expected information content coming from two random variables does not have any overlap.
+
+ <u>**:**</u>
+
 
 
 # References
 [1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: http://www.ece.tufts.edu/ee/194NIT/lect01.pdf.
 
 [2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA [Accessed 20 Aug. 2023].
+
+[3] Intelligent Systems Lab (2020). *Information Theory Basics.* YouTube. Available at: https://www.youtube.com/watch?v=bkLHszLlH34 [Accessed 20 Aug. 2023].
