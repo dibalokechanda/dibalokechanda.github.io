@@ -149,6 +149,8 @@ $$
  \end{align*} 
 $$
 
+> The conditional entropy is a measure of how much uncertainty remains about the random variable $X$ when we know the value of $Y$.
+{: .prompt-tip }
 
 # Marginal Entropy
 
@@ -171,3 +173,30 @@ H(X) & =- \sum p(x) \log p(x) \\
 H(Y) & =- \sum p(y) \log p(y) 
 \end{align*}
 $$
+
+# Key Properties related to Joint Entropy, Conditional Entropy and Marginal Entropy
+
+This subsection will dive deeper into key properties and relations associated with joint entropy, conditional entropy and marginal entropy before moving into details about mutual information which is the key topic of this article.
+
+- **Conditioning always reduces entropy:** When we apply conditioning to a specific random variable, it kind of eliminates some possible set of possibilities. Intuitively, it reduces uncertainty about the distribution prior to conditioning. Formally, it can be represented as below:
+
+$$
+H(X \mid Y) \leq H(X)
+$$
+
+Now the upper bound for this relation is $H(X|Y)=H(X)$ which happens if $X$ and $Y$ are independent random variables *i.e.* $p(x,y)=p(x) p(y)$. The interpretation of this upper bound is "knowing" anything about random variable $Y$ does not reduce uncertainty about random variable $X$.
+Also if $X$ and $Y$ are independent random variables, then,
+
+$$
+
+H(X,Y)=H(X)+H(Y)
+
+$$
+
+which is also easy to understand.
+
+
+# References
+[1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: http://www.ece.tufts.edu/ee/194NIT/lect01.pdf.
+
+[2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA [Accessed 20 Aug. 2023].

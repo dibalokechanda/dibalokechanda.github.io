@@ -28,7 +28,7 @@ where $x$ is the event, $p(x)$ is the probability of the event occurring and $I(
 
 The following is a plot of $- \log p(x)$ where $p(x)$ is bounded between 0 and 1.
 
-<iframe src="https://www.desmos.com/calculator/tf0y2jw8ra?embed" width="700" height="700" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/rklqka2ubx?embed" width="700" height="700" style="border: 2px solid #ccc" frameborder=0></iframe>
 
 _(Click  and drag across the plot to see how the value changes)_
 
