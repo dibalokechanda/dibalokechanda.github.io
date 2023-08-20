@@ -128,13 +128,13 @@ $$
  H(Y|X) & = -\sum_{x \in \mathcal{X}}p(X=x) \sum_{y \ \in \mathcal{Y}}  p(Y=y|X=x) \log p(Y=y|X=x) \\
         & =- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x) \ p(Y=y|X=x) \log p(Y=y|X=x) \\
         & =-  \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x,Y=y)\log p(Y=y|X=x) \\
-        & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X,Y)\log p(Y|X)} 
+        & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(x,y)\log p(y|x)} 
 \end{align*}
 $$
 
 
 
-In a similar we can write: 
+Similarly, we can write: 
 
 
 
@@ -145,11 +145,29 @@ $$
          & = -\sum_{y \in \mathcal{Y}}p(Y=y) \sum_{x \ \in \mathcal{X}}  p(X=x|Y=y) \log p(X=x|Y=y) \\
          & =- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(Y=y) \ p(X=x|Y=y) \log p(X=x|Y=y) \\
          & =-  \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X=x,Y=y)\log p(Y=y|X=x) \\
-         & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(X,Y)\log p(X|Y)} 
+         & = \boxed{- \sum_{x \in \mathcal{X}}\sum_{y \ \in \mathcal{Y}} p(x,y)\log p(x|y)} 
  \end{align*} 
 $$
 
 
 # Marginal Entropy
 
-Marginal entropy is the entropy associated with a marginal distribution.
+Marginal entropy is the entropy associated with a marginal distribution. There is nothing special about the definition, it is similar to normal entropy. For a joint distribution $p(x,y)$, the marginal distributions are $p(x)$ and $p(y)$. To marginalize we essentially sum out one variable as shown below:  
+
+
+$$
+\begin{align*}
+p(x) &= \sum_{y \in \mathcal{Y} }p(x,y) \\
+p(y) &= \sum_{x \in \mathcal{X} }p(x,y) \\
+\end{align*}
+$$
+
+We easily define the entropy based on the above equations as below: 
+
+
+$$
+\begin{align*}
+H(X) & =- \sum p(x) \log p(x) \\ 
+H(Y) & =- \sum p(y) \log p(y) 
+\end{align*}
+$$
