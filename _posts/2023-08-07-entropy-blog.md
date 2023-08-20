@@ -21,24 +21,24 @@ I am gonna assume readers are familiar with the concept of "Expectation" in the 
 Entropy quantifies the information associated with an entire probability distribution by taking the weighted average of self-information of each event. Mathematically that is represented by the following equation:
 
 $$
-\boxed{H(p)=\mathbb{E}_{X \sim p}[I(x)]=-\mathbb{E}_{X \sim p}[\log p(x)]}
+\boxed{H(X)=\mathbb{E}_{X \sim p}[I(x)]=-\mathbb{E}_{X \sim p}[\log p(x)]}
 $$
 
 The equation follows the definition I mentioned above. We are essentially taking the expectation of self-information over a probability distribution. As per the expectation formula, we can rewrite the equation as follows for discrete distributions *i.e.* for PMFs:
 
 $$
-\boxed{H(p)= - \sum_{x \in X} p(x) \log p(x)}
+\boxed{H(X)= - \sum_{x \in \mathcal{X}} P_{X}(x) \log P_{X}(x)}
 $$
 
 For continuous cases, the summation turns into integration which is given by the following equation:
 
 $$
-\boxed{H(p)=-\int_{x \in X} p(x) \log p(x) dx}
+\boxed{H(X)=-\int_{x \in \mathcal{X}} p_{X}(x) \log p_{X}(x) dx}
 $$
 
 Another important thing to note here, these equations can be generalized for high-dimensional distributions.
 
-> Entropy is also a non-negative quantity _i.e._ $H(p)\geq0$
+> Entropy is also a non-negative quantity _i.e._ $H(X)\geq0$
 {: .prompt-tip }
 
 # What is captured by Entropy
@@ -55,11 +55,11 @@ The answer is pretty obvious. You are going to choose the coin toss. The reason 
 
 Entropy can capture this "more uncertainty" in the die roll. The larger the range the larger the value of entropy. For the above example with a $\log-e$ base entropy for the coin toss is 
 
-$$H_{\text{coin-toss}}(p)=-0.5 \log 0.5-0.5 \log 0.5=0.693$$
+$$H_{\text{coin-toss}}(X)=-0.5 \log 0.5-0.5 \log 0.5=0.693$$
 
 But for the die roll entropy is
 
- $$H_{\text{die-roll}}(p)=-6\times\frac{1}{6}\times \log(\frac{1}{6})=1.79$$ 
+ $$H_{\text{die-roll}}(X)=-6\times\frac{1}{6}\times \log(\frac{1}{6})=1.79$$ 
  
  which is larger compared to the entropy of the coin toss.
 
@@ -76,13 +76,13 @@ Based on the PMF which state would you choose? If you are like most people you a
 For State-1, the computation of entropy is given below:
 
 
- $$H_{\text{state-1}}(p)=-4\times\frac{1}{4}\times \log(\frac{1}{4})=1.39$$ 
+ $$H_{\text{state-1}}(X)=-4\times\frac{1}{4}\times \log(\frac{1}{4})=1.39$$ 
 
 
  For State-2, the computation of entropy is given below:
 
  
- $$H_{\text{state-2}}(p)=-3\times\frac{1}{8}\times \log(\frac{1}{8})-\frac{5}{8}\times \log(\frac{5}{8})=1.07$$ 
+ $$H_{\text{state-2}}(X)=-3\times\frac{1}{8}\times \log(\frac{1}{8})-\frac{5}{8}\times \log(\frac{5}{8})=1.07$$ 
 
 
  Entropy can capture this "uncertainty" or "the amount of flatness" in a distribution.
