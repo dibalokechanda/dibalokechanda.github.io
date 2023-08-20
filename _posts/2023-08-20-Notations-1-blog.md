@@ -1,6 +1,6 @@
 ---
 title: Notations-1
-date: 2023-08-20 12:00:00 -500
+date: 2023-08-19 12:00:00 -500
 categories: [fundamentals]
 tags: [entropy, information_theory]
 math: true
