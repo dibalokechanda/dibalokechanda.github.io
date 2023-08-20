@@ -55,4 +55,6 @@ $$
 
 # References
 
-[1] Shannon, C.E., 1948. A mathematical theory of communication. *The Bell system technical journal*, 27(3), pp.379-423.
+[1] [Shannon, C.E., 1948. A mathematical theory of communication. *The Bell system technical journal*, 27(3), pp.379-423.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6773024)
+
+[2] [Ian Goodfellow, Yoshua Bengio, and Aaron Courville 2016. *Deep Learning.* MIT Press.](https://www.deeplearningbook.org/)
