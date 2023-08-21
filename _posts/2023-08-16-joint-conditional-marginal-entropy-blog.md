@@ -208,8 +208,8 @@ $$
 
 
 # References
-[1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: [http://www.ece.tufts.edu/ee/194NIT/lect01.pdf](http://www.ece.tufts.edu/ee/194NIT/lect01.pdf).
+[1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: http://www.ece.tufts.edu/ee/194NIT/lect01.pdf.
 
-[2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] [www.youtube.com. Available at: [https://www.youtube.com/watch?v=v68zYyaEmEA](www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA) [Accessed 20 Aug. 2023].
+[2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] [www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA [Accessed 20 Aug. 2023].
 
 [3] Intelligent Systems Lab (2020). *Information Theory Basics.* YouTube. Available at: https://www.youtube.com/watch?v=bkLHszLlH34 [Accessed 20 Aug. 2023].
