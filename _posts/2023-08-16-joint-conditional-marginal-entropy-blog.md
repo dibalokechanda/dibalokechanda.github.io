@@ -178,7 +178,7 @@ $$
 
 This subsection will dive deeper into key properties and relations associated with joint entropy, conditional entropy and marginal entropy before moving into details about mutual information which is the key topic of this article.
 
-- <u>**Conditioning always reduces entropy:**</u> When we apply conditioning to a specific random variable, it kind of eliminates some possible set of possibilities. Intuitively, it reduces uncertainty about the distribution before conditioning. Formally, it can be represented as below:
+- <u><b>Conditioning always reduces entropy:</b></u> When we apply conditioning to a specific random variable, it kind of eliminates some possible set of possibilities. Intuitively, it reduces uncertainty about the distribution before conditioning. Formally, it can be represented as below:
 
 $$
 H(X \mid Y) \leq H(X)
@@ -195,13 +195,21 @@ $$
 
 which is also easy to understand. This insinuates there is no "mutual information" shared between two random variables in other words the expected information content coming from two random variables does not have any overlap.
 
- <u>**:**</u>
+ - <u><b>Unsymmetric nature of conditional entropy:</b></u>  In general, conditional entropy is unsymmetric.  
+
+ $$
+ 
+ H(X|Y) \neq H(Y|X)
+
+$$
+
+
 
 
 
 # References
-[1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: http://www.ece.tufts.edu/ee/194NIT/lect01.pdf.
+[1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: [http://www.ece.tufts.edu/ee/194NIT/lect01.pdf](http://www.ece.tufts.edu/ee/194NIT/lect01.pdf).
 
-[2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA [Accessed 20 Aug. 2023].
+[2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] [www.youtube.com. Available at: [https://www.youtube.com/watch?v=v68zYyaEmEA](www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA) [Accessed 20 Aug. 2023].
 
 [3] Intelligent Systems Lab (2020). *Information Theory Basics.* YouTube. Available at: https://www.youtube.com/watch?v=bkLHszLlH34 [Accessed 20 Aug. 2023].
