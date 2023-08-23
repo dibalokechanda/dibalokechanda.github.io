@@ -59,6 +59,9 @@ $$
 
 This means for independent random variables there is no mutual information; which is kinda obvious from the definition of mutual information.
 
+> $I(X,Y) \geq 0$ ; with equality iff $X$ and $Y$ are independent.
+{: .prompt-tip }
+
 ## Normalized Mutual Information
 
 N
