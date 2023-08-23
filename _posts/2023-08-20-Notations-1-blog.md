@@ -10,7 +10,8 @@ To keep consistency for the readers and my sanity, this article will be used as 
 
 - [Self Information](https://dibalokechanda.github.io/posts/self-information-blog/)
 - [Entropy](https://dibalokechanda.github.io/posts/entropy-blog/)
-- [Mutual Information](https://dibalokechanda.github.io/posts/mutual-information-blog/)
+- [Joint, Conditional and Marginal Entropy](https://dibalokechanda.github.io/posts/joint-conditional-marginal-entropy-blog/)
+- [Mutual Information](https://dibalokechanda.github.io/posts/2023-mutual-information-blog/)
 
 The common notations are related to random variables, probability density function (PDF) and probability mass function (PMF).
 

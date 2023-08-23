@@ -37,9 +37,27 @@ If you closely think about the above equations, all of them are essentially calc
 The formula for mutual information with respect to <b> joint distribution </b> and <b> marginal distribution </b> is shown below:
 
 $$
-\mathrm{I}(X ; Y)=\sum_{y \in \mathcal{Y}} \sum_{x \in \mathcal{X}} p{(x, y)} \log \left(\frac{p(x, y)}{p(x) p(y)}\right)
+\boxed{\mathrm{I}(X ; Y)=\sum_{y \in \mathcal{Y}} \sum_{x \in \mathcal{X}} p{(x, y)} \log \left(\frac{p(x, y)}{p(x) p(y)}\right)}
 $$
 
+This can be derived from the definitions of joint entropy, marginal entropy and conditional entropy. I am gonna provide a specific derivation, but know that this can be derived in many ways.
+
+$$
+\begin{align*}
+I(X;Y) &= H(X)+H(Y)-H(X,Y)\\
+       & = \underbrace{-\sum_{x,y}p(x,y) \log p(x)}_{H(X)}\underbrace{-\sum_{x,y}p(x,y) \log p(y)}_{H(Y)}+\underbrace{\sum_{x,y}p(x,y) \log p(x,y)}_{-H(X,Y)} \\
+       &= \sum_{x,y}p(x,y) [\log p(x,y)-(\log p(x)+\log p(y))] \\
+       &= \sum_{x,y}p(x,y)\log \left(\frac{p(x, y)}{p(x) p(y)}\right) \\
+\end{align*}
+$$
+
+A significant observation that becomes apparent upon closer examination of the equation is what happens when the random variable $X$ and $Y$ are independent. When they are independent we know that $p(x,y)=p(x)p(y)$. Therefore, we get 
+
+$$
+I(X;Y)= \sum_{y \in \mathcal{Y}} \sum_{x \in \mathcal{X}} p{(x, y)} \log \left(1\right)=0
+$$
+
+This means for independent random variables there is no mutual information; which is kinda obvious from the definition of mutual information.
 
 ## Normalized Mutual Information
 
