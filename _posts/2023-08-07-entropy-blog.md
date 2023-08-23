@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-# Self-Information to Entropy
+## Self-Information to Entropy
 
 In a previous post about [self-information](https://dibalokechanda.github.io/posts/self-information-blog/), I explained how to mathematically formalize the concept of information associated with a specific event. One key thing about self-information is it quantifies the "information quantity" of a single event. But often we deal with distribution rather than just a single event. Probability distributions captures the likelihood of a sequence of events rather than a single event.
 
@@ -16,7 +16,7 @@ To give an example, if we roll a die, with self-information we can quantify how 
 I am gonna assume readers are familiar with the concept of "Expectation" in the context of probability theory. If not, I highly encourage you to go through some basic materials for it. A good place to start would be this [video](https://www.youtube.com/watch?v=_yJsO5955ZE).
 
 
-# Averaging Self-Information
+## Averaging Self-Information
 
 Entropy quantifies the information associated with an entire probability distribution by taking the weighted average of self-information of each event. Mathematically that is represented by the following equation:
 
@@ -41,7 +41,7 @@ Another important thing to note here, these equations can be generalized for hig
 > Entropy is also a non-negative quantity _i.e._ $H(X)\geq0$
 {: .prompt-tip }
 
-# What is captured by Entropy
+## What is captured by Entropy
 
 In a nutshell, entropy captures how much uncertainty is associated with a distribution. Now this in turn captures two things: the range of the distribution and the "flatness" of the distribution.
 
