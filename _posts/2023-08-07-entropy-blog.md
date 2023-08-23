@@ -9,7 +9,7 @@ toc: true
 
 # Self-Information to Entropy
 
-In a previous post about [self-information](https://dibalokechanda.github.io/posts/self-information-blog/), I explained how to mathematically formalize the concept of information associated with a specific event. One key thing about self-information is it quantifies the "information quantity" of a single event. But often we deal with distribution rather than just a single event.
+In a previous post about [self-information](https://dibalokechanda.github.io/posts/self-information-blog/), I explained how to mathematically formalize the concept of information associated with a specific event. One key thing about self-information is it quantifies the "information quantity" of a single event. But often we deal with distribution rather than just a single event. Probability distributions captures the likelihood of a sequence of events rather than a single event.
 
 To give an example, if we roll a die, with self-information we can quantify how much information is contained in the event that a "5" came up. The probability of that event is $p(x)=\frac{1}{6}$ for a fair die.  We can easily apply the formula $I(x)=- \log (x)$  and quantify the self-information. But how do we quantify the "information quantity" in the entire probability distribution associated with a die roll? That is where the concept of **Entropy** comes into play.
 
@@ -45,11 +45,11 @@ Another important thing to note here, these equations can be generalized for hig
 
 In a nutshell, entropy captures how much uncertainty is associated with a distribution. Now this in turn captures two things: the range of the distribution and the "flatness" of the distribution.
 
-#### Range of distribution
+### Range of distribution
 
 Let's describe it with an example. Suppose you are making a 100$ bet. There are two ways to go. One is to make a bet on the distribution for a fair coin toss. You can choose either head or tail. Another is to make a bet on the distribution for a fair die roll. You can choose one out of six possible outcomes. Just from common sense which one would you choose and why?
 
-The answer is pretty obvious. You are going to choose the coin toss. The reason is the distribution range is lower compared to the range of the distribution for a die roll.
+The answer is pretty obvious. You are going to choose the coin toss. The reason is the distribution range is lower compared to the range of the distribution for a die roll. In other words, there are fewer possible outcomes.
 
 ![pmf_entropy_range](https://i.ibb.co/gD9NHPg/entropy-pmf.png)
 
@@ -63,7 +63,7 @@ But for the die roll entropy is
  
  which is larger compared to the entropy of the coin toss.
 
-#### Flatness of Distribution
+### Flatness of Distribution
 
 Let's take another example to describe how the flatness of distribution is captured by entropy. Suppose you are given a choice to live in two different states. For the two states, the distribution of a day is sunny, rainy, snowy and cloudy looks like below:
 
@@ -87,6 +87,6 @@ For State-1, the computation of entropy is given below:
 
  Entropy can capture this "uncertainty" or "the amount of flatness" in a distribution.
 
- Even though the examples given are for univariate discrete distributions, this core idea is generalized for higher dimensional discrete and continuous distributions.
+ Even though the examples given are for univariate discrete distributions, this core idea is generalized for higher dimensional discrete and continuous distributions. A visual summary is given in the following diagram. 
 
  ![Entropy_two](https://i.ibb.co/FmgH6JL/chrome-i-DS4k-SVMVz.png)

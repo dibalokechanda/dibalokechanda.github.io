@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-To understand the concept of mutual information first, we need to understand joint entropy, conditional entropy and marginal entropy.
+To understand the concept of mutual information first, we need to understand joint entropy, conditional entropy and marginal entropy. These concepts are not necessarily hard, but they are introduced poorly with just a bunch of equations thrown at the beginners.
 
 ![image_3_blue_1_brown](https://i.ibb.co/vwVcyC8/chrome-b-WRWGz5-VBh.png)
 
@@ -54,7 +54,7 @@ $$
  H(X,Y)= - 6 \times \frac{1}{8} \times \log (\frac{1}{8})  - 6 \times \frac{1}{24} \times \log (\frac{1}{24})=2.354
 $$
 
-As expected this is lower compared to the fair coin version.
+As expected this is lower compared to the fair coin version. 
 
 We can generalize this concept for higher dimensional PMFs. The generalized version of the entropy formula for $n$ number of random variables $X_{1}, X_{2}, \cdots ,X_{n}$ is given below:
 
@@ -62,7 +62,7 @@ $$
 H(X_1, X_{2}, \cdots, X_n ) = -\sum_{x_1 \in \mathcal{X}_1, \ x_2 \in \mathcal{X}_2, \cdots, \  x_n \in \mathcal{X}_n} p(x_1, x_2,\cdots, x_n) \log p(x_1, x_2, \cdots, x_n)
 $$
 
-which might look complex but essentially utilizes the same concept.
+which might look complex but essentially utilizes the same concept. It is no longer possible to visualize this with a diagram, but all the intuitions derived for two variables; hold for a multivariable case.
 
 # Conditional Entropy
 
@@ -111,7 +111,7 @@ $$
 But there is a slight issue, we are considering one case at a time, either "Head" or "Tail".
 
 We need to consider both the case of "Head" and "Tail" at once. One naive approach would be to add both $H(Y|X=H)$ and $H(Y|X=T)$ to get $H(Y|X)$.
-Though it seems reasonable, the issue with this approach is we are discarding the probability associated with a specific random variable. The right approach is to take the weighted average of them. 
+Though it seems reasonable, the issue with this approach is we are discarding the probability associated with a specific random variable. The right approach is to take the weighted average (expectation) of them. 
 
 
 $$
@@ -176,9 +176,9 @@ $$
 
 # Key Properties related to Joint Entropy, Conditional Entropy and Marginal Entropy
 
-This subsection will dive deeper into key properties and relations associated with joint entropy, conditional entropy and marginal entropy before moving into details about mutual information which is the key topic of this article.
+This subsection will dive deeper into key properties and relations associated with joint entropy, conditional entropy and marginal entropy.
 
-- <u><b>Conditioning always reduces entropy:</b></u> When we apply conditioning to a specific random variable, it kind of eliminates some possible set of possibilities. Intuitively, it reduces uncertainty about the distribution before conditioning. Formally, it can be represented as below:
+- <u><b>Conditioning always reduces entropy:</b></u> When we apply conditioning to a specific random variable, it kind of eliminates some possible set of outcomes. Intuitively, it reduces uncertainty about the distribution before conditioning. Formally, it can be represented as below:
 
 $$
 H(X \mid Y) \leq H(X)
@@ -208,7 +208,7 @@ $$
 
 
 # References
-[1] Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: http://www.ece.tufts.edu/ee/194NIT/lect01.pdf.
+[1] [Vu, M. (n.d.). *Lecture 1: Entropy and mutual information.* [online] Available at: http://www.ece.tufts.edu/ee/194NIT/lect01.pdf.](http://www.ece.tufts.edu/ee/194NIT/lect01.pdf)
 
 [2] Sanderson, G. (2022). *Solving Wordle using information theory.* [online] [www.youtube.com. Available at: https://www.youtube.com/watch?v=v68zYyaEmEA [Accessed 20 Aug. 2023].
 

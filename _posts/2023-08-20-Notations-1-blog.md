@@ -6,7 +6,7 @@ tags: [entropy, information_theory]
 math: true
 toc: true
 ---
-To keep consistency for the readers and for my own sanity, this article will be used as a reference for notations for the following articles:
+To keep consistency for the readers and my sanity, this article will be used as a reference to introduce notations for the following articles:
 
 - [Self Information](https://dibalokechanda.github.io/posts/self-information-blog/)
 - [Entropy](https://dibalokechanda.github.io/posts/entropy-blog/)
