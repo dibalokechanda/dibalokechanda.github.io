@@ -22,6 +22,11 @@ $$
 \begin{align*}
 I(X;Y)&= H(X)-H(X|Y)\\
       &= H(Y)-H(Y|X) \\
-      &= H(X)+H(Y)-H(X,Y)
+      &= H(X)+H(Y)-H(X,Y) \\
+      &=H(X, Y)-H(X \mid Y)-H(Y \mid X)
 \end{align*}
 $$
+
+If you closely think about the above equations, all of them are essentially calculating the overlapped section. The following diagram highlighting different sections will make it more apparent.
+
+![components_venn_diagram](https://i.ibb.co/mbdQ8gd/chrome-8-Po-PNu-RVOA.png)
