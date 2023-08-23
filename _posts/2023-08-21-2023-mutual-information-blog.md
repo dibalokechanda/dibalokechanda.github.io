@@ -51,17 +51,41 @@ I(X;Y) &= H(X)+H(Y)-H(X,Y)\\
 \end{align*}
 $$
 
-A significant observation that becomes apparent upon closer examination of the equation is what happens when the random variable $X$ and $Y$ are independent. When they are independent we know that $p(x,y)=p(x)p(y)$. Therefore, we get 
+A significant observation that becomes apparent upon closer examination of the equation is what happens when the random variables $X$ and $Y$ are independent. When they are independent we know that $p(x,y)=p(x)p(y)$. Therefore, we get 
 
 $$
 I(X;Y)= \sum_{y \in \mathcal{Y}} \sum_{x \in \mathcal{X}} p{(x, y)} \log \left(1\right)=0
 $$
 
-This means for independent random variables there is no mutual information; which is kinda obvious from the definition of mutual information.
+This means for independent random variables there is no mutual information; which is kind of obvious from the definition of mutual information.
 
 > $I(X,Y) \geq 0$ ; with equality iff $X$ and $Y$ are independent.
 {: .prompt-tip }
 
 ## Normalized Mutual Information
 
-N
+Due to scale sensitivity and other issues with mutual information, it is preferable to work with a normalized version. However, in literature, there are many different ways NMI is calculated. These variations are based on the normalizing factor in the denominator. I will describe $4$ such versions which are available in [Sckit-Learn](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html#:~:text=Normalized%20Mutual%20Information%20(NMI)%20is,and%201%20(perfect%20correlation).).
+
+$$
+NMI_{arithmetic}=\frac{ I(X; Y)}{\frac{H(X)+H(Y)}{2}}= \frac{ 2I(X; Y)}{H(X)+H(Y)}
+$$
+
+Here the normalizing constant is the arithmetic mean of $H(X)$ and $H(Y)$ i.e. $\frac{H(X)+H(Y)}{2}$.
+
+
+$$
+NMI_{geometric}=\frac{ I(X; Y)}{\sqrt{H(X)H(Y)}}
+$$
+
+Here the normalizing constant is the geometric mean of $H(X)$ and $H(Y)$ i.e. $\sqrt{H(X)H(Y)}$.
+
+$$
+NMI_{max} = \frac{ I(X; Y)}{max\{H(X),H(Y)\}}
+$$
+
+Here the normalizing constant is the the maximum of $H(X)$ and $H(Y)$.
+
+$$
+NMI_{min} = \frac{ I(X; Y)}{min\{H(X),H(Y)\}}
+$$
+Here the normalizing constant is the the minimum of $H(X)$ and $H(Y)$.
