@@ -15,7 +15,7 @@ To understand the concept of mutual information first, we need to understand joi
 
 
 
-# Joint Entropy
+## Joint Entropy
 
 Joint Entropy is nothing but the entropy of a joint distribution. The joint distribution can be constructed with multiple random variables. But to keep it simple, let's consider a joint distribution of two random variables $X$ and $Y$. In addition, let's keep the discussion limited to discrete random variables as that is easier to visualize and reason with. The joint entropy $H(X,Y)$ is given by the following equation:
 
@@ -64,7 +64,7 @@ $$
 
 which might look complex but essentially utilizes the same concept. It is no longer possible to visualize this with a diagram, but all the intuitions derived for two variables; hold for a multivariable case.
 
-# Conditional Entropy
+## Conditional Entropy
 
 Conditional entropy captures the expected information content in a conditional distribution. Let's explain it with the same example given above.
 
@@ -152,7 +152,7 @@ $$
 > The conditional entropy is a measure of how much uncertainty remains about the random variable $X$ when we know the value of $Y$.
 {: .prompt-tip }
 
-# Marginal Entropy
+## Marginal Entropy
 
 Marginal entropy is the entropy associated with a marginal distribution. There is nothing special about the definition, it is similar to normal entropy. For a joint distribution $p(x,y)$, the marginal distributions are $p(x)$ and $p(y)$. To marginalize we essentially sum out one variable as shown below:  
 
@@ -174,7 +174,7 @@ H(Y) & =- \sum p(y) \log p(y)
 \end{align*}
 $$
 
-# Key Properties related to Joint Entropy, Conditional Entropy and Marginal Entropy
+## Key Properties related to Joint Entropy, Conditional Entropy and Marginal Entropy
 
 This subsection will dive deeper into key properties and relations associated with joint entropy, conditional entropy and marginal entropy.
 

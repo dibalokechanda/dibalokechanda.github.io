@@ -16,4 +16,4 @@ If you are familiar with mutual information, you must have come across the follo
 ![Venn diagram](https://i.ibb.co/vzM8S68/image-removebg-preview-modified.png)
 
 
-This diagram is used as a reference to explain mutual information. From the diagram, we can see mutual information $I(x;y)$ is the overlapping region between $H(X)$ and $H(Y)$.  This corresponds with the name <b>mutual information</b> as $H(X)$ is the expected self-information quantity in the random variable $X$ and $H(Y)$ is the expected self-information quantity in the random variable $Y$. Hence, the common section will be the "mutual information" which is shared by both random variables.
+This diagram is used as a reference to explain mutual information. From the diagram, we can see mutual information $I(X; Y)$ is the overlapping region between $H(X)$ and $H(Y)$.  This corresponds with the name <b>mutual information</b> as $H(X)$ is the expected self-information quantity in the random variable $X$ and $H(Y)$ is the expected self-information quantity in the random variable $Y$. Hence, the common section will be the "mutual information" which is shared by both random variables.
