@@ -9,7 +9,7 @@ toc: true
 
 Mutual information is one of the most important concepts in machine learning. It is closely related to concepts like Kullback–Leibler (KL) divergence, cross-entropy etc. This is such a fundamental concept that many novel work in the machine learning domain is based on this.
 
-# The Venn Diagram
+## The Venn Diagram
 
 If you are familiar with mutual information, you must have come across the following Venn diagram.
 
@@ -31,8 +31,16 @@ If you closely think about the above equations, all of them are essentially calc
 
 ![components_venn_diagram](https://i.ibb.co/mbdQ8gd/chrome-8-Po-PNu-RVOA.png)
 
+
+## The Formula 
+
 The formula for mutual information with respect to <b> joint distribution </b> and <b> marginal distribution </b> is shown below:
 
 $$
 \mathrm{I}(X ; Y)=\sum_{y \in \mathcal{Y}} \sum_{x \in \mathcal{X}} p{(x, y)} \log \left(\frac{p(x, y)}{p(x) p(y)}\right)
 $$
+
+
+## Normalized Mutual Information
+
+N
