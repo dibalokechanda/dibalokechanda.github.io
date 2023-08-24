@@ -25,7 +25,7 @@ The common notations are related to random variables, probability density functi
 | Probability Density Function (PDF)          | $p_{X}(x)$    |
 
 
-The notation $p(x)$  is used as a general placeholder for probability distributions. If a statement is true for both discrete random variables and continuous random variables to keep it general, I will use $p(x)$ and I hope readers will be to distinguish based on the context. For example, if I use a summation symbol $\sum$ with $p(x)$, readers can assume that statement or equation can be generalized to an integration symbol $\int$ for continuous random variables.  
+The notation $p(x)$  is used as a general placeholder for probability distributions. If a statement is true for both discrete random variables and continuous random variables to keep it general, I will use $p(x)$ and I hope readers will be able to distinguish based on the context. For example, if I use a summation symbol $\sum$ with $p(x)$, readers can assume that statement or equation can be generalized to an integration symbol $\int$ for continuous random variables.  
 
 # Other Notations
 
