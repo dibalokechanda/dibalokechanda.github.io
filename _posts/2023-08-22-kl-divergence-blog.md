@@ -22,20 +22,20 @@ $$
 \log \left( \frac{p_{\theta}(x_1)}{q_{\phi}(x_1)} \right)
 $$
 
-which is called the likelihood ratio. Now, this is measuring "distance" for only sample $x_{1}$. We need to take into account all the samples $x_{1},x_{2},\cdots$ not just a single sample $x_{1}$. First, we can generalize the likelihood ratio by replacing index $1$ with $i$ and we get the following:s
+which is called the log-likelihood ratio. Now, this is measuring "distance" for only sample $x_{1}$. We need to take into account all the samples $x_{1},x_{2},\cdots$ not just a single sample $x_{1}$. First, we can generalize the likelihood ratio by replacing index $1$ with $i$ and we get the following:
 
 
 $$
 \log \left( \frac{p_{\theta}(x_i)}{q_{\phi}(x_i)} \right)
 $$
 
-We can take the weighted average of this "distance measure" for all samples of the random variable $X$. You can think of it like we are averaging all individual log-likelihood ratio values for the random variable $X$. Following this logic we can write the following:-
+We can take the weighted average of this "distance measure" for all samples of the random variable $X$. You can think of it like we are averaging all individual log-likelihood ratio values for the random variable $X$. Following this logic, we can write :
 
 $$
 \sum_{i=1} p_\theta\left(x_i\right) \log \left[\frac{p_\theta\left(x_i\right)}{q_\phi\left(x_i\right)}\right]
 $$
 
-This is the definition of KL divergence. For continuous random variable we can replace $\sum$ with $\int$ get the following:
+This is the definition of KL divergence. For continuous random variable we can replace $\sum$ with $\int$ to get the following:
 
 $$
 
@@ -56,10 +56,11 @@ $$
  \boxed{D_{KL}(p||q)= \int_{x\in \mathcal{X}}p(x) \log \frac{p(x)}{q(x)}}
 $$
 
-An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of "distance" between distributions.
+An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of "distance" between distributions. When two distributions are not similar you should expect a larger value; whereas if the distributions are quite similar you should expect a lower value.
 
 ![kl_div](https://i.ibb.co/Fm5rGy5/chrome-zd-NX24h06x.png)
 
+Even though the visualization is shown of one-dimensional distribution it is easily generalizable for higher dimensional distribution.
 
 ## Why it is called "Divergence"?
 
@@ -69,13 +70,34 @@ $$
 D_{KL}(p||q) \neq D_{KL}(q||p)
 $$
 
-Also as it does not follow triangle inequality we write down the expression below: 
+Also as it does not follow triangle inequality and hence we can write down the expression below: 
 
 $$
 D_{\mathrm{KL}}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
 $$
 
-There are a couple of consequences due to the asymmetry property of KL divergence. To understand that, first, we need to understand the difference between "Forward KL Divergence" and " Reverse KL divergence". 
+There are a couple of consequences due to the asymmetry property of KL divergence. To understand that, first, we need to understand the difference between "Forward KL Divergence" and " Reverse KL divergence". For this, we need to consider a practical setting like variational inference, where we have a target distribution (or true distribution) $p$ and we are trying to approximate a candidate distribution $q$. In this context, the forward KL divergence is given by :
+
+$$
+D_{K L}(p \| q)=\mathbb{E}_{x \sim p}\left[\log \frac{p(x)}{q(x)}\right]
+$$
+
+And the reverse KL divergence is given  by:
+
+$$
+D_{K L}(q \| p)=\mathbb{E}_{x \sim q}\left[\log \frac{q(x)}{p(x)}\right]
+$$
+
+Let's try to visualize what is happening by considering the distribution below as the true distribution $p$.
+
+![target_distribution](https://i.ibb.co/CvjcgZn/image-removebg-preview.png)
+
+From the figure, we can see $p$ is a bimodal distribution. Now the 
+
+![forward_kl](https://i.ibb.co/vPv3RKr/image-removebg-preview-1.png)
+
+
+![reverse_kl](https://i.ibb.co/pR8YtW3/image-removebg-preview-2.png)
 # Connection to Information Theory
 
 

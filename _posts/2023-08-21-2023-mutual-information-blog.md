@@ -90,3 +90,5 @@ NMI_{min} = \frac{ I(X; Y)}{min\{H(X),H(Y)\}}
 $$
 
 Here the normalizing constant is the the minimum of $H(X)$ and $H(Y)$.
+
+
