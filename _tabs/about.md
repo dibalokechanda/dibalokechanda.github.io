@@ -12,7 +12,7 @@ This is a kind of repository of the concepts I learned during my PhD. I rely mos
 - [ARCHIVES](https://dibalokechanda.github.io/archives/): Published blogs chronologically sorted according to date.
 - [TAGS](https://dibalokechanda.github.io/tags/): Use it to filter through the type of concepts.
 - [CATEGORIES](https://dibalokechanda.github.io/categories/fundamentals/): Specific category of concepts. 
-- [HOME] (https://dibalokechanda.github.io/): Homepage of the blog.
+- [HOME] (https://dibalokechanda.github.io/): Homepage of the blog. You can use the search function on the top left if you are looking for a specific topic to explore.
 
 
 ## About Me:
