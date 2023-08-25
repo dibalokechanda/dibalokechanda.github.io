@@ -101,6 +101,10 @@ From the figure, we can see that $p$ is a bi-modal distribution. If we use forwa
 This shows that the forward KL exhibits mean-seeking behavior. In contrast, if reverse KL divergence is used as a metric it exhibits a mode-seeking behavior as shown in the following diagram. 
 
 ![reverse_kl](https://i.ibb.co/pR8YtW3/image-removebg-preview-2.png)
+
+Most people after learning this fact wonder which one is better or which one should be used; the forward KL divergence or the reverse KL divergence? The short answer is it depends. The first thing you need to come to terms with is, for higher dimensional distributions you can't visualize what the hell is happening. Hence, there is no visual intuition to rely on and to decide which one you would want. In higher dimensions, the distribution might have $n$-number of modes and depending on the problem you are trying to solve, you might prefer the forward or the reverse KL divergence.
+
+Usually in supervised classification type problem, the forward KL divergence is used.
 # Connection to Information Theory
 
 
