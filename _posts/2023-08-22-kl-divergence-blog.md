@@ -56,6 +56,26 @@ $$
  \boxed{D_{KL}(p||q)= \int_{x\in \mathcal{X}}p(x) \log \frac{p(x)}{q(x)}}
 $$
 
+An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of distance.
+
+![kl_div](https://i.ibb.co/Fm5rGy5/chrome-zd-NX24h06x.png)
+
+
 ## Why it is called "Divergence"?
 
-One thing you might have noticed in the previous section I always used " " when using the word "distance". It was intentional because KL divergence is not a true "distance" measure in the sense it is not symmetric.
+One thing you might have noticed in the previous section I always used " " when using the word "distance". It was intentional because KL divergence is not a true "distance" measure in the sense it is not symmetric. KL divergence between $p_{\theta}$ and $q_{\theta}$ will not be the same as the KL divergence between $q_{\theta}$ and $p_{\theta}$. In addition, it does not satisfy the triangle inequality. The unsymmetric nature can be mathematically expressed as below:
+
+$$
+D_{KL}(p||q) \neq D_{KL}(q||p)
+$$
+
+Also as it does not follow triangle inequality we write down the expression below: 
+
+$$
+D_{\mathrm{KL}}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
+$$
+
+# Connection to Information Theory
+
+
+# Connection to Cross-Entropy
