@@ -56,7 +56,7 @@ $$
  \boxed{D_{KL}(p||q)= \int_{x\in \mathcal{X}}p(x) \log \frac{p(x)}{q(x)}}
 $$
 
-An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of distance.
+An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of "distance" between distributions.
 
 ![kl_div](https://i.ibb.co/Fm5rGy5/chrome-zd-NX24h06x.png)
 
@@ -75,7 +75,14 @@ $$
 D_{\mathrm{KL}}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
 $$
 
+There are a couple of consequences due to the asymmetry property of KL divergence. To understand that, first, we need to understand the difference between "Forward KL Divergence" and " Reverse KL divergence". 
 # Connection to Information Theory
 
 
 # Connection to Cross-Entropy
+
+
+
+# References
+
+[1] [Ghosh, D. (2018). *KL Divergence for Machine Learning*. [online] The RL Probabilist. Available at: [https://dibyaghosh.com/blog/probability/kldivergence.html](https://dibyaghosh.com/blog/probability/kldivergence.html).
