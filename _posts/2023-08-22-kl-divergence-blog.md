@@ -76,6 +76,8 @@ $$
 D_{\mathrm{KL}}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
 $$
 
+## Forward KL Divergence vs Reverse KL Divergence
+
 There are a couple of consequences due to the asymmetry property of KL divergence. To understand that, first, we need to understand the difference between "Forward KL Divergence" and " Reverse KL divergence". For this, we need to consider a practical setting like variational inference, where we have a target distribution (or true distribution) $p$ and we are trying to approximate a candidate distribution $q$. In this context, the forward KL divergence is given by :
 
 $$
@@ -92,10 +94,11 @@ Let's try to visualize what is happening by considering the distribution below a
 
 ![target_distribution](https://i.ibb.co/CvjcgZn/image-removebg-preview.png)
 
-From the figure, we can see $p$ is a bimodal distribution. Now the 
+From the figure, we can see that $p$ is a bi-modal distribution. If we use forward KL divergence as a metric and use variational inference to approximate the parameterized distribution $q$ we will get something like below.  
 
 ![forward_kl](https://i.ibb.co/vPv3RKr/image-removebg-preview-1.png)
 
+This shows that the forward KL exhibits mean-seeking behavior. In contrast, if reverse KL divergence is used as a metric it exhibits a mode-seeking behavior as shown in the following diagram. 
 
 ![reverse_kl](https://i.ibb.co/pR8YtW3/image-removebg-preview-2.png)
 # Connection to Information Theory
