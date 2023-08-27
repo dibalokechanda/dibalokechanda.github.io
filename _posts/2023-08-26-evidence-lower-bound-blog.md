@@ -8,3 +8,15 @@ toc: true
 ---
 
 Evidence lower bound, commonly known as <b>ELBO<b>
+
+## Intractibility of Distribution
+
+
+
+## Derivation
+
+
+
+
+
+## Usage of ELBO
