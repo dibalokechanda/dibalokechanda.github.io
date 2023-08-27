@@ -73,6 +73,11 @@ $$
 
 which means $D_{K L}(p \| q)  \geq 0$ i.e. the non-negativity of KL divergence.
 
+### Usage of Jensen's Inequality in the Wild
+
+It is kinda shameful to admit, but I didn't know about the existance of Jensen's inequality until I came across the paper [GNNExplainer: Generating Explanations for Graph Neural Networks](https://arxiv.org/abs/1903.03894). 
+
+If you go through this paper, you will come across equation (3) where the authors make use of Jensen's inequality to get equation (4). But to make that use of Jensen's equality, the authors actually violate the convexity requirement, but say that in pratice their method works well despite this violation.
 
 
 # References
@@ -80,3 +85,5 @@ which means $D_{K L}(p \| q)  \geq 0$ i.e. the non-negativity of KL divergence.
 [1] [Duane Rich (2021). *Jensen’s Inequality*. YouTube. Available at: https://www.youtube.com/watch?v=u0_X2hX6DWE [Accessed 26 Aug. 2023]](https://www.youtube.com/watch?v=u0_X2hX6DWE).
 
 [2] [MIT OpenCourseWare (2018). *S18.2 Jensen’s Inequality*. YouTube. Available at: https://www.youtube.com/watch?v=GDJFLfmyb20 [Accessed 27 Aug. 2023]](https://www.youtube.com/watch?v=GDJFLfmyb20).
+
+[3] [Ying, Z., Bourgeois, D., You, J., Zitnik, M. and Leskovec, J., 2019. *Gnnexplainer: Generating explanations for graph neural networks.* Advances in neural information processing systems, 32](https://arxiv.org/abs/1903.03894)
