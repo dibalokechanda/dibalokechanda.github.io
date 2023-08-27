@@ -76,7 +76,7 @@ $$
 D_{\mathrm{KL}}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
 $$
 
-## Forward KL Divergence vs Reverse KL Divergence
+## Forward KL Divergence vs. Reverse KL Divergence
 
 There are a couple of consequences due to the asymmetry property of KL divergence. To understand that, first, we need to understand the difference between "Forward KL Divergence" and " Reverse KL divergence". For this, we need to consider a practical setting like variational inference, where we have a target distribution (or true distribution) $p$ and we are trying to approximate a candidate distribution $q$. In this context, the forward KL divergence is given by :
 
@@ -126,8 +126,27 @@ I(X ; Y) & =H(Y)-H(Y \mid X) \\
 \end{aligned}
 $$
 
+This equation captures the "distance" between the joint distribution $p(x,y)$ and the product of marginal distributions $p(x)$ and $p(y)$. If the random variables $X$ and $Y$ are independent which means $p(x,y)=p(x) p(y)$, then $D_{K L}(p(x,y) \| p(x) p(y)$ equals $0$ as per definition of KL divergence.
+
 ## Connection to Cross-Entropy
 
+To create the connection with cross-entropy first we need to start with the definition for KL divergence and perform some algebraic manipulations.
+
+$$
+\begin{align*}
+ D_{KL}(p||q) &= \sum_{x\in \mathcal{X}}p(x) \log \frac{p(x)}{q(x)} \\
+              &= \sum_{x\in \mathcal{X}}p(x)\log p(x) - p(x) \log q(x) \\
+              &= \sum_{x\in \mathcal{X}}p(x)\log p(x)- \sum_{x\in \mathcal{X}} p(x) \log q(x) \\
+              &=\underbrace{- \sum_{x\in \mathcal{X}} p(x) \log q(x)}_{\text{Cross-Entropy}}- \underbrace{\left(-\sum_{x\in \mathcal{X}}p(x)\log p(x) \right)}_{\text{Entropy}} \\
+\end{align*} 
+$$
+
+
+This can be expressed as below where $H(p,q)$ is the cross-entropy between distribution $p$ and distribution $q$  \& $H(p)$ is the entropy of distribution $p$.
+
+$$
+\boxed{D_{KL}(p||q) = H(p,q) - H(p)}
+$$
 
 
 # References
