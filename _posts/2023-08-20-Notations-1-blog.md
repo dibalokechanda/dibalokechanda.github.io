@@ -36,5 +36,3 @@ The notation $p(x)$  is used as a general placeholder for probability distributi
 - $I(X; Y)$: You can find more information about using a semicolon [here](https://math.stackexchange.com/questions/3820274/what-does-the-semicolon-mean-in-ixy-mutual-information). I might have as well used $I(X, Y)$ instead.
 
 - $D_{KL}(p \| q):$ Even though it depends on the context of what I am talking about, in general, consider $p$ as the true/target distribution which we are trying to approximate and $q$ as the parameterized distribution. Most of these are only applicable when talking about variational inference.
-
-- In general, usually, I won't express distribution as parameterized. For example instead of using $p_{\theta}$ which is distribution $p$ parameterized by $\theta$, I will use $p$ only. I expect readers to understand from context if a distribution can be parameterized or not. For example in the context of a supervised classification problem, if $D_{KL}(p \| q)$ is used, it usually means $p$ is the true data distribution (where parameterization does not make sense) and $q$ is the parameterized model generated distribution.
