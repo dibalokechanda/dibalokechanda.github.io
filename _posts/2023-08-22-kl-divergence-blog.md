@@ -103,7 +103,7 @@ This shows that the forward KL exhibits mean-seeking behavior. In contrast, if r
 ![reverse_kl](https://i.ibb.co/pR8YtW3/image-removebg-preview-2.png)
 
 Most people after learning this fact wonder which one is better or which one should be used; the forward KL divergence or the reverse KL divergence? The short answer is it depends. The first thing you need to come to terms with is, for higher dimensional distributions you can't visualize what the hell is happening. Hence, there is no visual intuition to rely on and to decide which one you would want. In higher dimensions, the distribution might have $n$-number of modes and depending on the problem you are trying to solve, you might prefer the forward or the reverse KL divergence.
-# Connection to Information Theory
+## Connection to Information Theory
 
 KL Divergence is also known as <b>Relative Entropy</b> and has a close connection to [Mutual Information](https://dibalokechanda.github.io/posts/2023-mutual-information-blog/). Let's start with the equation which connects mutual information to KL divergence:
 
@@ -111,7 +111,7 @@ $$
 \boxed{I(X; Y)=D_{K L}\left(p(x,y) \| p(x)  p(y)\right)}
 $$
 
-where $p(x) \otimes p(y)$ is the product between the marginal distribution between $p(x)$ and $p(y)$. The derivation of this specific equation is shown below:
+where $p(x) p(y)$ is the product between the marginal distribution between $p(x)$ and $p(y)$. The derivation of this specific equation is shown below:
 
 $$
 \begin{aligned}
@@ -126,7 +126,7 @@ I(X ; Y) & =H(Y)-H(Y \mid X) \\
 \end{aligned}
 $$
 
-# Connection to Cross-Entropy
+## Connection to Cross-Entropy
 
 
 
