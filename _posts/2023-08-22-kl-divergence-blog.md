@@ -58,7 +58,7 @@ $$
 
 An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of "distance" between distributions. When two distributions are not similar you should expect a larger value; whereas if the distributions are quite similar you should expect a lower value.
 
-![kl_div](https://i.ibb.co/Fm5rGy5/chrome-zd-NX24h06x.png)
+![kl_div](https://i.ibb.co/DDxVQH4/chrome-l-AZj-K1b4e-O.png)
 
 Even though the visualization is shown of one-dimensional distribution it is easily generalizable for higher dimensional distribution.
 

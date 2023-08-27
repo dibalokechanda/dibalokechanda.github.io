@@ -39,13 +39,16 @@ To get this quantity we first compute the expectation of the random variable to 
 
 ![JIE_2](https://i.ibb.co/PxPYpyz/chrome-ki-OBst-NSCt.png)
 
+One thing to note here, this holds for any number of sample points (more than one) and for any number of dimensions. 
 ## Application of Jensen's Inequality
+
+Well there are numerous application, but to keep it concise I will provide two such application. One is in the proof of non-negativity of KL divergence. Another is it's usage in the wild, a research paper related to explainability in graph neural network.
 
 
 
 
 # References
 
-[1] Duane Rich (2021). *Jensen’s Inequality*. YouTube. Available at: https://www.youtube.com/watch?v=u0_X2hX6DWE [Accessed 26 Aug. 2023].
+[1] [Duane Rich (2021). *Jensen’s Inequality*. YouTube. Available at: https://www.youtube.com/watch?v=u0_X2hX6DWE [Accessed 26 Aug. 2023]](https://www.youtube.com/watch?v=u0_X2hX6DWE).
 
-[2] MIT OpenCourseWare (2018). *S18.2 Jensen’s Inequality*. YouTube. Available at: https://www.youtube.com/watch?v=GDJFLfmyb20 [Accessed 27 Aug. 2023].
+[2] [MIT OpenCourseWare (2018). *S18.2 Jensen’s Inequality*. YouTube. Available at: https://www.youtube.com/watch?v=GDJFLfmyb20 [Accessed 27 Aug. 2023]](https://www.youtube.com/watch?v=GDJFLfmyb20).
