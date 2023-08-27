@@ -12,6 +12,7 @@ To keep consistency for the readers and my sanity, this article will be used as 
 - [Entropy](https://dibalokechanda.github.io/posts/entropy-blog/)
 - [Joint, Conditional and Marginal Entropy](https://dibalokechanda.github.io/posts/joint-conditional-marginal-entropy-blog/)
 - [Mutual Information](https://dibalokechanda.github.io/posts/2023-mutual-information-blog/)
+- [Kullback–Leibler Divergence](https://dibalokechanda.github.io/posts/kl-divergence-blog/)
 
 The common notations are related to random variables, probability density function (PDF) and probability mass function (PMF).
 
@@ -29,4 +30,6 @@ The notation $p(x)$  is used as a general placeholder for probability distributi
 
 # Other Notations
 
-- $\log$ : Assume natural logarithm or  $\log$ base-$e$. Most resources you will come across for these topics, tend to use base-$2$ logarithm, but in the machine learning domain, it is common practice to use a base-$e$ logarithm.
+- $\log$ : Assume natural logarithm or  $\log$ base-$e$. Most resources you will come across for these topics, tend to use base- $2$ logarithm, but in the machine learning domain, it is common practice to use a base- $e$ logarithm.
+
+- $I(X; Y):$ You can find more information about using a semicolon [here](https://math.stackexchange.com/questions/3820274/what-does-the-semicolon-mean-in-ixy-mutual-information). I might have as well used $I(X, Y)$ instead.
