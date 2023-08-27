@@ -2,7 +2,7 @@
 title: Evidence Lower Bound
 date: 2023-08-26 12:00:00 -500
 categories: [fundamentals]
-tags: [variational_inference, latent variables]
+tags: [variational_inference, latent_variables]
 math: true
 toc: true
 ---
