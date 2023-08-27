@@ -6,3 +6,5 @@ tags: [variational_inference, latent_variables]
 math: true
 toc: true
 ---
+
+Evidence lower bound, commonly known as <b>ELBO<b>

@@ -35,4 +35,4 @@ The notation $p(x)$  is used as a general placeholder for probability distributi
 
 - $I(X; Y)$: You can find more information about using a semicolon [here](https://math.stackexchange.com/questions/3820274/what-does-the-semicolon-mean-in-ixy-mutual-information). I might have as well used $I(X, Y)$ instead.
 
-- $D_{KL}(p \| q):$ Even though it depends on the context of what I am talking about, in general, consider $p$ as the true/target distribution which we are trying to approximate and $q$ as the parameterized distribution. Most of these are only applicable when talking about variational inference.
+- $D_{KL}(p | | q):$ Even though it depends on the context of what I am talking about, in general, consider $p$ as the true/target distribution which we are trying to approximate and $q$ as the parameterized distribution. Most of these are only applicable when talking about variational inference.
