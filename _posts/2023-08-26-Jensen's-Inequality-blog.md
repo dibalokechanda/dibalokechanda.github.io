@@ -45,6 +45,34 @@ One thing to note here, this holds for any number of sample points (more than on
 Well there are numerous application, but to keep it concise I will provide two such application. One is in the proof of non-negativity of KL divergence. Another is it's usage in the wild, a research paper related to explainability in graph neural network.
 
 
+### To Prove the Non-Negativity of KL Divergence
+
+For this proof first we need to know the fact that $- \log$ is a convex function. Now let's start with the definition of KL divergence and do some algebraic manipulations.
+
+
+$$
+\begin{align*}
+D_{K L}(p \| q) &=\mathbb{E}_{x \sim p}\left[\log \frac{p(x)}{q(x)}\right] \\
+                &= -\mathbb{E}_{x \sim p}\left[\log \frac{q(x)}{p(x)}\right] \\
+                &=  \mathbb{E}_{x \sim p}\left[-\log \frac{q(x)}{p(x)}\right] 
+\end{align*}
+$$
+
+At this point we can use Jensen's inequality to get the following :
+
+
+$$
+\begin{align*}
+D_{K L}(p \| q) &=\mathbb{E}_{x \sim p}\left[-\log \frac{q(x)}{p(x)}\right]  \\
+                & \geq - \log \mathbb{E}_{x \sim p} \left[\frac{q(x)}{p(x)}\right]\\
+                & =- \log \sum_{x \in \mathcal{X}} p(x) \frac{q(x)}{p(x)} \\
+                & = - \log  \sum_{x \in \mathcal{X}} q(x) \\
+                & = -\log (1) =0     
+\end{align*}
+$$
+
+which means $D_{K L}(p \| q)  \geq 0$ i.e. the non-negativity of KL divergence.
+
 
 
 # References
