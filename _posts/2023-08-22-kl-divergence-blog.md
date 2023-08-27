@@ -156,7 +156,7 @@ $$
 \underbrace{H(p,q)}_{\text{Cross-Entropy between $p$ and $q$}} = \underbrace{D_{KL}(p||q)}_{\text{KL Divergence between $p$ and $q$} }+ \underbrace{H(p)}_{\text{Entropy of distribution $p$}}
 $$
 
-In the context of a supervised classification problem, it is a common practice to use cross-entropy as a cost fucntion. You can think of $p$ as the true underlying data distribution and $q$ is the parameterized predicted distribution. The distribution $q$ is parameterized because it is controlled by the model parameters. One important thing to notice here, $H(p)$ equates to a constant value from optimization perspective because it does not contain $q$.
+In the context of a supervised classification problem, it is a common practice to use cross-entropy as a cost function. You can think of $p$ as the true underlying data distribution and $q$ as the parameterized predicted distribution. The distribution $q$ is parameterized because it is controlled by the model parameters. One important thing to notice here, $H(p)$ equates to a constant value from an optimization perspective because it does not contain $q$.
 
 # References
 

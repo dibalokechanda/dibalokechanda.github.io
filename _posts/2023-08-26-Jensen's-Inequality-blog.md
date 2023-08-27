@@ -73,6 +73,9 @@ $$
 
 which means $D_{K L}(p \| q)  \geq 0$ i.e. the non-negativity of KL divergence.
 
+> This is also known as Gibb's Inequality or Shannon-Kolmogorov information inequality
+{: .prompt-tip }
+
 ### Usage of Jensen's Inequality in the Wild
 
 It is kinda shameful to admit, but I didn't know about the existance of Jensen's inequality until I came across the paper [GNNExplainer: Generating Explanations for Graph Neural Networks](https://arxiv.org/abs/1903.03894). 
