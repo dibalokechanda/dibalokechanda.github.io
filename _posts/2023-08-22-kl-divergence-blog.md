@@ -73,9 +73,11 @@ $$
 Also as it does not follow triangle inequality and hence we can write down the expression below: 
 
 $$
-D_{\mathrm{KL}}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
+D_{KL}(p \| q) \nleq D_{\mathrm{KL}}(p \| r)+D_{\mathrm{KL}}(r \| q)
 $$
 
+> KL Divergence is also a non-negative quantity _i.e._ $D_{KL}(p \| q)\geq0$
+{: .prompt-tip }
 ## Forward KL Divergence vs. Reverse KL Divergence
 
 There are a couple of consequences due to the asymmetry property of KL divergence. To understand that, first, we need to understand the difference between "Forward KL Divergence" and " Reverse KL divergence". For this, we need to consider a practical setting like variational inference, where we have a target distribution (or true distribution) $p$ and we are trying to approximate a candidate distribution $q$. In this context, the forward KL divergence is given by :
@@ -148,6 +150,13 @@ $$
 \boxed{D_{KL}(p||q) = H(p,q) - H(p)}
 $$
 
+Let's talk about how this formula is used in practice. First, swap the sides and define cross-entropy as below:
+
+$$
+\underbrace{H(p,q)}_{\text{Cross-Entropy between $p$ and $q$}} = \underbrace{D_{KL}(p||q)}_{\text{KL Divergence between $p$ and $q$} }+ \underbrace{H(p)}_{\text{Entropy of distribution $p$}}
+$$
+
+In the context of a supervised classification problem, it is a common practice to use cross-entropy as a cost fucntion. You can think of $p$ as the true underlying data distribution and $q$ is the parameterized predicted distribution. The distribution $q$ is parameterized because it is controlled by the model parameters. One important thing to notice here, $H(p)$ equates to a constant value from optimization perspective because it does not contain $q$.
 
 # References
 
