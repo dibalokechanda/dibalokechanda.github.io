@@ -68,7 +68,7 @@ which might look complex but essentially utilizes the same concept. It is no lon
 
 Conditional entropy captures the expected information content in a conditional distribution. Let's explain it with the same example given above.
 
-Suppose we are given the fact that coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
+Suppose we are given the fact that a coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
 
 ![conditional_distribution_1](https://i.ibb.co/Rj5Bjw1/chrome-Ch-MTVFVw-Ap.png)
 *Conditioning on random variable X (considering "Head" comes up)*
@@ -184,7 +184,7 @@ $$
 H(X \mid Y) \leq H(X)
 $$
 
-Now the upper bound for this relation is $H(X|Y)=H(X)$ which happens if $X$ and $Y$ are independent random variables *i.e.* $p(x,y)=p(x) p(y)$. The interpretation of this upper bound is "knowing" anything about random variable $Y$ does not reduce uncertainty about random variable $X$.
+Now the upper bound for this relation is $H(X|Y)=H(X)$ which happens if $X$ and $Y$ are independent random variables *i.e.* $p(x,y)=p(x) p(y)$. The interpretation of this upper bound is that "knowing" anything about random variable $Y$ does not reduce uncertainty about random variable $X$.
 Also if $X$ and $Y$ are independent random variables, then,
 
 $$
