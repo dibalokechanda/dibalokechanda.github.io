@@ -11,6 +11,6 @@ toc: true
  *Image taken from [MIT Introduction to Deep Learning 6.S191: Lecture 4](https://youtu.be/3G5hWM6jqPk?t=479)*
 
 
-## What is a Latent Variable ?
+## What is a Latent Variables ?
 
-In simplest term, it is variable which we have no access to or in other words "unobserved" variable. This implies, we don't have access to the probability distribution of that variable.
+In simplest term, the variables to which we have no access to or in other words "unobserved" variables. This implies, we don't have access to the probability distribution of that variable.
