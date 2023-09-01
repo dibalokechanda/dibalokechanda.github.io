@@ -33,3 +33,15 @@ This is normally associated with a space (most of the time a vector space) where
 ## Latent Representation
 
 This is yet another terminology to refer to latent variables. For example, we say we want to learn the "latent representation of this Image X". This means we want to project the original image to a low-dimensional latent space. That projected version of the image is referred to as the latent representation.
+
+## Latent Variable Models (LVM)
+
+![LVM](https://i.ibb.co/mFb7gTb/chrome-x-V1u-P8-BZz-Y.png)
+
+
+
+# References
+
+[1] [DeepMind (2020). *DeepMind x UCL | Deep Learning Lectures | 11/12 | Modern Latent Variable Models.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=7Pcvdo4EJeo](https://youtu.be/7Pcvdo4EJeo).
+
+[2]
