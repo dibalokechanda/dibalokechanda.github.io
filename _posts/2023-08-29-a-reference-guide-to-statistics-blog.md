@@ -70,7 +70,7 @@ For example, let's use "mean" as the statistic. In that case, given a population
 
 ## Fundamental Concepts 
 
->### Parameter vs Statistic
+>### Parameter vs. Statistic
 
 >### Degrees of Freedom -->
 

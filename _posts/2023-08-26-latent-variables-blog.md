@@ -36,6 +36,19 @@ This is yet another terminology to refer to latent variables. For example, we sa
 
 ## Latent Variable Models (LVM)
 
+Latent variable models defines a distribution over observations $x$ by using a latent variable $z$.
+Now there are $5$ separate distributions associated with a LVM.
+
+- $p(x,z)$ : Joint distribution of observation $x$ and latent variable $z$
+- $p(z)$ : Prior distribution of latent variable $x$
+- $p(x)$ : Marginal distribution of the observations $x$
+- $p(x \mid z)$ : Conditional distribution  $x$ given $z$
+- $p(z\mid x)$ : Conditional distribution $z$ given $x$
+
+A visualization is shown below:
+
+
+
 ![LVM](https://i.ibb.co/mFb7gTb/chrome-x-V1u-P8-BZz-Y.png)
 
 
@@ -44,4 +57,3 @@ This is yet another terminology to refer to latent variables. For example, we sa
 
 [1] [DeepMind (2020). *DeepMind x UCL | Deep Learning Lectures | 11/12 | Modern Latent Variable Models.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=7Pcvdo4EJeo](https://youtu.be/7Pcvdo4EJeo).
 
-[2]
