@@ -33,3 +33,9 @@ This is normally associated with a space (most of the time a vector space) where
 ## Latent Representation
 
 This is yet another terminology to refer to latent variables. For example, we say we want to learn the "latent representation of this Image X". This means we want to project the original image to a low-dimensional latent space. That projected version of the image is referred to as the latent representation.
+
+## Modern Latent Variable Models
+
+This is a really vast topic and not possible to cover in a single post. Interested readers can watch the following lecture from DeepMind.
+
+{% include embed/{youtube}.html id='{7Pcvdo4EJeo}' %}
