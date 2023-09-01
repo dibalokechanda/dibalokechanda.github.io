@@ -55,5 +55,5 @@ A visualization is shown below:
 
 # References
 
-[1] [DeepMind (2020). *DeepMind x UCL | Deep Learning Lectures | 11/12 | Modern Latent Variable Models.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=7Pcvdo4EJeo](https://youtu.be/7Pcvdo4EJeo).
+[1] DeepMind (2020). *DeepMind x UCL . Deep Learning Lectures . 11/12 . Modern Latent Variable Models.* [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=7Pcvdo4EJeo (https://youtu.be/7Pcvdo4EJeo).
 
