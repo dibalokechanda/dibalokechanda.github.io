@@ -1,6 +1,6 @@
 ---
 title: A Reference Guide to Statistics
-date: 2023-07-30 12:00:00 -500
+date: 2023-08-30 12:00:00 -500
 categories: [statistics]
 tags: [statistics,inferential_statistics]
 math: true
