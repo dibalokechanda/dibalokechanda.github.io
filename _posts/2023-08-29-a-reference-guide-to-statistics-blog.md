@@ -14,19 +14,6 @@ This article acts as a repository of the concepts I learned about any topics in 
 - [zedstatistics](https://www.youtube.com/@zedstatistics/videos)
 
 In addition, several blog posts and texts are also used as references. 
-<!-- 
-## Descriptive Statistics
-
-> ### Types of Data
-
-
-> ### Moments
-
-
-> ### Measure of Center
-
-
-> ### Measure of Dispersion  -->
 
 
 ## Inferential Statistics 
