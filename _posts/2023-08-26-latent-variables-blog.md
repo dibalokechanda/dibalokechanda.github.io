@@ -43,7 +43,7 @@ Now there are $5$ separate distributions associated with a LVM.
 - $p(z)$ : Prior distribution of latent variable $x$
 - $p(x)$ : Marginal distribution of the observations $x$
 - $p(x \mid z)$ : Conditional distribution  $x$ given $z$
-- $p(z\mid x)$ : Conditional distribution $z$ given $x$
+- $p(z\mid x)$ : posterior conditional distribution $z$ given $x$
 
 A visualization is shown below:
 
@@ -51,9 +51,20 @@ A visualization is shown below:
 
 ![LVM](https://i.ibb.co/mFb7gTb/chrome-x-V1u-P8-BZz-Y.png)
 
+We can get the joint distribution $p(x,y)$ if we know prior of the latent variable $p(z)$ and the conditional distribution $p(x \mid z)$.
+
+$$
+p(x,z) = p(x \mid z ) p(z) 
+$$
+
+To get the posterior distributio we need to do the following. Note that this requires knowing the marginal distribution $p(x)$ by integrating over all possibilities of $z$ and the joint distribution $p(x,z)$.
+
+$$
+p(z \mid x)=\frac{p(x,z)}{p(x)}=\frac{p(x, z)}{\int p(x, z) d z}
+$$
 
 
 # References
 
-[1] DeepMind (2020). *DeepMind x UCL | Deep Learning Lectures | 11/12 | Modern Latent Variable Models.* [online] www.youtube.com. Available at: [https://www.youtube.com/watch?v=7Pcvdo4EJeo](https://youtu.be/7Pcvdo4EJeo).
+[1] DeepMind (2020). *DeepMind X UCL | Deep Learning Lectures | 11/12 | Modern Latent Variable Models.* [online] www.youtube.com. Available at: [https://www.youtube.com/watch?v=7Pcvdo4EJeo](https://youtu.be/7Pcvdo4EJeo).
 
