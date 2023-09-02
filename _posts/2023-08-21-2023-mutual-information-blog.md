@@ -83,7 +83,7 @@ $$
 NMI_{max} = \frac{ I(X; Y)}{max\{H(X),H(Y)\}}
 $$
 
-Here the normalizing constant is the the maximum of $H(X)$ and $H(Y)$.
+Here the normalizing constant is the maximum of $H(X)$ and $H(Y)$.
 
 $$
 NMI_{min} = \frac{ I(X; Y)}{min\{H(X),H(Y)\}}
