@@ -63,8 +63,4 @@ $$
 p(z \mid x)=\frac{p(x,z)}{p(x)}=\frac{p(x, z)}{\int p(x, z) d z}
 $$
 
-
-# References
-
-[1] DeepMind (2020). *DeepMind X UCL | Deep Learning Lectures | 11/12 | Modern Latent Variable Models.* [online] www.youtube.com. Available at: [https://www.youtube.com/watch?v=7Pcvdo4EJeo](https://youtu.be/7Pcvdo4EJeo).
-
+This is as far as we need to know as about latent variable model without getting into more complicated methods or a specific latent variable model.
