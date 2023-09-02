@@ -21,7 +21,7 @@ A visualization is shown below:
 
 
 
-![LVM](https://i.ibb.co/mFb7gTb/chrome-x-V1u-P8-BZz-Y.png)
+![LVM](https://i.ibb.co/FwRz37M/chrome-x00-YT8o-Qj-L.png)
 
 We can get the joint distribution $p(x,y)$ if we know prior of the latent variable $p(z)$ and the conditional distribution $p(x \mid z)$.
 
