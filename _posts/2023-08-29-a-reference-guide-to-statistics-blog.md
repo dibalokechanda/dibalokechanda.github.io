@@ -174,8 +174,17 @@ For $(1-\alpha)\times 100\%=95\%$ confidence interval the value of $\alpha=5\% =
 *When the population standard deviation is not known*
 
 $$
-\bar{X} \pm t_{\alpha / 2, d f} \frac{s}{\sqrt{n}}
+\boxed{\bar{X} \pm t_{\alpha / 2, d f} \frac{s}{\sqrt{n}}}
 $$
+
+where,
+ - $\bar{X}$ is the sample mean
+ - $s$ is the sample standard deviation. 
+ - $n$ sample size
+
+ - $t_{\alpha / 2, d f}$  is the critical value from t-distribution which is dependent on both $\alpha$ and $df$.
+ 
+ - $df$ is the degrees of freedom of the t-distribution which is equal to $n-1$ 
 
 <!-- >### Sampling Methods
 
