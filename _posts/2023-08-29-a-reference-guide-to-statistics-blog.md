@@ -88,15 +88,58 @@ One other key fact:
 
  - For any population proportion $p$, the sampling distribution of $\bar{p}$ is approximately normal if the sample size $n$ is sufficiently large enough, As a general guideline $np \geq 5$ and $n(1-p)\geq 5$. However, this guideline is different in different references.
 
+> ### t-Distribution
+<hr>
+
+*References:* [Introduction to the t Distribution (non-technical)](https://www.youtube.com/watch?v=Uv6nGIgZMVw)
+
+One issue when working with the sampling distribution of the sample mean is for many calculations we are required to know $\sigma$. But $\sigma$ is a population parameter which is most of the time not possible to know. This means we can not calculate the following quantity as $\sigma$ is unknown:
+
+$$
+
+Z= \frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}
+
+$$
+
+The solution is to use $s$  which is the <b>sample standard deviation</b> instead of $\sigma$. But $s$ is not a constant in contrast to $\sigma$. As a result, the following quantity is no longer a standard normal distribution:
+
+$$
+T=\frac{\bar{X}-\mu}{s / \sqrt{n}}
+$$
+
+Here, $T$ is a random variable which follows the <b>t-distribution</b>.
+
+
+#### Comparison with Normal Distribution
+
+t-Distribution is similar to normal distribution but has broader tails. 
+
 > ### Confidence Interval
 <hr>
 
+*References:* [Introduction to Confidence Intervals](https://www.youtube.com/watch?v=27iSnzss2wM), [What are confidence intervals? Actually.
+](https://www.youtube.com/watch?v=EJe3jiZNwUU)
+
 A confidence interval is a range of values that is constructed around a sample statistic, such as a mean or a proportion, to estimate the true population parameter with a certain level of confidence.
+
 
 > Sometimes known as interval estimate in contrast to point estimate.
 {: .prompt-tip }
 
-Now one really important thing to keep in mind, the <b>interval estimate is for the population parameter</b>. 
+For further clarification, another definition is given below:
+
+A confidence interval, or interval estimate, provides a range of values that, with a certain level of confidence, contains the population parameter of interest.
+
+
+Now one really important thing to keep in mind, the <b>interval estimate is for the population parameter</b>. We are not trying to get an interval estimate for sample statistics.
+
+The core idea is conveyed by the following equation:
+
+
+$$
+ \text{Point Estimate} \ \pm \ \text{Margin of Error}
+$$
+
 
 <!-- >### Sampling Methods
 
