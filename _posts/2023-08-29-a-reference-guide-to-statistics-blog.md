@@ -168,7 +168,7 @@ where,
  ![CI](https://i.ibb.co/qjPmWKz/chrome-j8-R9-WEb-V5-K.png)
  *Visualization for 95% confidence interval*
 
-For $(1-\alpha)\times 100\%=95\%$ confidence interval the value of $\alpha=5\% =0.05$. Based on this $\frac{\alpha}{2}=0.025$. We can use a software or the standard normal table to determine the $z_{\alpha/2}=z_{0.025}$ .
+For $(1-\alpha)\times 100\%=95\%$ confidence interval the value of $\alpha=5\% =0.05$. Based on this $\frac{\alpha}{2}=0.025$. We can use software or the standard normal table to determine the $z_{\alpha/2}=z_{0.025}$.
 
 
 *When the population standard deviation is not known*

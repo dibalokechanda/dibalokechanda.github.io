@@ -14,8 +14,8 @@ Now there are $5$ separate distributions associated with a LVM.
 - $p(x,z)$ : Joint distribution of observation $x$ and latent variable $z$
 - $p(z)$ : Prior distribution of latent variable $x$
 - $p(x)$ : Marginal distribution of the observations $x$ (also known as evidence)
-- $p(x \mid z)$ : likelihood distribution  $x$ given $z$
-- $p(z\mid x)$ : posterior  distribution $z$ given $x$
+- $p(x \mid z)$ : Likelihood distribution  $x$ given $z$
+- $p(z\mid x)$ : Posterior  distribution $z$ given $x$
 
 A visualization is shown below:
 
