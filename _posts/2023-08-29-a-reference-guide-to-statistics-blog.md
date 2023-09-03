@@ -20,6 +20,7 @@ In addition, several blog posts and texts are also used as references.
 
 
 >### Sampling 
+<hr>
 
 *References:* [Sampling Distributions (7.2)](https://www.youtube.com/watch?v=7S7j75d3GM4)
 
@@ -85,12 +86,19 @@ Three key facts about the sample proportion given the sample size equals $n$:
  
 One other key fact:
 
- - For any population proportion $p$, the sampling distribution of $\bar{p}$ is approximately normal if the sample size $n$ is sufficiently large enough, As a general guideline $np \geq 5$ and $n(1-p)\geq 5$.
+ - For any population proportion $p$, the sampling distribution of $\bar{p}$ is approximately normal if the sample size $n$ is sufficiently large enough, As a general guideline $np \geq 5$ and $n(1-p)\geq 5$. However, this guideline is different in different references.
+
+> ### Confidence Interval
+<hr>
+
+A confidence interval is a range of values that is constructed around a sample statistic, such as a mean or a proportion, to estimate the true population parameter with a certain level of confidence.
+
+> Sometimes known as interval estimate in contrast to point estimate.
+{: .prompt-tip }
+
+Now one really important thing to keep in mind, the <b>interval estimate is for the population parameter</b>. 
 
 <!-- >### Sampling Methods
-
-
->### Confidence Interval 
 
 
 >### Central Limit Theorem
