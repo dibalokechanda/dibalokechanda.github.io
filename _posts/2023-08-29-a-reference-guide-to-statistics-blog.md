@@ -24,7 +24,7 @@ In addition, several blog posts and texts are also used as references.
 
 *References:* [Sampling Distributions (7.2)](https://www.youtube.com/watch?v=7S7j75d3GM4)
 
- - A <b>Sample</b> is a small portion of the population that we examine and draw conclusions from.
+ - A <b>sample</b> is a small portion of the population that we examine and draw conclusions from.
 
  - The <b>process</b> of drawing a sample from the population is known as sampling. 
 
@@ -145,17 +145,37 @@ The core idea is conveyed by the following equation:
 
 
 $$
- \text{Point Estimate} \ \pm \ \text{Margin of Error}
+ \boxed{\text{Point Estimate} \ \pm \ \text{Margin of Error}}
 $$
 
-#### Confidence Interval for Population Mean
+#### Confidence Interval for Population Mean $\mu$
 
 *When the population standard deviation is known*
 
+A (1-$\alpha$)$\times 100\%$ confidence interval for $\mu$
+
+$$
+\boxed{\bar{X} \pm z_{\alpha / 2} \times \frac{\sigma}{\sqrt{n}}}
+$$
+
+where,
+ - $\bar{X}$ is the sample mean
+ - $\sigma$ is the population standard deviation. In practice, this is rarely known.
+ - $n$ sample size
+ - $\frac{\sigma}{\sqrt{n}}$ is the standard error of the sampling distribution *i.e.* $se(\bar{X})=\sigma_{\bar{X}}$
+ - $z_{\alpha /2}$ is the z-value determined based on the value of $\alpha$ 
+
+ ![CI](https://i.ibb.co/qjPmWKz/chrome-j8-R9-WEb-V5-K.png)
+ *Visualization for 95% confidence interval*
+
+For $(1-\alpha)\times 100\%=95\%$ confidence interval the value of $\alpha=5\% =0.05$. Based on this $\frac{\alpha}{2}=0.025$. We can use a software or the standard normal table to determine the $z_{\alpha/2}=z_{0.025}$ .
 
 
 *When the population standard deviation is not known*
 
+$$
+\bar{X} \pm t_{\alpha / 2, d f} \frac{s}{\sqrt{n}}
+$$
 
 <!-- >### Sampling Methods
 
