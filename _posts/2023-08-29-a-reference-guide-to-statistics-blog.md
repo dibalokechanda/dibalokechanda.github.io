@@ -37,6 +37,10 @@ When we draw a particular sample from a distribution, that specific sample creat
 
 The sampling distribution of a <b>statistic</b> is the probability distribution of that <b>statistic</b>. This means if we draw samples from the <b>population</b> a bunch of times, the distribution associated with a particular <b>statistic</b> is referred to as the <b>sampling</b> distribution. 
 
+> The sample statistic is known as the point estimate of the population parameter.
+{: .prompt-tip }
+
+
 #### Sampling Distribution of the Sample Mean
 
 *References:* [Sampling Distributions (7.2)](https://www.youtube.com/watch?v=7S7j75d3GM4), [The Sampling Distribution of the Sample Mean](https://www.youtube.com/watch?v=q50GpTdFYyI) 
@@ -91,7 +95,7 @@ One other key fact:
 > ### t-Distribution
 <hr>
 
-*References:* [Introduction to the t Distribution (non-technical)](https://www.youtube.com/watch?v=Uv6nGIgZMVw)
+*References:* [Introduction to the t Distribution (non-technical)](https://www.youtube.com/watch?v=Uv6nGIgZMVw), [What is the t-distribution? An extensive guide!](https://www.youtube.com/watch?v=UetYS3PaHIo)
 
 One issue when working with the sampling distribution of the sample mean is for many calculations we are required to know $\sigma$. But $\sigma$ is a population parameter which is most of the time not possible to know. This means we can not calculate the following quantity as $\sigma$ is unknown:
 
@@ -135,7 +139,7 @@ For further clarification, another definition is given below:
 A confidence interval, or interval estimate, provides a range of values that, with a certain level of confidence, contains the population parameter of interest.
 
 
-Now one really important thing to keep in mind, the <b>interval estimate is for the population parameter</b>. We are not trying to get an interval estimate for sample statistics.
+Now one really important thing to keep in mind, the <b>interval estimate or the confidence interval is for the population parameter</b>. We are not trying to get an interval estimate for sample statistics.
 
 The core idea is conveyed by the following equation:
 
@@ -143,6 +147,14 @@ The core idea is conveyed by the following equation:
 $$
  \text{Point Estimate} \ \pm \ \text{Margin of Error}
 $$
+
+#### Confidence Interval for Population Mean
+
+*When the population standard deviation is known*
+
+
+
+*When the population standard deviation is not known*
 
 
 <!-- >### Sampling Methods
