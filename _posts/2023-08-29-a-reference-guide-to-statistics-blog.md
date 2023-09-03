@@ -52,7 +52,7 @@ Other two key facts:
 
 - If the original population distribution is normally distributed, then the sampling distribution will also be a normal distribution with sample mean equals $\mu$ and standard error equals $\frac{\sigma}{\sqrt{n}}$ *i.e.* $\bar{X} \sim \mathcal{N}(\mu,\frac{\sigma^{2}}{n})$
 
-- If the original population distribution is not normally distributed, the sampling distribution might approach the normal distribution due to the central limit theorem. The condition is the sample size $n\geq30$.
+- If the original population distribution is not normally distributed, the sampling distribution might approach the normal distribution due to the central limit theorem but the sample size needs to be large enough for the normal approximation to be reasonable. In practice, the sample size needs to be $n\geq30$.
 
 We can standardize the sampling distribution of the sample mean as follows:-
 
@@ -77,12 +77,16 @@ Here the statistic we are interested in is the <b>proportion</b>.
 
 Three key facts about the sample proportion given the sample size equals $n$:
 
-- The expected value of the sample proportion $\bar{P}$ (this is sometimes denoted as $\hat{P}$) is equal to the population proportion; that is $\mathbb{E}(\bar{P})=\frac{X}{n}=P$.
+- The expected value of the sample proportion $\bar{p}$ (this is sometimes denoted as $\hat{p}$) is equal to the population proportion; that is $\mathbb{E}(\bar{p})=\frac{X}{n}=p$.
 
-- The variance value of the sample proportion $Var(\bar{P})=\frac{P(1-P)}{n}$.
+- The variance value of the sample proportion $Var(\bar{p})=\frac{p(1-p)}{n}$.
 
-- The standard error of the sample proportion $\bar{P}$ equals $se(\bar{P})=\sqrt{\frac{P(1-P)}{P}}$
+- The standard error of the sample proportion $\bar{p}$ equals $se(\bar{p})=\sqrt{\frac{p(1-p)}{p}}$
  
+One other key fact:
+
+ - For any population proportion $p$, the sampling distribution of $\bar{p}$ is approximately normal if the sample size $n$ is sufficiently large enough, As a general guideline $np \geq 5$ and $n(1-p)\geq 5$.
+
 <!-- >### Sampling Methods
 
 
