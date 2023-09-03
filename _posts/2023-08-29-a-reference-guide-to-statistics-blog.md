@@ -107,12 +107,16 @@ $$
 T=\frac{\bar{X}-\mu}{s / \sqrt{n}}
 $$
 
-Here, $T$ is a random variable which follows the <b>t-distribution</b>.
+Here, $T$ is a random variable which follows the <b>t-distribution</b>. It is characterized by <b>degrees of freedom</b> where for the above equation the degree of freedom equals $n-1$.
 
 
 #### Comparison with Normal Distribution
+Both t-distribution and standard normal distribution are bell-shaped and symmetric about $0$, but t-distribution has broader tails. The reason is for standard normal distribution we work with population parameters that are constant. This implies less variability. But for t-distribution, we replace $\sigma$ with $s$
+ which is a statistic, not a population parameter. This increases the variability of the distribution hence broader tails.
 
-t-Distribution is similar to normal distribution but has broader tails. 
+
+> The fewer the degrees of freedom the broader the tails.
+{: .prompt-tip }
 
 > ### Confidence Interval
 <hr>
