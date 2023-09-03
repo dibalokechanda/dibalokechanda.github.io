@@ -36,7 +36,32 @@ When we draw a particular sample from a distribution, that specific sample creat
 
 The sampling distribution of a <b>statistic</b> is the probability distribution of that <b>statistic</b>. This means if we draw samples from the <b>population</b> a bunch of times, the distribution associated with a particular <b>statistic</b> is referred to as the <b>sampling</b> distribution. 
 
-For example, let's use "mean" as the statistic. In that case, given a population (say all people in Wisconsin) and a random variable (say weight) we have a "true" population distribution of people's weights. Now we draw a sample from that distribution to calculate the mean weight for that sample and plot it into a histogram. We do this process again and again. The resulting histogram generated from this is the mean sampling distribution. One fact is that, this sampling distribution approaches a normal distribution due to the central limit theorem.
+#### Sampling Distribution of the Sample Mean
+
+For example, let's use "mean" as the statistic. In that case, given a population (say all people in Wisconsin) and a random variable (say weight) we have a "true" population distribution of people's weights. Now we draw a sample from that distribution to calculate the mean weight for that sample and plot it into a histogram. We do this process again and again. The resulting histogram generated from this is the mean sampling distribution. One fact is that this sampling distribution approaches a normal distribution due to the central limit theorem (under certain conditions). Two other key facts:
+
+- The expected value of the sample mean $\bar{X}$ equals the population mean meaning $\mathbb{E}(\bar{X})=\mu$
+
+- The standard error of the sample mean equals the population standard deviation divided by the square root of the sample size; $se(\bar{X})= \frac{\sigma}{\sqrt{n}}$.
+
+Other two key facts:
+
+- If the original population distribution is normally distributed, then the sampling distribution will also be a normal distribution with  sample mean equals $\mu$ and standard error equals $\frac{\sigma}{\sqrt{n}}$
+
+- If the original population distribution is not normally distributed, the sampling distribution might approach the normal distribution due to the central limit theorem. The condition is the sample size $n\geq30$.
+
+We can standardize the sampling distribution of the sample mean as follows:-
+
+$$
+
+Z= \frac{\bar{X}-\mu}{\frac{\sigma}{\sqrt{n}}}
+
+$$
+
+This will result in a standard normal distribution.
+
+
+#### Sampling Distribution of the Sample Proportion
 
 
 
@@ -75,3 +100,8 @@ For example, let's use "mean" as the statistic. In that case, given a population
 >### Degrees of Freedom -->
 
 
+
+
+# References
+
+[1] Jaggia, S., Kelly, A., Lertwachara, K. and Chen, L., 2021. *Business analytics: Communicating with numbers.* McGraw-Hill Education.
