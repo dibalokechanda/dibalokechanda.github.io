@@ -44,4 +44,4 @@ In practice this calculating this term is intractable. The reason is in high dim
 
 
 # References
-Standford Online (2023). *Stanford CS330 I Variational Inference and Generative Models l 2022 I Lecture 11*. [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=iL1c1KmYPM0 [Accessed 5 Sep. 2023].
+[1] Standford Online (2023). *Stanford CS330 I Variational Inference and Generative Models l 2022 I Lecture 11*. [online] www.youtube.com. Available at: [https://www.youtube.com/watch?v=iL1c1KmYPM0](https://www.youtube.com/watch?v=iL1c1KmYPM0).
