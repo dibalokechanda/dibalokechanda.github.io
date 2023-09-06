@@ -33,3 +33,17 @@ torch.unbind(torch.tensor([ [1, 2, 3],
 ```
 (tensor([1, 2, 3]), tensor([4, 5, 6]), tensor([7, 8, 9]))
 ```
+
+## `torch.Tensor.tolist()`
+
+> Returns the tensor as a (nested) list.
+
+```python
+a = torch.randn(2, 2)
+a.tolist()
+```
+
+```
+[[0.012766935862600803, 0.5415473580360413],
+ [-0.08909505605697632, 0.7729271650314331]]
+```
