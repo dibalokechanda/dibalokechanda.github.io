@@ -12,7 +12,7 @@ Every now and then I will come across a tensor manipulation method in Pytorch an
 
 ## `torch.Tensor.new_ones()`
 
-> Creates a new tensor but with all elements initialized to the value 1. By default, the returned Tensor has the same `torch.dtype` and `torch.device` as this tensor
+> Creates a new tensor but with all elements initialized to the value 1. By default, the returned Tensor has the same `torch.dtype` and `torch.device` as the original tensor.
 
 ```python
 tensor = torch.tensor((), dtype=torch.int32)
