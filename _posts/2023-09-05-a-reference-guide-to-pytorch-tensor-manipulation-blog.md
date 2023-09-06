@@ -18,3 +18,18 @@ Every now and then I will come across a tensor manipulation method in Pytorch an
 tensor = torch.tensor((), dtype=torch.int32)
 tensor.new_ones((2, 3))
 ```
+
+## `torch.unbind()`
+
+> Removes a tensor dimension. Returns a tuple of all slices along a given dimension, already without it.
+
+```python
+
+torch.unbind(torch.tensor([ [1, 2, 3],
+                            [4, 5, 6],
+                            [7, 8, 9]]))
+```
+
+```
+>>> (tensor([1, 2, 3]), tensor([4, 5, 6]), tensor([7, 8, 9]))
+```
