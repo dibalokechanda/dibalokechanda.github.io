@@ -104,6 +104,11 @@ This shows that the forward KL exhibits mean-seeking behavior. In contrast, if r
 
 ![reverse_kl](https://i.ibb.co/pR8YtW3/image-removebg-preview-2.png)
 
+Let's look at an example of a 2D case:
+
+![bishop_kl](https://i.ibb.co/bRzHqyf/chrome-k-COw-F1e-Wue.png)
+*Image taken from Bishop, C.M. and Nasrabadi, N.M., 2006. Pattern recognition and machine learning. The Left one is for Forward KL and the middle & the right one are for reverse KL.*
+
 Most people after learning this fact wonder which one is better or which one should be used; the forward KL divergence or the reverse KL divergence? The short answer is it depends. The first thing you need to come to terms with is, for higher dimensional distributions you can't visualize what the hell is happening. Hence, there is no visual intuition to rely on and to decide which one you would want. In higher dimensions, the distribution might have $n$-number of modes and depending on the problem you are trying to solve, you might prefer the forward or the reverse KL divergence.
 ## Connection to Information Theory
 
