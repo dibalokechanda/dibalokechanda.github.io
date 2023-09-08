@@ -13,7 +13,7 @@ Every now and then I will come across a tensor manipulation method in Pytorch or
 
 ### Separate Trainer class to train model 
 
-I usually write the training portion of the code in `main.py` file. But a much better approach is to have a separate trainer class to train the model. You can additional functions like  `store_values` to store different metrices  and outputs from the model. You also provide an additional variable like `train_log=['True',20]` which will decide if you should log the training metrics and how frequent the training logs should be. For some model training it does not make sense to log metrices after every epoch.
+I usually write the training portion of the code in `main.py` file. But a much better approach is to have a separate trainer class to train the model. You can have additional functions like  `store_values` to store different metrices  and outputs (for example embeddings) from the model. You also provide an additional variable like `train_log=['True',20]` which will decide if you should log the training metrics and how frequent the training logs should be. For some model training it does not make sense to log metrices after every epoch.
 
 
 ```python
