@@ -86,6 +86,12 @@ For State-1, the computation of entropy is given below:
 
 
  Entropy can capture this "uncertainty" or "the amount of flatness" in a distribution.
+ 
+ Another such visualization is given below:
+
+![bishop](https://i.ibb.co/HHzHm9Z/msedge-0-HFWw-EPRmi.png)
+*Image taken from Bishop, C.M. and Nasrabadi, N.M., 2006. Pattern recognition and machine learning (Vol. 4, No. 4, p. 738). New York: springer.*
+
 
  Even though the examples given are for univariate discrete distributions, this core idea is generalized for higher dimensional discrete and continuous distributions. A visual summary is given in the following diagram. 
 
