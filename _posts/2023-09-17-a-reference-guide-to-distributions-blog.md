@@ -56,10 +56,12 @@ $$
 \boxed{f(x \mid \alpha, \beta)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha) \Gamma(\beta)} x^{\alpha-1}(1-x)^{\beta-1}}
 $$
 
-
 $$
 \text { where, } \alpha, \beta>0, x \in[a, b]
 $$
+
+Here, $\Gamma(x)$ is the gamma function defined as $\Gamma(x-1)!$
+
 <u>Cumulative Density Function:</u>
 
 <b>No Closed Form Analytical Equation</b>
@@ -78,18 +80,10 @@ $$
 \boxed{\frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}}
 $$
 
-<u>Properties:</u>
+<u>Properties and Key Facts:</u>
 
  - Known as "The Probability Distribution of Probabilities".
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
  - Suitable distribution model for the random behavior of percentages and proportions.
+ - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
 
-<u>Visualizations:</u>
-
-- How the parameter change of $\alpha$ and $\beta$ change the shape of the distribution (Visualization taken from Wikipedia).
-
-<center>
-
- ![beta_distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/PDF_of_the_Beta_distribution.gif/330px-PDF_of_the_Beta_distribution.gif)
- 
- </center>
