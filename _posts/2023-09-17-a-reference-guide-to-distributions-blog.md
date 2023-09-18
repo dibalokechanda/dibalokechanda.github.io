@@ -11,6 +11,7 @@ toc: true
 ## Continuous Probability Distributions
 
 ### Gaussian Distribution
+<hr>
 
 <u>Probability Density Function:</u>
 
@@ -87,3 +88,35 @@ $$
  - Suitable distribution model for the random behavior of percentages and proportions.
  - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
 
+
+### Inverse Gamma Distribution
+<hr>
+
+<u>Probability Density Function:</u>
+
+$$
+\boxed{f(x \mid \alpha, \beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{-\alpha-1} \mathrm{e}^{-\beta / x}}
+$$
+
+$$
+\text { where, } \alpha, \beta>0,0<x<\infty
+$$
+
+<u>Cumulative Density Function:</u>
+
+<b>No Closed Form Analytical Equation</b>
+
+<u>Expected Value:</u>
+
+$$
+
+\boxed{\frac{\beta}{\alpha-1}}
+
+$$
+
+
+<u>Variance:</u>
+
+$$
+\boxed{\frac{\beta^2}{(\alpha-1)^2(\alpha-2)}}
+$$
