@@ -82,3 +82,14 @@ $$
 
  - Known as "The Probability Distribution of Probabilities".
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
+ - Suitable distribution model for the random behavior of percentages and proportions.
+
+<u>Visualizations:</u>
+
+- How the parameter change of $\alpha$ and $\beta$ change the shape of the distribution (Visualization taken from Wikipedia).
+
+<center>
+
+ ![beta_distribution](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/PDF_of_the_Beta_distribution.gif/330px-PDF_of_the_Beta_distribution.gif)
+ 
+ </center>
