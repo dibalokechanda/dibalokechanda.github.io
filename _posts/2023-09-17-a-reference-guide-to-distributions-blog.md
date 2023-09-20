@@ -59,7 +59,7 @@ Here,
 
 
 
-<u>Probability Density Function:</u>
+<u>Probability Density Function: </u>
 
 
 $$
