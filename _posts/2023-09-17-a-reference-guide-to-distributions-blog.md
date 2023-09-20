@@ -43,14 +43,14 @@ $$
 <u> Multivariate case (PDF):</u>
 
 $$
-f(x \mid \boldsymbol{\mu}, \boldsymbol{\Sigma})=\frac{1}{(2 \pi)^{D / 2}|\boldsymbol{\Sigma}|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right\}
+f(x \mid \mu, \Sigma)=\frac{1}{(2 \pi)^{D / 2}|\Sigma|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\mu)^{\top} \Sigma^{-1}(\mathbf{x}-\mu)\right\}
 $$
 
 Here,
 
 - $D$ is the number of dimensions
-- $\boldsymbol{\mu}$ is the mean vector
-- $\boldsymbol{\Sigma}$ is the covariance matrix
+- $\mu$ is the mean vector
+- $\Sigma$ is the covariance matrix
 
 
 ### Beta Distribution
