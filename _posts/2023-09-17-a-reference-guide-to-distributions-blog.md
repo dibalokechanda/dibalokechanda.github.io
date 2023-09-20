@@ -91,7 +91,11 @@ $$
 ### Gamma Distribution
 <hr>
 
+
+
 <u>Probability Density Function:</u>
+
+
 $$
 \boxed{f(x \mid \alpha, \beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} \mathrm{e}^{-\beta x}}
 $$
