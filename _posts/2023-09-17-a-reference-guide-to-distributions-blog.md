@@ -59,6 +59,26 @@ $$
 
 ### ⯈ Bionomial Distribution
 
+<u>Probability Density Function:</u>
+
+$$
+\boxed{P(X=x|p)= \binom{n}{x} p^x (1-p)^{n-x}= \frac{n!}{x!(n-x)!}p^x (1-p)^{n-x}}
+$$
+
+
+<u>Expected Value:</u>
+
+$$
+\boxed{np}
+$$
+
+<u>Variance:</u>
+
+$$
+\boxed{np(1-p)}
+$$
+
+
 ## ⦿ Continuous Probability Distributions
 
 ### ⯈ Gaussian Distribution
