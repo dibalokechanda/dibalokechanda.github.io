@@ -52,6 +52,10 @@ $$
 \boxed{p(1-p)}
 $$
 
+<u>Properties and Key Facts:</u>
+
+- Model events when there are only two possible outcomes : success and failure. The number of trials is equal to $1$.
+- The general version of it is bionomial distribution.
 
 ### 𝄦 Bionomial Distribution
 
