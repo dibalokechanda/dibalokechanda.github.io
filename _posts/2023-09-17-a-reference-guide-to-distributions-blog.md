@@ -59,6 +59,7 @@ $$
 <hr>
 
 
+
 <u>Probability Density Function:</u>
 
 
@@ -129,11 +130,6 @@ $$
 \boxed{\alpha / \beta^{2}}
 
 $$
-
-
-<u>Properties and Key Facts:</u>
-- Member of the exponential family
-
 
 ### Inverse Gamma Distribution
 <hr>
