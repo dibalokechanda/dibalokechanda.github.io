@@ -88,6 +88,33 @@ $$
  - Suitable distribution model for the random behavior of percentages and proportions.
  - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
 
+### Gamma Distribution
+<hr>
+
+<u>Probability Density Function:</u>
+$$
+\boxed{f(x \mid \alpha, \beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} \mathrm{e}^{-\beta x}}
+$$
+
+<u>Cumulative Density Function:</u>
+
+<b>No Closed Form Analytical Equation</b>
+
+<u>Expected Value:</u>
+
+$$
+
+\boxed{\alpha / \beta}
+
+$$
+
+<u>Variance:</u>
+
+$$
+
+\boxed{\alpha / \beta^{2}}
+
+$$
 
 ### Inverse Gamma Distribution
 <hr>
