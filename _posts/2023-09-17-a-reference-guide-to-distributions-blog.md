@@ -7,6 +7,51 @@ math: true
 toc: true
 ---
 
+## Discrete Probability Distributions
+
+### Bernoulli Distribution
+
+<u>Probability Density Function:</u>
+
+$$
+\begin{align*}
+\operatorname{P}(X=x \mid p) &=p^{x}(1-p)^{1-x} \\
+&= \begin{cases}p & x=1 \\ 1-p & x=0\end{cases}
+\end{align*}
+$$
+
+$$
+\text { where, }  p \in[0, 1]
+$$
+
+Here,
+
+- $p$ is the probability of success and $(1-p)$ is the probability of failure
+- $x=1$ defines the success event and $x=0$ defines the failure event
+
+
+<u>Cumulative Density Function:</u>
+$$
+\begin{cases}0 & \text { if } x<0 \\ 1-p & \text { if } 0 \leq x<1 \\ 1 & \text { if } x \geq 1\end{cases}
+$$
+
+
+<u>Expected Value:</u>
+
+$$
+
+\boxed{p}
+
+$$
+
+<u>Variance:</u>
+
+$$
+\boxed{p(1-p)}
+$$
+
+
+### Bionomial Distribution
 
 ## Continuous Probability Distributions
 
@@ -109,6 +154,8 @@ $$
 $$
 \boxed{f(x \mid \alpha, \beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} \mathrm{e}^{-\beta x}}
 $$
+
+There  is  another version of this distribution with only one parameter $\alpha$.
 
 <u>Cumulative Density Function:</u>
 
