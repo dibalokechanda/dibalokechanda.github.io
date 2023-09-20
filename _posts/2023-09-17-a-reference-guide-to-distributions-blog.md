@@ -46,13 +46,12 @@ $$
 f(x \mid \boldsymbol{\mu}, \boldsymbol{\Sigma})=\frac{1}{(2 \pi)^{D / 2}|\boldsymbol{\Sigma}|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right\}
 $$
 
+Here,
+
 - $D$ is the number of dimensions
 - $\boldsymbol{\mu}$ is the mean vector
 - $\boldsymbol{\Sigma}$ is the covariance matrix
 
-
-<u>Properties and Key Facts:</u>
-- Member of the exponential family
 
 ### Beta Distribution
 
