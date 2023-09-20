@@ -9,7 +9,7 @@ toc: true
 
 ## ⦿ Discrete Probability Distributions
 
-### 𝄦 Bernoulli Distribution
+### ⯈ Bernoulli Distribution
 
 <u>Probability Density Function:</u>
 
@@ -57,11 +57,11 @@ $$
 - Model events when there are only two possible outcomes : success and failure. The number of trials is equal to $1$.
 - The general version of it is bionomial distribution.
 
-### 𝄦 Bionomial Distribution
+### ⯈ Bionomial Distribution
 
 ## ⦿ Continuous Probability Distributions
 
-### 𝄦 Gaussian Distribution
+### ⯈ Gaussian Distribution
 <hr>
 
 <u>Probability Density Function:</u>
@@ -104,7 +104,7 @@ Here,
 - $\Sigma$ is the covariance matrix
 
 
-### 𝄦 Beta Distribution
+### ⯈ Beta Distribution
 
 <hr>
 
@@ -149,7 +149,7 @@ $$
  - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
  - Member of the exponential family
 
-###  𝄦 Gamma Distribution
+###  ⯈ Gamma Distribution
 <hr>
 
 
@@ -183,7 +183,7 @@ $$
 
 $$
 
-###  𝄦 Inverse Gamma Distribution
+###  ⯈ Inverse Gamma Distribution
 <hr>
 
 <u>Probability Density Function:</u>
