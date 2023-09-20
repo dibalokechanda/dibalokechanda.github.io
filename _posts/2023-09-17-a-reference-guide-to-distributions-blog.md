@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-## Discrete Probability Distributions
+## ⦿ Discrete Probability Distributions
 
 ### Bernoulli Distribution
 
@@ -55,7 +55,7 @@ $$
 
 ### Bionomial Distribution
 
-## Continuous Probability Distributions
+## ⦿ Continuous Probability Distributions
 
 ### Gaussian Distribution
 <hr>
