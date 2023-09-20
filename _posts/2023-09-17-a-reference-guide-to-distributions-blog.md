@@ -40,14 +40,23 @@ $$
 
 $$
 
+<u> Multivariate case (PDF):</u>
+
+$$
+f(x \mid \boldsymbol{\mu}, \boldsymbol{\Sigma})=\frac{1}{(2 \pi)^{D / 2}|\boldsymbol{\Sigma}|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right\}
+$$
+
+- $D$ is the number of dimensions
+- $\boldsymbol{\mu}$ is the mean vector
+- $\boldsymbol{\Sigma}$ is the covariance matrix
+
+
+<u>Properties and Key Facts:</u>
+- Member of the exponential family
 
 ### Beta Distribution
 
 <hr>
-
-
-
-
 
 
 <u>Probability Density Function:</u>
@@ -87,6 +96,7 @@ $$
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
  - Suitable distribution model for the random behavior of percentages and proportions.
  - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
+ - Member of the exponential family
 
 ### Gamma Distribution
 <hr>
@@ -119,6 +129,11 @@ $$
 \boxed{\alpha / \beta^{2}}
 
 $$
+
+
+<u>Properties and Key Facts:</u>
+- Member of the exponential family
+
 
 ### Inverse Gamma Distribution
 <hr>
