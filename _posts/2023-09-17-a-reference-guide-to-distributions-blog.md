@@ -31,6 +31,8 @@ Here,
 
 
 <u>Cumulative Density Function:</u>
+
+
 $$
 \begin{cases}0 & \text { if } x<0 \\ 1-p & \text { if } 0 \leq x<1 \\ 1 & \text { if } x \geq 1\end{cases}
 $$
