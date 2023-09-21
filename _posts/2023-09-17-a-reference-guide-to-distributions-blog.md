@@ -42,20 +42,22 @@ $$
 
 $$
 
-\boxed{p}
+\boxed{E(X)=p}
 
 $$
+
 
 <u>Variance:</u>
 
 $$
-\boxed{p(1-p)}
+\boxed{Var(x)=p(1-p)}
 $$
 
 <u>Properties and Key Facts:</u>
 
-- Model events when there are only two possible outcomes : success and failure. The number of trials is equal to $1$.
-- The general version of it is bionomial distribution.
+- The number of trials is equal to $1$.
+- Model events when there are only two possible outcomes : success and failure. 
+- Binomial distribution, Negative Bionomial Distribution and Geometric Distribution are built upon the idea of bernoulli trials.
 
 ### ⯈ Bionomial Distribution
 
@@ -65,18 +67,28 @@ $$
 \boxed{P(X=x|p)= \binom{n}{x} p^x (1-p)^{n-x}= \frac{n!}{x!(n-x)!}p^x (1-p)^{n-x}}
 $$
 
+where,
+
+- $n$ is the number of trials
+- $p$ is the probability of success and $(1-p)$ is the probability of failure for an individual trial
+- $x$ is the number of success out of $n$ trials 
 
 <u>Expected Value:</u>
 
 $$
-\boxed{np}
+\boxed{E(x)=np}
 $$
 
 <u>Variance:</u>
 
 $$
-\boxed{np(1-p)}
+\boxed{Var(x)=np(1-p)}
 $$
+
+
+<u>Properties and Key Facts:</u>
+
+ - Involves $n$ independent bernoulli trials
 
 
 ## ⦿ Continuous Probability Distributions
@@ -99,7 +111,7 @@ $$
 
 $$
 
-\boxed{\mu}
+\boxed{E(x)=\mu}
 
 $$
 
@@ -107,7 +119,7 @@ $$
 <u>Variance:</u>
 
 $$
-\boxed{\sigma^{2}}
+\boxed{Var(x)=\sigma^{2}}
 
 $$
 
@@ -151,14 +163,14 @@ Here, $\Gamma(x)$ is the gamma function defined as $\Gamma(x-1)!$
 
 $$
 
-\boxed{\frac{\alpha}{\alpha+\beta}}
+\boxed{E(x)=\frac{\alpha}{\alpha+\beta}}
 
 $$
 
 <u>Variance:</u>
 
 $$
-\boxed{\frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}}
+\boxed{Var(x)=\frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}}
 $$
 
 <u>Properties and Key Facts:</u>
@@ -191,7 +203,7 @@ There  is  another version of this distribution with only one parameter $\alpha$
 
 $$
 
-\boxed{\alpha / \beta}
+\boxed{E(x)=\alpha / \beta}
 
 $$
 
@@ -199,7 +211,7 @@ $$
 
 $$
 
-\boxed{\alpha / \beta^{2}}
+\boxed{Var(x)=\alpha / \beta^{2}}
 
 $$
 
@@ -224,7 +236,7 @@ $$
 
 $$
 
-\boxed{\frac{\beta}{\alpha-1}}
+\boxed{E(x)=\frac{\beta}{\alpha-1}}
 
 $$
 
@@ -232,5 +244,5 @@ $$
 <u>Variance:</u>
 
 $$
-\boxed{\frac{\beta^2}{(\alpha-1)^2(\alpha-2)}}
+\boxed{Var(x)=\frac{\beta^2}{(\alpha-1)^2(\alpha-2)}}
 $$
