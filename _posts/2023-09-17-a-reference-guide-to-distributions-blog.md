@@ -30,7 +30,7 @@ Here,
 - $x=1$ defines the success event and $x=0$ defines the failure event
 
 
-![bernouli](https://i.ibb.co/D8SqsR2/chrome-Rnw-GIVNZj-R.png)
+![bernouli](https://i.ibb.co/5xhx9V1/chrome-BZ6k-Qob-H8v.png)
 
 <u>Cumulative Density Function:</u>
 
@@ -59,6 +59,7 @@ $$
 
 - The number of trials is equal to $1$.
 - Model events when there are only two possible outcomes : success and failure. 
+- It is a special case of binomial distribution where number of trials $n=1$
 - Binomial distribution, Negative Bionomial Distribution and Geometric Distribution are built upon the idea of bernoulli trials.
 
 ### ⯈ Bionomial Distribution
@@ -92,12 +93,15 @@ $$
 
  - Involves $n$ independent bernoulli trials
  - Applicable when a repeating process can result in two possible outcomes. 
+ - Number of trials is fixed to $n$, the number of success is the random variable $x$
 
 
 
  <u> External Resources:</u>
 
  - A nice visual introduction to beginners: [From Primer](https://www.youtube.com/watch?v=6YzrVUVO9M0)
+
+ - How the probability shape changes with parameter change: [From Simply Learning Pro](https://www.youtube.com/watch?v=Y2-vSWFmgyI)
  - A more deeper dive: [From 3Blue1Brown](https://www.youtube.com/watch?v=8idr1WZ1A7Q)
 
 
@@ -142,6 +146,10 @@ where,
 
  - $p_1,p_{2},\cdots, p_{K}$  remains same from trial to trial
  - It is a generalization of binomial distribution for $K$ number of probabilities
+
+
+### ⯈ Geometric Distribution
+
 
 ## ⦿ Continuous Probability Distributions
 
