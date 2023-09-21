@@ -31,7 +31,7 @@ Here,
 
 
 ![bernouli](https://i.ibb.co/5xhx9V1/chrome-BZ6k-Qob-H8v.png)
-*The pmf is completely determined by the value of $p$*
+*The PMF is completely determined by the value of $p$*
 
 <u>Cumulative Density Function:</u>
 
@@ -78,7 +78,7 @@ where,
 - $x$ is the number of success out of $n$ trials 
 
 ![binomial_distribution](https://i.ibb.co/Ltsvfzj/chrome-Xk-XCcx-Dv-Eu.png)
-*The shape of the pmf is determined by the value of $n$ and $p$*
+*The shape of the PMF is determined by the value of $n$ and $p$*
 
 
 <u>Expected Value:</u>
@@ -154,6 +154,37 @@ where,
 
 
 ### ⯈ Geometric Distribution
+
+<u>Probability Density Function:</u>
+
+$$
+ \boxed{P(X=x \mid p)= (1-p)^{x-1}~p}
+$$
+
+where,
+
+- $p$ is the probability of success for a individual bernoulli trial
+- $(1-p)$ is the probability of failure for a individual bernoulli trial
+- $x$ is the random variable where $x$ is the trial number when first success happens
+- $x-1$ trials results in failure, $x^{th}$ trial results in success
+
+
+<u>Expected Value:</u>
+
+$$
+
+\boxed{E(X)=\frac{1}{p}}
+
+$$
+
+
+<u>Variance:</u>
+
+$$
+
+\boxed{Var(X)=\frac{1-p}{p^2}}
+
+$$
 
 
 ## ⦿ Continuous Probability Distributions
