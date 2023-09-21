@@ -91,6 +91,12 @@ $$
 <u>Properties and Key Facts:</u>
 
  - Involves $n$ independent bernoulli trials
+ - Applicable when a repeating process can result in two possible outcomes. 
+
+ <u> External Resources:</u>
+
+ - A nice visual introduction to beginners: [From Primer](https://www.youtube.com/watch?v=6YzrVUVO9M0)
+ - A more deeper dive: [From 3Blue1Brown](https://www.youtube.com/watch?v=8idr1WZ1A7Q)
 
 
 ## ⦿ Continuous Probability Distributions
