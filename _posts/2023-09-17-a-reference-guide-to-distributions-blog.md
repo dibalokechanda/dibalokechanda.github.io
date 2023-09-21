@@ -93,12 +93,42 @@ $$
  - Involves $n$ independent bernoulli trials
  - Applicable when a repeating process can result in two possible outcomes. 
 
+
+
  <u> External Resources:</u>
 
  - A nice visual introduction to beginners: [From Primer](https://www.youtube.com/watch?v=6YzrVUVO9M0)
  - A more deeper dive: [From 3Blue1Brown](https://www.youtube.com/watch?v=8idr1WZ1A7Q)
 
 
+<u>Multinominal Version:</u>
+
+- Assume $p_{1}$ is the probability of outcome 1 and $p_{2}$ is the probability of outcome 2. 
+- Also, assume that, out of $n$ trials $x_{1}$ times the outcome 1 happens and $x_{2}$ times the outcome 2 happens. 
+- As these outcomes are mutually exclusive $n=x_{1}+x_{2}$
+
+Then the binomial distribution can be written in the following form:
+
+$$
+P(X_{1}=x_{1}, X_{2}=x_{2}|p_1, p_2)= \frac{n!}{x_{1}!~x_{2}!}~ p^{x_{1}}_{1}~ p_{2}^{x_{2}}
+$$
+
+Now we can extend it to $K$ different category rather than thinking about $2$ category. For $K$ different possibilities with $p_k$ and $x_k$ being 
+the probability and count for the $k$
+th category, $k=1,…,K$.
+
+
+$$
+P(X_{1}=x_{1}, X_{2}=x_{2}, \cdots,X_{K}=x_{K}|p_1, p_2, \cdots, p_{K})= \frac{n!}{x_{1}!~x_{2}! \cdots x_K!}~ p^{x_{1}}_{1}~ p_{2}^{x_{2}} \cdots p^{x_{K}}_{K}
+$$
+
+We can express it more formally as follows:
+
+
+
+$$
+\boxed{P(X_{1}=x_{1}, X_{2}=x_{2}, \cdots,X_{K}=x_{K}|p_1, p_2, \cdots, p_{K})= \frac{n!}{\prod_{k=1}^{K}x_{k}!}~ \prod_{k=1}^{K} p^{x_{k}}_{k}}
+$$
 ## ⦿ Continuous Probability Distributions
 
 ### ⯈ Gaussian Distribution
