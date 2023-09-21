@@ -37,7 +37,7 @@ Here,
 
 
 $$
-\begin{cases}0 & \text { if } x<0 \\ 1-p & \text { if } 0 \leq x<1 \\ 1 & \text { if } x \geq 1\end{cases}
+\operatorname{P}(X\leq x )=\begin{cases}0 & \text { if } x<0 \\ 1-p & \text { if } 0 \leq x<1 \\ 1 & \text { if } x \geq 1\end{cases}
 $$
 
 
@@ -167,6 +167,12 @@ where,
 - $(1-p)$ is the probability of failure for a individual bernoulli trial
 - $x$ is the random variable where $x$ is the trial number when first success happens
 - $x-1$ trials results in failure, $x^{th}$ trial results in success
+
+<u>Cumulative Density Function:</u>
+
+$$
+\boxed{\operatorname{P}(X\leq x )=1- (1-p)^{x}}
+$$
 
 
 <u>Expected Value:</u>
