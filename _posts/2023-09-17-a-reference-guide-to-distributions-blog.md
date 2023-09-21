@@ -101,7 +101,9 @@ $$
  - A more deeper dive: [From 3Blue1Brown](https://www.youtube.com/watch?v=8idr1WZ1A7Q)
 
 
-<u>Multinominal Version:</u>
+### ⯈ Multinomial Distribution
+
+Let's start with modifying the binomial distribution and write it in a different way:
 
 - Assume $p_{1}$ is the probability of outcome 1 and $p_{2}$ is the probability of outcome 2. 
 - Also, assume that, out of $n$ trials $x_{1}$ times the outcome 1 happens and $x_{2}$ times the outcome 2 happens. 
@@ -129,6 +131,13 @@ We can express it more formally as follows:
 $$
 \boxed{P(X_{1}=x_{1}, X_{2}=x_{2}, \cdots,X_{K}=x_{K}|p_1, p_2, \cdots, p_{K})= \frac{n!}{\prod_{k=1}^{K}x_{k}!}~ \prod_{k=1}^{K} p^{x_{k}}_{k}}
 $$
+
+
+<u>Properties and Key Facts:</u>
+
+ - $p_1,p_{2},\cdots, p_{K}$ remains from trial to trial
+ - It is a generalization of binomial distribution for $K$ number of probabilities
+
 ## ⦿ Continuous Probability Distributions
 
 ### ⯈ Gaussian Distribution
