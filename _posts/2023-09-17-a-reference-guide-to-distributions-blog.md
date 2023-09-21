@@ -132,10 +132,15 @@ $$
 \boxed{P(X_{1}=x_{1}, X_{2}=x_{2}, \cdots,X_{K}=x_{K}|p_1, p_2, \cdots, p_{K})= \frac{n!}{\prod_{k=1}^{K}x_{k}!}~ \prod_{k=1}^{K} p^{x_{k}}_{k}}
 $$
 
+where,
+
+- $n=x_1+x_2+\cdots+x_{K}$
+- $p_1+p_2+\cdots+p_K=1$
+
 
 <u>Properties and Key Facts:</u>
 
- - $p_1,p_{2},\cdots, p_{K}$ remains from trial to trial
+ - $p_1,p_{2},\cdots, p_{K}$  remains same from trial to trial
  - It is a generalization of binomial distribution for $K$ number of probabilities
 
 ## ⦿ Continuous Probability Distributions
