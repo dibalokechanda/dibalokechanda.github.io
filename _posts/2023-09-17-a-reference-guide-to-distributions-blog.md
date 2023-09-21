@@ -30,6 +30,8 @@ Here,
 - $x=1$ defines the success event and $x=0$ defines the failure event
 
 
+![bernouli](https://i.ibb.co/D8SqsR2/chrome-Rnw-GIVNZj-R.png)
+
 <u>Cumulative Density Function:</u>
 
 
