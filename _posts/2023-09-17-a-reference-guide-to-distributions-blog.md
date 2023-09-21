@@ -31,6 +31,7 @@ Here,
 
 
 ![bernouli](https://i.ibb.co/5xhx9V1/chrome-BZ6k-Qob-H8v.png)
+*The pmf is completely determined by the value of $p$*
 
 <u>Cumulative Density Function:</u>
 
@@ -75,6 +76,10 @@ where,
 - $n$ is the number of trials
 - $p$ is the probability of success and $(1-p)$ is the probability of failure for an individual trial
 - $x$ is the number of success out of $n$ trials 
+
+![binomial_distribution](https://i.ibb.co/Ltsvfzj/chrome-Xk-XCcx-Dv-Eu.png)
+*The shape of the pmf is determined by the value of $n$ and $p$*
+
 
 <u>Expected Value:</u>
 
@@ -233,13 +238,20 @@ $$
 \boxed{Var(x)=\frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}}
 $$
 
+
+<u>Special case for uniform distribution:</u>
+
+if $\alpha=1$  and $\beta=1$ then, beta distribution represents an uniform distribution.
+
+
+
 <u>Properties and Key Facts:</u>
 
  - Known as "The Probability Distribution of Probabilities".
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
  - Suitable distribution model for the random behavior of percentages and proportions.
  - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
- - Member of the exponential family
+ - Member of the exponential family.
 
 ###  ⯈ Gamma Distribution
 <hr>
