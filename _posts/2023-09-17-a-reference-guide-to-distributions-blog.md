@@ -80,6 +80,10 @@ where,
 ![binomial_distribution](https://i.ibb.co/Ltsvfzj/chrome-Xk-XCcx-Dv-Eu.png)
 *The shape of the PMF is determined by the value of $n$ and $p$*
 
+Changing the value of $n$ and $p$ change the shape of the distribution:
+
+![binomia_different_shape](https://i.ibb.co/rH0SQ7s/chrome-SKqw-UXc-XEX.png)
+
 
 <u>Expected Value:</u>
 
