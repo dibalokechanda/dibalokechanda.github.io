@@ -240,7 +240,7 @@ $$
 <u> Multivariate case (PDF):</u>
 
 $$
-f(x \mid \mu, \Sigma)=\frac{1}{(2 \pi)^{D / 2}|\Sigma|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\mu)^{\top} \Sigma^{-1}(\mathbf{x}-\mu)\right\}
+f(x \mid\mu, \Sigma)=\frac{1}{(2 \pi)^{D / 2}|\Sigma|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\mu)^{\top} \Sigma^{-1}(\mathbf{x}-\mathbf{\mu})\right\}
 $$
 
 Here,
@@ -253,6 +253,20 @@ Here,
 ![bivariate_pdf](https://i.ibb.co/S7MXhNY/chrome-g-O3o-Zzk-P58.png)
 *Bivariate Guassian PDF*
 
+
+To get a better appreciation for the formula we can consider where number of dimensions $D=2$. For $D=2$,
+
+
+$$
+
+x=\begin{bmatrix} x_1 \\ x_2\end{bmatrix}  \qquad \mu=\begin{bmatrix} \mu_1 \\ \mu_2 \end{bmatrix} \qquad \Sigma=\begin{bmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{bmatrix} 
+$$
+
+With these considerations the bivariate gaussian pdf can be expressed as follows:
+
+$$
+f(x \mid\mu, \Sigma) = \frac{1}{(2\pi)^{2/2}\begin{vmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{vmatrix}^{1/2} } \exp \left(-\frac{1}{2}\begin{bmatrix} x_1 \\ x_2\end{bmatrix}^{\top} \begin{bmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{bmatrix}^{-1}  \begin{bmatrix} x_1 \\ x_2\end{bmatrix} \right)
+$$
 
 ### ⯈ Beta Distribution
 
