@@ -250,6 +250,9 @@ Here,
 - $\Sigma$ is the covariance matrix
 
 
+![bivariate_pdf](https://i.ibb.co/S7MXhNY/chrome-g-O3o-Zzk-P58.png)
+
+
 ### ⯈ Beta Distribution
 
 <hr>
