@@ -254,7 +254,7 @@ Here,
 *Bivariate Guassian PDF*
 
 
-To get a better appreciation for the formula we can consider where number of dimensions $D=2$. For $D=2$,
+To get a better appreciation for the formula we can consider the bivariate case where number of dimensions $D=2$. For $D=2$,
 
 
 $$
@@ -267,6 +267,14 @@ With these considerations the bivariate gaussian pdf can be expressed as follows
 $$
 f(x \mid\mu, \Sigma) = \frac{1}{(2\pi)^{2/2}\begin{vmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{vmatrix}^{1/2} } \exp \left(-\frac{1}{2}\begin{bmatrix} x_1 \\ x_2\end{bmatrix}^{\top} \begin{bmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{bmatrix}^{-1}  \begin{bmatrix} x_1 \\ x_2\end{bmatrix} \right)
 $$
+
+To understand the nature of $\Sigma$ we can consider some special case. First let's consider the off-diagonal elements $\sigma_{ij}=0$.
+
+
+![off_diagonal_0](https://i.ibb.co/hZnRgzZ/chrome-LASg-GUIXe-Y.png)
+
+
+When the variance for both $x_{1}$ and $x_{2}$ are equal the contour plot is circular in nature. But when they are not equal the contour plot is elliptical in nature.
 
 ### ⯈ Beta Distribution
 
