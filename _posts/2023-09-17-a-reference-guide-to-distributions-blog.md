@@ -251,6 +251,7 @@ Here,
 
 
 ![bivariate_pdf](https://i.ibb.co/S7MXhNY/chrome-g-O3o-Zzk-P58.png)
+*Bivariate Guassian PDF*
 
 
 ### ⯈ Beta Distribution
@@ -370,3 +371,25 @@ $$
 $$
 \boxed{Var(x)=\frac{\beta^2}{(\alpha-1)^2(\alpha-2)}}
 $$
+
+
+###  ⯈ Dirichlet distribution
+<hr>
+<u>Probability Density Function:</u>
+
+
+$$
+f(x_1,x_2,\cdots, x_K \mid \alpha_1, \alpha_2, \cdots, \alpha_K)=\frac{1}{B(\alpha)} \prod_{k=1}^{K}x_{k}^{\alpha_k -1}
+$$
+
+$$
+\text { where, } B(\alpha)= \frac{\prod_{k=1}^{K} \Gamma(\alpha_{k})}{\Gamma(\sum_{k=1}^{K}\alpha_{k})}
+$$
+
+
+
+
+
+
+![dirichlet_distribution](https://upload.wikimedia.org/wikipedia/commons/5/54/LogDirichletDensity-alpha_0.3_to_alpha_2.0.gif)
+*Image taken from Wikipedia*
