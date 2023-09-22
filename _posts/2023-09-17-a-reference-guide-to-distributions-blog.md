@@ -85,6 +85,14 @@ Changing the value of $n$ and $p$ change the shape of the distribution:
 ![binomia_different_shape](https://i.ibb.co/rH0SQ7s/chrome-SKqw-UXc-XEX.png)
 
 
+As a general thumbrule we can say the following:
+
+- $p=0.5$: Distribution will be symmetrical
+- $p<0.5$: Distribution skewed to the left
+- $p>0.5$: Distribution skewed to the right
+
+
+
 <u>Expected Value:</u>
 
 $$
