@@ -303,7 +303,7 @@ if $\alpha=1$  and $\beta=1$ then, beta distribution represents an uniform distr
  - Known as "The Probability Distribution of Probabilities".
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
  - Suitable distribution model for the random behavior of percentages and proportions.
- - Has close connection to bernoulli distribution. Just as binomial distribution is a generalization bernoulli distribution, dirichlet distribution is a generationalization of beta distribution.
+ - Has close connection to binomial distribution. Beta is the conjugate prior of Binomial distribution.
  - Member of the exponential family.
 
 ###  ⯈ Gamma Distribution
@@ -393,3 +393,10 @@ $$
 
 ![dirichlet_distribution](https://upload.wikimedia.org/wikipedia/commons/5/54/LogDirichletDensity-alpha_0.3_to_alpha_2.0.gif)
 *Image taken from Wikipedia*
+
+
+<u>Properties and Key Facts:</u>
+
+- The input to the distribution is a vector and what we sample from the distribution is also a vector.
+- It is a multivariate generalization of beta distribution.
+- Dirichlet is the conjugate prior of multinomial distribution.
