@@ -375,6 +375,32 @@ $$
 \boxed{\text{Gaussian Distribution is closed under conditioning}}
 $$
 
+
+<u> Affine transformation: </u>
+
+If we consider a multivariate gaussian distribution $x\sim \mathcal{N}(\mu,\Sigma)$ then performing an affine transformation to  $x$ to get another random variable $z$ can be done as follows:
+
+$$
+z = Ax+b
+$$
+
+$$\text{where,} ~A \in \mathbb{R}^{D\times D}~\text{and}~b\in \mathbb{R}^{D}$$
+
+Then the random variable $z$ will also follow a gaussian distribution as follows:
+
+
+$$
+z \sim \mathcal{N}(A \mu+b,A \Sigma A^{\top})
+$$
+
+
+
+$$
+\boxed{\text{Gaussian Distribution is closed under affine transformation}}
+$$
+
+
+
 ### ⯈ Beta Distribution
 
 <hr>
