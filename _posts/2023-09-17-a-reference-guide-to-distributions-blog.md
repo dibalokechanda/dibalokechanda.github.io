@@ -271,10 +271,15 @@ $$
 To understand the nature of $\Sigma$ we can consider some special case. First let's consider the off-diagonal elements $\sigma_{ij}=0$.
 
 
-![off_diagonal_0](https://i.ibb.co/hZnRgzZ/chrome-LASg-GUIXe-Y.png)
+![off_diagonal_0](https://i.ibb.co/1dFrg4h/chrome-WVo-JJp-Kp-SK.png)
 
 
 When the variance for both $x_{1}$ and $x_{2}$ are equal the contour plot is circular in nature. But when they are not equal the contour plot is elliptical in nature.
+
+Now we can consider the case when the off-diagonal elements are not zero.
+
+
+![Off_diagonal](https://i.ibb.co/TmW2RPC/chrome-Fz-U0am-UIc-G.png)
 
 ### ⯈ Beta Distribution
 
