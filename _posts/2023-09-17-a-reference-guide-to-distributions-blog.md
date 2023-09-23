@@ -11,7 +11,7 @@ toc: true
 
 ### ⯈ Bernoulli Distribution
 
-<u>Probability Density Function:</u>
+#### <u>Probability Density Function:</u>
 
 $$
 \begin{align*}
