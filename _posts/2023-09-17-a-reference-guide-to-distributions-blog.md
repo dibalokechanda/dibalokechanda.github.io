@@ -33,7 +33,7 @@ Here,
 ![bernouli](https://i.ibb.co/5xhx9V1/chrome-BZ6k-Qob-H8v.png)
 *The PMF is completely determined by the value of $p$*
 
-<u>Cumulative Density Function:</u>
+#### ⯌ <u>Cumulative Density Function:</u>
 
 
 $$
@@ -41,7 +41,7 @@ $$
 $$
 
 
-<u>Expected Value:</u>
+#### ⯌ <u>Expected Value:</u>
 
 $$
 
@@ -50,13 +50,13 @@ $$
 $$
 
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 \boxed{Var(x)=p(1-p)}
 $$
 
-<u>Properties and Key Facts:</u>
+#### ⯌ <u>Properties and Key Facts:</u>
 
 - The number of trials is equal to $1$.
 - Model events when there are only two possible outcomes : success and failure. 
@@ -65,7 +65,7 @@ $$
 
 ### ⯈ Bionomial Distribution
 
-<u>Probability Density Function:</u>
+#### ⯌ <u>Probability Density Function:</u>
 
 $$
 \boxed{P(X=x|p)= \binom{n}{x} p^x (1-p)^{n-x}= \frac{n!}{x!(n-x)!}p^x (1-p)^{n-x}}
@@ -93,20 +93,20 @@ As a general thumbrule we can say the following:
 
 
 
-<u>Expected Value:</u>
+#### ⯌ <u>Expected Value:</u>
 
 $$
 \boxed{E(x)=np}
 $$
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 \boxed{Var(x)=np(1-p)}
 $$
 
 
-<u>Properties and Key Facts:</u>
+#### ⯌ <u>Properties and Key Facts:</u>
 
  - Involves $n$ independent bernoulli trials
  - Applicable when a repeating process can result in two possible outcomes. 
@@ -114,7 +114,7 @@ $$
 
 
 
- <u> External Resources:</u>
+ #### ⯌ <u> External Resources:</u>
 
  - A nice visual introduction to beginners: [From Primer](https://www.youtube.com/watch?v=6YzrVUVO9M0)
 
@@ -159,7 +159,7 @@ where,
 - $p_1+p_2+\cdots+p_K=1$
 
 
-<u>Properties and Key Facts:</u>
+#### ⯌ <u>Properties and Key Facts:</u>
 
  - $p_1,p_{2},\cdots, p_{K}$  remains same from trial to trial
  - It is a generalization of binomial distribution for $K$ number of probabilities
@@ -167,7 +167,7 @@ where,
 
 ### ⯈ Geometric Distribution
 
-<u>Probability Density Function:</u>
+#### ⯌ <u>Probability Density Function:</u>
 
 $$
  \boxed{P(X=x \mid p)= (1-p)^{x-1}~p}
@@ -180,14 +180,14 @@ where,
 - $x$ is the random variable where $x$ is the trial number when first success happens
 - $x-1$ trials results in failure, $x^{th}$ trial results in success
 
-<u>Cumulative Density Function:</u>
+#### ⯌ <u>Cumulative Density Function:</u>
 
 $$
 \boxed{\operatorname{P}(X\leq x )=1- (1-p)^{x}}
 $$
 
 
-<u>Expected Value:</u>
+#### ⯌ <u>Expected Value:</u>
 
 $$
 
@@ -196,7 +196,7 @@ $$
 $$
 
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 
@@ -210,18 +210,18 @@ $$
 ### ⯈ Gaussian Distribution
 <hr>
 
-<u>Probability Density Function:</u>
+#### ⯌ <u>Probability Density Function:</u>
 
 $$
 \boxed{f(x \mid \mu, \sigma)= \frac{1}{\sqrt{2\pi \sigma^{2}}} \exp({-\frac{(x-\mu)^{2}}{2\sigma^{2}}})}
 $$
 
 
-<u>Cumulative Density Function:</u>
+#### ⯌ <u>Cumulative Density Function:</u>
 
-<b>No Closed Form Analytical Equation</b>
+#### ⯌ <b>No Closed Form Analytical Equation</b>
 
-<u>Expected Value:</u>
+#### ⯌ <u>Expected Value:</u>
 
 $$
 
@@ -230,14 +230,14 @@ $$
 $$
 
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 \boxed{Var(x)=\sigma^{2}}
 
 $$
 
-<u> Multivariate case (PDF):</u>
+#### ⯌ <u> Multivariate case (PDF):</u>
 
 $$
 f(x \mid\mu, \Sigma)=\frac{1}{(2 \pi)^{D / 2}|\Sigma|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\mu)^{\top} \Sigma^{-1}(\mathbf{x}-\mathbf{\mu})\right\}
@@ -288,7 +288,7 @@ Now we can consider the case when the off-diagonal elements are not zero. One th
 Depending on if they are positive or negative, it will be skewed towards a specifice direction.
 
 
-<u> Marginalization of a multivariate gaussian: </u>
+#### ⯌ <u> Marginalization of a multivariate gaussian: </u>
 
 First let us partition the random variable vetor and the mean vector in two sections $A$ and $B$.
 
@@ -342,7 +342,7 @@ $$
 $$
 
 
-<u> Conditionig on a multivariate gaussian: </u>
+#### ⯌ <u> Conditionig on a multivariate gaussian: </u>
 
 Conditioning on a  multivaraite gaussian can be done with the following equations:
 
@@ -376,7 +376,7 @@ $$
 $$
 
 
-<u> Affine transformation: </u>
+#### ⯌ <u> Affine transformation: </u>
 
 If we consider a multivariate gaussian distribution $x\sim \mathcal{N}(\mu,\Sigma)$ then performing an affine transformation to  $x$ to get another random variable $z$ can be done as follows:
 
@@ -407,7 +407,7 @@ $$
 
 
 
-<u>Probability Density Function: </u>
+#### ⯌ <u>Probability Density Function: </u>
 
 
 $$
@@ -422,11 +422,11 @@ Here, $\Gamma(x)$ is the gamma function defined as $\Gamma(x-1)!$
 
 
 
-<u>Cumulative Density Function:</u>
+#### ⯌ <u>Cumulative Density Function:</u>
 
 <b>No Closed Form Analytical Equation</b>
 
-<u>Expected Value:</u>
+#### ⯌ <u>Expected Value:</u>
 
 $$
 
@@ -434,20 +434,20 @@ $$
 
 $$
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 \boxed{Var(x)=\frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}}
 $$
 
 
-<u>Special case for uniform distribution:</u>
+#### ⯌ <u>Special case for uniform distribution:</u>
 
 if $\alpha=1$  and $\beta=1$ then, beta distribution represents an uniform distribution.
 
 
 
-<u>Properties and Key Facts:</u>
+#### ⯌ <u>Properties and Key Facts:</u>
 
  - Known as "The Probability Distribution of Probabilities".
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
@@ -460,7 +460,7 @@ if $\alpha=1$  and $\beta=1$ then, beta distribution represents an uniform distr
 
 
 
-<u>Probability Density Function:</u>
+#### ⯌ <u>Probability Density Function:</u>
 
 
 $$
@@ -469,11 +469,11 @@ $$
 
 There  is  another version of this distribution with only one parameter $\alpha$.
 
-<u>Cumulative Density Function:</u>
+#### ⯌ <u>Cumulative Density Function:</u>
 
-<b>No Closed Form Analytical Equation</b>
+ <b>No Closed Form Analytical Equation</b>
 
-<u>Expected Value:</u>
+#### ⯌ <u>Expected Value:</u>
 
 $$
 
@@ -481,7 +481,7 @@ $$
 
 $$
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 
@@ -492,7 +492,7 @@ $$
 ###  ⯈ Inverse Gamma Distribution
 <hr>
 
-<u>Probability Density Function:</u>
+#### ⯌ <u>Probability Density Function:</u>
 
 $$
 \boxed{f(x \mid \alpha, \beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{-\alpha-1} \mathrm{e}^{-\beta / x}}
@@ -502,11 +502,12 @@ $$
 \text { where, } \alpha, \beta>0,0<x<\infty
 $$
 
-<u>Cumulative Density Function:</u>
+#### ⯌ <u>Cumulative Density Function:</u>
 
 <b>No Closed Form Analytical Equation</b>
 
-<u>Expected Value:</u>
+
+#### ⯌ <u>Expected Value:</u>
 
 $$
 
@@ -515,7 +516,7 @@ $$
 $$
 
 
-<u>Variance:</u>
+#### ⯌ <u>Variance:</u>
 
 $$
 \boxed{Var(x)=\frac{\beta^2}{(\alpha-1)^2(\alpha-2)}}
@@ -524,7 +525,8 @@ $$
 
 ###  ⯈ Dirichlet distribution
 <hr>
-<u>Probability Density Function:</u>
+
+#### ⯌ <u>Probability Density Function:</u>
 
 
 $$
