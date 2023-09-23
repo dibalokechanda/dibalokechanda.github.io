@@ -243,6 +243,10 @@ $$
 f(x \mid\mu, \Sigma)=\frac{1}{(2 \pi)^{D / 2}|\Sigma|^{1 / 2}} \exp \left\{-\frac{1}{2}(\mathbf{x}-\mu)^{\top} \Sigma^{-1}(\mathbf{x}-\mathbf{\mu})\right\}
 $$
 
+$$
+ \text{where},  \mu \in \mathbb{R}^{D}, \Sigma \in \mathbb{R}^{D \times D}~\text{and}~\Sigma \succ0
+$$
+
 Here,
 
 - $D$ is the number of dimensions
@@ -276,10 +280,67 @@ To understand the nature of $\Sigma$ we can consider some special case. First le
 
 When the variance for both $x_{1}$ and $x_{2}$ are equal the contour plot is circular in nature. But when they are not equal the contour plot is elliptical in nature.
 
-Now we can consider the case when the off-diagonal elements are not zero.
+Now we can consider the case when the off-diagonal elements are not zero. One thing to note here as the covariance matrix is a symmetric matrix, $\sigma_{12}=\sigma_{21}$.
 
 
 ![Off_diagonal](https://i.ibb.co/TmW2RPC/chrome-Fz-U0am-UIc-G.png)
+
+Depending on if they are positive or negative, it will be skewed towards a specifice direction.
+
+
+<u> Marginalization of a multivariate gaussian: </u>
+
+First let us partition the random variable vetor and the mean vector in two sections $A$ and $B$.
+
+$$
+
+x= \begin{bmatrix} x_{1} \\  x_{2} \\ x_{3} \\ \vdots  \\ x_{D-1} \\ x_{D}\end{bmatrix} = \begin{bmatrix} x_{A} \\ x_{B}\end{bmatrix}
+$$
+
+$$
+
+\mu= \begin{bmatrix} \mu_{1} \\  \mu_{2} \\ \mu_{3} \\ \vdots  \\ \mu_{D-1} \\ \mu_{D}\end{bmatrix} = \begin{bmatrix} \mu_{A} \\ \mu_{B}\end{bmatrix}
+$$
+
+For the covariance matrix this will result in partioning the matrix into four sections:
+
+$$
+
+\Sigma= \begin{bmatrix} \Sigma_{AA}  & \Sigma_{AB}  \\ \Sigma_{BA} & \Sigma_{BB}  \end{bmatrix}
+
+$$
+
+For me personally, the first time I saw this I did not get it. Because nobody showed me a visualization for a specific case. So, the visualization for $D=7$ and partioned into $3$ and $4$ is shown below:
+
+
+
+![partioning](https://i.ibb.co/MRwMqc7/chrome-Bxl42wgauh.png)
+
+
+Back to the general case. Now let's say we want to find the mutivariate joint distribution of $x_{A}$. This means we need to integrate out all variables $x_{B}$.
+
+Therefore the marginal of $x_{A}$ will be:
+
+$$
+\boxed{x_{A} \sim \mathcal{N}(\mu_{A}, \Sigma_{AA})}
+$$
+
+Similarly, if we want to find the multivariate joint distribution of $x_{B}$. This means we need to integrate out all the variables $x_{A}$.
+
+Therefore the marginal of $x_{B}$ will be:
+
+$$
+\boxed{x_{B} \sim \mathcal{N}(\mu_{B},\Sigma_{BB})}
+
+$$
+
+
+This means if we know $\mu$ and $\Sigma$, in order to find $x_{A}$ and $x_{B}$ we can directly read off from $\mu$ and $\Sigma$ to construct the corresponding mean vector and covariance matrix.
+
+
+<u> Conditionig of a multivariate gaussian: </u>
+
+
 
 ### ⯈ Beta Distribution
 
@@ -299,6 +360,8 @@ $$
 $$
 
 Here, $\Gamma(x)$ is the gamma function defined as $\Gamma(x-1)!$
+
+
 
 <u>Cumulative Density Function:</u>
 
