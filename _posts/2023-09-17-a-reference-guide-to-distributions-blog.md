@@ -337,10 +337,43 @@ $$
 
 This means if we know $\mu$ and $\Sigma$, in order to find $x_{A}$ and $x_{B}$ we can directly read off from $\mu$ and $\Sigma$ to construct the corresponding mean vector and covariance matrix.
 
+$$
+\boxed{\text{Gaussian Distribution is closed under marginalization}}
+$$
 
-<u> Conditionig of a multivariate gaussian: </u>
+
+<u> Conditionig on a multivariate gaussian: </u>
+
+Conditioning on a  multivaraite gaussian can be done with the following equations:
 
 
+$$
+x_A \mid x_B \sim N\left(\mu_A+\Sigma_{A B} \Sigma_{B B}^{-1}\left(x_B-\mu_B\right), \Lambda_{A A}\right)
+$$
+
+$$
+x_B \mid x_A \sim N\left(\mu_B+\Sigma_{B A} \Sigma_{A A}^{-1}\left(x_A-\mu_A\right), \Lambda_{B B}\right)
+$$
+
+$$
+\text { where } \Lambda_{B B}=\Sigma_{B B}-\Sigma_{B A} \Sigma_{A A}^{-1} \Sigma_{A B}
+$$
+
+
+
+
+
+
+
+$$
+\text { where } \Lambda_{A A}=\Sigma_{A A^{-}} \Sigma_{A B} \Sigma_{B B}{ }^{-1} \Sigma_{B A}
+$$
+
+I am not gonna show the proof because it is way too rigorous and knowing it gives too little intuition for me to cover in this article.
+
+$$
+\boxed{\text{Gaussian Distribution is closed under conditioning}}
+$$
 
 ### ⯈ Beta Distribution
 
