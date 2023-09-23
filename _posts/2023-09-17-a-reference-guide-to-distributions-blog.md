@@ -219,7 +219,7 @@ $$
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
-#### ⯌ <b>No Closed Form Analytical Equation</b>
+ <b>No Closed Form Analytical Equation</b>
 
 #### ⯌ <u>Expected Value:</u>
 
