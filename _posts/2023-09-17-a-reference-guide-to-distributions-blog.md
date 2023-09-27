@@ -401,7 +401,62 @@ $$
 \boxed{\text{Gaussian Distribution is closed under affine transformation}}
 $$
 
+### ⯈ Laplace Distribution
 
+#### ⯌ <u>Probability Density Function: </u>
+
+$$
+
+f(x \mid \mu, b)=\frac{1}{2 b} \exp \left(-\frac{|x-\mu|}{b}\right)
+
+$$
+
+$$
+
+\text{where}, b>0
+$$
+
+
+where,
+
+- $\mu$ is the location parameter
+- $b$  is the scale parameter
+
+
+![laplace_distribution](https://i.ibb.co/VVSPXs1/chrome-Fhsvl-XBgfv.png)
+
+
+
+#### ⯌ <u>Cumulative Density Function:</u>
+
+$$
+\operatorname{F_{X}}(X\leq x )= \begin{cases}
+\frac{1}{2} \exp \left(\frac{x-\mu}{b}\right) & \text { if } x \leq \mu \\
+\\
+1-\frac{1}{2} \exp \left(-\frac{x-\mu}{b}\right) & \text { if } x \geq \mu
+\end{cases}
+$$
+
+
+
+#### ⯌ <u>Expected Value:</u>
+
+
+
+$$
+
+\boxed{E(X)=\frac{1}{p}}
+
+$$
+
+#### ⯌ <u>Variance:</u>
+
+
+$$
+
+\boxed{Var(X)=2b^2}
+
+$$
 
 ### ⯈ Beta Distribution
 
