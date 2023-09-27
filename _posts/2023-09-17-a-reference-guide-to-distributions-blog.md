@@ -401,6 +401,20 @@ $$
 \boxed{\text{Gaussian Distribution is closed under affine transformation}}
 $$
 
+### ⯈ Student-t Distribution
+
+#### ⯌ <u> Probability Density Function: </u>
+
+$$
+f(t \mid v)=\frac{\Gamma\left(\frac{v+1}{2}\right)}{\Gamma\left(\frac{v}{2}\right)} \frac{1}{\sqrt{v \pi}} \frac{1}{\left(1+\frac{1}{v} t^2\right)^{(v+1) / 2}}
+$$
+
+
+where,
+
+- $v$ is the degrees of freedom
+- $\Gamma$  is the gamma function defined as $\Gamma(n)=(n-1)!$
+
 ### ⯈ Laplace Distribution
 
 #### ⯌ <u>Probability Density Function: </u>
