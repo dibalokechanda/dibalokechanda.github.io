@@ -217,6 +217,8 @@ $$
 $$
 
 
+![gaussian_distribution](https://i.ibb.co/PhBcWx8/chrome-3-Lz396-LIg7.png)
+
 #### ⯌ <u>Cumulative Density Function:</u>
 
  <b>No Closed Form Analytical Equation</b>
