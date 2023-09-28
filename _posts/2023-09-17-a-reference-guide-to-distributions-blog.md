@@ -391,6 +391,8 @@ $$\text{where,} ~A \in \mathbb{R}^{D\times D}~\text{and}~b\in \mathbb{R}^{D}$$
 Then the random variable $z$ will also follow a gaussian distribution as follows:
 
 
+
+
 $$
 z \sim \mathcal{N}(A \mu+b,A \Sigma A^{\top})
 $$
@@ -400,6 +402,8 @@ $$
 $$
 \boxed{\text{Gaussian Distribution is closed under affine transformation}}
 $$
+
+
 
 ### ⯈ Student-t Distribution
 
@@ -414,6 +418,34 @@ where,
 
 - $v$ is the degrees of freedom
 - $\Gamma$  is the gamma function defined as $\Gamma(n)=(n-1)!$
+
+#### ⯌ <u> Expected Value: </u>
+
+$$
+E(x)=\begin{cases}
+\mu ,~ \text{when} ~ v>1\\
+\\
+\text{undefined}, ~ \text{otherwise}
+\end{cases}
+$$
+
+#### ⯌ <u>Variance:</u>
+
+$$
+Var(X)=\begin{cases}
+\frac{v}{v-2},  v>2 \\
+\\
+\infty,  1 <v \leq2 \\
+\\
+\text{undefined},~\text{otherwise}
+\end{cases}
+$$
+
+
+
+#### ⯌ <u>Properties and Key Facts:</u>
+
+- The larger the value of degrees of freedom $v$, the more it gets closer to the normal distribution.
 
 ### ⯈ Laplace Distribution
 
@@ -491,7 +523,7 @@ $$
 
 Here, $\Gamma(x)$ is the gamma function defined as $\Gamma(x-1)!$
 
-
+Also, $\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha) \Gamma(\beta)}$ is sometimes expressed as $\frac{1}{B(\alpha_1,\alpha_2)}$ which is the normalizing factor.
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
