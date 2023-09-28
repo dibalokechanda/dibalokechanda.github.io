@@ -637,7 +637,7 @@ f(x_1,x_2,\cdots, x_K \mid \alpha_1, \alpha_2, \cdots, \alpha_K)=\frac{1}{B(\alp
 $$
 
 $$
-\text { where, } B(\alpha)= \frac{\prod_{k=1}^{K} \Gamma(\alpha_{k})}{\Gamma(\sum_{k=1}^{K}\alpha_{k})}
+\text { where, } B(\alpha)= \frac{\prod_{k=1}^{K} \Gamma(\alpha_{k})}{\Gamma(\sum_{k=1}^{K}\alpha_{k})}, \text{which is the normalization factor}
 $$
 
 
@@ -653,4 +653,4 @@ $$
 
 - The input to the distribution is a vector and what we sample from the distribution is also a vector.
 - It is a multivariate generalization of beta distribution.
-- Dirichlet is the conjugate prior of multinomial distribution.
+- Dirichlet is the conjugate prior of the categorical and multinomial distribution.
