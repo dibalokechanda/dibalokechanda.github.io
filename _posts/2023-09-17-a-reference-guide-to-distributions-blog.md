@@ -114,7 +114,7 @@ $$
 
 
 
- #### ⯌ <u> External Resources:</u>
+#### ⯌ <u> External Resources:</u>
 
  - A nice visual introduction to beginners: [From Primer](https://www.youtube.com/watch?v=6YzrVUVO9M0)
 
