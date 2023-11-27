@@ -462,6 +462,20 @@ $$
 \frac{v}{v-2} \mathrm{~T}=\Sigma
 $$
 
+The expectation is given by:
+
+$$
+\boxed{E(S \mid \nu, \delta, \mathrm{T})=\delta}
+$$
+
+The covariance is given by:
+
+$$
+\operatorname{cov}(S \mid \delta, \mathrm{T})=\frac{v}{v-2} \mathrm{~T}=\Sigma
+$$
+
+It can be shown the marginal distribution is given by:
+
 
 
 #### ⯌ <u>Properties and Key Facts:</u>
