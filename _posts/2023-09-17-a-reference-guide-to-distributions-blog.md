@@ -713,3 +713,5 @@ $$
 $$
 f(x \mid \nu)=\frac{x^{\frac{\nu}{2}-1} e^{-\frac{x}{2}}}{2^{\nu / 2} \Gamma(\nu / 2)}
 $$
+
+where, $x>0$
