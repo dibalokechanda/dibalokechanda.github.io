@@ -64,7 +64,7 @@ $$
 - It is a special case of binomial distribution where number of trials $n=1$
 - Binomial distribution, Negative Binomial Distribution and Geometric Distribution are built upon the idea of Bernoulli trials.
 
-### ⯈ Bionomial Distribution
+### ⯈ Binomial Distribution
 
 #### ⯌ <u>Probability Density Function:</u>
 
