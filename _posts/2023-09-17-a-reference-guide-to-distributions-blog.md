@@ -694,8 +694,19 @@ $$
 ### ⯈ $\chi^{2}$ Distribution:
 
 
-#### ⯌ <u>Probability Density Function:</u>
 
+
+If $Z_1, \ldots, Z_\nu$ are independent, standard normal random variables, then the sum of their squares,
 $$
-f(x \mid v)=\frac{x^{\frac{v}{2}-1} e^{-\frac{x}{2}}}{2^{v / 2} \Gamma(v / 2)}
+Q=\sum_{i=1}^k Z_i^2,
+$$
+is distributed according to the chi-squared distribution with $\nu$ degrees of freedom. This is usually denoted as
+$$
+Q \sim \chi^2(\nu) \text { or } Q \sim \chi_{\nu}^2 
+$$
+
+
+#### ⯌ <u>Probability Density Function:</u>
+$$
+f(x \mid \nu)=\frac{x^{\frac{\nu}{2}-1} e^{-\frac{x}{2}}}{2^{\nu / 2} \Gamma(\nu / 2)}
 $$
