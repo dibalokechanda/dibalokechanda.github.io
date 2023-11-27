@@ -7,6 +7,7 @@ math: true
 toc: true
 ---
 
+I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. But still, I want to keep a reference of interesting facts I come across about these distributions.
 ## ⦿ Discrete Probability Distributions
 
 ### ⯈ Bernoulli Distribution
@@ -109,7 +110,7 @@ $$
 #### ⯌ <u>Properties and Key Facts:</u>
 
  - Involves $n$ independent bernoulli trials
- - Applicable when a repeating process can result in two possible outcomes. 
+ - Applicable when a repeating process can result in two possible outcomes.
  - Number of trials is fixed to $n$, the number of success is the random variable $x$
 
 
@@ -274,7 +275,7 @@ $$
 f(x \mid\mu, \Sigma) = \frac{1}{(2\pi)^{2/2}\begin{vmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{vmatrix}^{1/2} } \exp \left(-\frac{1}{2}\begin{bmatrix} x_1 \\ x_2\end{bmatrix}^{\top} \begin{bmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{bmatrix}^{-1}  \begin{bmatrix} x_1 \\ x_2\end{bmatrix} \right)
 $$
 
-To understand the nature of $\Sigma$ we can consider some special case. First let's consider the off-diagonal elements $\sigma_{ij}=0$.
+To understand the nature of $\Sigma$ we can consider some special cases. First, let's consider the off-diagonal elements $\sigma_{ij}=0$.
 
 
 ![off_diagonal_0](https://i.ibb.co/1dFrg4h/chrome-WVo-JJp-Kp-SK.png)
@@ -287,12 +288,12 @@ Now we can consider the case when the off-diagonal elements are not zero. One th
 
 ![Off_diagonal](https://i.ibb.co/TmW2RPC/chrome-Fz-U0am-UIc-G.png)
 
-Depending on if they are positive or negative, it will be skewed towards a specifice direction.
+Depending on if they are positive or negative, it will be skewed towards a specific direction.
 
 
 #### ⯌ <u> Marginalization of a multivariate gaussian: </u>
 
-First let us partition the random variable vetor and the mean vector in two sections $A$ and $B$.
+First let us partition the random variable vector and the mean vector into two sections $A$ and $B$.
 
 $$
 
@@ -304,7 +305,7 @@ $$
 \mu= \begin{bmatrix} \mu_{1} \\  \mu_{2} \\ \mu_{3} \\ \vdots  \\ \mu_{D-1} \\ \mu_{D}\end{bmatrix} = \begin{bmatrix} \mu_{A} \\ \mu_{B}\end{bmatrix}
 $$
 
-For the covariance matrix this will result in partioning the matrix into four sections:
+For the covariance matrix this will result in partitioning the matrix into four sections:
 
 $$
 
@@ -312,14 +313,14 @@ $$
 
 $$
 
-For me personally, the first time I saw this I did not get it. Because nobody showed me a visualization for a specific case. So, the visualization for $D=7$ and partioned into $3$ and $4$ is shown below:
+For me personally, the first time I saw this I did not get it. Because nobody showed me a visualization for a specific case. So, the visualization for $D=7$ and partitioned into $3$ and $4$ is shown below:
 
 
 
 ![partioning](https://i.ibb.co/MRwMqc7/chrome-Bxl42wgauh.png)
 
 
-Back to the general case. Now let's say we want to find the mutivariate joint distribution of $x_{A}$. This means we need to integrate out all variables $x_{B}$.
+Back to the general case. Now let's say we want to find the multivariate joint distribution of $x_{A}$. This means we need to integrate out all variables $x_{B}$.
 
 Therefore the marginal of $x_{A}$ will be:
 
@@ -344,9 +345,9 @@ $$
 $$
 
 
-#### ⯌ <u> Conditionig on a multivariate gaussian: </u>
+#### ⯌ <u> Conditioning on a multivariate Gussian: </u>
 
-Conditioning on a  multivaraite gaussian can be done with the following equations:
+Conditioning on a  multivariate gaussian can be done with the following equations:
 
 
 $$
@@ -388,7 +389,7 @@ $$
 
 $$\text{where,} ~A \in \mathbb{R}^{D\times D}~\text{and}~b\in \mathbb{R}^{D}$$
 
-Then the random variable $z$ will also follow a gaussian distribution as follows:
+Then the random variable $z$ will also follow a Gaussian distribution as follows:
 
 
 
@@ -441,11 +442,31 @@ Var(X)=\begin{cases}
 \end{cases}
 $$
 
+#### ⯌ <u> Multivariate Case: </u>
+
+
+$$
+f(s \mid v, \delta, \mathrm{T})=\frac{\Gamma\left(\frac{v+p}{2}\right)|\mathrm{T}|^{-1 / 2}}{(v \pi)^{p / 2} \Gamma\left(\frac{v}{2}\right)} \frac{1}{\left[1+\frac{1}{v}(s-\delta)^{\prime} \mathrm{T}^{-1}(s-\delta)\right]^{(v+p) / 2}}
+$$
+
+where,
+
+- $p$ is the number of dimensions
+- $v$ is the degrees of freedom
+- $\delta$ is the location parameter
+- $T$ is the scale matrix 
+
+where,
+
+$$
+\frac{v}{v-2} \mathrm{~T}=\Sigma
+$$
+
 
 
 #### ⯌ <u>Properties and Key Facts:</u>
 
-- The larger the value of degrees of freedom $v$, the more it gets closer to the normal distribution.
+- The larger the value of degrees of freedom $v$, the more it gets closer to the normal distribution. 
 
 ### ⯈ Laplace Distribution
 
@@ -570,7 +591,7 @@ $$
 \boxed{f(x \mid \alpha, \beta)=\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} \mathrm{e}^{-\beta x}}
 $$
 
-There  is  another version of this distribution with only one parameter $\alpha$.
+There is another version of this distribution with only one parameter $\alpha$.
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
