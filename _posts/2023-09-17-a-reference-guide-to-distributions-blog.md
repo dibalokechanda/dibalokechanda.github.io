@@ -689,3 +689,13 @@ $$
 - The input to the distribution is a vector and what we sample from the distribution is also a vector.
 - It is a multivariate generalization of beta distribution.
 - Dirichlet is the conjugate prior of the categorical and multinomial distribution.
+
+
+### ⯈ $\chi^{2}$ Distribution:
+
+
+#### ⯌ <u>Probability Density Function:</u>
+
+$$
+f(x \mid v)=\frac{x^{\frac{v}{2}-1} e^{-\frac{x}{2}}}{2^{v / 2} \Gamma(v / 2)}
+$$
