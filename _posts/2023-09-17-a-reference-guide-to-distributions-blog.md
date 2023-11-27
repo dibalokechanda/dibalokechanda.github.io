@@ -60,9 +60,9 @@ $$
 #### ⯌ <u>Properties and Key Facts:</u>
 
 - The number of trials is equal to $1$.
-- Model events when there are only two possible outcomes : success and failure. 
+- Model events when there are only two possible outcomes: success and failure. 
 - It is a special case of binomial distribution where number of trials $n=1$
-- Binomial distribution, Negative Bionomial Distribution and Geometric Distribution are built upon the idea of bernoulli trials.
+- Binomial distribution, Negative Binomial Distribution and Geometric Distribution are built upon the idea of Bernoulli trials.
 
 ### ⯈ Bionomial Distribution
 
@@ -86,7 +86,7 @@ Changing the value of $n$ and $p$ change the shape of the distribution:
 ![binomia_different_shape](https://i.ibb.co/rH0SQ7s/chrome-SKqw-UXc-XEX.png)
 
 
-As a general thumbrule we can say the following:
+As a general thumb rule, we can say the following:
 
 - $p=0.5$: Distribution will be symmetrical
 - $p<0.5$: Distribution skewed to the left
@@ -109,9 +109,9 @@ $$
 
 #### ⯌ <u>Properties and Key Facts:</u>
 
- - Involves $n$ independent bernoulli trials
+ - Involves $n$ independent Bernoulli trials
  - Applicable when a repeating process can result in two possible outcomes.
- - Number of trials is fixed to $n$, the number of success is the random variable $x$
+ - The number of trials is fixed to $n$ and the number of successess is the random variable $x$
 
 
 
@@ -176,8 +176,8 @@ $$
 
 where,
 
-- $p$ is the probability of success for a individual bernoulli trial
-- $(1-p)$ is the probability of failure for a individual bernoulli trial
+- $p$ is the probability of success for an individual Bernoulli trial
+- $(1-p)$ is the probability of failure for an individual Bernoulli trial
 - $x$ is the random variable where $x$ is the trial number when first success happens
 - $x-1$ trials results in failure, $x^{th}$ trial results in success
 
@@ -269,7 +269,7 @@ $$
 x=\begin{bmatrix} x_1 \\ x_2\end{bmatrix}  \qquad \mu=\begin{bmatrix} \mu_1 \\ \mu_2 \end{bmatrix} \qquad \Sigma=\begin{bmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{bmatrix} 
 $$
 
-With these considerations the bivariate gaussian pdf can be expressed as follows:
+With these considerations, the bivariate Gaussian pdf can be expressed as follows:
 
 $$
 f(x \mid\mu, \Sigma) = \frac{1}{(2\pi)^{2/2}\begin{vmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{vmatrix}^{1/2} } \exp \left(-\frac{1}{2}\begin{bmatrix} x_1 \\ x_2\end{bmatrix}^{\top} \begin{bmatrix} \sigma^{2}_{1} & \sigma_{12} \\ \sigma_{21} & \sigma_{2}^{2}\end{bmatrix}^{-1}  \begin{bmatrix} x_1 \\ x_2\end{bmatrix} \right)
@@ -291,7 +291,7 @@ Now we can consider the case when the off-diagonal elements are not zero. One th
 Depending on if they are positive or negative, it will be skewed towards a specific direction.
 
 
-#### ⯌ <u> Marginalization of a multivariate gaussian: </u>
+#### ⯌ <u> Marginalization of a multivariate Gaussian: </u>
 
 First let us partition the random variable vector and the mean vector into two sections $A$ and $B$.
 
@@ -581,16 +581,16 @@ $$
 
 #### ⯌ <u>Special case for uniform distribution:</u>
 
-if $\alpha=1$  and $\beta=1$ then, beta distribution represents an uniform distribution.
+if $\alpha=1$  and $\beta=1$ then, the beta distribution represents a uniform distribution.
 
 
 
 #### ⯌ <u>Properties and Key Facts:</u>
 
  - Known as "The Probability Distribution of Probabilities".
- - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not makes sense for it to have value not within the range  $0$ to $1$.
+ - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not make sense for it to have a value not within the range  $0$ to $1$.
  - Suitable distribution model for the random behavior of percentages and proportions.
- - Has close connection to binomial distribution. Beta is the conjugate prior of Binomial distribution.
+ - Has a close connection to binomial distribution. Beta is the conjugate prior to Binomial distribution.
  - Member of the exponential family.
 
 ###  ⯈ Gamma Distribution
@@ -687,7 +687,7 @@ $$
 <u>Properties and Key Facts:</u>
 
 - The input to the distribution is a vector and what we sample from the distribution is also a vector.
-- It is a multivariate generalization of beta distribution.
+- It is a multivariate generalization of the beta distribution.
 - Dirichlet is the conjugate prior of the categorical and multinomial distribution.
 
 
