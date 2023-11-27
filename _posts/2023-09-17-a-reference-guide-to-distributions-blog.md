@@ -715,3 +715,28 @@ f(x \mid \nu)=\frac{x^{\frac{\nu}{2}-1} e^{-\frac{x}{2}}}{2^{\nu / 2} \Gamma(\nu
 $$
 
 $$\text{where,}~ x>0$$
+
+
+#### ⯌ <u>Expectation:</u>
+
+$$ \nu $$
+
+
+#### ⯌ <u>Variance:</u>
+
+$$ 2 \nu$$
+
+#### ⯌ <u>Relationship to sampling variance:</u> 
+
+
+Now, consider a random sample of size $n$ from a normal distribution with unknown variance $\sigma^2$ The sample variance $S^2$ is given by:
+$$
+S^2=\frac{1}{n-1} \sum_{i=1}^n\left(X_i-\bar{X}\right)^2
+$$
+
+where $X_i$ are the individual sample observations, and $\bar{X}$ is the sample mean.
+
+The sampling distribution of $S^2$ (scaled by $\sigma^2$ ) follows a chi-squared distribution with $n-1$ degrees of freedom:
+$$
+\frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)
+$$
