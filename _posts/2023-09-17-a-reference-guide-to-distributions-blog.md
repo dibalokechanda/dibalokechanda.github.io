@@ -740,3 +740,5 @@ The sampling distribution of $S^2$ (scaled by $\sigma^2$ ) follows a chi-squared
 $$
 \frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)
 $$
+
+- The multivariate generalization of it is Wishart Distribution.
