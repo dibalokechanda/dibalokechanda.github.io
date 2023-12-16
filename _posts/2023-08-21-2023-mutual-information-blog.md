@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-Mutual information is one of the most important concepts in machine learning. It is closely related to concepts like Kullback–Leibler(KL) divergence, cross-entropy etc. This is such a fundamental concept that many novel work in the machine learning domain is based on this.
+Mutual information is one of the most important concepts in machine learning. It is closely related to concepts like  Kullback–Leibler (KL) divergence, cross-entropy etc. This is such a fundamental concept that many novel work in the machine learning domain is based on this.
 
 ## The Venn Diagram
 

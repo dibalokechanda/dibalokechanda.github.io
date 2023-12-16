@@ -7,13 +7,13 @@ math: true
 toc: true
 ---
 
-Every now and then I will come across a tensor manipulation method in Pytorch or some piece of code in Pytorch and think "I wish I had known about this earlier". Then after one or two days completely forget about that thing. This article is a reference for such useful Pytorch code snipptets.
+Every now and then I will come across a tensor manipulation method in Pytorch or some piece of code in Pytorch and think "I wish I had known about this earlier". Then after one or two days completely forget about that thing. This article is a reference for such useful Pytorch code snippets.
 
 ## Code organization 
 
 ### Separate Trainer class to train model 
 
-I usually write the training portion of the code in `main.py` file. But a much better approach is to have a separate trainer class to train the model. You can have additional functions like  `store_values` to store different metrices  and outputs (for example embeddings) from the model. You can also provide an additional variable like `train_log=['True',20]` which will decide if you should log the training metrics and how frequent the training logs should be. For some model training it does not make sense to log metrices after every epoch. Finally, you can return the trained model in the `train` function.
+I usually write the training portion of the code in `main.py` file. But a much better approach is to have a separate trainer class to train the model. You can have additional functions like  `store_values` to store different metrics and outputs (for example embeddings) from the model. You can also provide an additional variable like `train_log=['True',20]` which will decide if you should log the training metrics and how frequent the training logs should be. For some model training, it does not make sense to log metrics after every epoch. Finally, you can return the trained model in the `train` function.
 
 
 ```python

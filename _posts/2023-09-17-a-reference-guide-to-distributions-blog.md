@@ -111,7 +111,7 @@ $$
 
  - Involves $n$ independent Bernoulli trials
  - Applicable when a repeating process can result in two possible outcomes.
- - The number of trials is fixed to $n$ and the number of successess is the random variable $x$
+ - The number of trials is fixed to $n$ and the number of successes is the random variable $x$
 
 
 
@@ -222,7 +222,7 @@ $$
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
- <b>No Closed Form Analytical Equation</b>
+ <b>No Closed-Form Analytical Equation</b>
 
 #### ⯌ <u>Expected Value:</u>
 
@@ -261,7 +261,7 @@ Here,
 *Bivariate Guassian PDF*
 
 
-To get a better appreciation for the formula we can consider the bivariate case where number of dimensions $D=2$. For $D=2$,
+To get a better appreciation of the formula we can consider the bivariate case where the number of dimensions $D=2$. For $D=2$,
 
 
 $$
@@ -293,7 +293,7 @@ Depending on if they are positive or negative, it will be skewed towards a speci
 
 #### ⯌ <u> Marginalization of a multivariate Gaussian: </u>
 
-First let us partition the random variable vector and the mean vector into two sections $A$ and $B$.
+First, let us partition the random variable vector and the mean vector into two sections $A$ and $B$.
 
 $$
 
@@ -345,9 +345,9 @@ $$
 $$
 
 
-#### ⯌ <u> Conditioning on a multivariate Gussian: </u>
+#### ⯌ <u> Conditioning on a multivariate Gaussian: </u>
 
-Conditioning on a  multivariate gaussian can be done with the following equations:
+Conditioning on a  multivariate Gaussian can be done with the following equations:
 
 
 $$
@@ -562,7 +562,7 @@ Also, $\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha) \Gamma(\beta)}$ is sometimes e
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
-<b>No Closed Form Analytical Equation</b>
+<b>No Closed-Form Analytical Equation</b>
 
 #### ⯌ <u>Expected Value:</u>
 
@@ -609,7 +609,7 @@ There is another version of this distribution with only one parameter $\alpha$.
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
- <b>No Closed Form Analytical Equation</b>
+ <b>No Closed-Form Analytical Equation</b>
 
 #### ⯌ <u>Expected Value:</u>
 
@@ -642,7 +642,7 @@ $$
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
-<b>No Closed Form Analytical Equation</b>
+<b>No Closed-Form Analytical Equation</b>
 
 
 #### ⯌ <u>Expected Value:</u>
@@ -714,6 +714,8 @@ $$
 f(x \mid \nu)=\frac{x^{\frac{\nu}{2}-1} e^{-\frac{x}{2}}}{2^{\nu / 2} \Gamma(\nu / 2)}
 $$
 
+
+
 $$\text{where,}~ x>0$$
 
 
@@ -730,6 +732,7 @@ $$ 2 \nu$$
 
 
 Now, consider a random sample of size $n$ from a normal distribution with unknown variance $\sigma^2$ The sample variance $S^2$ is given by:
+
 $$
 S^2=\frac{1}{n-1} \sum_{i=1}^n\left(X_i-\bar{X}\right)^2
 $$
@@ -741,4 +744,7 @@ $$
 \frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)
 $$
 
-- The multivariate generalization of it is Wishart Distribution.
+Note that this is not the distribution of exact $S^2$, rather it is the distribution for $\frac{(n-1) S^2}{\sigma^2} $. 
+
+<u>Properties and Key Facts:</u>
+- The multivariate generalization of the $\chi^2$ distribution is the Wishart distribution is Wishart Distribution.
