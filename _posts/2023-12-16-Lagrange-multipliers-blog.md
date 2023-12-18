@@ -216,3 +216,5 @@ $$
 
 Notice that to form the third equation we took the partial derivative with respect to $\lambda$ and actually got back the constraint equation itself. And, the first two equations essentially remain the same just with an additional negative sign which is the side effect of having $\lambda$ absorb the negative sign before. That means we solving the exactly same problem as before.
 
+The mathematical convenience of this approach is we are dealing with a single equation that includes both the objective function and the constraint. Another convenience is we can use the same mathematical tool for solving constrained optimization problems that we used for unconstrained optimization problems. By that, I mean we are using gradients and first-order partial derivatives.
+
