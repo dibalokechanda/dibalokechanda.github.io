@@ -81,8 +81,9 @@ If we look back a the 3D surface we will get something like the following:
 ![constraint_3d](https://i.ibb.co/Wfnpwgs/ezgif-com-video-to-gif-converted-1.gif)
 
 
-If we visualize the portion of the curve under the constraint, we get something like the following:
+If we visualize the portion of the function $f(x,y)$ under the constraint, we get something like the following:
 
+![constraint_portion](https://i.ibb.co/vxjPXXm/ezgif-com-video-to-gif-converted-2.gif)
 
 
 
