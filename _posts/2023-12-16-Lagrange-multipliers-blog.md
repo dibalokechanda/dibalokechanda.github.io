@@ -91,8 +91,48 @@ If we change our constraint curve from $x^2+y^2=1$ to $x^2+y^2=3$ this visualiza
 
 ![constraint_portion2](https://i.ibb.co/SmcHhn6/ezgif-com-video-to-gif-converted-3.gif)
 
-We can see that how the constraint curve changes the maxima and minima location of the function under constraint.
+We can see how the constraint curve changes the maxima and minima location of the function under constraint.
 
 
 ## Constraint Curve Gradient
 
+Now we can define the constraint curve (surface) as follows:
+
+
+$$
+
+g(x,y)= x^2+y^2
+
+$$
+
+Wait a minute this is not a curve in the 2D x-y plane! This is the equation of a surface. Well, that's correct. And that surface looks like the following:
+
+![constraint_surface_with_contour](https://i.ibb.co/HGTYZzF/chrome-3-U5m2v-TFKd.png)
+
+But take a closer look at the contour lines for this surface. Each contour line is a circle. The first constraint curve we considered is one of those contour lines. The second constraint curve also. 
+
+If we take the gradient of that surface we get $\nabla g(x,y)$. Now if you think about it the gradient vector of $g(x,y)$ is also perpendicular to the contour lines. This means $\nabla g(x)$ and $\nabla f(x)$ are parallels! 
+
+Visually, if we want to see it we can plot the contour lines of $f(x,y)$ and $g(x,y)$ in a single plot.
+
+
+![together](https://i.ibb.co/TqRFFxz/chrome-RCGw-Eky0i-D.png)
+
+In the above plot, the blue lines are the contour plots of $g(x,y)$ and the red lines are the contour plots $f(x,y)$.  Now let's see the gradient vector at the contour lines which are plotted below. Well, just as we assumed, the gradient vectors are parallel. Note, the word "parallel". We are not saying they are in the same direction.
+
+If $\nabla f(x,y)$ and $ \nabla g(x,y)$ are parallel we can multiply a scalar with $ \nabla g(x,y)$ to make it equal to $\nabla f(x,y)$.
+
+
+![gradient_vec](https://i.ibb.co/DpVZTPj/POWERPNT-n88css-Ap-Gd.png)
+
+
+## The Lagrange Multiplier
+
+
+$$
+
+\nabla f(x,y) = \lambda \nabla g(x,y)
+
+$$
+
+where $\lambda$ is a scalar value which scales the gradient vector $\nabla g(x,y)$. And this $\lambda$ is the Lagrange multiplier.
