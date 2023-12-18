@@ -114,7 +114,17 @@ But take a closer look at the contour lines for this surface. Each contour line 
 If we take the gradient of that surface we get $\nabla g(x,y)$. Now if you think about it the gradient vector of $g(x,y)$ is also perpendicular to the contour lines. 
 
 
+
+A 3D visualization is given below:
+
 ![viz](https://i.ibb.co/3C7mxjq/chrome-42h1-LWq0-Ae.png)
+
+
+We can also take a look from the contour plot perspective as follows:
+
+![viz_2](https://i.ibb.co/FbR8ZXw/chrome-Frj-Ae4g3t6.png)
+
+
 
 
 
