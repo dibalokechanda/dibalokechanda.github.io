@@ -214,4 +214,5 @@ $$
 g(x,y)=0
 $$
 
-Notice that to form the third equation we took the partial derivative with respect to $\lambda$ and actually got back the constraint equation itself. 
+Notice that to form the third equation we took the partial derivative with respect to $\lambda$ and actually got back the constraint equation itself. And, the first two equations essentially remain the same just with an additional negative sign which is the side effect of having $\lambda$ absorb the negative sign before. That means we solving the exactly same problem as before.
+
