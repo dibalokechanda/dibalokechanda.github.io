@@ -35,6 +35,10 @@ A better way to see these contour lines is a contour plot generated from the top
 
 ![contour_plot](https://i.ibb.co/HPyTjLg/chrome-C3m6-Hf1-Jb8.png)
 
-Think of it as the contour lines being projected to the x-y plane.
+Think of it as the contour lines being projected to the x-y plane. See the below plot as a reference. I removed the original graph and kept only the contour lines. The Contour lines in the 3D surface are colored in green and the projected version in the x-y plane is colored in red. (Note that in the above plot that is reversed.)
+
+![projecting_contour_lines](https://i.ibb.co/9cCNy3J/ezgif-com-video-to-gif-converted.gif)
+
+I hope after seeing these visualizing contour plots are more intuitive now.
 
 ## Gradients being orthogonal to contour lines
