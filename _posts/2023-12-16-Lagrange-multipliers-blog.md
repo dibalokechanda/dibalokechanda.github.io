@@ -63,6 +63,26 @@ Now consider these three facts side by side :
 Voila ! This means gradient vectors are always orthogonal to the contour lines.
 
 
+## Adding a Constraint Curve
+
+
+Now if we do not want to find the maximum of the function at any given point, rather in a region we define, the optimization problem turns into a constrained optimization. To start, let us introduce a single constraint curve $g(x,y)$. To keep it simple, we will consider a unit circle center at the origin,
+
+$$
+x^2+y^2=1
+$$
+
+From the contour plot perspective, it looks like the following:
+
+![Constraint_Contour](https://i.ibb.co/9gwsxK8/chrome-z-Ul5v-WEe5-Z.png)
+
+If we look back a the 3D surface we will get something like the following:
+
+![constraint_3d](https://i.ibb.co/Wfnpwgs/ezgif-com-video-to-gif-converted-1.gif)
+
+
+If we visualize the portion of the curve under the constraint, we get something like the following:
+
 
 
 
