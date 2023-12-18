@@ -33,8 +33,8 @@ We can draw contour lines in the 3D surface of the plot which is shown below:
 
 A better way to see these contour lines is a contour plot generated from the top-down perspective as shown below:
 
-![](https://i.ibb.co/HPyTjLg/chrome-C3m6-Hf1-Jb8.png)
+![contour_plot](https://i.ibb.co/HPyTjLg/chrome-C3m6-Hf1-Jb8.png)
 
-Think of it as the contour lines are being projected to the x-y plane.
+Think of it as the contour lines being projected to the x-y plane.
 
 ## Gradients being orthogonal to contour lines
