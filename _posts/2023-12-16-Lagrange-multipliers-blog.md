@@ -87,3 +87,11 @@ If we visualize the portion of the function $f(x,y)$ under the constraint, we ge
 
 
 
+If we change our constraint curve from $x^2+y^2=1$ to $x^2+y^2=3$ this visualization changes to the following:
+
+![constraint_portion2](https://i.ibb.co/SmcHhn6/ezgif-com-video-to-gif-converted-3.gif)
+
+We can clearly see the constraint curve how the constraint curve changes the maxima and minima location of the function under constraint.
+
+
+## Constraint Curve Gradient
