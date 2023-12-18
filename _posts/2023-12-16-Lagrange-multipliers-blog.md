@@ -91,7 +91,7 @@ If we change our constraint curve from $x^2+y^2=1$ to $x^2+y^2=3$ this visualiza
 
 ![constraint_portion2](https://i.ibb.co/SmcHhn6/ezgif-com-video-to-gif-converted-3.gif)
 
-We can clearly see the constraint curve how the constraint curve changes the maxima and minima location of the function under constraint.
+We can see that how the constraint curve changes the maxima and minima location of the function under constraint.
 
 
 ## Constraint Curve Gradient
