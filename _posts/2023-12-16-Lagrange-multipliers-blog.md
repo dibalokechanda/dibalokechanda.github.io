@@ -139,6 +139,7 @@ In the above plot, the blue lines are the contour plots of $g(x,y)$ and the red 
 
 If $\nabla f(x,y)$ and $ \nabla g(x,y)$ are parallel we can multiply a scalar with $ \nabla g(x,y)$ to make it equal to $\nabla f(x,y)$.
 
+A visualization of a gradient vector on a specific contour line for $f(x.y)$ and $g(x,y)$ is given below:
 
 ![gradient_vec](https://i.ibb.co/DpVZTPj/POWERPNT-n88css-Ap-Gd.png)
 
@@ -153,3 +154,64 @@ $$
 $$
 
 where $\lambda$ is a scalar value which scales the gradient vector $\nabla g(x,y)$. And this $\lambda$ is the Lagrange multiplier.
+
+Now suppose, we go through the computation. 
+
+
+$$
+\nabla f(x,y)= \left[ \begin{aligned}  \frac{ \partial f(x,y)}{\partial x}  \\ \frac{ \partial f(x,y)}{\partial y} \end{aligned} \right]
+$$
+
+
+$$
+\nabla g(x,y)= \left[ \begin{aligned}  \frac{ \partial g(x,y)}{\partial x}  \\ \frac{ \partial g(x,y)}{\partial y} \end{aligned} \right]
+$$
+
+We get two sets of equations,
+
+$$
+ \frac{ \partial f(x,y)}{\partial x}= \lambda  \frac{ \partial g(x,y)}{\partial x} 
+$$
+
+$$
+ \frac{ \partial f(x,y)}{\partial y}= \lambda  \frac{ \partial g(x,y)}{\partial y} 
+$$
+
+But we have three unknowns $x$, $y$ and $\lambda$. The third equation will be the equality constraint itself $x^2+y^2=1$.
+
+Now we can be smart and avoid this dependence on the third equation. We can redefine our constraint function as $x^2+y^2-1=0$. And swap sides for the original equations:
+
+
+$$
+
+\nabla f(x,y) - \lambda \nabla g(x,y)=0
+
+$$
+
+Now, we can let the negative sign get absorbed in the Lagrange multiplier and rewrite the equation as follows:
+
+
+
+
+$$
+
+\nabla f(x,y) + \lambda \nabla g(x,y)=0
+
+$$
+
+Then we take partial derivative with respect to $x$, $y$ and $\lambda$ and get the three sets of equations:
+
+
+$$
+\frac{\partial f(x,y)}{\partial x}+\lambda \frac{\partial g(x,y)}{\partial x}=0
+$$
+
+$$
+\frac{\partial f(x,y)}{\partial y}+\lambda \frac{\partial g(x,y)}{\partial y}=0
+$$
+
+$$
+g(x,y)=0
+$$
+
+Notice that to form the third equation we took the partial derivative with respect to $\lambda$ and actually got back the constraint equation itself. 
