@@ -111,7 +111,14 @@ Wait a minute this is not a curve in the 2D x-y plane! This is the equation of a
 
 But take a closer look at the contour lines for this surface. Each contour line is a circle. The first constraint curve we considered is one of those contour lines. The second constraint curve also. 
 
-If we take the gradient of that surface we get $\nabla g(x,y)$. Now if you think about it the gradient vector of $g(x,y)$ is also perpendicular to the contour lines. This means $\nabla g(x)$ and $\nabla f(x)$ are parallels! 
+If we take the gradient of that surface we get $\nabla g(x,y)$. Now if you think about it the gradient vector of $g(x,y)$ is also perpendicular to the contour lines. 
+
+
+![viz](https://i.ibb.co/3C7mxjq/chrome-42h1-LWq0-Ae.png)
+
+
+
+This means $\nabla g(x)$ and $\nabla f(x)$ are parallels! 
 
 Visually, if we want to see it we can plot the contour lines of $f(x,y)$ and $g(x,y)$ in a single plot.
 
