@@ -227,3 +227,16 @@ Notice that to form the third equation we took the partial derivative with respe
 
 The mathematical convenience of this approach is we are dealing with a single equation that includes both the objective function and the constraint. Another convenience is we can use the same mathematical tool for solving constrained optimization problems that we used for unconstrained optimization problems. By that, I mean we are using gradients and first-order partial derivatives.
 
+
+## Generalizing the approach for Multi-Constraint Approach
+
+Just as a caution this approach is for equality constraints. Inequality constraints are not considered here. We can collect all the equality constraints and write them in a vector format $g(\mathbf{x})$. For each equality constraint, there will be a Lagrange multiplier. We also collect these into a vector $\mathbf{\lambda}$.  The modified Lagrangian can be written as the following:
+
+
+$$
+f(\mathbf{x})+\mathbf{\lambda}^{\top}g(\mathbf{x})=\mathbf{0}
+$$
+
+Where, $\mathbf{x}=\left[ \begin{aligned} x_1 \\ x_2 \\ . \\ x_n \end{aligned} \right]$ , $\mathbf{\lambda}=\left[ \begin{aligned} \lambda_1 \\ \lambda_2 \\ . \\ \lambda_n \end{aligned} \right]$ and $\mathbf{0}=\left[ \begin{aligned} 0 \\ 0 \\ . \\ 0 \end{aligned} \right]$.
+
+When we take the gradient of the Lagrangian to compute $\nabla \mathcal{L}(\mathbf{x},\mathbf{\lambda})$.
