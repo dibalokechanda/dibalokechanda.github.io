@@ -52,5 +52,9 @@ I will simply state some key facts about convex sets without going into rigorous
 
 - Hyperplanes are convex sets.
 
+- The set $\alpha C$ is convex for any convex set $C$ and scalar $\alpha$.
+
+
+
 
 
