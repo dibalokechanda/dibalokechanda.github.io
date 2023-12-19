@@ -22,7 +22,7 @@ $$
 f(x,y)=\frac{7xy}{e^{x^2+y^2}}
 $$
 
-A 3D visualization of the function is shown below:
+A 3-dimensional visualization of the function is shown below:
 
 
 ![3d_plot](https://i.ibb.co/tcDSnYr/ezgif-com-optimize.gif)
