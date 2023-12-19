@@ -57,4 +57,18 @@ I will simply state some key facts about convex sets without going into rigorous
 
 
 
+## Key Facts about Convex Functions
+
+
+ - Any local minimum is a global minimum.
+
+ - If hessian exists, the hessian is positive semidefinite.
+
+ - Level sets of convex functions are convex functions.
+
+ - Linear combination of convex function is convex. This means $a \cdot f(x)+b \cdot g(x)$ is convex for convex $f$ and $g$ and $a,b>0$.
+
+ - $\max (f(x), g(x))$ is convex for convex $f$ and $g$.
+
+
 
