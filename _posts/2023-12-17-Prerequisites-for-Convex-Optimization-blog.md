@@ -35,3 +35,22 @@ $$
 Here, $\theta x_1+(1-\theta) x_2 $ represents all possible points in the line segment between $x_1$ and $x_2$ by letting $\theta$ vary.
 
 The above picture shows a visualization of a convex set and a non-convex set in 2D and 3D. But this is a really general concept that can be easily extended to any number of dimensions. 
+
+
+## Key Facts about Convex Sets
+
+I will simply state some key facts about convex sets without going into rigorous proofs.
+
+
+- The empty set $\emptyset$ is a convex set.
+
+-  $\mathbb{R}^{d}$ is a convex set.
+
+-  Affine transformation (scaling and translation) of a convex set produces a convex set.
+
+- The intersection of convex sets are also convex sets.
+
+- Hyperplanes are convex sets.
+
+
+
