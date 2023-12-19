@@ -26,6 +26,12 @@ $$
 \theta x_1+(1-\theta) x_2 \in C
 $$
 
+$$
+\forall \theta \in[0,1], \forall x_1, x_2 \in C
+$$
+
+
+
 Here, $\theta x_1+(1-\theta) x_2 $ represents all possible points in the line segment between $x_1$ and $x_2$ by letting $\theta$ vary.
 
 The above picture shows a visualization of a convex set and a non-convex set in 2D and 3D. But this is a really general concept that can be easily extended to any number of dimensions. 

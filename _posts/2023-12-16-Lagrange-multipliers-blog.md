@@ -199,7 +199,16 @@ $$
 
 $$
 
-Then we take partial derivative with respect to $x$, $y$ and $\lambda$ and get the three sets of equations:
+This can be re-written as the following:
+
+$$
+\nabla (f(x,y) + \lambda  g(x,y))=0
+$$
+
+Note that, $f(x,y) + \lambda g(x,y)$ is referred to as the Lagrangian which is nothing but a unified equation for the objective function and the constraints.
+
+
+This can be interpreted as we take the partial derivative with respect to $x$, $y$ and $\lambda$ and get the three sets of equations:
 
 
 $$
