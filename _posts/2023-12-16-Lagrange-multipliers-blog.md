@@ -237,6 +237,6 @@ $$
 f(\mathbf{x})+\mathbf{\lambda}^{\top}g(\mathbf{x})=\mathbf{0}
 $$
 
-Where, $\mathbf{x}=\left[ \begin{aligned} x_1 \\ x_2 \\ . \\ . \\.  \\ x_n \end{aligned} \right]^{\top}$ , $\mathbf{\lambda}=\left[ \begin{aligned} \lambda_1 \\ \lambda_2 \\ . \\ . \\ . \\ \lambda_n \end{aligned} \right]$ and $\mathbf{0}=\left[ \begin{aligned} 0 \\ 0 \\ . \\. \\ . \\ 0 \end{aligned} \right]^{\top}$. To be clear about notation, I always consider vectors as column vectors.
+Where, $\mathbf{x}=\left[ \begin{aligned} x_1 \\ x_2 \\ . \\ . \\ .  \\ x_n \end{aligned} \right]^{\top}$ , $\mathbf{\lambda}=\left[ \begin{aligned} \lambda_1 \\ \lambda_2 \\ . \\ . \\ . \\ \lambda_n \end{aligned} \right]$ and $\mathbf{0}=\left[ \begin{aligned} 0 \\ 0 \\ . \\ . \\ . \\ 0 \end{aligned} \right]^{\top}$. To be clear about notation, I always consider vectors as column vectors.
 
 When we take the gradient of the Lagrangian to compute $\nabla \mathcal{L}(\mathbf{x},\mathbf{\lambda})$ 
