@@ -57,7 +57,7 @@ I will simply state some key facts about convex sets without going into rigorous
 
 ## Convex Functions
 
-![](https://i.ibb.co/jhzGcny/chrome-Yh-Btw45cw4.png)
+![convex_func](https://i.ibb.co/jhzGcny/chrome-Yh-Btw45cw4.png)
 
 A function $f$ is a convex function if the following definition holds:
 
