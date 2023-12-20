@@ -185,7 +185,7 @@ $$
 
 Two key things about the gradient of a function:
 
-- The gradient points to the direction of the steepest ascent. Additionally, $-\nabla f(\mathbf{x})$ is the direction of the steepest ascent.
+- The gradient points to the direction of the steepest ascent. Additionally, $-\nabla f(\mathbf{x})$ is the direction of the steepest descent.
 
 - The gradient vectors are always orthogonal to the contour lines. 
 
