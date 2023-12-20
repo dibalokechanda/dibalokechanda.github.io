@@ -213,7 +213,26 @@ This is a "hard" concept to get your head around. Sometimes to avoid rigorous de
 
 
 ### Supremum 
+For a subset $S \subseteq \mathbb{R}$, $u \in \mathbb{R}$ is called an upper bound for $S$ if 
 
+$$
+\forall x \in S: x \leq u
+$$
+
+
+
+Note that, we did not say $u \in S$, because the definition is more general. $u$ might or might not be in the set, meaning the definition holds whether $u \in S$ or $u \notin S$.
+
+If $u$ is an upper bound for $S$ and $u \in S$, the $u$ is called the maximal element of $S$. This is pretty easy to get your head around. Consider a set $S=\{ 1, \frac{1}{2}, \frac{1}{4} \}$. We can easily say $u=1$ is the maximal element because $u$ is the upper bound for the set and also an element of the set.
+
+But people get confused by the other case which is $u$ is an upper bound of $S$, but not an element of $S$ i.e. $u \notin S$. Consider $S=(0,1)$. Here the upper bound of the set is $1$. Technically, this is wrong, because $4$ is also another upper bound, so is $5$ and so on. The correct term to use here is $1$ is the "lowest upper bound" for $S=(0,1)$. Not that even though it is the lowest upper bound it is not an element. The values of set $S$ will get really really close to $1$, but will not include $1$. 
+
+From this we can define the supremum if a set . 
+
+
+
+
+### Infimum
 
 
 ## Subgradients
