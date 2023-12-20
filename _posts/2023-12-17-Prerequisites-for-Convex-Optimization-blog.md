@@ -303,4 +303,11 @@ $$
 
 ## Subgradient and Subdifferentials
 
-Subgradients are a generalization of gradients for non-differential functions.
+Subgradients are a generalization of gradients for both differentiable and non-differential functions. I will directly write down the definition from Boyd,
+
+
+A vector $g \in \mathbb{R}^n$ is a subgradient of $f:\mathbb{R}^n \rightarrow \mathbb{R}$ at $x \in \textbf{dom} f$ if for all $z \in \textbf{dom} f$
+
+$$
+f(z) \geq f(x)+g^T(z-x)
+$$
