@@ -238,7 +238,7 @@ If $u$ is an upper bound for $S$ and $u \in S$, then $u$ is called the maximal(o
 
 But people get confused by the other case which is $u$ is an upper bound of $S$, but not an element of $S$ i.e. $u \notin S$. Consider $S=(0,1)$. Here the upper bound of the set is $1$. Technically, this is wrong, because $4$ is also another upper bound, so is $5$ and so on. The correct term to use here is $1$ is the "least upper bound" for $S=(0,1)$. Note that even though it is the lowest upper bound it is not an element. The values of set $S$ will get really really close to $1$, but will not include $1$. 
 
-From this, we can define the supremum. For a non-empty subset $S \subseteq \mathbb{R}$ (which needs to be upper bounded, yes it is possible to have unbounded sets), $u \in \mathbb{R}$ is called supremum of $S$ if $\forall x \in S: x \leq u$ and $M$ is an upper bound of $S$, then $u\leq M$. It is written as:
+From this, we can define the supremum. For a non-empty subset $S \subseteq \mathbb{R}$ (which needs to be upper bounded, yes it is possible to have unbounded sets), $u \in \mathbb{R}$ is called supremum of $S$ if $\forall x \in S: x \leq u$ and if $M$ is an upper bound of $S$, then $u\leq M$. It is written as:
 
 
 $$
