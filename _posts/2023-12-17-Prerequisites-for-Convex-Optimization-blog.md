@@ -115,7 +115,10 @@ Checking if the hessian (if it exists) is positive semidefinite is one of the ea
 
 We also need to know how to formulate a convex optimization problem.
 
- ## The formulation of a convex optimization problem
+## The formulation of a convex optimization problem
+
+
+A standard convex optimization problem can be formed in the following way:
 
  $$
 \begin{aligned}
