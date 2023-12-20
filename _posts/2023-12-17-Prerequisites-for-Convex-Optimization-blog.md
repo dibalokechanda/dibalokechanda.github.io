@@ -165,6 +165,39 @@ Some other terminology to get familiar with:
 -  An inequality constraint can be in two states, active and inactive. For the values of $x$, $f_i(x)=0$, the inequality constraint is active. For the values of $x$, $f_i(x)<0$ the inequality constraint is inactive.
 
 
+## Multivariate Calculus
+
+
+### Gradient
+
+For a function $f(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$, the gradient is defined as follows:
+
+
+$$
+\nabla f(x)=\frac{d f}{d x}=\left(\begin{array}{c}
+\frac{\partial f}{\partial x_1} \\
+\frac{\partial f}{\partial x_2} \\
+\vdots \\
+\frac{\partial f}{\partial x_n}
+\end{array}\right)
+$$
+
+
+### Hessian 
+
+
+
+### Jacobian 
+
+
+
+
+
+
+
+
+## Supremum and Infimum
+
 
 
 
