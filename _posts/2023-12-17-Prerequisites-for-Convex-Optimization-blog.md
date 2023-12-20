@@ -301,4 +301,4 @@ $$
 
 
 
-## Subgradients
+## Subdifferentials
