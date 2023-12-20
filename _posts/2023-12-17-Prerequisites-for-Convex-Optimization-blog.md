@@ -303,7 +303,7 @@ $$
 
 ## Subgradient and Subdifferentials
 
-## Subgradient
+### Subgradient
 
 Subgradients are a generalization of gradients for both differentiable and non-differential functions. I will directly write down the definition from Boyd,
 
@@ -330,7 +330,7 @@ A visualization of some possible subgradient at the non-differentiable point is 
 
 
 
-## Subdifferentials
+### Subdifferentials
 
 The set of subgradients of $f$ at the point $x$ is called the subdifferential of $f$ at $x$ and is denoted by $\partial f(x)$.
 
@@ -341,6 +341,12 @@ The set of subgradients of $f$ at the point $x$ is called the subdifferential of
 $$
 \partial f(x)=\left\{g \in \mathbb{R}^n \mid f(z) \geq f(x)+g^T(z-x), \forall z \in \mathbb{R}^n\right\}
 $$
+
+A visualization for $f(x)=|x|$ is given below:
+
+
+![viz_diff_sub](https://i.ibb.co/G9KYVk4/chrome-x-W8i7-Fjr7t.png)
+
 
 For differentiable convex functions, this set contains only one element which is the gradient of the function at point $x$. Mathematically,
 
