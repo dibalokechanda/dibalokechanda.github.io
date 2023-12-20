@@ -55,6 +55,48 @@ I will simply state some key facts about convex sets without going into rigorous
 - The set $\alpha C$ is convex for any convex set $C$ and scalar $\alpha$.
 
 
+## Convex Functions
+
+![](https://i.ibb.co/jhzGcny/chrome-Yh-Btw45cw4.png)
+
+A function $f$ is a convex function if the following definition holds:
+
+$$
+f(\lambda x+(1-\lambda) y) \leq \lambda f(x)+(1-\lambda) f(y)
+$$
+
+$$
+\forall~\lambda \in [0,1]
+$$
+
+
+
+Look into [Jensen's inequality](https://dibalokechanda.github.io/posts/Jensen's-Inequality-blog/) to get a better sense of this definition. A much simpler interpretation of this is :
+
+The chord formed by connecting two points on the functions is above the function.
+
+Another definition can be given with epigraph.
+
+$$
+\operatorname{epi}(f)=\left\{(x, t) \mid x \in \mathbb{R}^n, t \in \mathbb{R}, \text { and } t \geq f(x)\right\}
+$$
+
+In simpler terms, the epigraph of a function includes all the points that lie above or on the graph of the function. If $f$ is a convex function, its epigraph will be a convex set. 
+
+
+![epigraph_def](https://i.ibb.co/Yjsd0Hs/chrome-Va-Ry-T3-Fp-AI.png)
+
+Now these two definitions are actually not that useful in practice, because most of the time we deal with high-dimensional functions that we can not visualize. The way to go about it is to recognize some common convex functions (I know it sounds bad). 
+
+
+
+- $f(\mathbf{x})=\mathbf{x}^T \mathbf{A}\mathbf{x}$ is a convex function if $\mathbf{A}\succeq0$.
+
+- $f(x)=\frac{1}{2} x^T A x+b^T x+c$ is a convex function if  $\mathbf{A}\succeq0$.
+
+- $\frac{1}{2}\|X w-y\|^2=\frac{1}{2} w^T X^T X w-y^T X w+\frac{1}{2} y^T y$ is convex.
+
+Checking if the hessian (if it exists) is positive semidefinite is one of the easiest ways to check for convexity.
 
 
 ## Key Facts about Convex Functions
