@@ -114,4 +114,17 @@ Checking if the hessian (if it exists) is positive semidefinite is one of the ea
  - $\max (f(x), g(x))$ is convex for convex $f$ and $g$.
 
 
+ ## The formulation of a convex optimization problem
+
+ $$
+\begin{aligned}
+\operatorname{minimize} & f_0(x) \\
+\text { subject to: } & f_j(x) \leq 0 \quad \forall j \in 1,2, \ldots, J \\
+& h_k(x)=0 \quad \forall k \in 1,2, \ldots, K
+\end{aligned}
+$$
+
+Where all $f_j(x), j \in 0,1,2, \ldots J$ are convex and all $h_k(x), k \in 1,2, \ldots, K$ are affine.
+
+
 
