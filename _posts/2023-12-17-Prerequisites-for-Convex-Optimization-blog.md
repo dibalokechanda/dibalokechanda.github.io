@@ -96,6 +96,8 @@ Now these two definitions are actually not that useful in practice, because most
 
 - $\frac{1}{2}\|X w-y\|^2=\frac{1}{2} w^T X^T X w-y^T X w+\frac{1}{2} y^T y$ is convex.
 
+- $\| \mathbf{x} \|$ for any norm is convex.
+
 Checking if the hessian (if it exists) is positive semidefinite is one of the easiest ways to check for convexity.
 
 
