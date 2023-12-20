@@ -326,7 +326,7 @@ The plot of the function is given below:
 
 A visualization of some possible subgradient at the non-differentiable point is given below:
 
-![](https://i.ibb.co/pbGKLrB/chrome-3c-Ogwsf-Bbq.png)
+![subdiffer](https://i.ibb.co/pbGKLrB/chrome-3c-Ogwsf-Bbq.png)
 
 
 
