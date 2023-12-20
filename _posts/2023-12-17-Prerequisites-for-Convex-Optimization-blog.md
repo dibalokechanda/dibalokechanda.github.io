@@ -314,6 +314,20 @@ $$
 f(z) \geq f(x)+g^T(z-x)
 $$
 
+As an example, consider the function: 
+
+$$
+f(\mathbf{x})= |x_1 -2|+(x-1)^2
+$$
+
+The plot of the function is given below:
+
+![sd_func](https://i.ibb.co/7pvjbRW/chrome-E0-WOP5-Y1-FH.png)
+
+A visualization of some possible subgradient at the non-differentiable point is given below:
+
+![](https://i.ibb.co/pbGKLrB/chrome-3c-Ogwsf-Bbq.png)
+
 
 
 ## Subdifferentials
@@ -322,13 +336,18 @@ The set of subgradients of $f$ at the point $x$ is called the subdifferential of
 
 
 
+
+
 $$
 \partial f(x)=\left\{g \in \mathbb{R}^n \mid f(z) \geq f(x)+g^T(z-x), \forall z \in \mathbb{R}^n\right\}
 $$
 
-For differentiable functions, this set contains only one element which is the gradient of the function at point $x$. Mathematically,
+For differentiable convex functions, this set contains only one element which is the gradient of the function at point $x$. Mathematically,
 
 $$
 \partial f(x) = \{ \nabla f(x)\}
 
 $$
+
+
+I highly encourage interested readers to go through the lecture notes from [Boyd](https://web.stanford.edu/class/ee364b/lectures/subgradients_notes.pdf). 
