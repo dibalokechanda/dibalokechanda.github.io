@@ -236,7 +236,7 @@ Note that, we did not say $u \in S$, because the definition is more general. $u$
 
 If $u$ is an upper bound for $S$ and $u \in S$, then $u$ is called the maximal(or max) element of $S$. This is pretty easy to get your head around. Consider a set $S=\{ 1, \frac{1}{2}, \frac{1}{4} \}$. We can easily say $u=1$ is the maximal element because $u$ is the upper bound for the set and also an element of the set.
 
-But people get confused by the other case which is $u$ is an upper bound of $S$, but not an element of $S$ i.e. $u \notin S$. Consider $S=(0,1)$. Here the upper bound of the set is $1$. Technically, this is wrong, because $4$ is also another upper bound, so is $5$ and so on. The correct term to use here is $1$ is the "least upper bound" for $S=(0,1)$. Note that even though it is the lowest upper bound it is not an element. The values of set $S$ will get really really close to $1$, but will not include $1$. 
+But people get confused by the other case which is $u$ is an upper bound of $S$, but not an element of $S$ i.e. $u \notin S$. Consider $S=(0,1)$. Here the upper bound of the set is $1$. Technically, this is wrong, because $4$ is also another upper bound, so is $5$ and so on. The correct term to use here is $1$ is the "least upper bound" for $S=(0,1)$. Note that even though it is the least upper bound it is not an element. The values of set $S$ will get really really close to $1$, but will not include $1$. 
 
 From this, we can define the supremum. For a non-empty subset $S \subseteq \mathbb{R}$ (which needs to be upper bounded, yes it is possible to have unbounded sets), $u \in \mathbb{R}$ is called supremum of $S$ if $\forall x \in S: x \leq u$ and if $M$ is an upper bound of $S$, then $u\leq M$. It is written as:
 
@@ -257,7 +257,7 @@ $$
 
 
 
-If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.  For infimum, we need the "largest lower bound".
+If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.  For infimum, we need the "largest lower bound". This is formally defined as follows:
 
 $$
 \inf (S)=l \Longleftrightarrow(\forall x \in S, x \geq l) \wedge(\forall N \text { lower bound of } S, l \geq N)
