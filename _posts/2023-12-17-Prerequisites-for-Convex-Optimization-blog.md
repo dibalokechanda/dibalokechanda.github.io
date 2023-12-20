@@ -113,6 +113,7 @@ Checking if the hessian (if it exists) is positive semidefinite is one of the ea
 
  - $\max (f(x), g(x))$ is convex for convex $f$ and $g$.
 
+We also need to know how to formulate a convex optimization problem.
 
  ## The formulation of a convex optimization problem
 
