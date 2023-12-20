@@ -203,9 +203,15 @@ $$
 $$
 
 
+## Taylor Series Approximation 
+
+
+
 ## Supremum and Infimum
 
-This is a "hard" concept to get your head around. Sometimes to avoid rigorous definitions, supremum is replaced with "max" and infimum is replaced with "min". This is fine as long as your optimization problem is "nice" and "well-behaved". Therefore, there is a good chance you can get way with just "min" and "max". But most of the resources you will come across, prefer "supremum" and "infimum" to enforce mathematical rigor. 
+This is a "hard" concept to get your head around. Sometimes to avoid rigorous definitions, supremum is replaced with "max" and infimum is replaced with "min". This is fine as long as your optimization problem is "nice" and "well-behaved". Therefore, there is a good chance you can get away with just "min" and "max". But most of the resources you will come across, prefer "supremum" and "infimum" to enforce mathematical rigor. 
 
 
 
+
+## Subgradients
