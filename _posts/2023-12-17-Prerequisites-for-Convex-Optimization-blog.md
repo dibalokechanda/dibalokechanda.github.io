@@ -246,6 +246,23 @@ $$
 $$
 
 
+Just for the sake of completeness, we need to know two additional facts.
+
+
+- If $S$ is non-empty and $\textbf{not}$ bounded above, then,
+
+$$
+\sup (S)=\infty
+$$
+
+
+- If $S=\emptyset$, then 
+
+
+
+$$
+\sup (S)=-\infty
+$$
 
 ### Infimum
 
@@ -257,10 +274,29 @@ $$
 
 
 
-If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.  For infimum, we need the "largest lower bound". This is formally defined as follows:
+If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.  For infimum, we need the "largest lower bound". This is formally defined as follows given $S$ is a non-empty set and bounded below:
 
 $$
 \inf (S)=l \Longleftrightarrow(\forall x \in S, x \geq l) \wedge(\forall N \text { lower bound of } S, l \geq N)
 $$
+
+Again for the sake of completeness, we need to know two additional facts.
+
+
+- If $S$ is non-empty and $\textbf{not}$ bounded below, then,
+
+$$
+\inf (S)=-\infty
+$$
+
+
+- If $S=\emptyset$, then 
+
+
+
+$$
+\inf (S)=\infty
+$$
+
 
 ## Subgradients
