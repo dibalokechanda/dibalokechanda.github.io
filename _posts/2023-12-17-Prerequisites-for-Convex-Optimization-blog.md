@@ -209,8 +209,10 @@ $$
 
 ## Supremum and Infimum
 
-This is a "hard" concept to get your head around. Sometimes to avoid rigorous definitions, supremum is replaced with "max" and infimum is replaced with "min". This is fine as long as your optimization problem is "nice" and "well-behaved". Therefore, there is a good chance you can get away with just "min" and "max". But most of the resources you will come across, prefer "supremum" and "infimum" to enforce mathematical rigor. 
+This is a "hard" concept to get your head around. Sometimes to avoid rigorous definitions, supremum is replaced with "max" and infimum is replaced with "min". This is fine as long as your optimization problem is "nice" and "well-behaved". Therefore, there is a good chance you can get away with just "min" and "max". But most of the resources you will come across, prefer "supremum" and "infimum" to enforce mathematical rigor. The definitions I will provide below are by no means a complete definition; because you can always argue about the "rigorousness" of the definition, but they should be enough to understand their usage in convex optimization.  
 
+
+### Supremum 
 
 
 
