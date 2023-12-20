@@ -303,6 +303,8 @@ $$
 
 ## Subgradient and Subdifferentials
 
+## Subgradient
+
 Subgradients are a generalization of gradients for both differentiable and non-differential functions. I will directly write down the definition from Boyd,
 
 
@@ -310,4 +312,23 @@ A vector $g \in \mathbb{R}^n$ is a subgradient of $f:\mathbb{R}^n \rightarrow \m
 
 $$
 f(z) \geq f(x)+g^T(z-x)
+$$
+
+
+
+## Subdifferentials
+
+The set of subgradients of $f$ at the point $x$ is called the subdifferential of $f$ at $x$ and is denoted by $\partial f(x)$.
+
+
+
+$$
+\partial f(x)=\left\{g \in \mathbb{R}^n \mid f(y) \geq f(x)+g^T(y-x), \forall y \in \mathbb{R}^n\right\}
+$$
+
+For differentiable functions, this set contains only one element which is the gradient of the function at point $x$. Mathematically,
+
+$$
+\partial f(x) = \{ \nabla f(x)\}
+
 $$
