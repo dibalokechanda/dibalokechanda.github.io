@@ -242,7 +242,7 @@ From this, we can define the supremum. For a non-empty subset $S \subseteq \math
 
 
 $$
-\sup (S)=u \Longleftrightarrow(\forall x \in S, x \leq u) \wedge(\forall v \text { upper bound of } S, u \leq M)
+\sup (S)=u \Longleftrightarrow(\forall x \in S, x \leq u) \wedge(\forall M \text { upper bound of } S, u \leq M)
 $$
 
 
@@ -257,10 +257,10 @@ $$
 
 
 
-If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.   In a sense, $l$ is the greatest lower bound. We write infimum as follows:
+If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.  For infimum, we need the "largest lower bound".
 
 $$
- \inf(S) 
+\inf (S)=l \Longleftrightarrow(\forall x \in S, x \geq l) \wedge(\forall N \text { lower bound of } S, l \geq N)
 $$
 
 ## Subgradients
