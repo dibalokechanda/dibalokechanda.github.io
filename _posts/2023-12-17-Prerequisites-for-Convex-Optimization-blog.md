@@ -301,4 +301,6 @@ $$
 
 
 
-## Subdifferentials
+## Subgradient and Subdifferentials
+
+Subgradients are a generalization of gradients for non-differential functions.
