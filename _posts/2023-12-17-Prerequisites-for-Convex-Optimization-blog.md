@@ -214,6 +214,13 @@ $$
 $$
 
 
+According to Schwarz's Theorem, the hessian is symmetric if it exists
+
+$$
+\frac{\partial^2 f}{\partial x_i \partial x_j}=\frac{\partial^2 f}{\partial x_j \partial x_i}
+$$.
+
+
 ## Taylor Series Approximation 
 
 
