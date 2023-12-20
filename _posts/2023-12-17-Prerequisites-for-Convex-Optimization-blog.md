@@ -130,5 +130,18 @@ $$
 
 Where all $f_j(x), j \in 0,1,2, \ldots J$ are convex and all $h_k(x), k \in 1,2, \ldots, K$ are affine.
 
+Here,
+
+- $f_0(x)$ is the objective function.
+- $f_i(x)$ are the inequality constraints.
+- $h_{k}(x)$ are the equality constraints.
+
+Some other terminology to get familiar with:
+
+- The feasible set is the set of points that satisfy the constraints
+-  An inequality constraint can be in two states, active and inactive. For the values of $x$, $f_i(x)=0$, the inequality constraint is active. For the values of $x$, $f_i(x)<0$ the inequality constraint is inactive.
+
+
+
 
 
