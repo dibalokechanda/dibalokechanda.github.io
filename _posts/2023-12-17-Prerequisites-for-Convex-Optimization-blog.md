@@ -323,7 +323,7 @@ The set of subgradients of $f$ at the point $x$ is called the subdifferential of
 
 
 $$
-\partial f(x)=\left\{g \in \mathbb{R}^n \mid f(y) \geq f(x)+g^T(y-x), \forall y \in \mathbb{R}^n\right\}
+\partial f(x)=\left\{g \in \mathbb{R}^n \mid f(z) \geq f(x)+g^T(z-x), \forall z \in \mathbb{R}^n\right\}
 $$
 
 For differentiable functions, this set contains only one element which is the gradient of the function at point $x$. Mathematically,
