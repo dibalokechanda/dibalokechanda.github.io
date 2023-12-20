@@ -115,6 +115,29 @@ Checking if the hessian (if it exists) is positive semidefinite is one of the ea
 
 We also need to know how to formulate a convex optimization problem.
 
+
+
+## Minimization or Maximization?
+
+
+It does not matter if we need to minimize or maximize an objective function. For example suppose we need to minimize a objective function $f(\mathbf{x})$, which can be mathematically written as follows:
+
+$$
+\min f(\mathbf{x})
+
+$$
+
+This can be converted into a maximization problem as follows:
+
+
+$$
+\max -f(\mathbf{x})
+$$
+
+
+The other way is also true, a maximization can be converted into a minimization problem too. Mostly it depends on the context and the domain of the problem. 
+
+
 ## The formulation of a convex optimization problem
 
 
