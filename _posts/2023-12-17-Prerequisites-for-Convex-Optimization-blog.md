@@ -174,7 +174,7 @@ For a function $f(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$, the gradien
 
 
 $$
-\nabla f(x)=\frac{d f}{d x}=\left(\begin{array}{c}
+\nabla f(\mathbf{x})=\frac{d f}{d \mathbf{x}}=\left(\begin{array}{c}
 \frac{\partial f}{\partial x_1} \\
 \frac{\partial f}{\partial x_2} \\
 \vdots \\
@@ -182,6 +182,12 @@ $$
 \end{array}\right)
 $$
 
+
+Two key things about the gradient of a function:
+
+- The gradient points to the direction of the steepest ascent. Additionally, $-\nabla f(\mathbf{x})$ is the direction of the steepest ascent.
+
+- The gradient vectors are always orthogonal to the contour lines. 
 
 ### Hessian 
 
