@@ -223,16 +223,34 @@ $$
 
 Note that, we did not say $u \in S$, because the definition is more general. $u$ might or might not be in the set, meaning the definition holds whether $u \in S$ or $u \notin S$.
 
-If $u$ is an upper bound for $S$ and $u \in S$, the $u$ is called the maximal element of $S$. This is pretty easy to get your head around. Consider a set $S=\{ 1, \frac{1}{2}, \frac{1}{4} \}$. We can easily say $u=1$ is the maximal element because $u$ is the upper bound for the set and also an element of the set.
+If $u$ is an upper bound for $S$ and $u \in S$, then $u$ is called the maximal(or max) element of $S$. This is pretty easy to get your head around. Consider a set $S=\{ 1, \frac{1}{2}, \frac{1}{4} \}$. We can easily say $u=1$ is the maximal element because $u$ is the upper bound for the set and also an element of the set.
 
-But people get confused by the other case which is $u$ is an upper bound of $S$, but not an element of $S$ i.e. $u \notin S$. Consider $S=(0,1)$. Here the upper bound of the set is $1$. Technically, this is wrong, because $4$ is also another upper bound, so is $5$ and so on. The correct term to use here is $1$ is the "lowest upper bound" for $S=(0,1)$. Not that even though it is the lowest upper bound it is not an element. The values of set $S$ will get really really close to $1$, but will not include $1$. 
+But people get confused by the other case which is $u$ is an upper bound of $S$, but not an element of $S$ i.e. $u \notin S$. Consider $S=(0,1)$. Here the upper bound of the set is $1$. Technically, this is wrong, because $4$ is also another upper bound, so is $5$ and so on. The correct term to use here is $1$ is the "least upper bound" for $S=(0,1)$. Note that even though it is the lowest upper bound it is not an element. The values of set $S$ will get really really close to $1$, but will not include $1$. 
 
-From this we can define the supremum if a set . 
+From this, we can define the supremum. For a subset $S \subseteq \mathbb{R}$, $u \in \mathbb{R}$ is called supremum of $S$ if $\forall x \in S: x \leq u$ and it is written as:
+
+
+$$
+\sup (S)
+$$
 
 
 
 
 ### Infimum
 
+For a subset $ S \subseteq \mathbb{R} ,  l \in \mathbb{R} $ is called a lower bound for $S$  if 
+
+$$
+\forall x \in S: x \geq l 
+$$
+
+
+
+If $l$  is a lower bound for $S$ and $l \in S $, then $l$ is called the minimal (or min) element of $S$.   In a sense, $l$ is the greatest lower bound. We write infimum as follows:
+
+$$
+ \inf(S) 
+$$
 
 ## Subgradients
