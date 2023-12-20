@@ -164,6 +164,17 @@ Some other terminology to get familiar with:
 - The feasible set is the set of points that satisfy the constraints
 -  An inequality constraint can be in two states, active and inactive. For the values of $x$, $f_i(x)=0$, the inequality constraint is active. For the values of $x$, $f_i(x)<0$ the inequality constraint is inactive.
 
+Another technical detail should be mentioned here. For an optimization to be convex optimization,
+
+$$
+\begin{array}{ll}
+\operatorname{minimize} & f(x) \\
+\text { subject to } & x \in C
+\end{array}
+$$
+
+This means the feasible set needs to be a convex set.
+
 
 ## Multivariate Calculus
 
