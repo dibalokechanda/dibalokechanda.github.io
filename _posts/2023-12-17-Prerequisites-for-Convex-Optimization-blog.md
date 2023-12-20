@@ -191,15 +191,16 @@ Two key things about the gradient of a function:
 
 ### Hessian 
 
+For a function $f(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$, the hessian is defined as follows:
 
-
-### Jacobian 
-
-
-
-
-
-
+$$
+\nabla^2 f(\mathbf{x})=\frac{\partial^2 f}{\partial x_i \partial x_j}=\left(\begin{array}{cccc}
+\frac{\partial^2 f}{\partial x_1 \partial x_1} & \frac{\partial^2 f}{\partial x_1 \partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_1 \partial x_n} \\
+\frac{\partial^2 f}{\partial x_2 \partial x_1} & \frac{\partial^2 f}{\partial x_2 \partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_2 \partial x_n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial^2 f}{\partial x_n \partial x_1} & \frac{\partial^2 f}{\partial x_n \partial x_2} & \cdots & \frac{\partial^2 f}{\partial x_n \partial x_n}
+\end{array}\right)
+$$
 
 
 ## Supremum and Infimum
