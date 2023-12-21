@@ -396,7 +396,7 @@ $$
 \partial f(x)=\left\{g \in \mathbb{R}^n \mid f(z) \geq f(x)+g^T(z-x), \forall z \in \mathbb{R}^n\right\}
 $$
 
-A visualization for $f(x)=|x|$ is given below:
+
 
 
 ![viz_diff_sub](https://i.ibb.co/G9KYVk4/chrome-x-W8i7-Fjr7t.png)
@@ -414,16 +414,3 @@ I highly encourage interested readers to go through the lecture notes from [Boyd
 
 
 
-## The Intuition behind Positive Definite and Positive Semi-Definite Matrices
-
-The definition of positive definite matrix is as follows:
-
-A matrix $\mathbf{M} \succ 0$ if 
-
-
-$$
-\mathbf{x}^{\top} \mathbf{M} \mathbf{x}>0, \quad \mathbf{x} \neq \mathbf{0}
-$$
-
-
-When a vector $\mathbf{x}$ is multiplied by $\mathbf{M}$, the vector will not get flipped. To get better intuitions about it, interested readers can read more about the geometric interpretation [here](https://gregorygundersen.com/blog/2022/02/27/positive-definite/).
