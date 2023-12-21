@@ -91,10 +91,6 @@ $$
 $$
 
 
-Rather than explaining these two, it is better to draw some pictures and intuit from those pictures.
-
-
-
 
 ## Hyperplanes 
 
