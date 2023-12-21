@@ -250,7 +250,7 @@ Now, sometimes we write $\mathbf{z}=\mathbf{x}+\Delta \mathbf{x}$ which is consi
 
 
 $$
-f(\mathbf{z})=f(\mathbf{x})+\nabla f(\mathbf{x})^{\mathrm{T}}(\mathbf{z}-\mathbf{x})+\frac{1}{2} (\mathbf{z}-\mathbf{x})^{\mathrm{T}} \nabla^2 f(\mathbf{x}) (\mathbf{z}-\mathbf{x})+O\left(\|\Delta \mathbf{x}\|^3\right)
+f(\mathbf{z})=f(\mathbf{x})+\nabla f(\mathbf{x})^{\top}(\mathbf{z}-\mathbf{x})+\frac{1}{2} (\mathbf{z}-\mathbf{x})^{\top} \nabla^2 f(\mathbf{x}) (\mathbf{z}-\mathbf{x})+O\left(\|\Delta \mathbf{x}\|^3\right)
 $$
 
 If we consider only the first-order term,
@@ -260,7 +260,14 @@ $$
 f(\mathbf{z})\approx f(\mathbf{x})+\nabla f(\mathbf{x})^{\mathrm{T}}(\mathbf{z}-\mathbf{x})
 $$
 
+Be careful about how interpret it. We are not performing Taylor series approximation at $\mathbf{z}$, we approximating it "around" point $\mathbf{x}$ and the returned expression will contain $\mathbf{z}$ terms.
 
+
+Sometimes it gets so confusing that; people use different notating to make it explicit. 
+
+$$
+f(z)=f\left(z_0\right)+\nabla f\left(z_0\right)^{\top}\left(z-z_0\right)+\frac{1}{2}\left(z-z_0\right)^{\top} \nabla^2 f\left(z_0\right)\left(z-z_0\right)+\text{higher order terms}
+$$
 
 ## Supremum and Infimum
 
