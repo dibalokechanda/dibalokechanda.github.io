@@ -67,7 +67,7 @@ One important thing to notice here, is the contrast with the convex combination.
 ![affine_set](https://i.ibb.co/88gktvF/chrome-Jw5f-C5-QZjm.png)
 
 ## Affine Set
-Contains the line through any two distinct points in the set.
+Contains the line through any two distinct points in the set. Think of it this way, you are given a set in $\mathbb{R}$, you pick two points from that set and draw a line that goes through those two points. Now all possible points on that line should be contained in that set. If that's the case, then the set is affine.
 
 
  One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness.
