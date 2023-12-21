@@ -61,7 +61,7 @@ $$
 \theta \mathbf{x}+(1-\theta) \mathbf{y}, \quad \theta \in \mathbb{R} 
 $$
 
-One important to notice here, is the contrast with the convex combination. For the convex combination, we had restrictions for $\theta$. But for affine combination, there is no such restriction. This means $\theta$ does not have to be between $0$ and $1$, it just has to be in $\mathbb{R}$.
+One important thing to notice here, is the contrast with the convex combination. For the convex combination, we had restrictions for $\theta$. But for affine combination, there is no such restriction. This means $\theta$ does not have to be between $0$ and $1$, it just has to be in $\mathbb{R}$.
 
 
 ![affine_set](https://i.ibb.co/88gktvF/chrome-Jw5f-C5-QZjm.png)
