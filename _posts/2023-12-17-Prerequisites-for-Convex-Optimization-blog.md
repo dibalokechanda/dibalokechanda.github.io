@@ -411,3 +411,7 @@ $$
 
 
 I highly encourage interested readers to go through the lecture notes from [Boyd](https://web.stanford.edu/class/ee364b/lectures/subgradients_notes.pdf). 
+
+
+
+## Intuition behind Positive Definite and Positive Semi-Definite Matrices
