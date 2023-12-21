@@ -29,7 +29,7 @@ A visualization is given below:
 
 This gets tricky when we are dealing with more than two points. First, let's take a look at the formal definition,
 
-A convex combination of points $x_1,x_2,x_3,\cdots$ in a vector space is a linear combination of these points with non-negative coefficients that sum to $1$.
+A convex combination of points $x_1,x_2,x_3,\cdots$ in a vector space is a linear combination of these points with non-negative coefficients that sum to $1$. Mathematically, 
 
 
 $$
@@ -48,7 +48,7 @@ $$
 
  In a convex set, any convex combination of points in the set remains within the set.
 
-## Convex Hull
+
 
 
 ## Affine Combination 
@@ -60,14 +60,21 @@ $$
 
 One important to see here, is the contrast with the convex combination. For the convex combination, we had restrictions for $\theta$. But for affine combination, there is no such restriction. This means $\theta$ does not have to be between $0$ and $1$, it just has to be in $\mathbb{R}$.
 
+
+![affine_set](https://i.ibb.co/88gktvF/chrome-Jw5f-C5-QZjm.png)
+
 ## Affine Set
-Contains the line through any two distinct points in the set
+Contains the line through any two distinct points in the set.
 
 
  One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness.
 
 
-## Affine Hull 
+## Affine Hull  and Convex Hull
+
+Rather than explaining these two, it is better to draw some pictures and intuit from those pictures.
+
+
 
 
 ## Hyperplanes 
