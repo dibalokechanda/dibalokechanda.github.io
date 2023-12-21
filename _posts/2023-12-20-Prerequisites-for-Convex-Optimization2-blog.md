@@ -46,6 +46,10 @@ $$
 \sum_{i=1}^k \theta_i=1
 $$
 
+ In a convex set, any convex combination of points in the set remains within the set.
+
+## Convex Hull
+
 
 ## Affine Combination 
 
@@ -60,6 +64,9 @@ Contains the line through any two distinct points in the set
 
 
  One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness.
+
+
+## Affine Hull 
 
 
 ## Hyperplanes 
