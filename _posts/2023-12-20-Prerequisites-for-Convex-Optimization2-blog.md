@@ -75,6 +75,22 @@ Contains the line through any two distinct points in the set.
 
 ## Affine Hull  and Convex Hull
 
+The definition of an affine hull:
+
+$$
+\operatorname{aff}(S)=\left\{\sum_{i=1}^k \theta_i x_i \mid x_i \in S, \sum_{i=1}^k \theta_i=1, \theta_i \in \mathbb{R}\right\}
+$$
+
+
+
+The definition of a convex hull:
+
+
+$$
+\operatorname{conv}(S)=\left\{\sum_{i=1}^k \theta_i x_i \mid x_i \in S, \sum_{i=1}^k \theta_i=1, \theta_i \geq 0\right\}
+$$
+
+
 Rather than explaining these two, it is better to draw some pictures and intuit from those pictures.
 
 
