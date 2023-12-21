@@ -200,6 +200,10 @@ Two key things about the gradient of a function:
 
 - The gradient vectors are always orthogonal to the contour lines. 
 
+A way to think about gradients is they are a way to package up partial derivatives $
+[\nabla f(\mathbf{x})]_i=\frac{\partial f(\mathbf{x})}{\partial x_i} 
+$ in a vector form.
+
 ### Hessian 
 
 For a function $f(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$, the hessian is defined as follows:
