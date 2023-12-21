@@ -284,6 +284,8 @@ $$
 
 
 
+
+
 Note that, we did not say $u \in S$, because the definition is more general. $u$ might or might not be in the set, meaning the definition holds whether $u \in S$ or $u \notin S$.
 
 If $u$ is an upper bound for $S$ and $u \in S$, then $u$ is called the maximal(or max) element of $S$. This is pretty easy to get your head around. Consider a set $S=\{ 1, \frac{1}{2}, \frac{1}{4} \}$. We can easily say $u=1$ is the maximal element because $u$ is the upper bound for the set and also an element of the set.
