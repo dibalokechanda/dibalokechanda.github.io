@@ -81,7 +81,7 @@ $$
 \operatorname{epi}(f)=\left\{(x, t) \mid x \in \mathbb{R}^n, t \in \mathbb{R}, \text { and } t \geq f(x)\right\}
 $$
 
-In simpler terms, the epigraph of a function includes all the points that lie above or on the graph of the function. If $f$ is a convex function, its epigraph will be a convex set. 
+In simpler terms, the epigraph of a function includes all the points that lie above or on the graph of the function. If $f$ is a convex function, its epigraph will be a convex set. Here is a nice [geogebra notebook](https://www.geogebra.org/m/aRCak4eP) from  Peter J.C. Dickinson if you want to play around with it. 
 
 
 ![epigraph_def](https://i.ibb.co/Yjsd0Hs/chrome-Va-Ry-T3-Fp-AI.png)

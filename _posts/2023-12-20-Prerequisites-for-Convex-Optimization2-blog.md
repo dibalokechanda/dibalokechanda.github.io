@@ -47,9 +47,14 @@ $$
 $$
 
 
-![convex_comb](https://i.ibb.co/4m2rkLd/chrome-B0cvt-Iwt8v.png)
+![convex_comb](https://i.ibb.co/2PXZnhM/chrome-z-QW4e-Lv-CIK.png)
+
+
+In my head, I visualize it as I am tuning knobs for $\theta_1,\theta_2,\theta_3, \cdots$ given a set of points $x_1,x_2,x_3\cdots$ and kind of filling in the area.
+
 
  In a convex set, any convex combination of points in the set remains within the set.
+
 
 ![comb_1](https://i.ibb.co/yRxy6wk/chrome-m4-N96-Mo-UYs.png)
 
