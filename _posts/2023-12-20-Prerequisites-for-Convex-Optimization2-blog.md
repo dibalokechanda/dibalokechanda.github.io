@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-This post is a continuation of my previous post [Prerequisites for Convex Optimization](https://dibalokechanda.github.io/posts/Prerequisites-for-Convex-Optimization-blog/). Here, I am going to cover more pre-requisite topics for understanding convex optimization. 
+This post is a continuation of my previous post [Prerequisites for Convex Optimization 1](https://dibalokechanda.github.io/posts/Prerequisites-for-Convex-Optimization-blog/). Here, I am going to cover more pre-requisite topics for understanding convex optimization. 
 
 
 ## Convex Combination

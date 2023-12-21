@@ -1,5 +1,5 @@
 ---
-title: Prerequisites for Convex Optimization
+title: Prerequisites for Convex Optimization 1
 date: 2023-12-17 12:00:00 -500
 categories: [fundamentals]
 tags: [optimization_theory, convexity]
