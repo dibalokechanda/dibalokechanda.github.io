@@ -110,9 +110,9 @@ $$
 
 
 
-Note that, hyperplanes do not have the restriction of going through the origin.
+Note that, hyperplanes do not have the restriction of going through the origin. If you get confused imagine hyperplanes just are lines in $\mathbb{R}^2$ and surfaces in $\mathbb{R}^3$.
 
-
+A hyperplane separate $\mathbb{R}^n$ into two half-spaces.
 
 ## Half Spaces 
 
@@ -123,10 +123,3 @@ $$
 \left\{x \mid a^T x \leq b\right\}(a \neq 0)
 $$
 
-
-## Supporting Hyperplane Theorem
-
-
-
-
-## Separating Hyperplane Theorem
