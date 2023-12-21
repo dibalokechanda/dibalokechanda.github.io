@@ -218,14 +218,47 @@ $$
 $$
 
 
-According to Schwarz's Theorem, the hessian is symmetric if it exists
+According to Schwarz's Theorem, the hessian is symmetric if it exists, that is :
 
 $$
 \frac{\partial^2 f}{\partial x_i \partial x_j}=\frac{\partial^2 f}{\partial x_j \partial x_i}
-$$.
+$$
 
 
 ## Taylor Series Approximation 
+
+The best way to think about the Taylor series is it approximates non-linear functions with piece-wise terms. Which is a lot easier to think about in one dimension. Go through this [video](https://youtu.be/3d6DsjIBzJ4) from 3blue1brown to appreciate the Taylor series in one dimension.
+
+
+You need to extrapolate this intuition in higher-dimension (at least for $f:\mathbb{R}^2 \rightarrow \mathbb{R}^3$) which is not an easy task. Usually, we never use more than 2nd-order terms in Taylor series expansion. 
+
+
+$$
+f(\mathbf{x}+\Delta \mathbf{x})=f(\mathbf{x})+\sum_i \frac{\partial f(\mathbf{x})}{\partial x_i} \Delta x_i+\frac{1}{2} \sum_i \sum_j \frac{\partial^2 f(\mathbf{x})}{\partial x_i \partial x_j} \Delta x_i \Delta x_j+\cdots
+$$
+
+
+A more concise way to write this is as follows:
+
+$$
+f(\mathbf{x}+\Delta \mathbf{x})=f(\mathbf{x})+\nabla f(\mathbf{x})^{\mathrm{T}} \Delta \mathbf{x}+\frac{1}{2} \Delta \mathbf{x}^{\mathrm{T}} \nabla^2 f(\mathbf{x}) \Delta \mathbf{x}+O\left(\|\Delta \mathbf{x}\|^3\right)
+$$
+
+where, $O\left(\|\Delta \mathbf{x}\|^3\right)$ are the higher order terms.
+
+Now, sometimes we write $\mathbf{z}=\mathbf{x}+\Delta \mathbf{x}$ which is considered as another point in the graph. Note that,  $\mathbf{z}-\mathbf{x}=\Delta \mathbf{x}$. Therefore, the above expression can be rewritten as follows:
+
+
+$$
+f(\mathbf{z})=f(\mathbf{x})+\nabla f(\mathbf{x})^{\mathrm{T}}(\mathbf{z}-\mathbf{x})+\frac{1}{2} (\mathbf{z}-\mathbf{x})^{\mathrm{T}} \nabla^2 f(\mathbf{x}) (\mathbf{z}-\mathbf{x})+O\left(\|\Delta \mathbf{x}\|^3\right)
+$$
+
+If we consider only the first-order term,
+
+
+$$
+f(\mathbf{z})\approx f(\mathbf{x})+\nabla f(\mathbf{x})^{\mathrm{T}}(\mathbf{z}-\mathbf{x})
+$$
 
 
 
