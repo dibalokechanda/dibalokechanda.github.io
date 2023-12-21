@@ -266,8 +266,9 @@ Be careful about how interpret it. We are not performing Taylor series approxima
 Sometimes it gets so confusing that; people use different notating to make it explicit. 
 
 $$
-f(z)=f\left(z_0\right)+\nabla f\left(z_0\right)^{\top}\left(z-z_0\right)+\frac{1}{2}\left(z-z_0\right)^{\top} \nabla^2 f\left(z_0\right)\left(z-z_0\right)+\text{higher order terms}
+f(\mathbf{x})=f\left(\mathbf{x_0}\right)+\nabla f\left(\mathbf{x_0}\right)^{\top}\left(\mathbf{x}-\mathbf{x}_0\right)+\frac{1}{2}\left(\mathbf{x}-\mathbf{x_0}\right)^{\top} \nabla^2 f\left(\mathbf{x_0}\right)\left(\mathbf{x}-\mathbf{x_0}\right)+\text{higher order terms}
 $$
+
 
 ## Supremum and Infimum
 
