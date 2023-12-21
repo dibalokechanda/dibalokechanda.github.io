@@ -96,10 +96,20 @@ $$
 $$
 
 
-These seem useless because they are kind of redefining the convex set and affine set. Well, convex hull and affine hull are themselves respectively convex and affine sets by definition. These become useful when you are given a set of points without structure and you want to form a convex set and affine set. The way you form those convex sets and affine sets is by creating the convex hull and affine hull from those set of given points.
+These seem useless because they are kind of redefining the convex set and affine set. Well, convex hull and affine hull are themselves respectively convex and affine sets by definition. These become useful when you are given a set of points without structure and you want to form a convex set and affine set. The way you form those convex sets and affine sets is by creating the convex hull and affine hull from those sets of given points.
 
 
 ## Hyperplanes 
+
+A hyperplane is a set which has the following form:
+
+
+$$
+\left\{x \mid a^\top x=b\right\}(a \neq 0)
+$$
+
+
+Note that, hyperplanes do not have the restriction of going through the origin.
 
 
 
