@@ -143,6 +143,10 @@ $$
 \theta_1 x_1+\theta_2 x_2 \in S
 $$
 
+A visualization of a conic cone is given below:
+
+![conic_cone](https://i.ibb.co/hmnFMBs/chrome-upf5bwci-Kq.png)
+
 ## Conic Hull
 
 The conic hull can be formed with the following definition:-
@@ -154,7 +158,11 @@ $$
 
 ## Summarization of Convex, Affine and Conic Set
 
+Keep the following figure in your head.
 
+
+
+![unified_view](https://i.ibb.co/kBpk4Q9/chrome-h-Cy-WFObm-Xw.png)
 
 ## Hyperplanes 
 
