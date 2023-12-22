@@ -110,7 +110,7 @@ $$
 
 
 
-Note that, hyperplanes do not have the restriction of going through the origin. If you get confused imagine hyperplanes just are lines in $\mathbb{R}^2$ and surfaces in $\mathbb{R}^3$.
+Note that, hyperplanes do not have the restriction of going through the origin (unlike vector subspaces). If you get confused imagine hyperplanes just are lines in $\mathbb{R}^2$ and surfaces in $\mathbb{R}^3$.
 
 A hyperplane separates $\mathbb{R}^n$ into two half-spaces.
 
@@ -123,5 +123,19 @@ $$
 \left\{x \mid a^T x \leq b\right\}(a \neq 0)
 $$
 
-A word of caution, even though it seems like half-space may seem like vector spaces they are not. That is if you pick two points from the the half-space, a linear combination of them may fall outside the half-space
+![half_spaces](https://i.ibb.co/0y6zmNg/chrome-FCo74w95-Yw.png)
 
+A couple of points about half-spaces:
+
+- The equality part can be dropped, in that case, the half-space will not contain the points along the line.
+
+
+![non_equal](https://i.ibb.co/YbrXVz2/chrome-f-G3-Hn-LRQ0t.png)
+
+
+- A word of caution, even though it seems like half-spaces are just like vector spaces (or vector subspaces) they are not. That is if you pick two points (vectors) from the the half-space, a linear combination of them may fall outside the half-space. In other words, the points from the set are not closed under linear transformation.
+
+
+- Half spaces are not affine set, they are convex set. 
+
+![half_space_convexity](https://i.ibb.co/zrSrQPx/chrome-ksmg-Hkq6-ET.png)
