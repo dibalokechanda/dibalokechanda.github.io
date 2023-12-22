@@ -112,14 +112,16 @@ $$
 
 Note that, hyperplanes do not have the restriction of going through the origin. If you get confused imagine hyperplanes just are lines in $\mathbb{R}^2$ and surfaces in $\mathbb{R}^3$.
 
-A hyperplane separate $\mathbb{R}^n$ into two half-spaces.
+A hyperplane separates $\mathbb{R}^n$ into two half-spaces.
 
 ## Half Spaces 
 
 
-A half space is a set of points of the following form:
+A half-space is a set of points of the following form:
 
 $$
 \left\{x \mid a^T x \leq b\right\}(a \neq 0)
 $$
+
+A word of caution, even though it seems like half-space may seem like vector spaces they are not. That is if you pick two points from the the half-space, a linear combination of them may fall outside the half-space
 
