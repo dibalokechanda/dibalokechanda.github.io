@@ -102,15 +102,57 @@ $$
 $$
 
 
-These seem useless because they are kind of redefining the convex set and affine set. Well, convex hull and affine hull are themselves respectively convex and affine sets by definition. These become useful when you are given a set of points without structure and you want to form a convex set and affine set. The way you form those convex sets and affine sets is by creating the convex hull and affine hull from the set of given points.
+These seem useless because they are kind of redefining the convex set and affine set. Well, convex hull and affine hull are themselves respectively convex and affine sets by definition. These become useful when you are given a set of points without structure and you want to form a convex set and affine set. The way you form those convex sets and affine sets is by creating the convex hull and affine hull from the set of given points. In addition, convex hull and affine hull have two special properties:
 
+
+- The set $\mathbf{aff}(S)$ is the smallest affine set containing $S$.
+- The set $\mathbf{conv}(S)$ is the smallest convex set containing $S$.
+
+
+![hull_convex](https://i.ibb.co/zsgJQsK/chrome-5p-Yxuf-Qf1-M.png)
 
 ## Conic Combination
 
+The formal definition of conic combination for a set of points $x_1, x_2, \ldots, x_k$ is given below:
 
+$$
+x_1, x_2, \ldots, x_k \in S
+$$
+
+
+$$
+\theta_1 x_1+\theta_2 x_2+\ldots+\theta_k x_k
+$$
+
+$$
+\theta_i \geq 0
+$$
+
+
+Not that $\theta$ values do not need to add up to $1$, the only requirement they need to satisfy is, that they need to be greater or equal to $0$ (non-negative).
 
 ## Convex Cone 
 
+The set $S$ is called a convex cone, if:
+
+$$
+\forall x_1, x_2 \in S, \theta_1, \theta_2 \geq 0
+$$
+
+$$
+\theta_1 x_1+\theta_2 x_2 \in S
+$$
+
+## Conic Hull
+
+The conic hull can be formed with the following definition:-
+
+$$
+\operatorname{cone}(S)=\left\{\sum_{i=1}^k \theta_i x_i \mid x_i \in S, \theta_i \geq 0\right\}
+$$
+
+
+## Summarization of Convex, Affine and Conic Set
 
 
 
