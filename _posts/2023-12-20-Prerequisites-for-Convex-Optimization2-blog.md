@@ -75,9 +75,9 @@ One important thing to notice here is the contrast with the convex combination. 
 Contains the line through any two distinct points in the set. Think of it this way, you are given a set in $\mathbb{R}^n$, you pick two points from that set and draw a line that goes through those two points. Now all possible points on that line should be contained in that set. If that's the case, then the set is affine.
 
 
- One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness. See the following visualization to get a intuitive understanding of it:
+ One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness. See the following visualization to get an intuitive understanding of it:
 
- ![affineness](https://i.ibb.co/kDK8k66/chrome-7-Vaw3-Ik-LQu.png)
+ ![affineness](https://i.ibb.co/64HYGQr/chrome-R8aauqi-B4c.png)
 
 
 
@@ -142,4 +142,4 @@ A couple of points about half-spaces:
 
 - Half spaces are not affine set, they are convex set. 
 
-![half_space_convexity](https://i.ibb.co/zrSrQPx/chrome-ksmg-Hkq6-ET.png)
+![half_space_convexity](https://i.ibb.co/ncwnvZM/chrome-Fe-Onm2v-T4-X.png)
