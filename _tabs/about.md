@@ -11,11 +11,15 @@ This is a kind of repository of the concepts I learned during my PhD. I rely mos
 - [ABOUT](https://dibalokechanda.github.io/about/): You are here.
 - [ARCHIVES](https://dibalokechanda.github.io/archives/): Published blogs chronologically sorted according to date.
 - [TAGS](https://dibalokechanda.github.io/tags/): Use it to filter through the type of concepts.
-- [CATEGORIES](https://dibalokechanda.github.io/categories/fundamentals/): Specific category of concepts. 
+- [CATEGORIES](https://dibalokechanda.github.io/categories/fundamentals/): Specific categories of concepts. 
 - [HOME](https://dibalokechanda.github.io/): Homepage of the blog. You can use the search function on the top left if you are looking for a specific topic to explore.
 
 
 ## About Me:
 
 I am a CS PhD student at Marquette University, Milwaukee, Wisconsin. I am affiliated with the Machine Learning, Optimization and Data (MOD) Lab. 
+
+## What if you find a mistake?
+
+Most of the topics I cover are also new to me and it is totally possible for me to misinterpret a concept or make a mistake. Please do let me know if I have any errors via email (dibaloke.chanda@marqutte.edu).
 
