@@ -320,3 +320,15 @@ Polyhedra can also be thought of as:
 - Intersection of finitely many half spaces and hyperplanes
 
 - The solution set of many inequalities and equalities
+
+
+## Positive Semidefinite Cones
+
+Before, we define this we need to get accustomed to some new notations.
+
+| Set Notation |  Set Definition (1)  | Set Definition (2)   | Meaning   |  
+|---|---|---|---|
+| $\mathbf{S}^n$ | ---------- | ----------  | Set of Symmetric $n \times n$ Matrices |
+|  $\mathbf{S}_{+}^n$ |  $\left\{X \in \mathbf{S}^n \mid X \succeq 0\right\}$ |$X \in \mathbf{S}_{+}^n \ \Longleftrightarrow z^T X z \geq 0$ for all $z$   | Set of Positive Semi Definite $n \times n$ Matrices   |
+|  $\mathbf{S}_{++}^n$  |   $\left\{X \in \mathbf{S}^n \mid X \succ 0\right\}$ | $X \in \mathbf{S}_{++}^n \ \Longleftrightarrow z^T X z > 0$ for all $z$  |  Set of Positive Definite $n \times n$ Matrices   | 
+
