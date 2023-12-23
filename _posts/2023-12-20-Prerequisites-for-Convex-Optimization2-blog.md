@@ -221,4 +221,3 @@ A couple of points about half-spaces:
 ## Norm Cone
 
 
-![norm_cone](https://i.ibb.co/SNQmpmk/chrome-u-DLjw-SKGa-X.png)
