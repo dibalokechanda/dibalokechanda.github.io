@@ -350,4 +350,15 @@ Now if this matrix has to be positive semidefinite (meaning $X \in \mathbf{S}^{n
 - $x\geq 0$ (First Principle Minor is positive)
 
 
+Based on the above two equations if we only plot the surface it will form a cone as shown below:
+
+
+![PSD_Cone](https://i.ibb.co/NtH9HgJ/ezgif-com-video-to-gif-converted.gif)
+
+
+Note that, we are considering the inequality, it will be a 3D volume, not a surface.  Also, notice that, this is not a polyhedra, which means you can not simply decompose this into finite set of equality and inequality constraints.
+
+
+
+
 
