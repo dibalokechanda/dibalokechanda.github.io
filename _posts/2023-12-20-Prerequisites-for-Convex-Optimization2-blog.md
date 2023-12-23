@@ -184,6 +184,23 @@ A couple of points about hyperplanes:
 
 - Hyplanes are both affine and convex.
 
+
+A visualization of hyperplane:
+
+![hype](https://i.ibb.co/XD5FzyB/chrome-lk-RU5-RP5qk.png)
+
+
+
+Now you need to have to visualization in your head:
+
+
+
+- Tuning the vector $a$ kind of tilts the hyperplane. The direction of tilting kind of depends on which component of vector $a$ you are tuning.
+
+
+- Tuning the value $b$ kind of shifts the hyperplane without titling it (you need to keep vector $a$ fixed).
+
+
 ## Half Spaces 
 
 
