@@ -414,3 +414,11 @@ I highly encourage interested readers to go through the lecture notes from [Boyd
 
 
 
+## Overloading a function with Set
+
+You can think of this like a math version of syntactical sugar. Normally, for a function $f:\mathbb{R}^{n} \rightarrow \mathbb{R} $ we plug in a vector $x \in\mathbb{R}^{n}$ and get a scalar value in $\mathbb{R}$. But rather than plugging in a single value, we can plug in a set a  of vectors in $\mathbb{R}^{n}$ and get a set of scalar values in $\mathbb{R}$ . This can be mathematically represented as below:
+
+
+$$
+f(S)=\{f(x) \mid x \in S\}
+$$
