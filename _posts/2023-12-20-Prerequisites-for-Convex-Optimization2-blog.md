@@ -230,10 +230,46 @@ A couple of points about half-spaces:
 ![half_space_convexity](https://i.ibb.co/ncwnvZM/chrome-Fe-Onm2v-T4-X.png)
 
 
+## Euclidean Ball
 
+A Euclidean ball is defined with two parameters $x_c$ which is the center of the ball and $r$ which is the radius of the ball.
+
+$$
+B\left(x_c, r\right)=\left\{x \mid\left\|x-x_c\right\|_2 \leq r\right\}=\left\{x_c+r u \mid\|u\|_2 \leq 1\right\}
+$$
+
+
+A visualization of the Euclidean ball is given below:
+
+![eu_ball](https://i.ibb.co/fFw78n3/chrome-p30-PS6-DOVm.png)
+
+
+
+## Ellipsoid 
+
+A generalization of the Euclidean ball can be done by incorporating a symmetric positive semidefinite matrix $P$. 
+
+$$
+\left\{x \mid\left(x-x_c\right)^T P^{-1}\left(x-x_c\right) \leq 1\right\}
+$$
+
+$$
+P \in \mathbf{S}_{++}^n
+$$
+
+![ell](https://i.ibb.co/BrhRrnk/chrome-hfp-Zze-Dx0s.png)
 
 ## Norm Ball
 
+A set of points defined by the following equation:
+
+$$
+\left\{x \mid\left\|x-x_{\mathrm{c}}\right\| \leq r\right\}
+$$
+
+This is generalized for any valid norm.
+
+![ballss](https://i.ibb.co/gdf4Zj0/chrome-EHwc-FXdr-BR.png)
 
 
 
