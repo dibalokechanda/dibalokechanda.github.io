@@ -292,3 +292,26 @@ $$
 
 
 I will point to a [Geogebra notebook](https://www.geogebra.org/m/fuxN6MM4) by Peter J.C. Dickinson if you want to visualize these in 3D.
+
+
+## Polyhedra
+
+A polyhedra is a set of points given by the following equation:
+
+$$
+\left\{x \mid A x \preceq b, Cx=d \}\right.
+$$
+
+$$
+A \in \mathbf{R}^{\operatorname{mxn}}, C \in \mathbf{R}^{p \times n}, \preceq\text { is component wise inequality }
+$$
+
+
+![polyhedra](https://i.ibb.co/0czm6X7/chrome-I18c-Jed-Lk-N.png)
+
+
+Polyhedra can also be thought of as:
+
+- Intersection of finitely many half spaces and hyperplanes
+
+- The solution set of many inequalities and equalities
