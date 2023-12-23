@@ -197,9 +197,11 @@ Now you need to have to visualization in your head:
 
 - Tuning the vector $a$ kind of tilts the hyperplane. The direction of tilting kind of depends on which component of vector $a$ you are tuning.
 
+![tilt_viz](https://i.ibb.co/Q8DNjDz/chrome-FJBUBPFRv-C.png)
 
 - Tuning the value $b$ kind of shifts the hyperplane without titling it (you need to keep vector $a$ fixed).
 
+![tilt_viz_2](https://i.ibb.co/0J9L1RC/chrome-Z2t-DKl-XGd1.png)
 
 ## Half Spaces 
 
