@@ -274,13 +274,21 @@ This is generalized for any valid norm.
 
 
 ## Norm Cone
+The set of points which are defined as follows:
 
-I will not go through the trouble of trying to plot them. Rather, I will point to a [Geogebra notebook](https://www.geogebra.org/m/fuxN6MM4) by Peter J.C. Dickinson. Let's visualize the level sets for these norm cones:
+$$
+\{(x, t) \mid\|x\| \leq t\}
+$$
 
+
+
+
+![3d_norm_cones](https://i.ibb.co/5FcgQ3q/chrome-2-TMysdo-DR2.png)
+
+
+ Visualize the level sets for these norm cones:
 
 ![norm_cones](https://i.ibb.co/mXm4rnN/chrome-S5-PNz-Fw-Xyz.png)
 
 
-
-<iframe width="100%" height="104" frameborder="0"
-  src="https://observablehq.com/embed/@mimmackk/unitball?cells=viewof+p"></iframe>
+I will point to a [Geogebra notebook](https://www.geogebra.org/m/fuxN6MM4) by Peter J.C. Dickinson if you want to visualize these in 3D.
