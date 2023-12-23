@@ -280,3 +280,7 @@ I will not go through the trouble of trying to plot them. Rather, I will point t
 
 ![norm_cones](https://i.ibb.co/mXm4rnN/chrome-S5-PNz-Fw-Xyz.png)
 
+
+
+<iframe width="100%" height="104" frameborder="0"
+  src="https://observablehq.com/embed/@mimmackk/unitball?cells=viewof+p"></iframe>
