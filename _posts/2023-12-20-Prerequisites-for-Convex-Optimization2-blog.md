@@ -220,5 +220,8 @@ A couple of points about half-spaces:
 
 ## Norm Cone
 
-I will not go through the trouble of trying to plot them. Rather, I will point to a [Geogebra notebook](https://www.geogebra.org/m/fuxN6MM4) by Peter J.C. Dickinson.
+I will not go through the trouble of trying to plot them. Rather, I will point to a [Geogebra notebook](https://www.geogebra.org/m/fuxN6MM4) by Peter J.C. Dickinson. Let's visualize the level sets for these norm cones:
+
+
+![norm_cones](https://i.ibb.co/mXm4rnN/chrome-S5-PNz-Fw-Xyz.png)
 
