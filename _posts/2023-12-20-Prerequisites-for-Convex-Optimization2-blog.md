@@ -356,7 +356,11 @@ Based on the above two equations if we only plot the surface it will form a cone
 ![PSD_Cone](https://i.ibb.co/NtH9HgJ/ezgif-com-video-to-gif-converted.gif)
 
 
-Note that, we are considering the inequality, it will be a 3D volume, not a surface.  Also, notice that, this is not a polyhedra, which means you can not simply decompose this into finite set of equality and inequality constraints.
+How to interpret this? Pick any point $(x,y,z)$ from this volume and use that to form a matrix and the matrix formed will be a positive semi-definite matrix.
+
+
+
+Note that, if we consider the inequality, it will be a 3D volume, not a surface.  Also, notice that; this is not a polyhedron, which means you can not simply decompose this into a finite set of equality and inequality constraints.
 
 
 
