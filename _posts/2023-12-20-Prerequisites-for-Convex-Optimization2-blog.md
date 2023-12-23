@@ -177,7 +177,12 @@ $$
 
 Note that, hyperplanes do not have the restriction of going through the origin (unlike vector subspaces). If you get confused imagine hyperplanes just are lines in $\mathbb{R}^2$ and surfaces in $\mathbb{R}^3$.
 
-A hyperplane separates $\mathbb{R}^n$ into two half-spaces.
+
+A couple of points about hyperplanes:
+
+- A hyperplane separates $\mathbb{R}^n$ into two half-spaces.
+
+- Hyplanes are both affine and convex.
 
 ## Half Spaces 
 
@@ -204,3 +209,16 @@ A couple of points about half-spaces:
 - Half spaces are not affine set, they are convex set. 
 
 ![half_space_convexity](https://i.ibb.co/ncwnvZM/chrome-Fe-Onm2v-T4-X.png)
+
+
+
+
+## Norm Ball
+
+
+
+
+## Norm Cone
+
+
+![norm_cone](https://i.ibb.co/SNQmpmk/chrome-u-DLjw-SKGa-X.png)
