@@ -329,6 +329,25 @@ Before, we define this we need to get accustomed to some new notations.
 | Set Notation |  Set Definition (1)  | Set Definition (2)   | Meaning   |  
 |---|---|---|---|
 | $\mathbf{S}^n$ | ---------- | ----------  | Set of Symmetric $n \times n$ Matrices |
-|  $\mathbf{S}_{+}^n$ |  $\left\{X \in \mathbf{S}^n \mid X \succeq 0\right\}$ |$X \in \mathbf{S}_{+}^n \ \Longleftrightarrow z^T X z \geq 0$ for all $z$   | Set of Positive Semi Definite $n \times n$ Matrices   |
-|  $\mathbf{S}_{++}^n$  |   $\left\{X \in \mathbf{S}^n \mid X \succ 0\right\}$ | $X \in \mathbf{S}_{++}^n \ \Longleftrightarrow z^T X z > 0$ for all $z$  |  Set of Positive Definite $n \times n$ Matrices   | 
+|  $\mathbf{S}_{+}^n$ |  $\{X \in \mathbf{S}^n \mid X \succeq 0\}$ |$X \in \mathbf{S}_{+}^n \ \Longleftrightarrow z^T X z \geq 0$ for all $z$   | Set of Positive Semi Definite $n \times n$ Matrices   |
+|  $\mathbf{S}_{++}^n$  |   $\{X \in \mathbf{S}^n \mid X \succ 0 \}$ | $X \in \mathbf{S}_{++}^n \ \Longleftrightarrow z^T X z > 0$ for all $z$  |  Set of Positive Definite $n \times n$ Matrices   | 
+
+
+Now for $n \geq 3$, it is not possible to visualize the cone, so we will restrict ourselves to $n=2$. 
+
+Let's consider a general symmetric matrix as follows:
+
+
+$$
+X=\left[ \begin{aligned}   x  \qquad  z  \\ z \qquad y\end{aligned} \right]
+
+$$
+
+Now if this matrix has to be positive semidefinite (meaning $X \in \mathbf{S}^{n=2}_{+}$) two things need to happen:
+
+
+- $xy-z^2 \geq 0$ 
+- $x\geq 0$ (First Principle Minor is positive)
+
+
 
