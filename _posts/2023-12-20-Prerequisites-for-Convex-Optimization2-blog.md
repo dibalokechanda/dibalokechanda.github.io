@@ -360,7 +360,7 @@ How to interpret this? Pick any point $(x,y,z)$ from this volume and use that to
 
 
 
-Note that, if we consider the inequality, it will be a 3D volume, not a surface.  Also, notice that; this is not a polyhedron, which means you can not simply decompose this into a finite set of equality and inequality constraints.
+Note that, if we consider the inequality, it will be a 3D volume, not a surface.  Also, notice that; this is not a polyhedron, which means you can not simply decompose this into a finite set of equality and inequality constraints. This has a bigger implication about the positivity of a matrix.
 
 
 
