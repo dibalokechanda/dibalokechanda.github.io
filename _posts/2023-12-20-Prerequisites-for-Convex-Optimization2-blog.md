@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for Convex Optimization 2 
 date: 2023-12-20 12:00:00 -500
-categories: [Convex Optimization]
+categories: [fundamentals]
 tags: [optimization_theory, convexity]
 math: true
 toc: true
@@ -356,11 +356,7 @@ Based on the above two equations if we only plot the surface it will form a cone
 ![PSD_Cone](https://i.ibb.co/NtH9HgJ/ezgif-com-video-to-gif-converted.gif)
 
 
-How to interpret this? Pick any point $(x,y,z)$ from this volume and use that to form a matrix and the matrix formed will be a positive semi-definite matrix.
-
-
-
-Note that, if we consider the inequality, it will be a 3D volume, not a surface.  Also, notice that; this is not a polyhedron, which means you can not simply decompose this into a finite set of equality and inequality constraints. This has a bigger implication about the positivity of a matrix.
+Note that, we consider the equality, it will be a 3D volume, not a surface. 
 
 
 
