@@ -82,9 +82,9 @@ One important thing to notice here is the contrast with the convex combination. 
 Contains the line through any two distinct points in the set. Think of it this way, you are given a set in $\mathbb{R}^n$, you pick two points from that set and draw a line that goes through those two points. Now all possible points on that line should be contained in that set. If that's the case, then the set is affine.
 
 
- One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness. See the following visualization to get an intuitive understanding of it:
+ One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than "affineness". See the following visualization to get an intuitive understanding of it:
 
- ![affineness](https://i.ibb.co/64HYGQr/chrome-R8aauqi-B4c.png)
+![aff](https://i.ibb.co/64HYGQr/chrome-R8aauqi-B4c.png)
 
 
 
@@ -274,7 +274,7 @@ $$
 
 This is generalized for any valid norm.
 
-![ballss](https://i.ibb.co/gdf4Zj0/chrome-EHwc-FXdr-BR.png)
+![balls](https://i.ibb.co/gdf4Zj0/chrome-EHwc-FXdr-BR.png)
 
 
 
@@ -308,7 +308,7 @@ $$
 $$
 
 $$
-A \in \mathbf{R}^{\operatorname{mxn}}, C \in \mathbf{R}^{p \times n}, \preceq\text { is component wise inequality }
+A \in \mathbf{R}^{\operatorname{mxn}}, C \in \mathbf{R}^{p \times n}, \preceq\text { is component-wise inequality }
 $$
 
 
