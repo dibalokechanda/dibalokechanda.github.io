@@ -9,3 +9,5 @@ toc: true
 
 
 This is a continuation of my previous posts: [Prerequisites for Convex Optimization 1](https://dibalokechanda.github.io/posts/Prerequisites-for-Convex-Optimization1-blog/) and [Prerequisites for Convex Optimization 2](https://dibalokechanda.github.io/posts/Prerequisites-for-Convex-Optimization2-blog/).
+
+In [Prerequisites for Convex Optimization 1](https://dibalokechanda.github.io/posts/Prerequisites-for-Convex-Optimization1-blog/) I introduced some prerequisite mathemathical concepts like gradient, hessian, supremum, infimum, etc. There was also a gentle introduction to the concept of convexity in terms of sets and functions.
