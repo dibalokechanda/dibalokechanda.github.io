@@ -356,7 +356,7 @@ Based on the above two equations if we only plot the surface it will form a cone
 ![PSD_Cone](https://i.ibb.co/NtH9HgJ/ezgif-com-video-to-gif-converted.gif)
 
 
-Note that, we consider the equality, it will be a 3D volume, not a surface. 
+
 
 
 
