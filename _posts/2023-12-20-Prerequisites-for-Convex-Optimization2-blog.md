@@ -356,6 +356,9 @@ Based on the above two equations if we only plot the surface it will form a cone
 ![PSD_Cone](https://i.ibb.co/NtH9HgJ/ezgif-com-video-to-gif-converted.gif)
 
 
+Note that, this can not be decomposed in the a finite set of equality and inequality constraints.
+
+
 
 
 
