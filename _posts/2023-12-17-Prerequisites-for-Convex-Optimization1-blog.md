@@ -368,7 +368,7 @@ $$
 f(z) \geq f(x)+g^T(z-x)
 $$
 
-As an example, consider the function: 
+As an example, consider the following function: 
 
 $$
 f(\mathbf{x})= |x_1 -2|+(x-1)^2
