@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-This article contains codes snippets for "R" programming language. I am fairly new to "R" and documenting the code snippets helps me to understand it better. Just a word of caution, the snippets are not organized neatly.
+This article contains codes snippets for "R" programming language. I am fairly new to "R" and documenting the code snippets helps me to understand it better. Just a word of caution, the snippets are not organized neatly. This just for my personal reference to keep track of what concepts I learned in R. 
 
 
 
@@ -24,12 +24,16 @@ rm(list=ls())
 
 
 ## Loading in libraries 
-As an example the ggplot2
+As an example the `ggplot2` library can be loaded as follows:
+
+```R
+library(ggplot2)
+```
 
 ## Generating samples from a probability distribution
 
 ### Generating samples from an uniform distribution
-_Reference_: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform
+_Reference_: [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform)
 
 
 ```R
@@ -39,8 +43,16 @@ x <- runif(20, min = -1, max = 1)
 
 ### Generating samples from a normal distribution 
 
-_Reference_: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Normal
+_Reference_: [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Normal](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Normal)
 
 ```R
 x <- rnorm(n=100,mean=68.5,sd=5.7)
+```
+
+## Operations on dataframe
+
+### Getting a summary for the dataframe
+
+```R
+summary(data)
 ```
