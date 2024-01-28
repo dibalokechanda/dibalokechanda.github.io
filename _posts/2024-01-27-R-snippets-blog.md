@@ -20,6 +20,19 @@ rm(list=ls())
 
 ## Basics 
 
+## Installing libraries
+```R
+install.packages("ggplot2")
+```
+
+## Loading in libraries 
+As an example the `ggplot2` library can be loaded as follows:
+
+```R
+library(ggplot2)
+```
+
+
 ### Creating a sequence of numbers given a range 
 
 ```R
@@ -28,13 +41,6 @@ sequence <- seq(1, 10, by=1)
 print(sequence)
 ```
 
-
-## Loading in libraries 
-As an example the `ggplot2` library can be loaded as follows:
-
-```R
-library(ggplot2)
-```
 
 ## Generating samples from a probability distribution
 
