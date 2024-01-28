@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-This article contains codes snippets for "R" programming language. I am fairly new to "R" and documenting the code snippets helps me to understand it better. Just a word of caution, the snippets are not organized neatly. This just for my personal reference to keep track of what concepts I learned in R. 
+This article contains code snippets for "R" programming language. I am fairly new to "R" and documenting the code snippets helps me to understand it better. Just a word of caution, the snippets are not organized neatly. This is just for my personal reference to keep track of what concepts I learned in R.
 
 
 
@@ -20,13 +20,13 @@ rm(list=ls())
 
 ## Basics 
 
-## Installing libraries
+### Installing libraries
 ```R
 install.packages("ggplot2")
 ```
 
-## Loading in libraries 
-As an example the `ggplot2` library can be loaded as follows:
+### Loading in libraries 
+As an example, the `ggplot2` library can be loaded as follows:
 
 ```R
 library(ggplot2)
@@ -44,7 +44,7 @@ print(sequence)
 
 ## Generating samples from a probability distribution
 
-### Generating samples from an uniform distribution
+### Generating samples from a uniform distribution
 _Reference_: [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform)
 
 
@@ -81,7 +81,7 @@ In ggplot the first argument is the dataframe and the second argument inside `ae
 ggplot(data,aes(x=price))
 ```
 
-**Specify the type of plot**: Then we add in the geometry to specify the type of plot. We can specify additional parameter as argument which will control the look of the plot
+**Specify the type of plot**: Then we add in the geometry to specify the type of plot. We can specify additional parameters as arguments which will control the look of the plot
 
 ```R
 # Plot a histogram where bindwidth=50 and specify the edge and fill colors
@@ -94,7 +94,7 @@ As an example, here we are plotting a histogram with `geom_histogram`. There are
 
 ### Clean themes
 
-This is kinda subjective and varies from person to person. But I normally use the followning code snippets as a theme.
+This is kinda subjective and varies from person to person. But I normally use the following code snippets as a theme.
 
 ```R
 theme_bw()+
