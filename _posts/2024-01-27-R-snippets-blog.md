@@ -18,6 +18,10 @@ This article contains codes snippets for "R" programming language. I am fairly n
 rm(list=ls())
 ```
 
+## Basics 
+
+### Creating a sequence of numbers given a range 
+
 
 ## Loading in Libraries 
 As an example the ggplot2
@@ -25,6 +29,7 @@ As an example the ggplot2
 ## Generating Samples from a probability distribution
 
 ### Generating samples from an uniform distribution
+_Reference_: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform
 
 
 ```R
