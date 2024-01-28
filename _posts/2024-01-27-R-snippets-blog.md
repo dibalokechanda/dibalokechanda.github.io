@@ -22,6 +22,12 @@ rm(list=ls())
 
 ### Creating a sequence of numbers given a range 
 
+```R
+# To create a sequence from 1 to 10 in steps of 1
+sequence <- seq(1, 10, by=1)
+print(sequence)
+```
+
 
 ## Loading in libraries 
 As an example the `ggplot2` library can be loaded as follows:
@@ -57,9 +63,6 @@ x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```R
 summary(data)
 ```
-
-
-
 
 ## ggplot commands
 
