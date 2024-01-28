@@ -46,6 +46,7 @@ x <- runif(20, min = -1, max = 1)
 _Reference_: [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Normal](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Normal)
 
 ```R
+# Sample 100 sample from normal distribution with a specified mean and standard deviation
 x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```
 
