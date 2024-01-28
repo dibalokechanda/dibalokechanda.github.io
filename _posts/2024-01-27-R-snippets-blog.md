@@ -12,7 +12,7 @@ This article contains codes snippets for "R" programming language. I am fairly n
 
 
 
-## Clear Variables
+## Clear variables from workspace
 
 ```R
 rm(list=ls())
@@ -23,10 +23,10 @@ rm(list=ls())
 ### Creating a sequence of numbers given a range 
 
 
-## Loading in Libraries 
+## Loading in libraries 
 As an example the ggplot2
 
-## Generating Samples from a probability distribution
+## Generating samples from a probability distribution
 
 ### Generating samples from an uniform distribution
 _Reference_: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Uniform
@@ -35,4 +35,12 @@ _Reference_: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics
 ```R
 # Sample 20 values from a uniform distribution which ranges from -1 to 1
 x <- runif(20, min = -1, max = 1)
+```
+
+### Generating samples from a normal distribution 
+
+_Reference_: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/Normal
+
+```R
+x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```
