@@ -80,6 +80,8 @@ ggplot(data,aes(x=price))+
   geom_histogram(binwidth = 50,col='#9683F5',fill='#D2CDE9')
 ```
 
+As an example, here we are plotting a histogram with `geom_histogram`. There are way too many parameters to go through. The best approach is to look up the documentation when you need to implement a specific thing.
+[https://ggplot2.tidyverse.org/reference/geom_histogram.html](https://ggplot2.tidyverse.org/reference/geom_histogram.html)
 
 ### Clean themes
 
