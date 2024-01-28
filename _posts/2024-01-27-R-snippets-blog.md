@@ -70,6 +70,17 @@ x <- rnorm(n=100,mean=68.5,sd=5.7)
 summary(data)
 ```
 
+## Split continuous numerical variables in different classes
+
+```R
+breaks <- c(10, 20, 40, 60, 90,Inf)
+labels <- c("10-20", "21-40", "41-60", "61-80","81+")
+
+# Create a new column with age groups
+data$age_group <- cut(data$AGE, breaks = breaks, labels = labels, right = FALSE) 
+```
+In the above example code , there is a continuous age group variable. A new column is created by assigning different edge groups.
+
 ## ggplot commands
 
 
@@ -94,7 +105,7 @@ As an example, here we are plotting a histogram with `geom_histogram`. There are
 
 ### Clean themes
 
-This is kinda subjective and varies from person to person. But I normally use the following code snippets as a theme.
+This is kinda subjective and varies from person to person. But I normally use the following code snippets as a theme. This code snippet need to be varied for different types of plots.
 
 ```R
 theme_bw()+
@@ -106,6 +117,18 @@ theme_bw()+
         axis.line = element_line(color = "white"),
 ```
 
+
+### 2D density contour plot with heatmap overlay
+
+```R
+m<-ggplot(data, aes(x = HEIGHT, y = WEIGHT)) +
+  geom_point()+
+  stat_bin2d(bins=80)+
+  scale_fill_gradient(low="lightblue", high="red")+
+
+m+geom_density_2d()
+
+```
 
 ### Save an image with ggplot
 
