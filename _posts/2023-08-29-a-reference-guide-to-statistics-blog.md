@@ -186,6 +186,14 @@ where,
  
  - $df$ is the degrees of freedom of the t-distribution which is equal to $n-1$ 
 
+
+ >### Hypothesis Testing
+
+First let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform test to check the "Hypothesis". 
+
+
+
+
 <!-- >### Sampling Methods
 
 
@@ -196,7 +204,7 @@ where,
 
 
 
->### Hypothesis Testing
+
 
 
 >### p-value
