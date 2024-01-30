@@ -79,7 +79,7 @@ labels <- c("10-20", "21-40", "41-60", "61-80","81+")
 # Create a new column with age groups
 data$age_group <- cut(data$AGE, breaks = breaks, labels = labels, right = FALSE) 
 ```
-In the above example code , there is a continuous age group variable. A new column is created by assigning different edge groups.
+In the above example code, there is a continuous age group variable. A new column is created by assigning different edge groups.
 
 ## ggplot commands
 
@@ -87,7 +87,7 @@ In the above example code , there is a continuous age group variable. A new colu
 ### Basic ggplot  plot
 
 **Specifiy the data**:
-In ggplot the first argument is the dataframe and the second argument inside `aes()` specify the columns of the dataframe that is to be used as the x-axis and y-axis. If the type of plot only involves a single column (for example histogram) we only need to pass in one column as x-axis. 
+In ggplot the first argument is the data frame and the second argument inside `aes()` specifies the columns of the data frame that is to be used as the x-axis and y-axis. If the type of plot only involves a single column (for example histogram) we only need to pass in one column as the x-axis. 
 ```
 ggplot(data,aes(x=price))
 ```
@@ -105,7 +105,7 @@ As an example, here we are plotting a histogram with `geom_histogram`. There are
 
 ### Clean themes
 
-This is kinda subjective and varies from person to person. But I normally use the following code snippets as a theme. This code snippet need to be varied for different types of plots.
+This is kinda subjective and varies from person to person. But I normally use the following code snippets as a theme. This code snippet needs to be varied for different types of plots.
 
 ```R
 theme_bw()+
