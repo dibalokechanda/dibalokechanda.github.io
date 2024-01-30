@@ -189,7 +189,11 @@ where,
 
  >### Hypothesis Testing
 
-First let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform test to check the "Hypothesis". 
+First let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform test to check the "Hypothesis" hence the name "hypothesis testing". Now, this might seem ambigious because of how general definition is. That is an unfortunate consequence of trying to avoid attaching a concept to a specific example. Sometimes the concept seems way to abstract.
+
+**Null hypothesis:** This is denoted as $H_0$. This is accepted value (for now) for a parameter.
+
+**Alternative hypothesis:** This is denoted as $H_a$. This the hypothesis that need to be tested.
 
 
 
