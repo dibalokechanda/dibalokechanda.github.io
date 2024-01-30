@@ -201,9 +201,13 @@ There are two possible outcomes from hypothesis testing:
 - We can reject the null hypothesis.
 - Or we can fail to reject the null hypothesis. Note that, we did not prove the "null hypothesis" is actually true.
 
- A good another analogy for this is "you are innocent until proven guilty". Using that analogy we can say "Null hypothesis is true unless the evidence we get is substantial enough to accept the alternative hypothesis and reject the null hypothesis". Well, we need to define and quantify what we mean by "substantial evidence".
+ A good another analogy for this is "you are innocent until proven guilty". Using that analogy we can say "Null hypothesis is true unless the evidence we get is substantial enough to accept the alternative hypothesis and reject the null hypothesis". Well, we need to define and quantify what we mean by "substantial evidence". 
 
  **Defining substantial evidence:** We use test statistic (the statistic for the parameter) to get the "evidence". Note that, this is  "statistic" because we will always be working with samples.  Also, this indicate what we mean by "substantial evidence". Because when we work with "statistic" and get a sampling distribution for a parameter, there is always randomness. So, by "substantial evidence" we mean we can say without any doubt the evidence against null hypothesis did not happen because of randomness.  Let's test a concrete example, assume we make a null hypothesis about the weight of people in Wisconsin. The null hypothesis is : The proportion of people that is overweight in Wisconsin is 0.3. And the alternative hypothesis is : The proportion of people that is overweight in Wisconsin is not 0.3. 
+
+$$
+\boxed{\text{Substantial evidence = Statistically significant}}
+$$
 
 $$
 H_0: \text{Proportion of overweight people in Wisconsin }=~0.3   
