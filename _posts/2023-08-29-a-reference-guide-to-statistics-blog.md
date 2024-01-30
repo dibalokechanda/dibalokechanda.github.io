@@ -191,11 +191,11 @@ where,
 
 First let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform test to check the "Hypothesis" hence the name "hypothesis testing". Now, this might seem ambigious because of how general the definition is. That is an unfortunate consequence of trying to avoid attaching a concept to a specific example. Sometimes the concept seems way too abstract.
 
-**Null hypothesis:** This is denoted as $H_0$. This is accepted value (for now) for a parameter.
+**Null hypothesis:** This is denoted as $H_0$. This is the accepted value (for now) for a parameter.
 
 **Alternative hypothesis:** This is denoted as $H_a$. This the hypothesis that need to be tested.
 
-
+ A good another analogy for this is "you are innocent until proven guilty". Using that analogy we can say "Null hypothesis is true unless the evidence we get is substantial enough to accept the alternative hypothesis and reject the null hypothesis". Well, we need to quantify what we mean by "substantial" and also define what we mean by "evidence" .
 
 
 <!-- >### Sampling Methods
