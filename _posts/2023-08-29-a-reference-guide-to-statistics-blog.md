@@ -243,6 +243,12 @@ $$
 \hat{p}\pm z_{\alpha / 2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}
 $$
 
+Sometimes it is written in terms of standard error as follows:
+
+$$
+\hat{\boldsymbol{p}} \pm z_{\alpha / 2} ~S E(\hat{\boldsymbol{p}})
+$$
+
 
  >### Hypothesis Testing
 
