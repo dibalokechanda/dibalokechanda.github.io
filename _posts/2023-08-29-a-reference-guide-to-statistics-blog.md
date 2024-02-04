@@ -105,7 +105,7 @@ $$
 
 with sample variance we are trying to get the point estimate of the population parameter which is variance $\sigma^2$.
 
-If we compute this sample variance numerious times and take the expectation of that, in the long learn we are going to get the population variance $\sigma^2$.
+If we compute this sample variance numerious times and take the expectation of that, in the long learn we are going to get the population variance $\sigma^2$. 
 
 
 $$
@@ -128,9 +128,12 @@ $$
 $$
 
 
-This is chi-square distribution with $n-1$ degrees of freedom. Again to reiterate this is not the exact distribution for the sample variance; rather a scaled version of the sample variance.
+This is chi-square distribution with $n-1$ degrees of freedom. Again to reiterate this is not the exact distribution for the sample variance; rather a scaled version of the sample variance. Sometimes the expression is modified and written as follows to explicitly mention the degrees of freedom:
 
 
+$$
+\chi_{n-1}^2=\frac{(n-1) s^2}{\sigma^2}
+$$
 
 
 
