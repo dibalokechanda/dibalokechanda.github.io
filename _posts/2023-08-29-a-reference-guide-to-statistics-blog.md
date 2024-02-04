@@ -255,7 +255,7 @@ Here,
 
 - $\hat{p}$ is the sample proportion
 - $ z_{\alpha / 2}$ is a critical value which is dependent on $\alpha/2$
-- $S E(\hat{\boldsymbol{p}})$ is the standard error for sample proportion
+- $S E(\hat{p})$ is the standard error for sample proportion
 
  >### Hypothesis Testing
 
