@@ -232,6 +232,17 @@ where,
  
  - $\nu$ is the degrees of freedom of the t-distribution which is equal to $n-1$ 
 
+Note that with a larger sample size of $n$, the quantity  $t_{\alpha / 2, \nu} \frac{s}{\sqrt{n}}$ decreases. This implies with large sample size, our confidence interval is more tight.
+
+#### Confidence interval for population proportion $p$
+
+A $(1-\alpha)\times 100\%$   confidence interval for $p$
+
+
+$$
+\hat{p}\pm z_{\alpha / 2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}
+$$
+
 
  >### Hypothesis Testing
 
