@@ -305,7 +305,7 @@ $$
 _One-tailed test_: In one-tailed test, typically the alternative hypothesis statement a $>$ or $<$ sign.
 
 
-With $>$ sign:
+Left-tailed test:
 $$
 H_0: p=~0.3  
 $$
@@ -314,7 +314,7 @@ $$
 H_0: p >~0.3  
 $$
 
-With $<$ sign:
+Right-tailed test:
 
 $$
 H_0: p=~0.3  
