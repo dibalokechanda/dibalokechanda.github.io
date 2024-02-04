@@ -357,7 +357,7 @@ $$
 Facts about p-values:
 
 - When we compute p-value we are assuming the null hypothesis is true.
-- When the p-values starts to go low we start to doubt the null hypothesis.
+- When the p-values starts to go low we start to doubt the null hypothesis. In other ways, we starts to get uncomfortable about the null hypothesis.
 
 
 
