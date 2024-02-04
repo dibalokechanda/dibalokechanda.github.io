@@ -172,7 +172,10 @@ Both t-distribution and standard normal distribution are bell-shaped and symmetr
 <hr>
 
 *References:* [Introduction to Confidence Intervals](https://www.youtube.com/watch?v=27iSnzss2wM), [What are confidence intervals? Actually.
-](https://www.youtube.com/watch?v=EJe3jiZNwUU)
+](https://www.youtube.com/watch?v=EJe3jiZNwUU), [Confidence Intervals - Introduction
+](https://youtu.be/MbXThbTSrVI?list=LL)
+
+*Interactive Visualization of Confidence Interval:* [From Seeing theory](https://seeing-theory.brown.edu/frequentist-inference/index.html)
 
 A confidence interval is a range of values that is constructed around a sample statistic, such as a mean or a proportion, to estimate the true population parameter with a certain level of confidence.
 
