@@ -354,7 +354,10 @@ $$
 >### p-value
 
 
-When we compute p-value we are assuming the null hypothesis is true.
+Facts about p-values:
+
+- When we compute p-value we are assuming the null hypothesis is true.
+- When the p-values starts to go low we start to doubt the null hypothesis.
 
 
 
