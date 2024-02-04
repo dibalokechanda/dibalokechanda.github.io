@@ -234,7 +234,7 @@ where,
 
 Note that with a larger sample size of $n$, the quantity  $t_{\alpha / 2, \nu} \frac{s}{\sqrt{n}}$ decreases. This implies with large sample size, our confidence interval is more tight.
 
-#### Confidence interval for population proportion $p$
+#### Confidence Interval for Population Proportion $p$
 
 A $(1-\alpha)\times 100\%$   confidence interval for $p$
 
@@ -246,7 +246,7 @@ $$
 Sometimes it is written in terms of standard error as follows:
 
 $$
-\hat{\boldsymbol{p}} \pm z_{\alpha / 2} ~S E(\hat{\boldsymbol{p}})
+\hat{p} \pm z_{\alpha / 2} ~S E(\hat{p})
 $$
 
 
