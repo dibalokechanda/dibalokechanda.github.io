@@ -240,7 +240,7 @@ A $(1-\alpha)\times 100\%$   confidence interval for $p$
 
 
 $$
-\hat{p}\pm z_{\alpha / 2} \sqrt{\frac{\widehat{p}(1-\widehat{p})}{n}}
+\hat{p}\pm z_{\alpha / 2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 $$
 
 Sometimes it is written in terms of standard error as follows:
