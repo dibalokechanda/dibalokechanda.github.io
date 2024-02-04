@@ -351,21 +351,19 @@ $$
 
 ![hypotheis_test](https://i.ibb.co/V9c14nx/chrome-omogx2-Pvx-X.png)
 
+>### p-value
+
+
+When we compute p-value we are assuming the null hypothesis is true.
+
+
 
 <!-- >### Sampling Methods
 
 
 >### Central Limit Theorem
 
->### Student t-Distribution
 
-
-
-
-
-
-
->### p-value
 
 
 >### p-hacking 
