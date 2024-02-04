@@ -94,8 +94,7 @@ One other key fact:
 
 #### Sampling Distribution of the Sample Variance
 *References:* [The Sampling Distribution of the Sample Variance
-](https://youtu.be/V4Rm4UQHij0), [The Sample Variance and its Chi Squared Distribution
-](https://youtu.be/EgA1fqww4B8)
+](https://youtu.be/V4Rm4UQHij0)
 
 Let's start by defining the sample variance. Mathematically, the sample variance denoted as $s^2$ can be defined as follows:
 
@@ -221,7 +220,7 @@ For $(1-\alpha)\times 100\%=95\%$ confidence interval the value of $\alpha=5\% =
 *When the population standard deviation is not known*
 
 $$
-\boxed{\bar{X} \pm t_{\alpha / 2, d f} \frac{s}{\sqrt{n}}}
+\boxed{\bar{X} \pm t_{\alpha / 2, \nu} \frac{s}{\sqrt{n}}}
 $$
 
 where,
@@ -229,9 +228,9 @@ where,
  - $s$ is the sample standard deviation. 
  - $n$ sample size
 
- - $t_{\alpha / 2, d f}$  is the critical value from t-distribution which is dependent on both $\alpha$ and $df$.
+ - $t_{\alpha / 2, \nu}$  is the critical value from t-distribution which is dependent on both $\alpha$ and $\nu$.
  
- - $df$ is the degrees of freedom of the t-distribution which is equal to $n-1$ 
+ - $\nu$ is the degrees of freedom of the t-distribution which is equal to $n-1$ 
 
 
  >### Hypothesis Testing
