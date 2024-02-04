@@ -286,7 +286,45 @@ $$
 Well, to get evidence to reject the null hypothesis, we collect a sample and measure the proportion of people that is overweight. Say, that comes out to be $0.32$. Does that mean we should reject the null hypothesis? Obivously not, because that small deviation can happen by random chance. We need some really extreme evidence to reject the null hypothesis.  This is where things become fuzzy and subjective. We need to quantify exactly what evidence would convince us to reject the null hypothesis.
 
 
-**Quantifying substantial evidence:** 
+**One-tailed vs Two-tailed test:** 
+
+Let's rewrite the statements for hypothesis testing again but in a concise manner:
+
+
+_Two-tailed test:_ In two-tailed test, typically the alternative hypothesis  statement involve a $\neq$ symbol. 
+
+$$
+H_0: p=~0.3  
+$$
+
+$$
+H_0: p \neq~0.3  
+$$
+
+
+_One-tailed test_: In one-tailed test, typically the alternative hypothesis statement a $>$ or $<$ sign.
+
+
+With $>$ sign:
+$$
+H_0: p=~0.3  
+$$
+
+$$
+H_0: p >~0.3  
+$$
+
+With $<$ sign:
+
+$$
+H_0: p=~0.3  
+$$
+
+$$
+H_0: p < ~0.3  
+$$
+
+
 
 
 
