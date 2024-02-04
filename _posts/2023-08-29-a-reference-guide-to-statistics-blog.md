@@ -121,7 +121,7 @@ What factors dicate the sampling distribution of the sample variance:
 
 > Sampling Distribution of the Sample Variance for a normal distribution
 
-Suppose the distribution we are sampling from is normally distribution with a population variance of $\sigma^2$. And we sample $n$ independent samples from the distribution. In that case, the sampling distribution of  <b>modified sample variance </b> (modified by scaling with $\frac{(n-1)}{\sigma^2}$) is given by a chi-square distribution which can be expressed as follows:
+Suppose the distribution we are sampling from is normally distributed with a population variance of $\sigma^2$. And we sample $n$ independent samples from the distribution. In that case, the sampling distribution of  <b>modified sample variance </b> (modified by scaling with $\frac{(n-1)}{\sigma^2}$) is given by a chi-square distribution which can be expressed as follows:
 
 $$
 \chi^2=\frac{(n-1) s^2}{\sigma^2}
@@ -134,6 +134,8 @@ This is chi-square distribution with $n-1$ degrees of freedom. Again to reiterat
 $$
 \chi_{n-1}^2=\frac{(n-1) s^2}{\sigma^2}
 $$
+
+For low sample size the distribution is skewed. As the sample size increases the distribution becomes more and more symmetric.
 
 
 
