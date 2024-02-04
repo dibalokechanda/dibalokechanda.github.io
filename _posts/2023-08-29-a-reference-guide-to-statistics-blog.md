@@ -250,6 +250,13 @@ $$
 $$
 
 
+
+Here,
+
+- $\hat{p}$ is the sample proportion
+- $ z_{\alpha / 2}$ is a critical value which is dependent on $\alpha/2$
+- $S E(\hat{\boldsymbol{p}})$ is the standard error for sample proportion
+
  >### Hypothesis Testing
 
 First let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform test to check the "Hypothesis" hence the name "hypothesis testing". Now, this might seem ambigious because of how general the definition is. That is an unfortunate consequence of trying to avoid attaching a concept to a specific example. Sometimes the concept seems way too abstract.
