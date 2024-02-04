@@ -94,7 +94,8 @@ One other key fact:
 
 #### Sampling Distribution of the Sample Variance
 *References:* [The Sampling Distribution of the Sample Variance
-](https://youtu.be/V4Rm4UQHij0)
+](https://youtu.be/V4Rm4UQHij0), [The Sample Variance and its Chi Squared Distribution
+](https://youtu.be/EgA1fqww4B8)
 
 Let's start by defining the sample variance. Mathematically, the sample variance denoted as $s^2$ can be defined as follows:
 
@@ -120,14 +121,14 @@ What factors dicate the sampling distribution of the sample variance:
 
 > Sampling Distribution of the Sample Variance for a normal distribution
 
-Suppose the distribution we are sampling from is normally distribution with a population variance of $\sigma^2$. And we sample $n$ independent samples from the distribution. In that case, the sampling distribution of  <b>modified sample variance </b> (modified by dividing by $\sigma^2$) is given by a chi-square distribution which can be expressed as follows:
+Suppose the distribution we are sampling from is normally distribution with a population variance of $\sigma^2$. And we sample $n$ independent samples from the distribution. In that case, the sampling distribution of  <b>modified sample variance </b> (modified by scaling with $\frac{(n-1)}{\sigma^2}$) is given by a chi-square distribution which can be expressed as follows:
 
 $$
 \chi^2=\frac{(n-1) s^2}{\sigma^2}
 $$
 
 
-This is chi-square distribution with $n-1$ degrees of freedom. Again to reiterate this is not the exact distribution for the sample variance; rather if the sample variance is scaled.
+This is chi-square distribution with $n-1$ degrees of freedom. Again to reiterate this is not the exact distribution for the sample variance; rather a scaled version of the sample variance.
 
 
 
