@@ -291,41 +291,62 @@ Well, to get evidence to reject the null hypothesis, we collect a sample and mea
 Let's rewrite the statements for hypothesis testing again but in a concise manner:
 
 
-_Two-tailed test:_ In two-tailed test, typically the alternative hypothesis  statement involve a $\neq$ symbol. 
+_Two-tailed test:_ In two-tailed test, typically the alternative hypothesis  statement involve a $\neq$ symbol and the null hypothesis involves a equal symbol.
 
 $$
 H_0: p=~0.3  
 $$
 
 $$
-H_0: p \neq~0.3  
+H_a: p \neq~0.3  
 $$
 
 
-_One-tailed test_: In one-tailed test, typically the alternative hypothesis statement a $>$ or $<$ sign.
 
 
-Left-tailed test:
+
+Left-tailed test (Version 1):
+$$
+H_0: p\geq~0.3  
+$$
+
+$$
+H_a: p <~0.3  
+$$
+
+Left-tailed test (Version 2):
+
+$$
+H_0: p =~0.3  
+$$
+
+$$
+H_a: p <~0.3  
+$$
+
+
+Right-tailed test (Version 1):
+
+$$
+H_0: p\leq~0.3  
+$$
+
+$$
+H_a: p > ~0.3  
+$$
+
+
+Right-tailed test (Version 2):
+
 $$
 H_0: p=~0.3  
 $$
 
 $$
-H_0: p >~0.3  
+H_a: p > ~0.3  
 $$
 
-Right-tailed test:
-
-$$
-H_0: p=~0.3  
-$$
-
-$$
-H_0: p < ~0.3  
-$$
-
-
-
+![hypotheis_test](https://i.ibb.co/V9c14nx/chrome-omogx2-Pvx-X.png)
 
 
 <!-- >### Sampling Methods
