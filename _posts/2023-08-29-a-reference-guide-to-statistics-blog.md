@@ -354,11 +354,18 @@ $$
 
 >### p-value
 
+_Reference_: [What is a p-value? ](https://youtu.be/UsU-O2Z1rAs)
+
+Definition: The p-value is the probability of getting the observed value of the test statistic or a value with even greater evidence against $H_0$, if the null hypothesis is true. 
+
 
 Facts about p-values:
 
-- When we compute p-value we are assuming the null hypothesis is true.
-- When the p-values start to go low we start to doubt the null hypothesis. In other words, we start to get uncomfortable about the null hypothesis.
+- p-value is a probability.
+- When we compute the p-value we are assuming the null hypothesis is true.
+- When the p-values start to go low we start to doubt the null hypothesis. In other words, we start to get uncomfortable about the null hypothesis. We set a threshold (usually 0.05) and when p-value goes down below that threshold we reject the null hypothesis.
+
+- If the p-value does not go down below the threshold we cannot reject the null hypothesis. In other words, the evidence we get to reject the null hypothesis are not statistically significant enough.
 
 
 
