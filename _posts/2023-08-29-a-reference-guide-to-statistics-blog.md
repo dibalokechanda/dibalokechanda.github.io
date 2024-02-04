@@ -309,6 +309,7 @@ $$
 
 
 Left-tailed test (Version 1):
+
 $$
 H_0: p\geq~0.3  
 $$
