@@ -264,10 +264,13 @@ Here,
 
 First, let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform tests to check the "Hypothesis" hence the name "hypothesis testing". Now, this might seem ambiguous because of how general the definition is. That is an unfortunate consequence of trying to avoid attaching a concept to a specific example. Sometimes the concept seems way too abstract.
 
-**Null hypothesis:** This is denoted as $H_0$. This is the accepted value (for now) for a parameter. Again, we are ambiguous about what we mean by a "parameter". Again, the reason is we want it to be general. The parameter can be a mean or a proportion or predicted coefficients of the regression model.....
+#### Null hypothesis:
+
+This is denoted as $H_0$. This is the accepted value (for now) for a parameter. Again, we are ambiguous about what we mean by a "parameter". Again, the reason is we want it to be general. The parameter can be a mean or a proportion or predicted coefficients of the regression model.....
 
 
-**Alternative hypothesis:** This is denoted as $H_a$.
+#### Alternative hypothesis:
+This is denoted as $H_a$
 
 There are two possible outcomes from hypothesis testing:
 
@@ -289,7 +292,7 @@ $$
 Well, to get evidence to reject the null hypothesis, we collect a sample and measure the proportion of people who are overweight. Say, that comes out to be $0.32$. Does that mean we should reject the null hypothesis? Obviously not, because that small deviation can happen by random chance. We need some really extreme evidence to reject the null hypothesis.  This is where things become fuzzy and subjective. We need to quantify exactly what evidence would convince us to reject the null hypothesis.
 
 
-**One-tailed vs Two-tailed test:** 
+#### One-tailed vs Two-tailed test: 
 
 Let's rewrite the statements for hypothesis testing again but in a concise manner:
 
