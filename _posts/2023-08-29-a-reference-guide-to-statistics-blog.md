@@ -340,7 +340,17 @@ Note that this is going to change if we change our confidence level or level of 
 ![reject_null](https://i.ibb.co/pyfpRRj/chrome-c-FWz-MEe-Ycw.png)
 
 
-- Another way to do this is using the concept of p-value. 
+- Another way to do this is using the concept of p-value. The general rule is:
+
+
+If $p$-value $\leq \alpha / 2$: Reject the null hypothesis.
+
+If $p$-value $>\alpha / 2$: Fail to reject the null hypothesis.
+
+ 
+![p_value_cannot_reject_null](https://i.ibb.co/pPC0gqr/chrome-f9rr-Bkxh10.png)
+
+![p_value_reject_null](https://i.ibb.co/9sSRM4S/chrome-Es-S6pv-Jkb-F.png)
 
 _One-tailed test_:
 
