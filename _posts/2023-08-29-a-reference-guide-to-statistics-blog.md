@@ -262,9 +262,9 @@ Here,
 
  >### Hypothesis Testing
 
-First, let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform tests to check the "Hypothesis" hence the name "hypothesis testing". Now, this might seem ambigous because of how general the definition is. That is an unfortunate consequence of trying to avoid attaching a concept to a specific example. Sometimes the concept seems way too abstract.
+First, let's try to understand what we mean by "Hypothesis". This kind of a general term to refer to a "claim" or a premise. We perform tests to check the "Hypothesis" hence the name "hypothesis testing". Now, this might seem ambiguous because of how general the definition is. That is an unfortunate consequence of trying to avoid attaching a concept to a specific example. Sometimes the concept seems way too abstract.
 
-**Null hypothesis:** This is denoted as $H_0$. This is the accepted value (for now) for a parameter. Again, we are ambigous about what we mean by a "parameter". Again, the reason is we want it to be general. The parameter can be a mean or a proportion or predicted coefficients of the regression model.....
+**Null hypothesis:** This is denoted as $H_0$. This is the accepted value (for now) for a parameter. Again, we are ambiguous about what we mean by a "parameter". Again, the reason is we want it to be general. The parameter can be a mean or a proportion or predicted coefficients of the regression model.....
 
 
 **Alternative hypothesis:** This is denoted as $H_a$.
@@ -274,9 +274,9 @@ There are two possible outcomes from hypothesis testing:
 - We can reject the null hypothesis.
 - Or we can fail to reject the null hypothesis. Note that, we did not prove the "null hypothesis" is actually true.
 
- A good analogy for this is "you are innocent until proven guilty". Using that analogy we can say "Null hypothesis is true unless the evidence we get is substantial enough to accept the alternative hypothesis and reject the null hypothesis". Well, we need to define and quantify what we mean by "substantial evidence". 
+ A good analogy for this is "You are innocent until proven guilty". Using that analogy we can say "Null hypothesis is true unless the evidence we get is substantial enough to accept the alternative hypothesis and reject the null hypothesis". Well, we need to define and quantify what we mean by "substantial evidence". 
 
- **Defining substantial evidence:** We use test statistic (the statistic for the parameter) to get the "evidence". Note that, this is  "statistic" because we will always be working with samples.  Also, this indicates what we mean by "substantial evidence". Because when we work with "statistic" and get a sampling distribution for a parameter, there is always randomness. So, by "substantial evidence" we mean we can say without any doubt the evidence against the null hypothesis did not happen because of randomness.  Let's test a concrete example, assume we make a null hypothesis about the weight of people in Wisconsin. The null hypothesis is: The proportion of people that is overweight in Wisconsin is 0.3. And the alternative hypothesis is: The proportion of people who are overweight in Wisconsin is not 0.3. 
+ **Defining substantial evidence:** We use test statistics (the statistic for the parameter) to get the "evidence". Note that, this is  "statistic" because we will always be working with samples.  Also, this indicates what we mean by "substantial evidence". Because when we work with "statistics" and get a sampling distribution for a parameter, there is always randomness. So, by "substantial evidence" we mean we can say without any doubt the evidence against the null hypothesis did not happen because of randomness.  Let's test a concrete example, assume we make a null hypothesis about the weight of people in Wisconsin. The null hypothesis is: The proportion of people that are overweight in Wisconsin is 0.3. And the alternative hypothesis is: The proportion of people who are overweight in Wisconsin is not 0.3. 
 
 $$
 H_0: \text{Proportion of overweight people in Wisconsin }=~0.3   
@@ -307,6 +307,8 @@ $$
 
 
 
+> Two-tailed test is sometimes referred to as non-directional hypothesis testing
+{: .prompt-tip }
 
 Left-tailed test (Version 1):
 
@@ -349,6 +351,11 @@ $$
 $$
 H_a: p > ~0.3  
 $$
+
+
+
+> Left-tailed test and right-tailed test are sometimes referred to as directional hypothesis testing
+{: .prompt-tip }
 
 ![hypotheis_test](https://i.ibb.co/V9c14nx/chrome-omogx2-Pvx-X.png)
 
