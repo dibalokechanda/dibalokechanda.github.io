@@ -333,12 +333,14 @@ Note that this is going to change if we change our confidence level or level of 
 - Compute test statistic based on the data and compare it to the critical value.
 
 
-- If the absolute value of the test statistic is greater than the critical value, you reject the null hypothesis.
+- If the absolute value of the test statistic is greater than the critical value, you reject the null hypothesis. Otherwise, you say we fail to reject the null hypothesis.
+
+![fail_to_reject](https://i.ibb.co/hKyXWG3/chrome-u-L5ysc-WTLx.png)
+
+![reject_null](https://i.ibb.co/pyfpRRj/chrome-c-FWz-MEe-Ycw.png)
 
 
-
-
-
+- Another way to do this is using the concept of p-value. 
 
 _One-tailed test_:
 
