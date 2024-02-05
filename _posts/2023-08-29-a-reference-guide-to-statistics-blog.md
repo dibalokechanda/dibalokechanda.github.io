@@ -354,7 +354,8 @@ $$
 
 >### p-value
 
-_Reference_: [What is a p-value? ](https://youtu.be/UsU-O2Z1rAs)
+_Reference_: [What is a p-value? ](https://youtu.be/UsU-O2Z1rAs) [P Values, z Scores, Alpha, Critical Values
+](https://www.youtube.com/watch?v=zTABmVSAtT0&ab_channel=statisticsfun)
 
 Definition: The p-value is the probability of getting the observed value of the test statistic or a value with even greater evidence against $H_0$, if the null hypothesis is true. 
 
