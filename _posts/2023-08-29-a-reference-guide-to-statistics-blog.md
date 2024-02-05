@@ -308,10 +308,39 @@ H_a: p \neq~0.3
 $$
 
 
+![two_tailed_hp](https://i.ibb.co/yFjs9BD/chrome-fph5-Hs-Hkn-U.png)
+
 
 
 > Two-tailed test is sometimes referred to as non-directional hypothesis testing
 {: .prompt-tip }
+
+
+Process of performing a two-tailed hypothesis test:
+
+
+- Decide on the null hypothesis ($H_0$) and the alternative hypothesis ($H_a$). 
+
+- Decide on the confidence level ($(1-\alpha)\times 100\%$) or the level of significance value ($\alpha$). The most common value for the confidence level is $95\%$, which means the overall level of significance is $\alpha=0.05$. But as we are doing a two-tailed test we need to compute $\alpha/2=0.025$ for two tails. 
+
+![hp_first_step](https://i.ibb.co/5jrw3L3/chrome-7-MT2-Do6-Fvg.png)
+
+Note that this is going to change if we change our confidence level or level of significance. There is no general rule for choosing this; rather it depends on the domain. For example, if you are doing something in the medical domain, your level of confidence should be pretty high. There are other nuances to decide on this but they are specific to specific cases. 
+
+- Then we need to compute the critical value. But this is dependent on which statistic we are working with. For example, if we are working with z-statistic and by hypothesis testing we are trying to evaluate an assumption about a population mean then the critical value is typically $1.96$. In short, this is not that straightforward and depends on a lot of factors. Take a look at this [cheatsheet](https://puremathematics.mt/hypothesis-testing-cheat-sheet-2/) to get a feeling for this. 
+
+
+- Compute test statistic based on the data and compare it to the critical value.
+
+
+- If the absolute value of the test statistic is greater than the critical value, you reject the null hypothesis.
+
+
+
+
+
+
+_One-tailed test_:
 
 Left-tailed test (Version 1):
 
