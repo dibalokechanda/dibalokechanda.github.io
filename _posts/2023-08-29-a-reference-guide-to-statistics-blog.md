@@ -354,6 +354,9 @@ If $p$-value $>\alpha / 2$: Fail to reject the null hypothesis.
 
 _One-tailed test_:
 
+
+![one_tailed_hp](https://i.ibb.co/5hvNLhc/chrome-ck-IRwf-XD3k.png)
+
 Left-tailed test (Version 1):
 
 $$
@@ -401,7 +404,6 @@ $$
 > Left-tailed test and right-tailed test are sometimes referred to as directional hypothesis testing
 {: .prompt-tip }
 
-![hypotheis_test](https://i.ibb.co/V9c14nx/chrome-omogx2-Pvx-X.png)
 
 >### p-value
 
