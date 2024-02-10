@@ -147,6 +147,7 @@ mat_cbind <- cbind(col1, col2, col3)
 mat_rbind <- rbind(col1, col2, col3)
 ```
 
+
 ## Generating samples from a probability distribution
 
 ### Generating samples from a uniform distribution
