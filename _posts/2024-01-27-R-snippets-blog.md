@@ -277,6 +277,23 @@ model <- lm(y ~ poly(x, 5), data = data)
 summary(model)
 ```
 
+#### Detecting multicollinearity
+
+To detect multicollinearity in regression the variation inflation factor (VIF) can be computed. As a thumb rule if $\text{VIF}>10$, then multicollinearity exists.
+
+```R
+library(car)
+
+# Fit a regression model ....
+# Compute VIF
+vif_result <- vif(model)
+
+# Print VIF values
+print(vif_result)
+
+```
+
+
 ## Personalized snippets 
 
 ### Split continuous numerical variables in different classes
