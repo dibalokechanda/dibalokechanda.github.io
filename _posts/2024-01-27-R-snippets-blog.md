@@ -136,7 +136,7 @@ logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
 mat <- matrix(0,nrow = num_rows, ncol = num_cols)
 ```
 
-#### Creating matrices by stacking matrices (vertically and horizontally)
+#### Creating matrices by stacking vectors (vertically and horizontally)
 
 ```R
 col1 <- c(1, 4, 7)
