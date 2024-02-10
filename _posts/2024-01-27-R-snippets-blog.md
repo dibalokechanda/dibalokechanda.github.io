@@ -32,6 +32,26 @@ As an example, the `ggplot2` library can be loaded as follows:
 library(ggplot2)
 ```
 
+### For loops
+
+
+```R
+# Example of a for loop
+for (i in 1:5) {
+  print(i)
+}
+```
+
+```R
+# Looping over elements of a vector
+element_vector <- c("a", "b", "c", "d", "e")
+for (element in element_vector) {
+  print(element)
+}
+
+
+```
+
 
 ### Creating a sequence of numbers given a range 
 
