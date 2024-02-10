@@ -51,6 +51,19 @@ print(paste("Name:", name, ", Age:", age))
 
 ```
 
+### Conditionals 
+
+```R
+# Example of an else if statement
+x <- 10
+if (x > 20) {
+  print("x is greater than 20")
+} else if (x > 10) {
+  print("x is greater than 10 but less than or equal to 20")
+} else {
+  print("x is less than or equal to 10")
+}
+```
 
 ### While loops
 
@@ -77,8 +90,6 @@ element_vector <- c("a", "b", "c", "d", "e")
 for (element in element_vector) {
   print(element)
 }
-
-
 ```
 
 
