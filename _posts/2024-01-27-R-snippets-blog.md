@@ -41,7 +41,7 @@ sequence <- seq(1, 10, by=1)
 print(sequence)
 ```
 
-Another way to create sequence is with ``:`` 
+Another way to create a sequence is with ``:`` 
 
 ```R
 # Create a sequence from 1 to 100
@@ -53,8 +53,10 @@ i <- 1:100
 ```R
 
 # Creating empty vectors 
-
 empty_vec <- c()
+
+# Creating an empty vector of a specific length and type
+empty_vector <- vector("numeric", length = 5)
 
 # Creating a numeric vector
 numeric_vector <- c(1, 2, 3, 4, 5)
