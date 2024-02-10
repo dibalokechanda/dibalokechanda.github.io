@@ -128,6 +128,25 @@ logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
 ```
 
 
+### Creating matrices
+
+#### Creating an empty matrix filled with zeros (or any specific values)
+
+```R
+mat <- matrix(0,nrow = num_rows, ncol = num_cols)
+```
+
+#### Creating matrices by stacking matrices (vertically and horizontally)
+
+```R
+col1 <- c(1, 4, 7)
+col2 <- c(2, 5, 8)
+col3 <- c(3, 6, 9)
+
+mat_cbind <- cbind(col1, col2, col3)
+mat_rbind <- rbind(col1, col2, col3)
+```
+
 ## Generating samples from a probability distribution
 
 ### Generating samples from a uniform distribution
