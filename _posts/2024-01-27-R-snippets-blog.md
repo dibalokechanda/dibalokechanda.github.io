@@ -239,6 +239,13 @@ ggsave("plot.png",width=5,height=5)
 
 #### Fitting a simple regression model
 
+The following code fit a simple linear regression model of the form:
+
+$$
+
+y= \beta_0+\beta_1x+ \epsilon
+$$
+
 ```R
 data <- read.csv("data.csv")
 
@@ -255,10 +262,16 @@ coefficients(model)
 
 #### Include non-linear terms in the regression model
 
+Non-linear regression terms can be introduced with the help of the ```poly()`` function. The following code snippet fit a regression of the following form:
+
+$$
+y=\beta_0+\beta_1 x+\beta_2 x^2+ \beta_3 x^3+ \beta_4 x^4+ \beta_5 x^5
+$$
+
 ```R
 data <- read.csv("data.csv")
 
-model <- lm(y ~ poly(x, 9), data = data)
+model <- lm(y ~ poly(x, 5), data = data)
 
 # Summary 
 summary(model)
