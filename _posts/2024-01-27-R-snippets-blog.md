@@ -12,7 +12,7 @@ This article contains code snippets for "R" programming language. I am fairly ne
 
 
 
-## Clear variables from workspace
+## Clear variables from work space
 
 ```R
 rm(list=ls())
@@ -32,9 +32,18 @@ As an example, the `ggplot2` library can be loaded as follows:
 library(ggplot2)
 ```
 
+### While loops
+
+```R
+# Example of a while loop
+i <- 1
+while (i <= 5) {
+  print(i)
+  i <- i + 1
+}
+```
+
 ### For loops
-
-
 ```R
 # Example of a for loop
 for (i in 1:5) {
@@ -86,7 +95,6 @@ character_vector <- c("a", "b", "c", "d", "e")
 
 # Creating a logical vector
 logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
-
 
 ```
 
