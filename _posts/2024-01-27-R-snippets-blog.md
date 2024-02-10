@@ -9,13 +9,16 @@ toc: true
 
 This article contains code snippets for "R" programming language. I am fairly new to "R" and documenting the code snippets helps me to understand it better. Just a word of caution, the snippets are not organized neatly. This is just for my personal reference to keep track of what concepts I learned in R.
 
-
-
-
 ## Clear variables from work space
 
 ```R
 rm(list=ls())
+```
+
+## Clear Plots
+
+```R
+dev.off(dev.list()["RStudioGD"]
 ```
 
 ## Basics 
@@ -31,6 +34,23 @@ As an example, the `ggplot2` library can be loaded as follows:
 ```R
 library(ggplot2)
 ```
+
+### Printing
+
+```R
+# Example of using sprintf() inside print()
+x <- 10
+print(sprintf("The value of x is %d", x))
+```
+
+```R
+# Example of using paste() inside print()
+name <- "John"
+age <- 30
+print(paste("Name:", name, ", Age:", age))
+
+```
+
 
 ### While loops
 
