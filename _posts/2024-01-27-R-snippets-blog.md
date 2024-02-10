@@ -28,7 +28,7 @@ dev.off(dev.list()["RStudioGD"]
 install.packages("ggplot2")
 ```
 
-### Loading in libraries 
+### Loading in library
 As an example, the `ggplot2` library can be loaded as follows:
 
 ```R
