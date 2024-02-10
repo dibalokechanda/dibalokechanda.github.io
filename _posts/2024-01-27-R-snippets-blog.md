@@ -80,7 +80,6 @@ i <- 1:100
 ### Creating vectors 
 
 ```R
-
 # Creating empty vectors 
 empty_vec <- c()
 
@@ -95,7 +94,6 @@ character_vector <- c("a", "b", "c", "d", "e")
 
 # Creating a logical vector
 logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
-
 ```
 
 
@@ -126,18 +124,6 @@ x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```R
 summary(data)
 ```
-
-## Split continuous numerical variables in different classes
-
-```R
-breaks <- c(10, 20, 40, 60, 90,Inf)
-labels <- c("10-20", "21-40", "41-60", "61-80","81+")
-
-# Create a new column with age groups
-data$age_group <- cut(data$AGE, breaks = breaks, labels = labels, right = FALSE) 
-```
-In the above example code, there is a continuous age group variable. A new column is created by assigning different edge groups.
-
 ## ggplot commands
 
 
@@ -193,3 +179,18 @@ m+geom_density_2d()
 # Saves the last plot as "plot.png" 5x5 image
 ggsave("plot.png",width=5,height=5)
 ```
+
+
+
+## Personalized snippets 
+
+### Split continuous numerical variables in different classes
+
+```R
+breaks <- c(10, 20, 40, 60, 90,Inf)
+labels <- c("10-20", "21-40", "41-60", "61-80","81+")
+
+# Create a new column with age groups
+data$age_group <- cut(data$AGE, breaks = breaks, labels = labels, right = FALSE) 
+```
+In the above example code, there is a continuous age group variable. A new column is created by assigning different edge groups.
