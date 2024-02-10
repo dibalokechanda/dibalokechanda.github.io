@@ -233,6 +233,37 @@ ggsave("plot.png",width=5,height=5)
 
 
 
+## Statistical Concepts
+
+### Regression 
+
+#### Fitting a simple regression model
+
+```R
+data <- read.csv("data.csv")
+
+# Fit the regression model
+model <- lm(y ~ x, data = data)
+
+# Summary of the model
+summary(model)
+
+# Coefficients:
+coefficients(model)
+```
+
+
+#### Include non-linear terms in the regression model
+
+```R
+data <- read.csv("data.csv")
+
+model <- lm(y ~ poly(x, 9), data = data)
+
+# Summary 
+summary(model)
+```
+
 ## Personalized snippets 
 
 ### Split continuous numerical variables in different classes
