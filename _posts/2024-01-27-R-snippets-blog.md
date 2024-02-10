@@ -262,7 +262,7 @@ coefficients(model)
 
 #### Include non-linear terms in the regression model
 
-Non-linear regression terms can be introduced with the help of the ```poly()`` function. The following code snippet fit a regression of the following form:
+Non-linear regression terms can be introduced with the help of the ``poly()`` function. The following code snippet fit a regression of the following form:
 
 $$
 y=\beta_0+\beta_1 x+\beta_2 x^2+ \beta_3 x^3+ \beta_4 x^4+ \beta_5 x^5
