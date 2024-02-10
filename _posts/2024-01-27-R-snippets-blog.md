@@ -41,6 +41,33 @@ sequence <- seq(1, 10, by=1)
 print(sequence)
 ```
 
+Another way to create sequence is with ``:`` 
+
+```R
+# Create a sequence from 1 to 100
+i <- 1:100
+```
+
+### Creating vectors 
+
+```R
+
+# Creating empty vectors 
+
+empty_vec <- c()
+
+# Creating a numeric vector
+numeric_vector <- c(1, 2, 3, 4, 5)
+
+# Creating a character vector
+character_vector <- c("a", "b", "c", "d", "e")
+
+# Creating a logical vector
+logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+
+
+```
+
 
 ## Generating samples from a probability distribution
 
