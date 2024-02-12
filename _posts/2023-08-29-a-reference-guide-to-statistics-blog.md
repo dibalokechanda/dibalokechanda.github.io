@@ -419,7 +419,26 @@ Facts about p-values:
 - When we compute the p-value we are assuming the null hypothesis is true.
 - When the p-values start to go low we start to doubt the null hypothesis. In other words, we start to get uncomfortable about the null hypothesis. We set a threshold (usually 0.05) and when p-value goes down below that threshold we reject the null hypothesis.
 
-- If the p-value does not go down below the threshold we cannot reject the null hypothesis. In other words, the evidence we get to reject the null hypothesis are not statistically significant enough.
+- If the p-value does not go down below the threshold we cannot reject the null hypothesis. In other words, the evidence we get to reject the null hypothesis is not statistically significant enough.
+
+
+> ### Resampling techniques
+
+#### Bootstrapping
+
+Before understanding the concept of bootstrapping, we need to understand why we even need bootstrapping.
+
+<b> The motivation behind bootstrapping:</b> In statistics, we try to estimate a population parameter. But the population is unobservable in practice, hence we work with a sampling distribution and try to estimate the population parameter from the sampling distribution. But to construct a sampling distribution we need to have certain assumptions:
+
+- We can take multiple samples from the distribution and compute a statistic for each sample. Taking multiple samples allows us to construct the sampling distribution and do stuffs like creating a confidence interval from the sampling distribution.
+
+- Another important assumption is the underlying population is Gaussian. If it is not, the sample size is large enough for the central limit theorem to kick in. 
+
+What if these assumptions are violated? What if you have a single sample? 
+
+<b>Issues</b>: For a single sample, the statistic computed from that sample will be closer to the actual population parameter if the sample size is really large. If the sample size is small, it will to far off from the actual population parameter. In addition, with a single sample, how do you create a confidence interval?
+
+Bootstrapping tries to solve these issues by using a resampling technique.
 
 
 
