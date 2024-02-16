@@ -143,6 +143,8 @@ For low sample size the distribution is skewed. As the sample size increases the
 
 *References:* [Introduction to the t Distribution (non-technical)](https://www.youtube.com/watch?v=Uv6nGIgZMVw), [What is the t-distribution? An extensive guide!](https://www.youtube.com/watch?v=UetYS3PaHIo)
 
+_Interactive Visualization_: [Kristoffer Magnusson](https://rpsychologist.com/d3/tdist/)
+
 One issue when working with the sampling distribution of the sample mean is for many calculations we are required to know $\sigma$. But $\sigma$ is a population parameter which is most of the time not possible to know. This means we can not calculate the following quantity as $\sigma$ is unknown:
 
 $$
