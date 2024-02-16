@@ -438,7 +438,9 @@ What if these assumptions are violated? What if you have a single sample?
 
 <b>Issues</b>: For a single sample, the statistic computed from that sample will be closer to the actual population parameter if the sample size is really large. If the sample size is small, it will to far off from the actual population parameter. In addition, with a single sample, how do you create a confidence interval?
 
-Bootstrapping tries to solve these issues by using a resampling technique.
+Bootstrapping tries to solve these issues by using a resampling technique. Note that it is a generalized technique that is applicable to any population parameter, like population mean, population proportion, regression coefficients, etc.
+
+
 
 
 
