@@ -430,7 +430,7 @@ Before understanding the concept of bootstrapping, we need to understand why we 
 
 <b> The motivation behind bootstrapping:</b> In statistics, we try to estimate a population parameter. But the population is unobservable in practice, hence we work with a sampling distribution and try to estimate the population parameter from the sampling distribution. But to construct a sampling distribution we need to have certain assumptions:
 
-- We can take multiple samples from the distribution and compute a statistic for each sample. Taking multiple samples allows us to construct the sampling distribution and do stuffs like creating a confidence interval from the sampling distribution.
+- We can take multiple samples from the distribution and compute a statistic for each sample. Taking multiple samples allows us to construct the sampling distribution and do stuff like creating a confidence interval from the sampling distribution.
 
 - Another important assumption is the underlying population is Gaussian. If it is not, the sample size is large enough for the central limit theorem to kick in. 
 
@@ -440,8 +440,78 @@ What if these assumptions are violated? What if you have a single sample?
 
 Bootstrapping tries to solve these issues by using a resampling technique. Note that it is a generalized technique that is applicable to any population parameter, like population mean, population proportion, regression coefficients, etc.
 
+See the following visualization that I created as part of a class activity for the **Statistical Machine Learning** course at Marquette University. 
+
+![bootstrap](https://i.ibb.co/4smKdH5/POWERPNT-v-Q82zrj-Fy-Q.png)
 
 
+ - Resample with replacement and create a bootstrapped dataset
+
+ - Using the bootstrapped dataset compute a statistic. 
+
+ - Generate the bootstrap distribution
+
+ This distribution is a non-parametric estimation of the population. This can be used to compute standard error and form confidence intervals.
+
+See the following code example in R. This was also part of the class activity for the **Statistical Machne Learning** course in Marquette.
+
+```R
+# Import the packages
+library(infer)
+library(ggplot2)
+library(dplyr)
+
+# Set Random seed 
+set.seed(6520)
+
+# Load the built in gss dataset
+data(gss)
+
+# Take a look at the population dataset
+dplyr::glimpse(gss)
+
+# Find the population mean 
+population_mean <- mean(gss$hours)
+
+# Randomly choose 20 row indices from the original dataframe
+random_indices <- sample(nrow(gss), 20)
+
+# Subset the original dataframe using the randomly chosen indices
+sample_dataset<- gss[random_indices, ]
+
+# Take a look at the sample dataset
+dplyr::glimpse(sample_dataset)
+
+# Finding the mean with Bootstrapping
+boot_dist <- sample_dataset %>%
+  specify(response = hours) %>%
+  generate(reps = 1000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+# Visualize bootstrap distribution
+boot_dist %>%
+  visualize()+
+  theme_bw()
+  
+# Form the confidence interval
+ci <- infer::get_ci(
+  boot_dist, level = .95)
+
+# Compute the sample mean
+obs_mean <- sample_dataset %>%
+  specify(response = hours) %>%
+  calculate(stat = "mean")
+
+# Visualise
+boot_dist %>%
+  visualize() +
+  shade_confidence_interval(endpoints = ci)+
+  geom_vline(xintercept = population_mean,
+             color = "red",linetype = "dashed",size = 3)+
+  geom_vline(xintercept = obs_mean[[1]],
+             color = "blue",size = 3)+
+  theme_bw()
+```
 
 
 <!-- >### Sampling Methods
