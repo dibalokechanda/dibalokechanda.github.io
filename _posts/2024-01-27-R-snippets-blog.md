@@ -306,3 +306,11 @@ labels <- c("10-20", "21-40", "41-60", "61-80","81+")
 data$age_group <- cut(data$AGE, breaks = breaks, labels = labels, right = FALSE) 
 ```
 In the above example code, there is a continuous age group variable. A new column is created by assigning different edge groups.
+
+### Get a random subset from a data frame
+
+```R
+k=10
+random_indices <- sample(nrow(data), k)
+subset_dataset<- data[random_indices, ]
+```
