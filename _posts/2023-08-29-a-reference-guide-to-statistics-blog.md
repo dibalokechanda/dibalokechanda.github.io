@@ -175,7 +175,7 @@ Both t-distribution and standard normal distribution are bell-shaped and symmetr
 ](https://www.youtube.com/watch?v=EJe3jiZNwUU), [Confidence Intervals - Introduction
 ](https://youtu.be/MbXThbTSrVI?list=LL)
 
-*Interactive Visualization of Confidence Interval:* [From Seeing theory](https://seeing-theory.brown.edu/frequentist-inference/index.html)
+*Interactive Visualization of Confidence Interval:* [From Seeing theory](https://seeing-theory.brown.edu/frequentist-inference/index.html), [By Kristoffer Magnusson](https://rpsychologist.com/d3/ci/)
 
 A confidence interval is a range of values that is constructed around a sample statistic, such as a mean or a proportion, to estimate the true population parameter with a certain level of confidence.
 
@@ -425,6 +425,7 @@ Facts about p-values:
 > ### Resampling techniques
 
 #### Bootstrapping
+_Interactive Visualization_ : [From Seeing Theory](https://seeing-theory.brown.edu/frequentist-inference/index.html)
 
 Before understanding the concept of bootstrapping, we need to understand why we even need bootstrapping.
 
