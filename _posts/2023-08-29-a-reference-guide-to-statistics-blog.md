@@ -528,6 +528,16 @@ Let's also talk about some of the limitations of the bootstrap method.
 
 - Bootstrap does not do anything for bias correction. 
 
+#### Cross-validation 
+
+There are different variations of the cross-validation approach. The most well-known one is K-fold cross-validation. However, blindly using K-fold cross-validation without considering different assumptions can reach different conclusions. For interested readers should look into [Sckit-learn](https://scikit-learn.org/stable/modules/cross_validation.html) documentation which provides API for the following cross-validation methods:
+
+
+- K-fold cross-validation 
+
+
+
+- 
 
 
 <!-- >### Sampling Methods
