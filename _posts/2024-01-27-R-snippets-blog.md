@@ -175,6 +175,22 @@ x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```R
 summary(data)
 ```
+
+### Getting the number of columns in a dataframe
+```R
+# Get the number of columns in the data frame
+num_cols_df <- ncol(data_frame)
+print(num_cols_df) 
+```
+
+### Getting the number of rows in a dataframe
+
+```R
+# Get the number of rows in the data frame
+num_rows_df <- nrow(data_frame)
+print(num_rows_df) 
+```
+
 ## ggplot commands
 
 

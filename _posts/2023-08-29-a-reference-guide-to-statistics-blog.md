@@ -530,7 +530,7 @@ Let's also talk about some of the limitations of the bootstrap method.
 
 #### Cross-validation 
 
-There are different variations of the cross-validation approach. The most well-known ones are K-fold cross-validation and Leave-one-out cross-validation (LOOCV). However, blindly using these techniques without considering different assumptions can reach to wrong conclusions. For example in case of a classification problem, if your dataset is severely imbalanced stratified K-fold should be used. Interested readers should look into [Sckit-learn](https://scikit-learn.org/stable/modules/cross_validation.html) documentation which provides API for the following cross-validation methods:
+There are different variations of the cross-validation approach. The most well-known ones are K-fold cross-validation and Leave-one-out cross-validation (LOOCV). However, blindly using these techniques without considering different assumptions can reach to wrong conclusions. For example in case of a classification problem, if your dataset is severely imbalanced stratified K-fold should be used rather than vanilla K-fold cross-validation. Interested readers should look into [Sckit-learn](https://scikit-learn.org/stable/modules/cross_validation.html) documentation which provides API for the following cross-validation methods:
 
 
 - K-fold 
@@ -545,6 +545,7 @@ There are different variations of the cross-validation approach. The most well-k
 - Leave P Groups Out
 - Group Shuffle Split
 
+I think the Sckit-learn documentation does a pretty good job of explaining them, so I won't cover any of these.
 
 <!-- >### Sampling Methods
 
