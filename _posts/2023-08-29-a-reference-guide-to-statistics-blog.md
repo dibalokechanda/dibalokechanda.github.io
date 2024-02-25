@@ -426,6 +426,8 @@ Facts about p-values:
 
 > ### Resampling techniques
 
+Resampling techniques are usually used to compute different versions of the training dataset. These different versions of the training dataset can be used to refit a model again and again to gain additional insights and information.
+
 #### Bootstrapping
 _Interactive Visualization_ : [From Seeing Theory](https://seeing-theory.brown.edu/frequentist-inference/index.html)
 
@@ -515,6 +517,17 @@ boot_dist %>%
              color = "blue",size = 3)+
   theme_bw()
 ```
+
+Let's also talk about some of the limitations of the bootstrap method.
+
+- It is computationally expensive which is obvious.
+
+- Bootstrap cannot fix a bad sample that is not representative of the population.
+
+- If the sample size is too small bootstrap cannot fix that.
+
+- Bootstrap does not do anything for bias correction. 
+
 
 
 <!-- >### Sampling Methods
