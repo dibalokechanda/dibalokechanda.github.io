@@ -168,22 +168,22 @@ _Reference_: [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topic
 x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```
 
-## Operations on dataframe
+## Operations on data frame
 
-### Getting a summary for the dataframe
+### Getting a summary for the data frame
 
 ```R
 summary(data)
 ```
 
-### Getting the number of columns in a dataframe
+### Getting the number of columns in a data frame
 ```R
 # Get the number of columns in the data frame
 num_cols_df <- ncol(data_frame)
 print(num_cols_df) 
 ```
 
-### Getting the number of rows in a dataframe
+### Getting the number of rows in a data frame
 
 ```R
 # Get the number of rows in the data frame
