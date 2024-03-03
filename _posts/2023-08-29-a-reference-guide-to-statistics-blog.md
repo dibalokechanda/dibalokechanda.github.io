@@ -547,11 +547,13 @@ There are different variations of the cross-validation approach. The most well-k
 
 I think the Sckit-learn documentation does a pretty good job of explaining them, so I won't go into too much detail.
 
-One use of cross-validation is choosing parameters. The following diagram visualizes this process:
+One use case of cross-validation is choosing (hyper)parameters. The following diagram visualizes this process:
 
 ![strategy_cv](https://i.ibb.co/Ns6tvyG/chrome-P8n-Pz9-MWp-F.png)
 
-It is easily apparent that CV increases the computational cost significantly.
+It is easily apparent that CV increases the computational cost significantly. If you ever used GridSearchCV for choosing hyperparameters, you will understand what I am talking about.
+
+When we perform a single train-test split, there's a risk that the split might not be representative of the overall dataset. Cross-validation helps mitigate the variability of test splits by systematically cycling through different train-test splits, providing a more robust estimate of model performance.
 
 <!-- >### Sampling Methods
 
