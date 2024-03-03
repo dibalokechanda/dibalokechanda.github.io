@@ -551,9 +551,14 @@ One use case of cross-validation is choosing (hyper)parameters. The following di
 
 ![strategy_cv](https://i.ibb.co/Ns6tvyG/chrome-P8n-Pz9-MWp-F.png)
 
-It is easily apparent that CV increases the computational cost significantly. If you ever used GridSearchCV for choosing hyperparameters, you will understand what I am talking about.
+Another visualization that shows $5$-fold cross validation :
 
-When we perform a single train-test split, there's a risk that the split might not be representative of the overall dataset. Cross-validation helps mitigate the variability of test splits by systematically cycling through different train-test splits, providing a more robust estimate of model performance.
+
+![5fold](https://i.ibb.co/pZqpk4L/chrome-jm-ITGHt-AGm.png)
+
+It is easily apparent that CV increases the computational cost significantly. If you ever used GridSearchCV for choosing hyperparameters, you will understand what I am talking about. If the number of (hyper)parameters is low, then it is kind of manageable. But as the number increases the computational complexity quickly gets out of hand.
+
+Another use case is providing a robust estimate of the model performance. When we perform a single train-test split, there's a risk that the split might not be representative of the overall dataset. Cross-validation helps mitigate the variability of test splits by systematically cycling through different train-test splits, providing a more robust estimate of model performance.
 
 <!-- >### Sampling Methods
 
