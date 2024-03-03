@@ -545,7 +545,13 @@ There are different variations of the cross-validation approach. The most well-k
 - Leave P Groups Out
 - Group Shuffle Split
 
-I think the Sckit-learn documentation does a pretty good job of explaining them, so I won't cover any of these.
+I think the Sckit-learn documentation does a pretty good job of explaining them, so I won't go into too much detail.
+
+One use of cross-validation is choosing parameters. The following diagram visualizes this process:
+
+![strategy_cv](https://i.ibb.co/Ns6tvyG/chrome-P8n-Pz9-MWp-F.png)
+
+It is easily apparent that CV increases the computational cost significantly.
 
 <!-- >### Sampling Methods
 
