@@ -554,7 +554,7 @@ One use case of cross-validation is choosing (hyper)parameters. The following di
 Another visualization that shows $5$-fold cross validation :
 
 
-![5fold](https://i.ibb.co/pZqpk4L/chrome-jm-ITGHt-AGm.png)
+![5fold](https://i.ibb.co/TBFFQ0r/chrome-Zbb-GGBj-TYn.png)
 
 It is easily apparent that CV increases the computational cost significantly. If you ever used GridSearchCV for choosing hyperparameters, you will understand what I am talking about. If the number of (hyper)parameters is low, then it is kind of manageable. But as the number increases the computational complexity quickly gets out of hand.
 
