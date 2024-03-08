@@ -168,7 +168,7 @@ _Reference_: [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topic
 x <- rnorm(n=100,mean=68.5,sd=5.7)
 ```
 
-## Operations on data frame
+## Operations on dataframe
 
 ### Getting a summary for the data frame
 
