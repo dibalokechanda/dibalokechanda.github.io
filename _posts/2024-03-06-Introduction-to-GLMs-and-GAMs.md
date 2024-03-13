@@ -37,6 +37,7 @@ This signifies the link function connects the expected value of the response var
 
 - For binary logistic regression, the link function is the logit function. 
 
+
 Some people might get confused about the expectation term appearing out of nowhere. Let's take a closer look at OLS:
 
 $$
@@ -85,5 +86,5 @@ One common doubt about generalized linear models is, why they are called linear 
 Another common confusion about generalized linear models is the interpretation of link functions. Why do we even need a link function? There are several explanations for this. One explanation that seems the most intuitive to me is it makes $\mu(\mathbf{X})$ and $\mathbf{X}^{T}\beta$ compatible.
 
 
-
+You can find a nice summary of the distributions and link functions in [Wikipedia](https://en.wikipedia.org/wiki/Generalized_linear_model).
 
