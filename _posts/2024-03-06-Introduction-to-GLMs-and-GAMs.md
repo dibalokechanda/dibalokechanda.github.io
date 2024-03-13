@@ -1,5 +1,5 @@
 ---
-title: Introduction to GLMs and GAMs
+title: Introduction to GLMs
 date: 2024-03-6 12:00:00 -500
 categories: [statistics]
 tags: [inferential_statistics]
@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-In this article, I am going to give a beginner-friendly introduction to generalized linear models (GLMs) and generalized additive models (GAMs).
+In this article, I am going to give a beginner-friendly introduction to generalized linear models (GLMs). As a prerequisite you should have a pretty clear idea about about OLS and the assumptions of OLS. Also, you need to be somewhat familiar to expoential family.
 
 # Generalized Linear Models (GLM) 
 
