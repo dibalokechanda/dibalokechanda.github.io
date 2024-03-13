@@ -56,7 +56,7 @@ $$
 \mathbf{Y}|\mathbf{X} \sim \mathcal{N}(\mu(\mathbf{X}),\sigma^2\mathbf{I})
 $$
 
-where, the expectation is a general function of $\mathbf{X}$ expressed as $\mu({\mathbf{X}})$.
+where, the expectation is a general function of $\mathbf{X}$ expressed as $\mu({\mathbf{X}})$. In OLS, we assume $\mu({\mathbf{X}})$ is directly equal to $\mathbf{X}^{T}\beta$, but GLM this assumption is relaxed.
 
 One important detail everyone forgets to mention is, that the GLM only works if the distribution of the response variable is from the exponential family. Exponential family is defined generally in the following form: 
 
