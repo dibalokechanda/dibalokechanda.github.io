@@ -37,6 +37,21 @@ This signifies the link function connects the expected value of the response var
 
 - For binary logistic regression, the link function is the logit function. 
 
+Some people might get confused about the expectation term appearing out of nowwhere. Let's take a closer look at OLS:
+
+$$
+\mathbf{Y}=\mathbf{X}^{T} \mathbf{\beta}+\epsilon
+$$
+
+we assume $\epsilon\sim\mathcal{N}(0,\sigma^2I)$. It is possible to absorb the $\epsilon$ directly in our model. This turns $\mathbf{Y}$ into a random variable which follows a conditional distribution as follows:
+
+
+$$
+Y|X \sim \mathcal{N}(\mathbf{X}^{T} \mathbf{\beta},\sigma^2 I)
+$$
+
+From the above equation we can see how for a OLS the expectation of  response variables $\mathbf{Y}$ relate to the linear combination of predictor variables.
+
 
 One important detail everyone forgets to mention is, the GLM only works if the distribution of the response variable is from exponential family. Exponential family are defined generally in the following form: 
 
