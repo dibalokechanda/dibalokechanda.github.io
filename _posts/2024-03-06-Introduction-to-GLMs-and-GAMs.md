@@ -15,7 +15,7 @@ This starts with the idea about the ordinary least squares (OLS) and the assumpt
 
 ![ols](https://i.ibb.co/5xsFKVV/chrome-j5j-Tu-I7-Ar-N.png)
 
-In this figure, the Gaussian distribution of the response variable is superimposed on the regression line. I think anyone can immediately see the problem if this model is to be applied in a real-world scenario. The response variable is not always going to follow the Gaussian distribution. When it does not follow a Gaussian distribution the OLS is going to fail. 
+In this figure, the Gaussian distribution of the response variable is superimposed on the regression line. I think anyone can immediately see the problem if this model is to be applied in a real-world scenario. The response variable is not always going to follow the Gaussian distribution. When it does not follow a Gaussian distribution the OLS is going to fail. Also for OLS to work it need to abide by the homoscedasticity requirement which is often not the case in real-life data. 
 
 How do we adjust for this? Is there a way we can specify the distribution of the response variable before hand and the model will adapt accordingly ?  Generalized linear models does exactly that. A well-known example of GLM is logistic regression where we assume the response variable follows a bernouli distribution.
 
@@ -38,9 +38,15 @@ This signifies the link function connects the expected value of the response var
 - For binary logistic regression, the link function is the logit function. 
 
 
-One important detail everyone forgets to mention is, the GLM only works if the distribution of the response variable is from exponential family. This can help us give a concise definition of the GLMs.
+One important detail everyone forgets to mention is, the GLM only works if the distribution of the response variable is from exponential family. Exponential family are defined generally in the following form: 
 
-IN GLMs, the response variable $y_i$ follows a distribution from the exponential family with a expected value of $\mu_i$. This expected value  $\mu_i$ can model as a function of the linear combination of response variables. But this is not necessarily a direct functional mapping rather a mapping after applying the link function.
+$$
+f(y|\theta, \phi) = \exp\left\{\frac{t(y)\theta - b(\theta)}{a(\phi)} + c(y, \phi)\right\}
+$$
+
+This can help us give a concise definition of the GLMs.
+
+IN GLMs, the response variable $y_i$ follows a distribution from the exponential family with a expected value of $\mu_i$. This expected value  $\mu_i$ can be modeled as a function of the linear combination of response variables. But this is not necessarily a direct functional mapping rather a mapping after applying the link function.
 
 
 
