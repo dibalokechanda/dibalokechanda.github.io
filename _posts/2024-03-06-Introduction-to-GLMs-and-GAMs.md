@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-In this article, I am going to give a beginner-friendly introduction to generalized linear models (GLMs). As a prerequisite you should have a pretty clear idea about about OLS and the assumptions of OLS. Also, you need to be somewhat familiar to expoential family.
+In this article, I am going to give a beginner-friendly introduction to generalized linear models (GLMs). As a prerequisite you should have a pretty clear idea about about OLS and the assumptions of OLS. Also, you need to be somewhat familiar to expoential family of distributions.
 
 # Generalized Linear Models (GLM) 
 
