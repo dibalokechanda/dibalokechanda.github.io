@@ -61,7 +61,9 @@ $$
 
 This can help us give a concise definition of the GLMs.
 
-IN GLMs, the response variable $y_i$ follows a distribution from the exponential family with a expected value of $\mu_i$. This expected value  $\mu_i$ can be modeled as a function of the linear combination of response variables. But this is not necessarily a direct functional mapping rather a mapping after applying the link function.
+IN GLMs, the response variable $y_i$ follows a distribution from the exponential family with a expected value of $\mu_i$. This expected value  $\mu_i$ can be modeled as a function of the linear combination of response variables. But this is not necessarily a direct functional mapping rather a mapping after applying the link function. 
+
+One common doubt about generalized linear models is, why they are called linear if they are modeling non-linear relationship between the response and predictor variables? The answer to that is the model is linear in parameter. 
 
 
 
