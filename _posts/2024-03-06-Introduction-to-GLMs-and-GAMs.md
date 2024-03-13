@@ -21,7 +21,7 @@ How do we adjust for this? Is there a way we can specify the distribution of the
 
 There are three components related to a generalized linear model.
 
-- <b> Systemic Component: </b> This is the component that contains the predictor variables $x_1,x_2,x_3,\cdots,x_n$. This means the systemic component is $\beta_+\beta_1x_1+\beta_2x_2+\cdots+\beta_nx_n$.
+- <b> Systemic Component: </b> This is the component that contains the predictor variables $x_1,x_2,x_3,\cdots,x_n$. This means the systemic component is $\beta_0+\beta_1x_1+\beta_2x_2+\cdots+\beta_nx_n$.
 
 - <b> Random Component:</b> This is the probability distribution of the response variable. For OLS this is a Gaussian distribution, for binary logistic regression this is a Binomial distribution. As these are related to distributions, they act as random components in the model. 
 
