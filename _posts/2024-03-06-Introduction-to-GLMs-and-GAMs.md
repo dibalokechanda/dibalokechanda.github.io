@@ -83,8 +83,8 @@ IN GLMs, the response variable $y_i$ follows a distribution from the exponential
 
 One common doubt about generalized linear models is, why they are called linear if they are modeling non-linear relationships between the response and predictor variables. The answer to that is the model is linear in parameter. 
 
-Another common confusion about generalized linear models is the interpretation of link functions. Why do we even need a link function? There are several explanations for this. One explanation that seems the most intuitive to me is it makes $\mu(\mathbf{X})$ and $\mathbf{X}^{T}\beta$ compatible.
+Another common confusion about generalized linear models is the interpretation of link functions. Why do we even need a link function? There are several explanations for this. One explanation that seems the most intuitive to me is it makes $\mu(\mathbf{X})$ and $\mathbf{X}^{T}\beta$ compatible. For example, if your response variable is restricted to strictly non-negative numbers, the link function should transform $\mu_i$ to a non-negative number. But this raises another issue. Based on this requirement there is a plethora of possible link functions. How do we choose the best one? Here comes the idea of canonical link functions.
 
 
-You can find a nice summary of the distributions and link functions in [Wikipedia](https://en.wikipedia.org/wiki/Generalized_linear_model).
+You can find a nice summary of the distributions and link functions in [Wikipedia](https://en.wikipedia.org/wiki/Generalized_linear_model). Also, for a nice visual introduction you can to this [video](https://youtu.be/6Nfv0Xr44y8?list=PLl4b1XM725Oc8g3V9p98UeRTOXoAlGEYw).
 
