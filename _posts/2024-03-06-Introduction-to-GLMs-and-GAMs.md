@@ -47,7 +47,7 @@ we assume $\epsilon\sim\mathcal{N}(0,\sigma^2I)$. It is possible to absorb the $
 
 
 $$
-Y|X \sim \mathcal{N}(\mathbf{X}^{T} \mathbf{\beta},\sigma^2 I)
+Y|X \sim \mathcal{N}(\mathbf{X}^{T} \mathbf{\beta},\text{a function of}~\mathbf{X})
 $$
 
 From the above equation we can see how for a OLS the expectation of  response variables $\mathbf{Y}$ relate to the linear combination of predictor variables.
