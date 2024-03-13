@@ -43,15 +43,20 @@ $$
 \mathbf{Y}=\mathbf{X}^{T} \mathbf{\beta}+\epsilon
 $$
 
-we assume $\epsilon\sim\mathcal{N}(0,\sigma^2I)$. It is possible to absorb the $\epsilon$ directly in our model. This turns $\mathbf{Y}$ into a random variable which follows a conditional distribution as follows:
+we assume $\epsilon\sim\mathcal{N}(0,\sigma^2\mathbf{I})$. It is possible to absorb the $\epsilon$ directly in our model. This turns $\mathbf{Y}$ into a random variable which follows a conditional distribution as follows:
 
 
 $$
-Y|X \sim \mathcal{N}(\mathbf{X}^{T} \mathbf{\beta},\text{a function of}~\mathbf{X})
+\mathbf{Y}|\mathbf{X} \sim \mathcal{N}(\mathbf{X}^{T} \mathbf{\beta},\sigma^2\mathbf{I})
 $$
 
-From the above equation, we can see how for an OLS the expectation of response variables $\mathbf{Y}$ relates to the linear combination of predictor variables.
+From the above equation, we can see how for an OLS the expectation of response variables $\mathbf{Y}$ relates to the linear combination of predictor variables. The above equation can also be written as follows:
 
+$$
+\mathbf{Y}|\mathbf{X} \sim \mathcal{N}(\mu(\mathbf{X}),\sigma^2\mathbf{I})
+$$
+
+where, the expectation is a general function of $\mathbf{X}$ expressed as $\mu({\mathbf{X}})$.
 
 One important detail everyone forgets to mention is, that the GLM only works if the distribution of the response variable is from the exponential family. Exponential family is defined generally in the following form: 
 
