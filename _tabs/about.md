@@ -17,7 +17,7 @@ This is a kind of repository of the concepts I learned during my PhD. I rely mos
 
 ## About Me:
 
-I am a CS PhD student at Marquette University, Milwaukee, Wisconsin. I am affiliated with the Machine Learning, Optimization and Data (MOD) Lab. 
+I am a CS PhD student at Marquette University, Milwaukee, Wisconsin.
 
 ## What if you find a mistake?
 
