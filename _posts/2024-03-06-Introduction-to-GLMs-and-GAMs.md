@@ -59,9 +59,16 @@ $$
 where, the expectation is a general function of $\mathbf{X}$ expressed as $\mu({\mathbf{X}})$. In OLS, we assume $\mu({\mathbf{X}})$ is directly equal to $\mathbf{X}^{T}\beta$, but for GLM this assumption is relaxed. More precisely,
 
 $$
-
 \mu(\mathbf{X})= f(\mathbf{X}^{T}\beta);~\text{where}~f(\cdot)=g^{-1}(\cdot)
 $$
+
+The above equation can be written in terms of link function $g(\cdot)$ as follows:
+
+
+$$
+g(\mu(\mathbf{X}))= \mathbf{X}^{T}\beta
+$$
+
 
 One important detail everyone forgets to mention is, that the GLM only works if the distribution of the response variable is from the exponential family. Exponential family is defined generally in the following form: 
 
@@ -74,6 +81,8 @@ This can help us give a concise definition of the GLMs.
 IN GLMs, the response variable $y_i$ follows a distribution from the exponential family with an expected value of $\mu_i$. This expected value  $\mu_i$ can be modeled as a function of the linear combination of response variables. But this is not necessarily a direct functional mapping but a mapping after applying the link function. 
 
 One common doubt about generalized linear models is, why they are called linear if they are modeling non-linear relationships between the response and predictor variables. The answer to that is the model is linear in parameter. 
+
+Another common confusion about generalized linear models is the interpretation of link functions. Why do we even need a link function? There are several explanations for this. One explanation that seems the most intuitive to me is it makes $\mu(\mathbf{X})$ and $\mathbf{X}^{T}\beta$ compatible.
 
 
 
