@@ -214,7 +214,7 @@ $$
 #### ⯌ <u>Probability Density Function:</u>
 
 $$
-\boxed{f(x \mid \mu, \sigma)= \frac{1}{\sqrt{2\pi \sigma^{2}}} \exp({-\frac{(x-\mu)^{2}}{2\sigma^{2}}})}
+\boxed{f(x \mid \mu, \sigma)= \frac{1}{\sqrt{2\pi \sigma^{2}}} \exp\left({-\frac{(x-\mu)^{2}}{2\sigma^{2}}}\right)}
 $$
 
 
