@@ -77,7 +77,7 @@ $$
 f(y|\theta, \phi) = \exp\left\{\frac{t(y)\theta - b(\theta)}{a(\phi)} + c(y, \phi)\right\}
 $$
 
-This can help us give a concise definition of the GLMs.
+I am not going to go into details about exponential family in this article, you will have to take my word for it. This can help us give a concise definition of the GLMs.
 
 IN GLMs, the response variable $y_i$ follows a distribution from the exponential family with an expected value of $\mu_i$. This expected value  $\mu_i$ can be modeled as a function of the linear combination of response variables. But this is not necessarily a direct functional mapping but a mapping after applying the link function. 
 
