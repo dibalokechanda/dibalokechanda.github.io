@@ -17,6 +17,8 @@ Additionally, I want to mention some external resources that provide interactive
 
 - [Probability Distribution Explorer](https://distribution-explorer.github.io/index.html)
 
+- [Interactive visualization of probability distributions By Fred Feng](https://probstats.org/)
+
 
 ## ⦿ Discrete Probability Distributions
 
