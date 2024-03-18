@@ -8,6 +8,16 @@ toc: true
 ---
 
 I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. Also, some distributions are domain-specific. For example, an engineer who works with the applications of wireless communication will surely know about Rayleigh and Rician distributions. Hence, it is kind of a waste of energy and time to try to learn about all the distributions. But still, I want to keep a reference of distributions I come across often when going through literature. Funnily enough, most of the distributions come from the exponential family which I completely overlooked when I started the article.
+
+
+Additionally, I want to mention some external resources that provide interactivity.
+
+
+- [The distribution zoo by Ben Lambert and Fergus Cooper](https://ben18785.shinyapps.io/distribution-zoo/)
+
+- [Probability Distribution Explorer](https://distribution-explorer.github.io/index.html)
+
+
 ## ⦿ Discrete Probability Distributions
 
 ### ⯈ Bernoulli Distribution
