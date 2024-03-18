@@ -519,7 +519,7 @@ It can be shown the marginal distribution is given by:
 
 - The larger the value of degrees of freedom $v$, the more it gets closer to the normal distribution. 
 
-### ⯈ Laplace Distribution
+### ⯈ Laplace/Double-Sideded Exponential Distribution
 
 #### ⯌ <u>Probability Density Function: </u>
 
@@ -784,4 +784,4 @@ $$
 Note that this is not the distribution of exact $S^2$, rather it is the distribution for $\frac{(n-1) S^2}{\sigma^2} $. 
 
 <u>Properties and Key Facts:</u>
-- The multivariate generalization of the $\chi^2$ distribution is the Wishart distribution is Wishart Distribution.
+- The multivariate generalization of the $\chi^2$ distribution is the Wishart distribution.
