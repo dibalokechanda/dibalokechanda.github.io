@@ -7,10 +7,12 @@ math: true
 toc: true
 ---
 
-I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. But still, I want to keep a reference of interesting facts I come across about these distributions.
+I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. Also, some distributions are domain-specific. For example, an engineer who works with the applications of wireless communication will surely know about Rayleigh and Rician distributions. Hence, it is kind of a waste of energy and time to try to learn about all the distributions. But still, I want to keep a reference of distributions I come across often when going through literature. Funnily enough, most of the distributions come from the exponential family which I completely overlooked when I started the article.
 ## ⦿ Discrete Probability Distributions
 
 ### ⯈ Bernoulli Distribution
+
+The best way to think about this distribution is to think about a biased coin toss where the probability of head is $p$ and the probability of tail is $1-p$. Whenever I come across any scenario that involves Bernoulli distribution, I try to project that scenario into a biased contain toss. 
 
 #### ⯌ <u>Probability Density Function:</u>
 
@@ -159,11 +161,46 @@ where,
 - $n=x_1+x_2+\cdots+x_{K}$
 - $p_1+p_2+\cdots+p_K=1$
 
+Also, another way I have seen this expressed in literature is as follows:
+
+$$
+ \binom{n}{x_1\ldots x_K} \prod_{k=1}^{K} p^{x_{k}}_{k}
+$$
 
 #### ⯌ <u>Properties and Key Facts:</u>
 
  - $p_1,p_{2},\cdots, p_{K}$  remains same from trial to trial
  - It is a generalization of binomial distribution for $K$ number of probabilities
+
+
+### ⯈ Multinoulli/Categorical Distribution
+
+This distribution often gets mixed up with other distributions (specifically multinomial distribution) in the literature.
+
+This can be thought of as a generalization of the Bernoulli distribution of K-states. For the Bernoulli distribution, I think of a biased coin, for the Multinouli distribution I think of a K-sided die. This means each K-state has some probability associated with it. As an example, for a fair 6-sided die, the probability for each side is $1/6$. The random variable is $X=\{x_1,x_2,\ldots,x_K\}$. But it is better to think of it as a vector where one of the values can be $1$ while the others remain equal to $0$. For example if $K=3$, the possible states for the vector are:
+
+$$
+[1,0,0] \\
+[0,1,0] \\
+[0,0,1]
+$$
+
+If you know about one-hot encoding this will seem familiar to you.
+
+
+#### ⯌ <u>Probability Density Function:</u>
+
+
+$$
+\prod_{k=1}^{K} p^{x_{k}}_{k}
+$$
+
+This means we are multiplying the probability of each K-side coming up.
+
+
+#### ⯌ <u>Property and Key Facts:</u>
+
+- This distribution is a special case of the multinomial distribution when number of trials $n=1$. 
 
 
 ### ⯈ Geometric Distribution

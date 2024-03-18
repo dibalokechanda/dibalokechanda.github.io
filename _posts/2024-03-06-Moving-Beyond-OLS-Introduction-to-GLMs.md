@@ -1,5 +1,5 @@
 ---
-title: Introduction to GLMs
+title: Moving Beyond OLS-Introduction to GLMs
 date: 2024-03-6 12:00:00 -500
 categories: [statistics]
 tags: [inferential_statistics]
