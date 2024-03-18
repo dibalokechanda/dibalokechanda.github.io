@@ -7,10 +7,10 @@ math: true
 toc: true
 ---
 
-I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. Also, some distributions are domain-specific. For example, an engineer who works with the applications of wireless communication will surely know about Rayleigh and Rician distributions. Hence, it is kind of a waste of energy and time to try to learn about all the distributions. But still, I want to keep a reference of distributions I come across often when going through literature. Funnily enough, most of the distributions come from the exponential family which I completely overlooked when I started the article.
+I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. Also, some distributions are domain-specific. For example, an engineer who works with the applications of wireless communication will surely know about Rayleigh and Rician distributions. Hence, it is kind of a waste of energy and time to try to learn about all the distributions. But still, I want to keep a reference of distributions I come across often when going through literature. Interestingly, Most of the distributions come from the exponential family which I completely overlooked when I started the article.
 
 
-Additionally, I want to mention some external resources that provide interactivity.
+Additionally, I want to mention some external resources that provide interactive visualizations of probability distributions.
 
 
 - [The distribution zoo by Ben Lambert and Fergus Cooper](https://ben18785.shinyapps.io/distribution-zoo/)
@@ -22,7 +22,7 @@ Additionally, I want to mention some external resources that provide interactivi
 
 ### ⯈ Bernoulli Distribution
 
-The best way to think about this distribution is to think about a biased coin toss where the probability of head is $p$ and the probability of tail is $1-p$. Whenever I come across any scenario that involves Bernoulli distribution, I try to project that scenario into a biased contain toss. 
+The best way to think about this distribution is to think about a biased coin toss where the probability of a head is $p$ and the probability of a tail is $1-p$. Whenever I come across any scenario that involves Bernoulli distribution, I try to project that scenario into a biased contain toss. 
 
 #### ⯌ <u>Probability Density Function:</u>
 
