@@ -13,7 +13,7 @@ I know it is dumb to create a reference guide to distributions because it is too
 Additionally, I want to mention some external resources that provide interactive visualizations of probability distributions.
 
 
-- [The distribution zoo by Ben Lambert and Fergus Cooper](https://ben18785.shinyapps.io/distribution-zoo/)
+- [The Distribution Zoo by Ben Lambert and Fergus Cooper](https://ben18785.shinyapps.io/distribution-zoo/)
 
 - [Probability Distribution Explorer](https://distribution-explorer.github.io/index.html)
 
