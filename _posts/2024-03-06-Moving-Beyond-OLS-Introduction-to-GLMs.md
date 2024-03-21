@@ -19,7 +19,7 @@ In this figure, the Gaussian distribution of the response variable is superimpos
 
 To get a better perspective we can look at it from another perspective:
 
-![ols_viz](https://i.ibb.co/NK0Q2YN/Picture1.png)
+![ols_viz](https://i.ibb.co/KjY9Bjv/Picture3.png)
 
 I think anyone can immediately see the problem if this model is to be applied in a real-world scenario. The response variable is not always going to follow the Gaussian distribution. When it does not follow a Gaussian distribution the OLS is going to fail. Also for OLS to work it needs to abide by the homoscedasticity requirement which is often not the case in real-life data. 
 
