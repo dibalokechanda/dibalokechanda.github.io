@@ -28,6 +28,7 @@ The best way to think about this distribution is to think about a biased coin to
 
 #### ⯌ <u>Probability Density Function:</u>
 
+The compact form of distribution looks scary and unintuitive (the first one below) and throws people off. The more intuitive one is the second one which shows the distribution is parameterized by a single probability value $p$. 
 $$
 \begin{align*}
 \operatorname{P}(X=x \mid p) &=p^{x}(1-p)^{1-x} \\
@@ -456,9 +457,10 @@ $$
 
 
 ### ⯈ Student-t Distribution
+At first glance, this looks really complicated and the way to get around it is not to look at the constant part and only focus on the kernel part. Personally, I only had to deal with the explicit version of the student-t distribution when doing Bayesian stuff. When using it in other scenarios like dealing with sampling distribution, you almost never have to deal with the explicit version of the PDF, it's taken care of by the software package you are using. 
 
 #### ⯌ <u> Probability Density Function: </u>
-
+  
 $$
 f(t \mid v)=\frac{\Gamma\left(\frac{v+1}{2}\right)}{\Gamma\left(\frac{v}{2}\right)} \frac{1}{\sqrt{v \pi}} \frac{1}{\left(1+\frac{1}{v} t^2\right)^{(v+1) / 2}}
 $$
@@ -523,13 +525,16 @@ $$
 \operatorname{cov}(S \mid \delta, \mathrm{T})=\frac{v}{v-2} \mathrm{~T}=\Sigma
 $$
 
-It can be shown the marginal distribution is given by:
+
 
 
 
 #### ⯌ <u>Properties and Key Facts:</u>
 
-- The larger the value of degrees of freedom $v$, the more it gets closer to the normal distribution. 
+- The larger the value of degrees of freedom $v$, the more it gets closer to the normal distribution. You will find a nice interactive visualization [here](https://probstats.org/studentt.html) to understand how it approaches a normal distribution as the degrees of freedom increase.
+
+- Whenever you have to deal with samples there is a very high chance you will need to deal with the student-t distribution in some way.
+
 
 ### ⯈ Laplace/Double-Sideded Exponential Distribution
 
@@ -592,6 +597,10 @@ $$
 
 <hr>
 
+Beta distribution is completely parameterized by $\alpha$ and $\beta$. Normally the $\alpha$ is called the "successful outcomes" and $\beta$ is called "unsuccessful outcomes". Please note that we use the terms "successful" and "unsuccessful" as placeholder. A better way to think is an event that has two possible outcomes, where one outcome is termed as the "success" and the other outcome is termed as "unsuccessful".
+To get a more intuitive feeling about the Beta distribution I would recommend looking at this [video](https://www.youtube.com/watch?v=juF3r12nM5A) from Luis Serrano.
+
+#### <u> External Resources:</u>
 
 
 #### ⯌ <u>Probability Density Function: </u>
@@ -640,7 +649,7 @@ if $\alpha=1$  and $\beta=1$ then, the beta distribution represents a uniform di
  - Bounded between $0$ to $1$. As it signifies the distribution of probability values it does not make sense for it to have a value not within the range  $0$ to $1$.
  - Suitable distribution model for the random behavior of percentages and proportions.
  - Has a close connection to binomial distribution. Beta is the conjugate prior to Binomial distribution.
- - Member of the exponential family.
+
 
 ###  ⯈ Gamma Distribution
 <hr>
@@ -711,7 +720,8 @@ $$
 
 
 ###  ⯈ Dirichlet distribution
-<hr>
+
+To really understand Dirichlet distribution you first need to understand the Beta distribution because Dirichlet distribution is the generalization of the Beta distribution. The other way to think about this is the Beta distribution is the special case of the Dirichlet distribution when $K=2$. 
 
 #### ⯌ <u>Probability Density Function:</u>
 
@@ -723,15 +733,6 @@ $$
 $$
 \text { where, } B(\alpha)= \frac{\prod_{k=1}^{K} \Gamma(\alpha_{k})}{\Gamma(\sum_{k=1}^{K}\alpha_{k})}, \text{which is the normalization factor}
 $$
-
-
-
-
-
-
-![dirichlet_distribution](https://upload.wikimedia.org/wikipedia/commons/5/54/LogDirichletDensity-alpha_0.3_to_alpha_2.0.gif)
-*Image taken from Wikipedia*
-
 
 <u>Properties and Key Facts:</u>
 
