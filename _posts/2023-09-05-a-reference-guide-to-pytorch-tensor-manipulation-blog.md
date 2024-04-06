@@ -1,5 +1,5 @@
 ---
-title: A Reference Guide to Pytorch Tips and Tricks
+title: A Reference Guide to Deep Learning in Pytorch Tips and Tricks
 date: 2023-09-04 12:00:00 -500
 categories: [pytorch]
 tags: [pytorch,pytorch_basics]
@@ -10,6 +10,92 @@ toc: true
 Every now and then I will come across a tensor manipulation method in Pytorch or some piece of code in Pytorch and think "I wish I had known about this earlier". Then after one or two days completely forget about that thing. This article is a reference for such useful Pytorch code snippets.
 
 ## Code organization 
+
+### Saving command line arguments to a JSON file
+
+I use `argparser` to process command line arguments and use a `script.py` file to get the command line arguments. Example code snipppet from one of the project I used this:
+
+
+
+#### script.py
+
+```python
+import subprocess
+command = [
+    'python', 'main.py',
+    '--folder','Exp1',
+    '--epoch','50',
+    '--split_ratio','0.8',
+    '--seed','66',
+    '--batch_size', '32',
+    '--dim_input','6',
+    '--hidden_emb_size','32',
+    '--learning_rate','0.001',
+    '--weight_decay','1e-3',
+    '--dropout','0.2',
+    '--frac_graph_to_backdoor','0.4'
+    ]    
+subprocess.run(command)
+```
+
+As the first argument I need to specify the main file and the second arugment is the folder where I want to save everything from a specific experiment.
+
+#### arguments.py
+
+```python
+import argparse
+import json
+import os
+
+class parse_args():
+    """
+    - Creates Arguments Parser object
+    - Creates a dictory with the folder name specified by --folder argument
+    - Creates a json file with the same name as the folder and stores the arguments
+    """
+    
+    def __init__(self):
+        argParser = argparse.ArgumentParser(description='arguments')
+        argParser.add_argument('--folder', type=str, 
+                               help='Name of the folder that will contain related info and results from a specific experiment')
+        argParser.add_argument('--epoch', type=int, 
+                               help='Training epoch count')
+        argParser.add_argument('--split_ratio', type=float, 
+                               help='Train-Test Split Ratio')
+        argParser.add_argument('--seed', type=int, 
+                               help='Random seed value for reproducibility')
+        argParser.add_argument('--batch_size', type=int, 
+                               help='Batch Size to be used for DataLoader')
+        argParser.add_argument('--dim_input', type=int, 
+                               help='Dimension of the input feature vector of each node')
+        argParser.add_argument('--hidden_emb_size', type=int, 
+                               help='Dimension of the feature vectors in the hidden layers')
+        argParser.add_argument('--learning_rate', type=float, 
+                               help='Learning Rate for Training')
+        argParser.add_argument('--weight_decay', type=float, 
+                               help='Weight Decay Parameter')
+        argParser.add_argument('--dropout', type=float, 
+                               help='Dropout Value')
+        argParser.add_argument('--frac_graph_to_backdoor',type=float,
+                               help='Fraction of Training Graphs that need to be backdoored')
+        self.args = argParser.parse_args()
+    
+    def get_args(self):
+        return self.args
+    
+    def dump_json(self):
+        folder_name = self.args.folder
+        json_file=folder_name # json file name with the same name as the folder
+        os.makedirs(folder_name, exist_ok=True)  # Create folder if it doesn't exist
+        
+        json_path = os.path.join(folder_name, self.args.folder)
+        
+        with open(json_path, 'w') as json_file:
+            json.dump(vars(self.args), json_file, indent=4)
+```
+
+You will notice I am creating a json file with the same name as the folder and storing the command line arguments in there.
+
 
 ### Separate Trainer class to train model 
 
