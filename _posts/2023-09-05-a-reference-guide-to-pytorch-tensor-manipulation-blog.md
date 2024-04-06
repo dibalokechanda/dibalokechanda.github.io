@@ -96,6 +96,17 @@ class parse_args():
 
 You will notice I am creating a json file with the same name as the folder and storing the command line arguments in there.
 
+In the `main.py` I just need to do the following:
+
+```python
+
+from arguments import parse_args
+
+argument_parser=parse_args()       
+argument_parser.dump_json()
+args=argument_parser.get_args()
+```
+
 
 ### Separate Trainer class to train model 
 
