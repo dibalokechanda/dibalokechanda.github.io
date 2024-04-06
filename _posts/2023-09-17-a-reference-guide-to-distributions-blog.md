@@ -7,8 +7,7 @@ math: true
 toc: true
 ---
 
-I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. Also, some distributions are domain-specific. For example, an engineer who works with the applications of wireless communication will surely know about Rayleigh and Rician distributions. Hence, it is kind of a waste of energy and time to try to learn about all the distributions. But still, I want to keep a reference of distributions I come across often when going through literature. Interestingly, Most of the distributions come from the exponential family which I completely overlooked when I started the article.
-
+I know it is dumb to create a reference guide to distributions because it is too large of a topic to keep a reference on. I mean there are entire books written on these distributions. Also, some distributions are domain-specific. For example, an engineer who works with the applications of wireless communication will surely know about Rayleigh and Rician distributions. Hence, it is kind of a waste of energy and time to try to learn about all the distributions. But still, I want to keep a reference of distributions I come across often when going through literature. Interestingly, most of the distributions come from the exponential family.
 
 Additionally, I want to mention some external resources that provide interactive visualizations of probability distributions.
 
@@ -307,7 +306,7 @@ Here,
 - $\Sigma$ is the covariance matrix
 
 
-![bivariate_pdf](https://i.ibb.co/S7MXhNY/chrome-g-O3o-Zzk-P58.png)
+![bivariate_pdf](https://i.ibb.co/yNj1s25/MATLAB-gmg1-Ngw1-LP.png)
 *Bivariate Guassian PDF*
 
 
@@ -598,10 +597,10 @@ $$
 <hr>
 
 Beta distribution is completely parameterized by $\alpha$ and $\beta$. Normally the $\alpha$ is called the "successful outcomes" and $\beta$ is called "unsuccessful outcomes". Please note that we use the terms "successful" and "unsuccessful" as placeholder. A better way to think is an event that has two possible outcomes, where one outcome is termed as the "success" and the other outcome is termed as "unsuccessful".
-To get a more intuitive feeling about the Beta distribution I would recommend looking at this [video](https://www.youtube.com/watch?v=juF3r12nM5A) from Luis Serrano.
+
 
 #### <u> External Resources:</u>
-
+- To get a more intuitive feeling about the Beta distribution I would recommend looking at this [video](https://www.youtube.com/watch?v=juF3r12nM5A) from Luis Serrano.
 
 #### ⯌ <u>Probability Density Function: </u>
 
