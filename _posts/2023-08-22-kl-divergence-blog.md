@@ -94,15 +94,15 @@ $$
 
 Let's try to visualize what is happening by considering the distribution below as the true distribution $p$.
 
-![target_distribution](https://i.ibb.co/CvjcgZn/image-removebg-preview.png)
+![target_distribution](https://i.ibb.co/7VDxGS5/chrome-e7cz-BQQIY2.png)
 
 From the figure, we can see that $p$ is a bi-modal distribution. If we use forward KL divergence as a metric and use variational inference to approximate the parameterized distribution $q$ we will get something like below.  
 
-![forward_kl](https://i.ibb.co/vPv3RKr/image-removebg-preview-1.png)
+![forward_kl](https://i.ibb.co/QkBBvH6/chrome-Jmw9cvt-Mtw.png)
 
 This shows that the forward KL exhibits mean-seeking behavior. In contrast, if reverse KL divergence is used as a metric it exhibits a mode-seeking behavior as shown in the following diagram. 
 
-![reverse_kl](https://i.ibb.co/pR8YtW3/image-removebg-preview-2.png)
+![reverse_kl](https://i.ibb.co/897grYf/chrome-8-Rwy8-F1ad6.png)
 
 Let's look at an example of a 2D case:
 
