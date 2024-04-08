@@ -1,5 +1,5 @@
 ---
-title: A Reference Guide to Deep Learning in Pytorch Tips and Tricks
+title: A Reference Guide to Deep Learning in Pytorch | Tips and Tricks
 date: 2023-09-04 12:00:00 -500
 categories: [pytorch]
 tags: [pytorch,pytorch_basics]
