@@ -9,6 +9,13 @@ toc: true
 
 Every now and then I will come across a tensor manipulation method in Pytorch or some piece of code in Pytorch and think "I wish I had known about this earlier". Then after one or two days completely forget about that thing. This article is a reference for such useful Pytorch code snippets.
 
+## File Structure Organization
+
+File structure organization depends on the complexity of the project and personal preference. For small to medium project I more or less use the following file structure.
+
+![c1](https://i.ibb.co/yQ15xJT/chrome-xs0g-M0j-BMn.png)
+
+
 ## Code organization 
 
 ### Saving command line arguments to a JSON file
