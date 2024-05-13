@@ -215,3 +215,6 @@ a.tolist()
 [[0.012766935862600803, 0.5415473580360413],
  [-0.08909505605697632, 0.7729271650314331]]
 ```
+### `tensor1.expand_as(tensor2)`
+
+Expands the dimensions of a tensor to match the shape of another tensor.
