@@ -15,14 +15,21 @@ File structure organization depends on the complexity of the project and persona
 
 ![c1](https://i.ibb.co/yQ15xJT/chrome-xs0g-M0j-BMn.png)
 
+It might be the case that, the `model.py` file is so complex you need to break it down into multiple files. Another scenario might be you need to run your code against different architectures. In that case, there should be a folder called `models` and inside that folder there should be different .py files for different architectures.
+
+![mpy](https://i.ibb.co/BfNh8DQ/chrome-E8eei5ygj-S.png)
+
+As a hypothetical scenario imagine, you are proposing a new block called "abcd_module". And you want to check how the module behaves with different architectures like ResNet, VGG-16, InceptionNet, etc. Then your folder structure should look like above. The `__init__.py` should define how you will import the different files.
+
+Note that this should be done if your architectures defined in those files are radically different from each other. If the difference is couple of layers depending on a bunch of choices, you are better off with a single `model.py` and using ModuleDict or ModuleList combined with if-elif-else blocks.
+
+
 
 ## Code organization 
 
 ### Saving command line arguments to a JSON file
 
 I use `argparser` to process command line arguments and use a `script.py` file to get the command line arguments. Example code snipppet from one of the project I used this:
-
-
 
 #### script.py
 
