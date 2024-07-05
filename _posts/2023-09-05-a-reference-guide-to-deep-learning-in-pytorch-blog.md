@@ -23,7 +23,7 @@ As a hypothetical scenario imagine, you are proposing a new block called "abcd_m
 
 Note that this should be done if your architectures defined in those files are radically different from each other. If the difference is couple of layers depending on a bunch of choices, you are better off with a single `model.py` and using ModuleDict or ModuleList combined with if-elif-else blocks.
 
-
+Also, another disclaimer you should only move to a multi-file appproach for your architecture if you model is too complex. If it is a simple model breaking it down into multiple files will cause more annoyance. 
 
 ## Code organization 
 

@@ -25,7 +25,7 @@ $$
 A 3-dimensional visualization of the function is shown below:
 
 
-![3d_plot](https://i.ibb.co/tcDSnYr/ezgif-com-optimize.gif)
+![3d_plot](/assets/img/lm1.gif)
 
 We can draw contour lines in the 3D surface of the plot which is shown below:
 
