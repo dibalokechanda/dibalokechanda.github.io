@@ -51,7 +51,7 @@ Let's describe it with an example. Suppose you are making a 100$ bet. There are 
 
 The answer is pretty obvious. You are going to choose the coin toss. The reason is the distribution range is lower compared to the range of the distribution for a die roll. In other words, there are fewer possible outcomes.
 
-![pmf_entropy_range](https://i.ibb.co/gD9NHPg/entropy-pmf.png)
+![pmf_entropy_range](/assets/img/Entropy/entropy1.png)
 
 Entropy can capture this "more uncertainty" in the die roll. The larger the range the larger the value of entropy. For the above example with a $\log-e$ base entropy for the coin toss is 
 
@@ -68,7 +68,7 @@ But for the die roll entropy is
 Let's take another example to describe how the flatness of distribution is captured by entropy. Suppose you are given a choice to live in two different states. For the two states, the distribution of a day is sunny, rainy, snowy and cloudy looks like below:
 
 
-![pmf_entropy_flatness_1](https://i.ibb.co/Dp8BpwT/chrome-0-SWw-MAor-Lq.png)
+![pmf_entropy_flatness_1](/assets/img/Entropy/entropy2.png)
 
 Based on the PMF which state would you choose? If you are like most people you are going to choose "State-2". The reason is living in "State-1" looks like a nightmare because of the uncertainty in weather. In contrast, the weather for "State-2" is much less uncertain and mostly sunny.
 
@@ -89,10 +89,10 @@ For State-1, the computation of entropy is given below:
  
  Another such visualization is given below:
 
-![bishop](https://i.ibb.co/ZYL66rp/chrome-OXkyvas-ZU7.png)
+![bishop](/assets/img/Entropy/entropy3.png)
 *Image Adapted from Bishop, C.M. and Nasrabadi, N.M., 2006. Pattern recognition and machine learning*
 
 
  Even though the examples given are for univariate discrete distributions, this core idea is generalized for higher dimensional discrete and continuous distributions. A visual summary is given in the following diagram. 
 
- ![Entropy_two](https://i.ibb.co/FmgH6JL/chrome-i-DS4k-SVMVz.png)
+ ![Entropy_two](/assets/img/Entropy/entropy4.png)
