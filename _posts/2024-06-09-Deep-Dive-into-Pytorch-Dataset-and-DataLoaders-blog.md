@@ -7,14 +7,12 @@ math: true
 toc: true
 ---
 
-When I started learning Pytorch, one of the most confusing things to me was the `torch.utils.data.Dataset` and `torch.utils.data.DataLoader`. There were certain rules to define these things and I always wondered what was going on behind the scenes or what would I need to do if I ever had to define a custom variation of them. Later when I learned about `collate_fn`, `Sampler`, `pin_memory` I realized what I was missing. In this article, I want to dig deeper and understand from a fundamental level how these things work. Well, obviously there needs to be some level of abstraction, so when I say fundamental level, take it with a grain of salt.
-
-
+When I started learning Pytorch, one of the most confusing things to me was the `torch.utils.data.Dataset` and `torch.utils.data.DataLoader`. There were certain rules to define these things and I always wondered what was going on behind the scenes or what would I need to do if I ever had to define a custom variation of them. Later when I learned about `collate_fn`, `Sampler`, `pin_memory` I started to understand the inner workings of how these are implemented. In this article, I want to dig deeper and understand from a fundamental level how these things work. Well, obviously there needs to be some level of abstraction, so when I say fundamental level, take it with a grain of salt.
 
 
 ## What is a Dataset?
 
-This might be surprising, but depending on your problem definition, it can be literally anything. For example, if you are doing a supervised object classification problem, a single data point in your dataset will contain an image and a label. Same thing if you are working with a tabular dataset and a label. One single data point is just one row in the table. But if you are doing something a little more complicated like working with a graph neural network, instead of an image it will contain a graph and the corresponding label. But to represent a graph you need two pieces of information. One is the feature matrix and the second is the adjacency matrix or edge list. This means now a single data point contains three "entities". The feature matrix, graph connectivity information and label. 
+This might be surprising, but depending on your problem definition, it can be literally anything. For example, if you are doing a supervised object classification problem, a single data point in your dataset will contain an image and a label. Same thing if you are working with a tabular dataset and a label. One single data point is just one row in the table. These are the most basic examples and very straight forward to implement. But if you are doing something a little more complicated like working with a graph neural network, instead of an image it will contain a graph and the corresponding label. But to represent a graph you need two pieces of information. One is the feature matrix and the second is the adjacency matrix or edge list. This means now a single data point contains three "entities". The feature matrix, graph connectivity information and label. 
 
 So, it is futile to concretely say what a dataset is. Hence, we need to show it in an abstract format. 
 
@@ -77,9 +75,13 @@ There are three dunder methods you can define.
 
 How do you apply the transformations? If you are not doing something exotic, Pytorch provides some handy built-in transformations through `torchvision.transforms` for image data. 
 
+
+
+
+
 ## Applying transformations
 
-Look up the official [documentation](https://pytorch.org/vision/main/transforms.html) image transformation for this. There is a plethora of image transformations you can use. Pytorch provides `transforms.Compose()` to chain together multiple transformations. 
+Look up the official [documentation](https://pytorch.org/vision/main/transforms.html#v2-api-reference-recommended) image transformation for this as well the [examples](https://pytorch.org/vision/stable/auto_examples/transforms/plot_transforms_illustrations.html#sphx-glr-auto-examples-transforms-plot-transforms-illustrations-py). There is a plethora of image transformations you can use. Pytorch provides `transforms.Compose()` to chain together multiple transformations. 
 
 A basic version from the Pytorch documentation :
 
