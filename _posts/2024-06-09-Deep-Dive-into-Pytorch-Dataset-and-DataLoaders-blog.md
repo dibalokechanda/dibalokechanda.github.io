@@ -81,7 +81,7 @@ How do you apply the transformations? If you are not doing something exotic, Pyt
 
 ## Applying transformations
 
-Look up the official [documentation](https://pytorch.org/vision/main/transforms.html#v2-api-reference-recommended) image transformation for this as well the [examples](https://pytorch.org/vision/stable/auto_examples/transforms/plot_transforms_illustrations.html#sphx-glr-auto-examples-transforms-plot-transforms-illustrations-py). There is a plethora of image transformations you can use. Pytorch provides `transforms.Compose()` to chain together multiple transformations. 
+Look up the official [documentation](https://pytorch.org/vision/main/transforms.html#v2-api-reference-recommended) image transformation for this as well the [examples](https://pytorch.org/vision/stable/auto_examples/transforms/plot_transforms_illustrations.html#sphx-glr-auto-examples-transforms-plot-transforms-illustrations-py). There is a plethora of image transformations you can use. Pytorch provides `transforms.Compose()` to chain together multiple transformations.
 
 A basic version from the Pytorch documentation :
 
@@ -93,6 +93,14 @@ transforms.Compose([
 ])
 ```
 
-In addition, you can make up your own custom transformation if you need it.
+In addition, you can make up your own custom transformation if you need it. Interested readers should check out this recent [talk](https://www.youtube.com/watch?v=_CdgR35yu9s) from Nicolas Hug.
 
 ## `torch.utils.data.DataLoader`
+
+
+
+
+## References
+
+[1] [TorchVision Transforms V2 - Nicolas Hug | PyTorch Meetup #17](https://www.youtube.com/watch?v=_CdgR35yu9s)
+
