@@ -23,7 +23,7 @@ $$
 
 A visualization is given below:
 
-![convex_combination](https://i.ibb.co/ZfdcjxK/chrome-he-U3-Oaxx-Xw.png)
+![convex_combination](/assets/img/Convex_Optimization_2/co1.png)
 
 
 This gets tricky when we are dealing with more than two points. First, let's take a look at the formal definition,
@@ -46,7 +46,7 @@ $$
 $$
 
 
-![convex_comb](https://i.ibb.co/2PXZnhM/chrome-z-QW4e-Lv-CIK.png)
+![convex_comb](/assets/img/Convex_Optimization_2/co2.png)
 
 
 In my head, I visualize it as I am tuning knobs for $\theta_1,\theta_2,\theta_3, \cdots$ given a set of points $x_1,x_2,x_3\cdots$ and kind of filling in the area.
@@ -55,7 +55,7 @@ In my head, I visualize it as I am tuning knobs for $\theta_1,\theta_2,\theta_3,
  In a convex set, any convex combination of points in the set remains within the set.
 
 
-![comb_1](https://i.ibb.co/yRxy6wk/chrome-m4-N96-Mo-UYs.png)
+![comb_1](/assets/img/Convex_Optimization_2/co3.png)
 
 
 ## Affine Combination 
@@ -73,7 +73,7 @@ $$
 One important thing to notice here is the contrast with the convex combination. For the convex combination, we had another restriction for $\theta$. 
 
 
-![affine_set](https://i.ibb.co/88gktvF/chrome-Jw5f-C5-QZjm.png)
+![affine_set](/assets/img/Convex_Optimization_2/co4.png)
 
 ## Affine Set
 Contains the line through any two distinct points in the set. Think of it this way, you are given a set in $\mathbb{R}^n$, you pick two points from that set and draw a line that goes through those two points. Now all possible points on that line should be contained in that set. If that's the case, then the set is affine.
@@ -81,7 +81,7 @@ Contains the line through any two distinct points in the set. Think of it this w
 
  One important thing to remember is every convex set is also affine, but not every affine set is convex. Convexity is a stronger condition than affineness. See the following visualization to get an intuitive understanding of it:
 
- ![affineness](https://i.ibb.co/64HYGQr/chrome-R8aauqi-B4c.png)
+ ![affineness](/assets/img/Convex_Optimization_2/co5.png)
 
 
 
@@ -111,7 +111,7 @@ These seem useless because they are kind of redefining the convex set and affine
 - The set $\mathbf{conv}(S)$ is the smallest convex set containing $S$.
 
 
-![hull_convex](https://i.ibb.co/zsgJQsK/chrome-5p-Yxuf-Qf1-M.png)
+![hull_convex](/assets/img/Convex_Optimization_2/co6.png)
 
 ## Conic Combination
 
@@ -147,7 +147,7 @@ $$
 
 A visualization of a conic cone is given below:
 
-![conic_cone](https://i.ibb.co/hmnFMBs/chrome-upf5bwci-Kq.png)
+![conic_cone](/assets/img/Convex_Optimization_2/co7.png)
 
 ## Conic Hull
 
@@ -164,7 +164,7 @@ Keep the following figure in your head.
 
 
 
-![unified_view](https://i.ibb.co/6W7CtvK/chrome-Ylp-Ti-G0-EQL.png)
+![unified_view](/assets/img/Convex_Optimization_2/cos.png)
 
 ## Hyperplanes 
 
@@ -189,7 +189,7 @@ A couple of points about hyperplanes:
 
 A visualization of hyperplane:
 
-![hype](https://i.ibb.co/XD5FzyB/chrome-lk-RU5-RP5qk.png)
+![hype](/assets/img/Convex_Optimization_2/co8.png)
 
 
 
@@ -199,11 +199,11 @@ Now you need to have to visualization in your head:
 
 - Tuning the vector $a$ kind of tilts the hyperplane. The direction of tilting kind of depends on which component of vector $a$ you are tuning.
 
-![tilt_viz](https://i.ibb.co/Q8DNjDz/chrome-FJBUBPFRv-C.png)
+![tilt_viz](/assets/img/Convex_Optimization_2/co9.png)
 
 - Tuning the value $b$ kind of shifts the hyperplane without titling it (you need to keep vector $a$ fixed).
 
-![tilt_viz_2](https://i.ibb.co/0J9L1RC/chrome-Z2t-DKl-XGd1.png)
+![tilt_viz_2](/assets/img/Convex_Optimization_2/co10.png)
 
 ## Half Spaces 
 
@@ -214,14 +214,14 @@ $$
 \left\{x \mid a^T x \leq b\right\}(a \neq 0)
 $$
 
-![half_spaces](https://i.ibb.co/0y6zmNg/chrome-FCo74w95-Yw.png)
+![half_spaces](/assets/img/Convex_Optimization_2/co11.png)
 
 A couple of points about half-spaces:
 
 - The equality part can be dropped, in that case, the half-space will not contain the points along the line.
 
 
-![non_equal](https://i.ibb.co/YbrXVz2/chrome-f-G3-Hn-LRQ0t.png)
+![non_equal](/assets/img/Convex_Optimization_2/co12.png)
 
 
 - A word of caution, even though it seems like half-spaces are just like vector spaces (or vector subspaces) they are not. That is if you pick two points (vectors) from the the half-space, a linear combination of them may fall outside the half-space. In other words, the points from the set are not closed under linear transformation.
@@ -229,7 +229,7 @@ A couple of points about half-spaces:
 
 - Half spaces are not affine set, they are convex set. 
 
-![half_space_convexity](https://i.ibb.co/ncwnvZM/chrome-Fe-Onm2v-T4-X.png)
+![half_space_convexity](/assets/img/Convex_Optimization_2/co13.png)
 
 
 ## Euclidean Ball
@@ -243,7 +243,7 @@ $$
 
 A visualization of the Euclidean ball is given below:
 
-![eu_ball](https://i.ibb.co/fFw78n3/chrome-p30-PS6-DOVm.png)
+![eu_ball](/assets/img/Convex_Optimization_2/co14.png)
 
 
 
@@ -259,7 +259,7 @@ $$
 P \in \mathbf{S}_{++}^n
 $$
 
-![ell](https://i.ibb.co/BrhRrnk/chrome-hfp-Zze-Dx0s.png)
+![ell](/assets/img/Convex_Optimization_2/co15.png)
 
 ## Norm Ball
 
@@ -271,7 +271,7 @@ $$
 
 This is generalized for any valid norm.
 
-![ballss](https://i.ibb.co/gdf4Zj0/chrome-EHwc-FXdr-BR.png)
+![ballss](/assets/img/Convex_Optimization_2/co16.png)
 
 
 
@@ -285,12 +285,12 @@ $$
 
 
 
-![3d_norm_cones](https://i.ibb.co/5FcgQ3q/chrome-2-TMysdo-DR2.png)
+![3d_norm_cones](/assets/img/Convex_Optimization_2/co17.png)
 
 
  Visualize the level sets for these norm cones:
 
-![norm_cones](https://i.ibb.co/mXm4rnN/chrome-S5-PNz-Fw-Xyz.png)
+![norm_cones](/assets/img/Convex_Optimization_2/co18.png)
 
 
 I will point to a [Geogebra notebook](https://www.geogebra.org/m/fuxN6MM4) by Peter J.C. Dickinson if you want to visualize these in 3D.
@@ -309,7 +309,7 @@ A \in \mathbf{R}^{\operatorname{mxn}}, C \in \mathbf{R}^{p \times n}, \preceq\te
 $$
 
 
-![polyhedra](https://i.ibb.co/0czm6X7/chrome-I18c-Jed-Lk-N.png)
+![polyhedra](/assets/img/Convex_Optimization_2/co19.png)
 
 
 Polyhedra can also be thought of as:
@@ -350,15 +350,7 @@ Now if this matrix has to be positive semidefinite (meaning $X \in \mathbf{S}^{n
 Based on the above two equations if we only plot the surface it will form a cone as shown below:
 
 
-![PSD_Cone](https://i.ibb.co/NtH9HgJ/ezgif-com-video-to-gif-converted.gif)
+![PSD_Cone](/assets/img/Convex_Optimization_2/co20.gif)
 
 
 Note that, this can not be decomposed in the a finite set of equality and inequality constraints.
-
-
-
-
-
-
-
-
