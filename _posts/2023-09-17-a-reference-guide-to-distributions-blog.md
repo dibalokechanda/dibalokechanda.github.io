@@ -45,7 +45,7 @@ Here,
 - $x=1$ defines the success event and $x=0$ defines the failure event
 
 
-![bernouli](https://i.ibb.co/5xhx9V1/chrome-BZ6k-Qob-H8v.png)
+![bernouli](/assets/img/A_Reference_Guide_to_Distributions/rd1.png)
 *The PMF is completely determined by the value of $p$*
 
 #### ⯌ <u>Cumulative Density Function:</u>
@@ -92,12 +92,12 @@ where,
 - $p$ is the probability of success and $(1-p)$ is the probability of failure for an individual trial
 - $x$ is the number of success out of $n$ trials 
 
-![binomial_distribution](https://i.ibb.co/Ltsvfzj/chrome-Xk-XCcx-Dv-Eu.png)
+![binomial_distribution](/assets/img/A_Reference_Guide_to_Distributions/rd2.png)
 *The shape of the PMF is determined by the value of $n$ and $p$*
 
 Changing the value of $n$ and $p$ change the shape of the distribution:
 
-![binomia_different_shape](https://i.ibb.co/rH0SQ7s/chrome-SKqw-UXc-XEX.png)
+![binomia_different_shape](/assets/img/A_Reference_Guide_to_Distributions/rd3.png)
 
 
 As a general thumb rule, we can say the following:
@@ -267,7 +267,7 @@ $$
 $$
 
 
-![gaussian_distribution](https://i.ibb.co/PhBcWx8/chrome-3-Lz396-LIg7.png)
+![gaussian_distribution](/assets/img/A_Reference_Guide_to_Distributions/rd4.png)
 
 #### ⯌ <u>Cumulative Density Function:</u>
 
@@ -306,7 +306,7 @@ Here,
 - $\Sigma$ is the covariance matrix
 
 
-![bivariate_pdf](https://i.ibb.co/yNj1s25/MATLAB-gmg1-Ngw1-LP.png)
+![bivariate_pdf](/assets/img/A_Reference_Guide_to_Distributions/rd5.png)
 *Bivariate Guassian PDF*
 
 
@@ -327,7 +327,7 @@ $$
 To understand the nature of $\Sigma$ we can consider some special cases. First, let's consider the off-diagonal elements $\sigma_{ij}=0$.
 
 
-![off_diagonal_0](https://i.ibb.co/1dFrg4h/chrome-WVo-JJp-Kp-SK.png)
+![off_diagonal_0](/assets/img/A_Reference_Guide_to_Distributions/rd6.png)
 
 
 When the variance for both $x_{1}$ and $x_{2}$ are equal the contour plot is circular in nature. But when they are not equal the contour plot is elliptical in nature.
@@ -335,7 +335,7 @@ When the variance for both $x_{1}$ and $x_{2}$ are equal the contour plot is cir
 Now we can consider the case when the off-diagonal elements are not zero. One thing to note here as the covariance matrix is a symmetric matrix, $\sigma_{12}=\sigma_{21}$.
 
 
-![Off_diagonal](https://i.ibb.co/TmW2RPC/chrome-Fz-U0am-UIc-G.png)
+![Off_diagonal](/assets/img/A_Reference_Guide_to_Distributions/rd7.png)
 
 Depending on if they are positive or negative, it will be skewed towards a specific direction.
 
@@ -366,7 +366,7 @@ For me personally, the first time I saw this I did not get it. Because nobody sh
 
 
 
-![partioning](https://i.ibb.co/MRwMqc7/chrome-Bxl42wgauh.png)
+![partioning](/assets/img/A_Reference_Guide_to_Distributions/rd8.png)
 
 
 Back to the general case. Now let's say we want to find the multivariate joint distribution of $x_{A}$. This means we need to integrate out all variables $x_{B}$.
@@ -557,7 +557,7 @@ where,
 - $b$  is the scale parameter
 
 
-![laplace_distribution](https://i.ibb.co/VVSPXs1/chrome-Fhsvl-XBgfv.png)
+![laplace_distribution](/assets/img/A_Reference_Guide_to_Distributions/rd9.png)
 
 
 
