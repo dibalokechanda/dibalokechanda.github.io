@@ -13,11 +13,11 @@ Every now and then I will come across a tensor manipulation method in Pytorch or
 
 File structure organization depends on the complexity of the project and personal preference. For small to medium project I more or less use the following file structure.
 
-![c1](https://i.ibb.co/yQ15xJT/chrome-xs0g-M0j-BMn.png)
+![c1](/assets/img/Pytorch/pt1.png)
 
 It might be the case that, the `model.py` file is so complex you need to break it down into multiple files. Another scenario might be you need to run your code against different architectures. In that case, there should be a folder called `models` and inside that folder there should be different .py files for different architectures.
 
-![mpy](https://i.ibb.co/BfNh8DQ/chrome-E8eei5ygj-S.png)
+![mpy](/assets/img/Pytorch/pt2.png)
 
 As a hypothetical scenario imagine, you are proposing a new block called "abcd_module". And you want to check how the module behaves with different architectures like ResNet, VGG-16, InceptionNet, etc. Then your folder structure should look like above. The `__init__.py` should define how you will import the different files.
 
