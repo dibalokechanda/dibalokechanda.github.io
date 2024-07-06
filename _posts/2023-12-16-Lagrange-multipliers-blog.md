@@ -25,19 +25,19 @@ $$
 A 3-dimensional visualization of the function is shown below:
 
 
-![3d_plot](/assets/img/lm1.gif)
+![3d_plot](/assets/img/Lagrange_Multipliers/lm1.gif)
 
 We can draw contour lines in the 3D surface of the plot which is shown below:
 
-![contour_lines](https://i.ibb.co/sJ2CBHD/chrome-TSTm-FGEW6h.png)
+![contour_lines](/assets/img/Lagrange_Multipliers/lm2.png)
 
 A better way to see these contour lines is a contour plot generated from the top-down perspective as shown below:
 
-![contour_plot](https://i.ibb.co/HPyTjLg/chrome-C3m6-Hf1-Jb8.png)
+![contour_plot](/assets/img/Lagrange_Multipliers/lm3.png)
 
 Think of it as the contour lines being projected to the x-y plane. See the below plot as a reference. I removed the original graph and kept only the contour lines. The Contour lines in the 3D surface are colored in green and the projected version in the x-y plane is colored in red.
 
-![projecting_contour_lines](https://i.ibb.co/9cCNy3J/ezgif-com-video-to-gif-converted.gif)
+![projecting_contour_lines](/assets/img/Lagrange_Multipliers/lm4.gif)
 
 I hope after seeing these visualizing contour plots are more intuitive now.
 
@@ -74,22 +74,22 @@ $$
 
 From the contour plot perspective, it looks like the following:
 
-![Constraint_Contour](https://i.ibb.co/9gwsxK8/chrome-z-Ul5v-WEe5-Z.png)
+![Constraint_Contour](/assets/img/Lagrange_Multipliers/lm5.png)
 
 If we look back a the 3D surface we will get something like the following:
 
-![constraint_3d](https://i.ibb.co/Wfnpwgs/ezgif-com-video-to-gif-converted-1.gif)
+![constraint_3d](/assets/img/Lagrange_Multipliers/lm6.gif)
 
 
 If we visualize the portion of the function $f(x,y)$ under the constraint, we get something like the following:
 
-![constraint_portion](https://i.ibb.co/vxjPXXm/ezgif-com-video-to-gif-converted-2.gif)
+![constraint_portion](/assets/img/Lagrange_Multipliers/lm7.gif)
 
 
 
 If we change our constraint curve from $x^2+y^2=1$ to $x^2+y^2=3$ this visualization changes to the following:
 
-![constraint_portion2](https://i.ibb.co/SmcHhn6/ezgif-com-video-to-gif-converted-3.gif)
+![constraint_portion2](/assets/img/Lagrange_Multipliers/lm8.gif)
 
 We can see how the constraint curve changes the maxima and minima location of the function under constraint.
 
@@ -107,7 +107,7 @@ $$
 
 Wait a minute this is not a curve in the 2D x-y plane! This is the equation of a surface. Well, that's correct. And that surface looks like the following:
 
-![constraint_surface_with_contour](https://i.ibb.co/HGTYZzF/chrome-3-U5m2v-TFKd.png)
+![constraint_surface_with_contour](/assets/img/Lagrange_Multipliers/lm9.png)
 
 But take a closer look at the contour lines for this surface. Each contour line is a circle. The first constraint curve we considered is one of those contour lines. The second constraint curve also. 
 
@@ -117,12 +117,12 @@ If we take the gradient of that surface we get $\nabla g(x,y)$. Now if you think
 
 A 3D visualization is given below:
 
-![viz](https://i.ibb.co/3C7mxjq/chrome-42h1-LWq0-Ae.png)
+![viz](/assets/img/Lagrange_Multipliers/lm10.png)
 
 
 We can also take a look from the contour plot perspective as follows:
 
-![viz_2](https://i.ibb.co/FbR8ZXw/chrome-Frj-Ae4g3t6.png)
+![viz_2](/assets/img/Lagrange_Multipliers/lm11.png)
 
 
 
@@ -133,7 +133,7 @@ This means $\nabla g(x)$ and $\nabla f(x)$ are parallels!
 Visually, if we want to see it we can plot the contour lines of $f(x,y)$ and $g(x,y)$ in a single plot.
 
 
-![together](https://i.ibb.co/TqRFFxz/chrome-RCGw-Eky0i-D.png)
+![together](/assets/img/Lagrange_Multipliers/lm12.png)
 
 In the above plot, the blue lines are the contour plots of $g(x,y)$ and the red lines are the contour plots $f(x,y)$.  Now let's see the gradient vector at the contour lines which are plotted below. Well, just as we assumed, the gradient vectors are parallel. Note, the word "parallel". We are not saying they are in the same direction.
 
@@ -141,7 +141,7 @@ If $\nabla f(x,y)$ and $ \nabla g(x,y)$ are parallel we can multiply a scalar wi
 
 A visualization of a gradient vector on a specific contour line for $f(x.y)$ and $g(x,y)$ is given below:
 
-![gradient_vec](https://i.ibb.co/DpVZTPj/POWERPNT-n88css-Ap-Gd.png)
+![gradient_vec](/assets/img/Lagrange_Multipliers/lm13.png)
 
 
 ## The Lagrange Multiplier
