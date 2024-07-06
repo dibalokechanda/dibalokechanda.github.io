@@ -7,7 +7,7 @@ math: true
 toc: true
 ---
 
-![latent](https://i.ibb.co/qnmxF0N/chrome-Mrd-IOj-EBE0.png)
+![latent](/assets/img/Latent_Variables/lv1.png)
  *Image taken from [MIT Introduction to Deep Learning 6.S191: Lecture 4](https://youtu.be/3G5hWM6jqPk?t=479)*
 
 
