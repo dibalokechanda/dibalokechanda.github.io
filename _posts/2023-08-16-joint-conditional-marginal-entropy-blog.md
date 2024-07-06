@@ -9,7 +9,7 @@ toc: true
 
 To understand the concept of mutual information first, we need to understand joint entropy, conditional entropy and marginal entropy. These concepts are not necessarily hard, but they are introduced poorly with just a bunch of equations thrown at the beginners.
 
-![image_3_blue_1_brown](https://i.ibb.co/vwVcyC8/chrome-b-WRWGz5-VBh.png)
+![image_3_blue_1_brown](/assets/img/Joint_Conditional_and_Marginal_Entropy/jcm1.png)
 
  *Image taken from [3Blue1Brown](https://www.youtube.com/@3blue1brown) video-[Solving Wordle using information theory](https://youtu.be/v68zYyaEmEA?t=708)*
 
@@ -31,7 +31,7 @@ $$
 
 Now this equation essentially takes in a joint probability distribution $p(x,y)$ and spits out a single number that represents the expected information quantity in that joint distribution. Let's start with a simple example, a joint distribution of a fair coin toss and a fair die roll. The assumption that needs to be made here the coin toss and die roll are independent of each other. The visualization of the distribution is shown below:
 
-![joint_pmf](https://i.ibb.co/C5ZV4Mf/chrome-a-MM4-Ni3hk-N.png)
+![joint_pmf](/assets/img/Joint_Conditional_and_Marginal_Entropy/jcm2.png)
 
 
 We can easily tell as the distribution is completely flat, which means it has a high joint entropy. We can compute it as follows (with $\log-e$ base) :
@@ -43,7 +43,7 @@ $$
 Now suppose we change the distribution by using a biased coin with a higher probability for "head" and the modified joint probability distribution is shown below:
 
 
-![join_pmf_biased](https://i.ibb.co/s2NMBjb/chrome-w3i-JVqr-OA7.png)
+![join_pmf_biased](/assets/img/Joint_Conditional_and_Marginal_Entropy/jcm3.png)
 
 
 
@@ -70,7 +70,7 @@ Conditional entropy captures the expected information content in a conditional d
 
 Suppose we are given the fact that a coin toss results in "head", which means we will be dealing with only a "slice" of the distribution i.e. a conditional distribution.
 
-![conditional_distribution_1](https://i.ibb.co/Rj5Bjw1/chrome-Ch-MTVFVw-Ap.png)
+![conditional_distribution_1](/assets/img/Joint_Conditional_and_Marginal_Entropy/jcm4.png)
 *Conditioning on random variable X (considering "Head" comes up)*
 
 We get the values after applying the following formula: 
@@ -105,7 +105,7 @@ $$
 
 
 
-![conditional_distribution_2](https://i.ibb.co/QM03Z11/chrome-SLTu2-PFOv8.png)
+![conditional_distribution_2](/assets/img/Joint_Conditional_and_Marginal_Entropy/jcm5.png)
 *Conditioning on random variable X (considering "Tail" comes up)*
 
 But there is a slight issue, we are considering one case at a time, either "Head" or "Tail".
