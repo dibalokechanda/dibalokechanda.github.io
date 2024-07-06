@@ -12,7 +12,7 @@ When I started learning Pytorch, one of the most confusing things to me was the 
 
 
 
-# What is a Dataset ?
+## What is a Dataset?
 
 This might be surprising, but depending on your problem definition, it can be literally anything. For example, if you are doing a supervised object classification problem, a single data point in your dataset will contain an image and a label. Same thing if you are working with a tabular dataset and a label. One single data point is just one row in the table. But if you are doing something a little more complicated like working with a graph neural network, instead of an image it will contain a graph and the corresponding label. But to represent a graph you need two pieces of information. One is the feature matrix and the second is the adjacency matrix or edge list. This means now a single data point contains three "entities". The feature matrix, graph connectivity information and label. 
 
@@ -48,7 +48,7 @@ Based on these examples, it is easy to see the need for abstraction. There are j
 
 # `torch.utils.data.Dataset`
 
-This is an abstract class provided in Pytorch for map-style dataset. This can be used by subclassing it to create a custom dataset wrapper class.
+This is an abstract class provided in Pytorch for a map-style dataset. This can be used by subclassing it to create a custom dataset wrapper class.
 
 The most basic version is shown below:
 
@@ -96,7 +96,4 @@ transforms.Compose([
 
 In addition, you can make up your own custom transformation if you need it.
 
-
-
-
-# `torch.utils.data.DataLoader`
+## `torch.utils.data.DataLoader`
