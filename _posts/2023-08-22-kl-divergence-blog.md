@@ -58,7 +58,7 @@ $$
 
 An example of KL divergence is shown in the diagram below. It is kind of self-explanatory if you know KL divergence is a measure of "distance" between distributions. When two distributions are not similar you should expect a larger value; whereas if the distributions are quite similar you should expect a lower value.
 
-![kl_div](https://i.ibb.co/DDxVQH4/chrome-l-AZj-K1b4e-O.png)
+![kl_div](/assets/img/Kullback_Leibler_Divergence/kld1.png)
 
 Even though the visualization is shown of one-dimensional distribution it is easily generalizable for higher dimensional distribution.
 
@@ -94,19 +94,19 @@ $$
 
 Let's try to visualize what is happening by considering the distribution below as the true distribution $p$.
 
-![target_distribution](https://i.ibb.co/7VDxGS5/chrome-e7cz-BQQIY2.png)
+![target_distribution](/assets/img/Kullback_Leibler_Divergence/kld2.png)
 
 From the figure, we can see that $p$ is a bi-modal distribution. If we use forward KL divergence as a metric and use variational inference to approximate the parameterized distribution $q$ we will get something like below.  
 
-![forward_kl](https://i.ibb.co/QkBBvH6/chrome-Jmw9cvt-Mtw.png)
+![forward_kl](/assets/img/Kullback_Leibler_Divergence/kld3.png)
 
 This shows that the forward KL exhibits mean-seeking behavior. In contrast, if reverse KL divergence is used as a metric it exhibits a mode-seeking behavior as shown in the following diagram. 
 
-![reverse_kl](https://i.ibb.co/897grYf/chrome-8-Rwy8-F1ad6.png)
+![reverse_kl](/assets/img/Kullback_Leibler_Divergence/kld4.png)
 
 Let's look at an example of a 2D case:
 
-![bishop_kl](https://i.ibb.co/bRzHqyf/chrome-k-COw-F1e-Wue.png)
+![bishop_kl](/assets/img/Kullback_Leibler_Divergence/kld5.png)
 *Image taken from Bishop, C.M. and Nasrabadi, N.M., 2006. Pattern recognition and machine learning. The Left one is for Forward KL and the middle & the right one are for reverse KL.*
 
 Most people after learning this fact wonder which one is better or which one should be used; the forward KL divergence or the reverse KL divergence? The short answer is it depends. The first thing you need to come to terms with is, for higher dimensional distributions you can't visualize what the hell is happening. Hence, there is no visual intuition to rely on and to decide which one you would want. In higher dimensions, the distribution might have $n$-number of modes and depending on the problem you are trying to solve, you might prefer the forward or the reverse KL divergence.
