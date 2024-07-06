@@ -13,7 +13,7 @@ Mutual information is one of the most important concepts in machine learning. It
 
 If you are familiar with mutual information, you must have come across the following Venn diagram.
 
-![Venn diagram](https://i.ibb.co/cX3n5HJ/chrome-1n-Xw-UGxw-IH.png)
+![Venn diagram](/assets/img/Mutual_Information/mi1.png)
 
 
 This diagram is used as a reference to explain mutual information. From the diagram, we can see mutual information $I(X; Y)$ is the overlapping region between $H(X)$ and $H(Y)$.  This corresponds with the name <b>mutual information</b> as $H(X)$ is the expected self-information quantity in the random variable $X$ and $H(Y)$ is the expected self-information quantity in the random variable $Y$. Hence, the common section will be the "mutual information" which is shared by both random variables. Just by using common sense, without any prior knowledge, we can write down the following equations with the help of the Venn diagram:
@@ -29,7 +29,7 @@ $$
 
 If you closely think about the above equations, all of them are essentially calculating the overlapped section. The following diagram highlighting different sections will make it more apparent.
 
-![components_venn_diagram](https://i.ibb.co/mbdQ8gd/chrome-8-Po-PNu-RVOA.png)
+![components_venn_diagram](/assets/img/Mutual_Information/mi2.png)
 
 
 ## The Formula 
