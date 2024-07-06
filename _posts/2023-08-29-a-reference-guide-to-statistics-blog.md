@@ -216,7 +216,7 @@ where,
  - $\frac{\sigma}{\sqrt{n}}$ is the standard error of the sampling distribution *i.e.* $se(\bar{X})=\sigma_{\bar{X}}$
  - $z_{\alpha /2}$ is the z-value determined based on the value of $\alpha$ 
 
- ![CI](https://i.ibb.co/qjPmWKz/chrome-j8-R9-WEb-V5-K.png)
+ ![CI](/assets/img/Statistics/st1.png)
  *Visualization for 95% confidence interval*
 
 For $(1-\alpha)\times 100\%=95\%$ confidence interval the value of $\alpha=5\% =0.05$. Based on this $\frac{\alpha}{2}=0.025$. We can use software or the standard normal table to determine the $z_{\alpha/2}=z_{0.025}$.
@@ -310,7 +310,7 @@ H_a: p \neq~0.3
 $$
 
 
-![two_tailed_hp](https://i.ibb.co/yFjs9BD/chrome-fph5-Hs-Hkn-U.png)
+![two_tailed_hp](/assets/img/Statistics/st2.png)
 
 
 
@@ -325,7 +325,7 @@ Process of performing a two-tailed hypothesis test:
 
 - Decide on the confidence level ($(1-\alpha)\times 100\%$) or the level of significance value ($\alpha$). The most common value for the confidence level is $95\%$, which means the overall level of significance is $\alpha=0.05$. But as we are doing a two-tailed test we need to compute $\alpha/2=0.025$ for two tails. 
 
-![hp_first_step](https://i.ibb.co/5jrw3L3/chrome-7-MT2-Do6-Fvg.png)
+![hp_first_step](/assets/img/Statistics/st3.png)
 
 Note that this is going to change if we change our confidence level or level of significance. There is no general rule for choosing this; rather it depends on the domain. For example, if you are doing something in the medical domain, your level of confidence should be pretty high. There are other nuances to decide on this but they are specific to specific cases. 
 
@@ -337,9 +337,9 @@ Note that this is going to change if we change our confidence level or level of 
 
 - If the absolute value of the test statistic is greater than the critical value, you reject the null hypothesis. Otherwise, you say we fail to reject the null hypothesis.
 
-![fail_to_reject](https://i.ibb.co/hKyXWG3/chrome-u-L5ysc-WTLx.png)
+![fail_to_reject](/assets/img/Statistics/st4.png)
 
-![reject_null](https://i.ibb.co/pyfpRRj/chrome-c-FWz-MEe-Ycw.png)
+![reject_null](/assets/img/Statistics/st5.png)
 
 
 - Another way to do this is using the concept of p-value. The general rule is:
@@ -350,14 +350,14 @@ If $p$-value $\leq \alpha / 2$: Reject the null hypothesis.
 If $p$-value $>\alpha / 2$: Fail to reject the null hypothesis.
 
  
-![p_value_cannot_reject_null](https://i.ibb.co/pPC0gqr/chrome-f9rr-Bkxh10.png)
+![p_value_cannot_reject_null](/assets/img/Statistics/st6.png)
 
-![p_value_reject_null](https://i.ibb.co/9sSRM4S/chrome-Es-S6pv-Jkb-F.png)
+![p_value_reject_null](/assets/img/Statistics/st7.png)
 
 _One-tailed test_:
 
 
-![one_tailed_hp](https://i.ibb.co/5hvNLhc/chrome-ck-IRwf-XD3k.png)
+![one_tailed_hp](/assets/img/Statistics/st8.png)
 
 Left-tailed test (Version 1):
 
@@ -447,7 +447,7 @@ Bootstrapping tries to solve these issues by using a resampling technique. Note 
 
 See the following visualization that I created as part of a class activity for the **Statistical Machine Learning** course at Marquette University. 
 
-![bootstrap](https://i.ibb.co/4smKdH5/POWERPNT-v-Q82zrj-Fy-Q.png)
+![bootstrap](/assets/img/Statistics/st9.png)
 
 
  - Resample with replacement and create a bootstrapped dataset
@@ -549,12 +549,12 @@ I think the Sckit-learn documentation does a pretty good job of explaining them,
 
 One use case of cross-validation is choosing (hyper)parameters. The following diagram visualizes this process:
 
-![strategy_cv](https://i.ibb.co/Ns6tvyG/chrome-P8n-Pz9-MWp-F.png)
+![strategy_cv](/assets/img/Statistics/st10.png)
 
 Another visualization that shows $5$-fold cross validation :
 
 
-![5fold](https://i.ibb.co/TBFFQ0r/chrome-Zbb-GGBj-TYn.png)
+![5fold](/assets/img/Statistics/st11.png)
 
 It is easily apparent that CV increases the computational cost significantly. If you ever used GridSearchCV for choosing hyperparameters, you will understand what I am talking about. If the number of (hyper)parameters is low, then it is kind of manageable. But as the number increases the computational complexity quickly gets out of hand.
 
