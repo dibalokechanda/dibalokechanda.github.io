@@ -22,7 +22,7 @@ $$
 
 There are two components to this inequality relation. The first component is a convex function $f(\cdot)$ and another is a random variable $X$. Now as we are dealing with a random variable there has to be distribution associated with it. There is no restriction on what kind of distribution it could be. For the purpose of visualization, I chose normal distribution.
 
-![jensen_inequality](https://i.ibb.co/fHL8P2x/chrome-K1h-MCRJ6-Pf.png)
+![jensen_inequality](/assets/img/Jensens_Inequality/ji1.png)
 
 
 <b>Right Hand Side</b> : $\mathbb{E}[f(X)]$
@@ -30,14 +30,14 @@ There are two components to this inequality relation. The first component is a c
 
 To get this quantity we need to sample from the distribution associated with $X$ and plug them into the convex function $f(\cdot)$  and we will get outputs $f(X)$. Then we apply expectation to get $\mathbb{E}[f(x)]$.
 
-![JIE_1](https://i.ibb.co/8br4qWP/chrome-MKXKZa-Qz-Rp.png)
+![JIE_1](/assets/img/Jensens_Inequality/ji2.png)
 
 
 <b>Left Hand Side</b> : $f(\mathbb{E}[X])$
 
 To get this quantity we first compute the expectation of the random variable to get $\mathbb{E}[X]$. Then we plug that into the convex function $f(\cdot)$ to get $f(\mathbb{E}[X])$.
 
-![JIE_2](https://i.ibb.co/PxPYpyz/chrome-ki-OBst-NSCt.png)
+![JIE_2](/assets/img/Jensens_Inequality/ji3.png)
 
 One thing to note here, this holds for any number of sample points (more than one) and for any number of dimensions. 
 ## Application of Jensen's Inequality
