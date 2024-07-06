@@ -21,7 +21,7 @@ A visualization is shown below:
 
 
 
-![LVM](https://i.ibb.co/N94DJ8g/chrome-p-KMix-Rpx-OW.png)
+![LVM](/assets/img/Latent_Variable_Model/lvm1.png)
 *Probabilistic Graphical Model (PGM) Representation of Latent Variable Models*
 
 We can get the joint distribution $p(x,y)$ if we know prior of the latent variable $p(z)$ and the conditional distribution $p(x \mid z)$.
