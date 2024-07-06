@@ -18,7 +18,7 @@ This might be surprising, but depending on your problem definition, it can be li
 
 So, it is futile to concretely say what a dataset is. Hence, we need to show it in an abstract format. 
 
-![Viz_dataset](https://i.ibb.co/X7Z4k93/POWERPNT-H7s-OJHWbyk.png)
+![Viz_dataset](/assets/img/Pytorch_Dataset_DataLoaders/pdd1.png)
 
 In the above diagram, I use white blocks to represent a single data point. Mathematically the entire dataset is represented by $\mathcal{D}$ and a single data point is represented by $\mathcal{D}^{(k)}$ where $k$ is the index.
 
@@ -27,20 +27,20 @@ You will notice I used curly braces to contain all the data points. This is to i
 ## Getting an appreciation for the abstraction
 Let's see some special cases to appreciate the need for abstraction.
 
-![image_classification](https://i.ibb.co/HNhBby2/POWERPNT-2-Gvl-B9in-Xk.png)
+![image_classification](/assets/img/Pytorch_Dataset_DataLoaders/pdd2.png)
 
 As an example consider the above case which is a supervised object classification problem. One single data point $D^{(k)}$ contains two "entities". The first one is the image (denoted by $x_k$) and the second one is the label (denoted by $y_k$). However, both of them need to go through several transformations to get a tensor representation. These transformations can include normalization, changing the data type, cropping, scaling, etc. For image domain problems, `torchvision` provides several built-in approaches for transformation. In my experience, these are not enough and often you need to write custom transformations.
 
 Let's look at another special case where in addition to object classification, an additional task is object detection. For that, in addition to the classification label you need to provide the ground truth label for the bounding box of the object.
 
-![bound_box](https://i.ibb.co/J5M9VYf/POWERPNT-ui2mcth-Mm-H.png)
+![bound_box](/assets/img/Pytorch_Dataset_DataLoaders/pdd3.png)
 
 In this case, the dataset consists of three entities. The original image $x_k$, the classification label $y_k$, the bounding box label $b_k$ for object detection. 
 
 Another such example is from a graph neural network. In the following example, $x_k$ consists of two parts $f_k$ which is the feature matrix and $e_k$ which is the edge matrix.
 
 
-![graph_neural_network](https://i.ibb.co/vkCmJL4/POWERPNT-xy-Mb7xrwxz.png)
+![graph_neural_network](/assets/img/Pytorch_Dataset_DataLoaders/pdd4.png)
 
 
 Based on these examples, it is easy to see the need for abstraction. There are just way too many ways a dataset can be formed. But as long as you follow certain criteria when defining your dataset, it does not matter what your dataset looks like.
