@@ -18,7 +18,7 @@ Most of this post is from [Convex Optimization – Boyd and Vandenberghe](https:
 
 ## Convex Sets
 
-![convex_sets](https://i.ibb.co/tC3GG3v/chrome-t-W3nv-Re2-A2.png)
+![convex_sets](/assets/img/Convex_Optimization_1/co1.png)
 
 A set $C$ is convex if the line segment between any two points in $C$ lies in $C$, i.e. if for any $x_1, x_2 \in C$ and any $\theta$ with $0\leq\theta\leq 1$, we have
 
@@ -57,7 +57,7 @@ I will simply state some key facts about convex sets without going into rigorous
 
 ## Convex Functions
 
-![convex_func](https://i.ibb.co/jhzGcny/chrome-Yh-Btw45cw4.png)
+![convex_func](/assets/img/Convex_Optimization_1/co2.png)
 
 A function $f$ is a convex function if the following definition holds:
 
@@ -84,7 +84,7 @@ $$
 In simpler terms, the epigraph of a function includes all the points that lie above or on the graph of the function. If $f$ is a convex function, its epigraph will be a convex set. Here is a nice [geogebra notebook](https://www.geogebra.org/m/aRCak4eP) from  Peter J.C. Dickinson if you want to play around with it. 
 
 
-![epigraph_def](https://i.ibb.co/Yjsd0Hs/chrome-Va-Ry-T3-Fp-AI.png)
+![epigraph_def](/assets/img/Convex_Optimization_1/co3.png)
 
 Now these two definitions are actually not that useful in practice, because most of the time we deal with high-dimensional functions that we can not visualize. The way to go about it is to recognize some common convex functions (I know it sounds bad). 
 
@@ -376,11 +376,11 @@ $$
 
 The plot of the function is given below:
 
-![sd_func](https://i.ibb.co/7pvjbRW/chrome-E0-WOP5-Y1-FH.png)
+![sd_func](/assets/img/Convex_Optimization_1/co4.png)
 
 A visualization of some possible subgradient at the non-differentiable point is given below:
 
-![subdiffer](https://i.ibb.co/pbGKLrB/chrome-3c-Ogwsf-Bbq.png)
+![subdiffer](/assets/img/Convex_Optimization_1/co5.png)
 
 
 
@@ -399,7 +399,7 @@ $$
 
 
 
-![viz_diff_sub](https://i.ibb.co/G9KYVk4/chrome-x-W8i7-Fjr7t.png)
+![viz_diff_sub](/assets/img/Convex_Optimization_1/co6.png)
 
 
 For differentiable convex functions, this set contains only one element which is the gradient of the function at point $x$. Mathematically,
