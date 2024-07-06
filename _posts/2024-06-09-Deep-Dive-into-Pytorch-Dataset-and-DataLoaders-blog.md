@@ -42,16 +42,13 @@ Another such example is from a graph neural network. In the following example, $
 
 ![graph_neural_network](/assets/img/Pytorch_Dataset_DataLoaders/pdd4.png)
 
-
 Based on these examples, it is easy to see the need for abstraction. There are just way too many ways a dataset can be formed. But as long as you follow certain criteria when defining your dataset, it does not matter what your dataset looks like.
 
-
-# `torch.utils.data.Dataset`
+## `torch.utils.data.Dataset`
 
 This is an abstract class provided in Pytorch for a map-style dataset. This can be used by subclassing it to create a custom dataset wrapper class.
 
 The most basic version is shown below:
-
 
 ```python
 from torch.utils.data import Dataset
