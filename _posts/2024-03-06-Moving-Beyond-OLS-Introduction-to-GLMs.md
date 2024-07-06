@@ -13,13 +13,13 @@ In this article, I am going to give a beginner-friendly introduction to generali
 
 This starts with the idea about the ordinary least squares (OLS) and the assumptions we make when we fit an OLS. One of the assumptions is the response variable follows a Gaussian distribution with constant variance. When we are introduced to OLS we come across a figure like the following:
 
-![ols](https://i.ibb.co/5xsFKVV/chrome-j5j-Tu-I7-Ar-N.png)
+![ols](/assets/img/GLMs/glm1.png)
 
 In this figure, the Gaussian distribution of the response variable is superimposed on the regression line.
 
 To get a better perspective we can look at it from another perspective:
 
-![ols_viz](https://i.ibb.co/LYGB8nR/Picture4.png)
+![ols_viz](/assets/img/GLMs/glm2.png)
 
 I think anyone can immediately see the problem if this model is to be applied in a real-world scenario. The response variable is not always going to follow the Gaussian distribution. When it does not follow a Gaussian distribution the OLS is going to fail. Also for OLS to work it needs to abide by the homoscedasticity requirement which is often not the case in real-life data. 
 
