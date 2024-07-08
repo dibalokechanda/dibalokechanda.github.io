@@ -106,7 +106,11 @@ To understand how dataloading works we need to understand the Sampler and the Co
 ![dataloader_internal_workings](/assets/img/Pytorch_Dataset_DataLoaders/pdd5.png)
 
 
-The dataloader is sitting between the raw data points and the training/inference pipeline. Its job is to sample data points to form a batch and hand over that batch to the training/inference pipeline. In addition, it needs to provide the functionality for multiprocessing.
+The dataloader is sitting between the raw data points and the training/inference pipeline. Its job is to sample data points to form a batch and hand over that batch to the training/inference pipeline. In addition, it needs to provide the functionality for multiprocessing and make the dataloading process as efficient as possible.
+
+### Sampler
+
+
 
 
 
