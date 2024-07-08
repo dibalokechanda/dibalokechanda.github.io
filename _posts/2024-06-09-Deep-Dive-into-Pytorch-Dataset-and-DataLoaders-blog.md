@@ -106,7 +106,11 @@ The dataloader is sitting between the raw data points and the training/inference
 
 ## Sampler and BatchSampler
 
-The job of the Sampler is to sample indices of data points according to a certain scheme.  To implement a Sampler you need to do the following things:
+The job of the Sampler is to sample indices of data points according to a certain scheme. 
+
+> Sampler and BatchSampler works with indices of the map-style dataset rather than working with the actual data points.
+
+To implement a Sampler you need to do the following things:
 
 
 - Inherit the `torch.utils.data.Sampler` class
@@ -135,7 +139,7 @@ class SequentialSampler(Sampler[int]):
         return len(self.data_source)
 ```
 
-Take a close look at the `__iter__` method which is just returning an iterator over the range of indices of the data samples. All the other Samplers including `RandomSampler`, `SubsetRandomSampler`, `WeightedRandomSampler` also return an iterator. 
+Take a close look at the `__iter__` method which is just returning an iterator over the range of indices of the data samples. If you need a refresher on iterators take a look at this [video](https://www.youtube.com/watch?v=WR7mO_jYN9g). All the other Samplers including `RandomSampler`, `SubsetRandomSampler`, `WeightedRandomSampler` also return an iterator. 
 
 
 However, `BatchSampler` is completely different in behavior.
@@ -216,3 +220,5 @@ If `drop_last` is `True` then according to this example `len(self.sampler)` is e
 
 
 If `drop_last` is `False` then according to this example, $(10+3-1)//3=4$ i.e. the number of batches is $4$.
+
+Now, let's shift our focus to the `__iter__` method. Again to understand this you need to have a clear idea about [Iterators](https://www.youtube.com/watch?v=WR7mO_jYN9g) and [Generators](https://www.youtube.com/watch?v=gMompY5MyPg) in Python.
