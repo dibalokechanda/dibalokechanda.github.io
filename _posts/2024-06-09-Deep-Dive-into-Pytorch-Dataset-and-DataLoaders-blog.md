@@ -187,9 +187,9 @@ class BatchSampler(Sampler[List[int]]):
             return (len(self.sampler) + self.batch_size - 1) // self.batch_size  
 ```
 
-I removed some code and comments so that it's more clean. The `__init__` methods indicate the batch sampler only cares about `sampler`, `batch_size` and `drop_last` argument.
+I removed some code and comments so that it's more clean. The `__init__` method indicate the batch sampler only cares about `sampler`, `batch_size` and `drop_last` argument.
 
-First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there is going to be $9/3=3$ batch and each batch will contain $3$ elements.
+First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there is going to be $9/3=3$ batches and each batch will contain $3$ elements.
 
 ![batch_size](/assets/img/Pytorch_Dataset_DataLoaders/pdd6.png)
 
@@ -222,3 +222,48 @@ If `drop_last` is `True` then according to this example `len(self.sampler)` is e
 If `drop_last` is `False` then according to this example, $(10+3-1)//3=4$ i.e. the number of batches is $4$.
 
 Now, let's shift our focus to the `__iter__` method. Again to understand this you need to have a clear idea about [Iterators](https://www.youtube.com/watch?v=WR7mO_jYN9g) and [Generators](https://www.youtube.com/watch?v=gMompY5MyPg) in Python.
+
+
+```python
+def __iter__(self) -> Iterator[List[int]]:
+
+        if self.drop_last:
+            sampler_iter = iter(self.sampler)
+            while True:
+                try:
+                    batch = [next(sampler_iter) for _ in range(self.batch_size)]
+                    yield batch
+                except StopIteration:
+                    break
+        else:
+            batch = [0] * self.batch_size
+            idx_in_batch = 0
+            for idx in self.sampler:
+                batch[idx_in_batch] = idx
+                idx_in_batch += 1
+                if idx_in_batch == self.batch_size:
+                    yield batch
+                    idx_in_batch = 0
+                    batch = [0] * self.batch_size
+            if idx_in_batch > 0:
+                yield batch[:idx_in_batch]
+```
+
+This can be broken down into two parts. If `self.drop_last==True` then
+
+
+
+
+```python
+...
+        if self.drop_last:
+            sampler_iter = iter(self.sampler)
+            while True:
+                try:
+                    batch = [next(sampler_iter) for _ in range(self.batch_size)]
+                    yield batch
+                except StopIteration:
+                    break
+...
+```
+Notice that we are creating an iterator over `self.sampler` which is `sample_iter`. Then by using the `next` method inside the List comprehension we create the list of indices for a batch and by using `yield` we return that list of indices as an iterator.
