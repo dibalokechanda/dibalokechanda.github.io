@@ -267,3 +267,27 @@ This can be broken down into two parts. If `self.drop_last==True` then
 ...
 ```
 Notice that we are creating an iterator over `self.sampler` which is `sample_iter`. Then by using the `next` method inside the List comprehension we create the list of indices for a batch and by using `yield` we return that list of indices as an iterator.
+
+Let's look at the other case when `self.drop_last==False`
+
+
+```python
+...
+    else:
+            batch = [0] * self.batch_size
+            idx_in_batch = 0
+            for idx in self.sampler:
+                batch[idx_in_batch] = idx
+                idx_in_batch += 1
+                if idx_in_batch == self.batch_size:
+                    yield batch
+                    idx_in_batch = 0
+                    batch = [0] * self.batch_size
+            if idx_in_batch > 0:
+                yield batch[:idx_in_batch]
+```
+
+In this implementation, we create a zero-filled list with a length equal to the batch size. Then we keep inserting elements from the `sampler` into that list i.e. `batch[idx_in_batch] = idx`. When that list is completely filled we `yield` that batch and reset everything.
+
+Finally, ` yield batch[:idx_in_batch]` actually yields the incomplete batch.
+
