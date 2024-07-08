@@ -37,7 +37,6 @@ In this case, the dataset consists of three entities. The original image $x_k$, 
 
 Another such example is from a graph neural network. In the following example, $x_k$ consists of two parts $f_k$ which is the feature matrix and $e_k$ which is the edge matrix.
 
-
 ![graph_neural_network](/assets/img/Pytorch_Dataset_DataLoaders/pdd4.png)
 
 Based on these examples, it is easy to see the need for abstraction. There are just way too many ways a dataset can be formed. But as long as you follow certain criteria when defining your dataset, it does not matter what your dataset looks like.
@@ -75,10 +74,6 @@ There are three dunder methods you can define.
 
 How do you apply the transformations? If you are not doing something exotic, Pytorch provides some handy built-in transformations through `torchvision.transforms` for image data. 
 
-
-
-
-
 ## Applying transformations
 
 Look up the official [documentation](https://pytorch.org/vision/main/transforms.html#v2-api-reference-recommended) image transformation for this as well the [examples](https://pytorch.org/vision/stable/auto_examples/transforms/plot_transforms_illustrations.html#sphx-glr-auto-examples-transforms-plot-transforms-illustrations-py). There is a plethora of image transformations you can use. Pytorch provides `transforms.Compose()` to chain together multiple transformations.
@@ -107,10 +102,4 @@ To understand how dataloading works we need to understand the Sampler and the Co
 
 
 The dataloader is sitting between the raw data points and the training/inference pipeline. Its job is to sample data points to form a batch and hand over that batch to the training/inference pipeline. In addition, it needs to provide the functionality for multiprocessing and make the dataloading process as efficient as possible.
-
-### Sampler
-
-
-
-
 
