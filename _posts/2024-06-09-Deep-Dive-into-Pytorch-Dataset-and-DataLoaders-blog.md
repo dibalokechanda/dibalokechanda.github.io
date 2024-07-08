@@ -86,21 +86,23 @@ Look up the official [documentation](https://pytorch.org/vision/main/transforms.
 A basic version from the Pytorch documentation :
 
 ```python
-transforms.Compose([
-    transforms.CenterCrop(10),
-    transforms.PILToTensor(),
-    transforms.ConvertImageDtype(torch.float),
+
+from torchvision.transforms import v2
+
+transforms = v2.Compose([
+    v2.RandomResizedCrop(size=(224, 224), antialias=True),
+    v2.RandomHorizontalFlip(p=0.5),
+    v2.ToDtype(torch.float32, scale=True),
+    v2.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 ```
 
-In addition, you can make up your own custom transformation if you need it. Interested readers should check out this recent [talk](https://www.youtube.com/watch?v=_CdgR35yu9s) from Nicolas Hug.
+In addition, you can make up your own [custom transformation](https://pytorch.org/vision/main/auto_examples/transforms/plot_custom_transforms.html#sphx-glr-auto-examples-transforms-plot-custom-transforms-py) if you need it. Interested readers should check out this recent [talk](https://www.youtube.com/watch?v=_CdgR35yu9s) from Nicolas Hug who introduce the v2 API. A word of caution, at the time of writing this article this is a pretty recent API and most codebases still using the old one.
 
 ## `torch.utils.data.DataLoader`
 
 
+![dataloader_internal_workings](/assets/img/Pytorch_Dataset_DataLoaders/pdd5.png)
 
 
-## References
-
-[1] [TorchVision Transforms V2 - Nicolas Hug | PyTorch Meetup #17](https://www.youtube.com/watch?v=_CdgR35yu9s)
 
