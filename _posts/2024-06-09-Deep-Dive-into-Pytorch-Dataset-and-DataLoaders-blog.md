@@ -289,5 +289,10 @@ Let's look at the other case when `self.drop_last==False`
 
 In this implementation, we create a zero-filled list with a length equal to the batch size. Then we keep inserting elements from the `sampler` into that list i.e. `batch[idx_in_batch] = idx`. When that list is completely filled we `yield` that batch and reset everything.
 
-Finally, ` yield batch[:idx_in_batch]` actually yields the incomplete batch.
+Finally, `yield batch[:idx_in_batch]` actually yields the incomplete batch.
 
+## Collator
+
+The job of a collator is to form a batch. To get an intuition let's take a look at the definition given in the documentation for `torch.utils.data.default_collate()`
+
+> Take in a batch of data and put the elements within the batch into a tensor with an additional outer dimension - batch size.
