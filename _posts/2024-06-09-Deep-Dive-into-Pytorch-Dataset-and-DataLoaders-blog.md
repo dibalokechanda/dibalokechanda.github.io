@@ -183,4 +183,8 @@ class BatchSampler(Sampler[List[int]]):
             return (len(self.sampler) + self.batch_size - 1) // self.batch_size  
 ```
 
-I removed some code and comments so that it's more clean. First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements.
+I removed some code and comments so that it's more clean. First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there is going to be $9/3=3$ batch and each batch will contain $3$ elements.
+
+![batch_size](/assets/img/Pytorch_Dataset_DataLoaders/pdd6.png)
+
+But what happens when the total number of elements is not divisible by the `batch_size` argument? Say there are a total of $10$ elements 

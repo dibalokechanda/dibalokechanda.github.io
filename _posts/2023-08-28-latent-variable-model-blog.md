@@ -9,7 +9,7 @@ toc: true
 
 
 Latent variable models defines a distribution over observations $x$ by using a latent variable $z$.
-Now there are $5$ separate distributions associated with a LVM.
+There are $5$ separate distributions associated with a LVM.
 
 - $p(x,z)$ : Joint distribution of observation $x$ and latent variable $z$
 - $p(z)$ : Prior distribution of latent variable $z$
@@ -24,7 +24,7 @@ A visualization is shown below:
 ![LVM](/assets/img/Latent_Variable_Model/lvm1.png)
 *Probabilistic Graphical Model (PGM) Representation of Latent Variable Models*
 
-We can get the joint distribution $p(x,y)$ if we know prior of the latent variable $p(z)$ and the conditional distribution $p(x \mid z)$.
+We can get the joint distribution $p(x,z)$ if we know prior of the latent variable $p(z)$ and the conditional distribution $p(x \mid z)$.
 
 $$
 p(x,z) = p(x \mid z ) p(z) 
