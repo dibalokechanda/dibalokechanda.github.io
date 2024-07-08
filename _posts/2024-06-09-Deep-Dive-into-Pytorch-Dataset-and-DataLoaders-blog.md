@@ -103,3 +103,84 @@ To understand how dataloading works we need to understand the Sampler and the Co
 
 The dataloader is sitting between the raw data points and the training/inference pipeline. Its job is to sample data points to form a batch and hand over that batch to the training/inference pipeline. In addition, it needs to provide the functionality for multiprocessing and make the dataloading process as efficient as possible.
 
+
+## Sampler and BatchSampler
+
+The job of the Sampler is to sample indices of data points according to a certain scheme.  To implement a Sampler you need to do the following things:
+
+
+- Inherit the `torch.utils.data.Sampler` class
+- Implement the `__iter__` method and `__len__` method (the later is not mandatory)
+
+
+We can take a look at the `SequentialSampler` source code to get a feel for it:
+
+```python
+class SequentialSampler(Sampler[int]):
+    r"""Samples elements sequentially, always in the same order.
+
+    Args:
+        data_source (Dataset): dataset to sample from
+    """
+
+    data_source: Sized
+
+    def __init__(self, data_source: Sized) -> None:
+        self.data_source = data_source
+
+    def __iter__(self) -> Iterator[int]:
+        return iter(range(len(self.data_source)))
+
+    def __len__(self) -> int:
+        return len(self.data_source)
+```
+
+Take a close look at the `__iter__` method which is just returning an iterator over the range of indices of the data samples. All the other Samplers including `RandomSampler`, `SubsetRandomSampler`, `WeightedRandomSampler` also return an iterator. 
+
+
+However, `BatchSampler` is completely different in behavior.
+
+
+```python
+class BatchSampler(Sampler[List[int]]):
+
+    def __init__(self, sampler: Union[Sampler[int], Iterable[int]], batch_size: int, drop_last: bool) -> None:
+
+      
+
+        self.sampler = sampler
+        self.batch_size = batch_size
+        self.drop_last = drop_last
+
+    def __iter__(self) -> Iterator[List[int]]:
+
+        if self.drop_last:
+            sampler_iter = iter(self.sampler)
+            while True:
+                try:
+                    batch = [next(sampler_iter) for _ in range(self.batch_size)]
+                    yield batch
+                except StopIteration:
+                    break
+        else:
+            batch = [0] * self.batch_size
+            idx_in_batch = 0
+            for idx in self.sampler:
+                batch[idx_in_batch] = idx
+                idx_in_batch += 1
+                if idx_in_batch == self.batch_size:
+                    yield batch
+                    idx_in_batch = 0
+                    batch = [0] * self.batch_size
+            if idx_in_batch > 0:
+                yield batch[:idx_in_batch]
+
+    def __len__(self) -> int:
+      
+        if self.drop_last:
+            return len(self.sampler) // self.batch_size  
+        else:
+            return (len(self.sampler) + self.batch_size - 1) // self.batch_size  
+```
+
+I removed some code and comments so that it's more clean.
