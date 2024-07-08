@@ -183,8 +183,36 @@ class BatchSampler(Sampler[List[int]]):
             return (len(self.sampler) + self.batch_size - 1) // self.batch_size  
 ```
 
-I removed some code and comments so that it's more clean. First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there is going to be $9/3=3$ batch and each batch will contain $3$ elements.
+I removed some code and comments so that it's more clean. The `__init__` methods indicate the batch sampler only cares about `sampler`, `batch_size` and `drop_last` argument.
+
+First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there is going to be $9/3=3$ batch and each batch will contain $3$ elements.
 
 ![batch_size](/assets/img/Pytorch_Dataset_DataLoaders/pdd6.png)
 
-But what happens when the total number of elements is not divisible by the `batch_size` argument? Say there are a total of $10$ elements 
+But what happens when the total number of elements is not divisible by the `batch_size` argument? Say there are a total of $10$ elements and the batch size is $3$. 
+
+
+![incomplete_batch](/assets/img/Pytorch_Dataset_DataLoaders/pdd7.png)
+
+If `drop_last=False` (which is the default behavior), there will be a total of $4$ batches where the first $3$ batch will contain $3$ elements each. However, the last batch will contain only a single element.
+
+![drop_last_true](/assets/img/Pytorch_Dataset_DataLoaders/pdd8.png).
+
+
+On the other hand if `drop_last=True` that means the last element will be dropped. More generally, some elements will be dropped so that the number of elements (after dropping) is completely divisible by the batch size.
+
+After knowing this information, if you look at the `__len__` method it makes complete sense.
+
+```python
+ def __len__(self) -> int:
+      
+        if self.drop_last:
+            return len(self.sampler) // self.batch_size  
+        else:
+            return (len(self.sampler) + self.batch_size - 1) // self.batch_size 
+```
+
+If `drop_last` is `True` then according to this example `len(self.sampler)` is equal to $10$ and `self.batch_size=3`. If floor division is performed then $10//3=3$ which is the number of batches.
+
+
+If `drop_last` is `False` then according to this example, $(10+3-1)//3=4$ i.e. the number of batches is $4$.
