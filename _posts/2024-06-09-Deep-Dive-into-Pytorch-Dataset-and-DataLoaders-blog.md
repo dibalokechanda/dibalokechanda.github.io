@@ -183,4 +183,4 @@ class BatchSampler(Sampler[List[int]]):
             return (len(self.sampler) + self.batch_size - 1) // self.batch_size  
 ```
 
-I removed some code and comments so that it's more clean.
+I removed some code and comments so that it's more clean. First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements.
