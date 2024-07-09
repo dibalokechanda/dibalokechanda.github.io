@@ -200,7 +200,7 @@ But what happens when the total number of elements is not divisible by the `batc
 
 If `drop_last=False` (which is the default behavior), there will be a total of $4$ batches where the first $3$ batch will contain $3$ elements each. However, the last batch will contain only a single element.
 
-![drop_last_true](/assets/img/Pytorch_Dataset_DataLoaders/pdd8.png).
+![drop_last_true](/assets/img/Pytorch_Dataset_DataLoaders/pdd8.png)
 
 
 On the other hand if `drop_last=True` that means the last element will be dropped. More generally, some elements will be dropped so that the number of elements (after dropping) is completely divisible by the batch size.
