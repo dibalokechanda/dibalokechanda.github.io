@@ -33,7 +33,7 @@ Let's look at another special case where in addition to object classification, a
 
 ![bound_box](/assets/img/Pytorch_Dataset_DataLoaders/pdd3.png)
 
-In this case, the dataset consists of three entities. The original image $x_k$, the classification label $y_k$, the bounding box label $b_k$ for object detection. 
+In this case, the dataset consists of three entities. The original image $x_k$, the classification label $y_k$ and the bounding box label $b_k$ for object detection. 
 
 Another such example is from a graph neural network. In the following example, $x_k$ consists of two parts $f_k$ which is the feature matrix and $e_k$ which is the edge matrix.
 
@@ -108,13 +108,13 @@ The dataloader is sitting between the raw data points and the training/inference
 
 The job of the Sampler is to sample indices of data points according to a certain scheme. 
 
-> Sampler and BatchSampler works with indices of the map-style dataset rather than working with the actual data points. Keep this in mind if sometimes I refer to actual data points for bettter clarity.
+> Sampler and BatchSampler works with indices of the map-style dataset rather than working with the actual data points. Keep this in mind if sometimes I refer to actual data points for better clarity.
 
 To implement a Sampler you need to do the following things:
 
 
 - Inherit the `torch.utils.data.Sampler` class
-- Implement the `__iter__` method and `__len__` method (the later is not mandatory)
+- Implement the `__iter__` method and `__len__` method (the latter is not mandatory)
 
 
 We can take a look at the `SequentialSampler` source code to get a feel for it:
@@ -187,9 +187,9 @@ class BatchSampler(Sampler[List[int]]):
             return (len(self.sampler) + self.batch_size - 1) // self.batch_size  
 ```
 
-I removed some code and comments so that it's more clean. The `__init__` method indicate the batch sampler only cares about `sampler`, `batch_size` and `drop_last` argument.
+I removed some code and comments so that it's more clean. The `__init__` method indicates the batch sampler only cares about `sampler`, `batch_size` and `drop_last` argument.
 
-First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there is going to be $9/3=3$ batches and each batch will contain $3$ elements.
+First, we need to understand the `batch_size` and `drop_last` parameters. `batch_size` means the number of elements in a single batch. Let's take an example of $9$ elements and batch size of $3$. That means there are going to be $9/3=3$ batches and each batch will contain $3$ elements.
 
 ![batch_size](/assets/img/Pytorch_Dataset_DataLoaders/pdd6.png)
 
