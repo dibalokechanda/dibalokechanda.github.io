@@ -108,7 +108,7 @@ The dataloader is sitting between the raw data points and the training/inference
 
 The job of the Sampler is to sample indices of data points according to a certain scheme. 
 
-> Sampler and BatchSampler works with indices of the map-style dataset rather than working with the actual data points.
+> Sampler and BatchSampler works with indices of the map-style dataset rather than working with the actual data points. Keep this in mind if sometimes I refer to actual data points for bettter clarity.
 
 To implement a Sampler you need to do the following things:
 
@@ -322,5 +322,11 @@ def collate_int_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Typ
 
 def collate_str_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
     ...
-
 ```
+
+It is apparent that it is capable of handling different data types. The following is from the official documentation which clarifies a few more things.
+
+> For instance, if each data sample consists of a 3-channel image and an integral class label, i.e., each element of the dataset returns a tuple (image, class_index), the default collate_fn collates a list of such tuples into a single tuple of a batched image tensor and a batched class label Tensor. In particular, the default collate_fn has the following properties:
+> - It always prepends a new dimension as the batch dimension.
+> - It automatically converts NumPy arrays and Python numerical values into PyTorch Tensors.
+> - It preserves the data structure, e.g., if each sample is a dictionary, it outputs a dictionary with the same set of keys but batched Tensors as values (or lists if the values can not be converted into Tensors). 
