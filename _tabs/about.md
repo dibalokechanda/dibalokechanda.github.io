@@ -6,7 +6,7 @@ order: 4
 
 ## About This Blog:
 
-This is a kind of repository of the concepts I learned during my PhD. I rely mostly on visual intuitions without going too much into rigorous mathematics. The structure of the blog website:
+This is a kind of repository of the concepts I learned. I rely mostly on visual intuitions without going too much into rigorous mathematics. The structure of the blog website:
 
 - [ABOUT](https://dibalokechanda.github.io/about/): You are here.
 - [ARCHIVES](https://dibalokechanda.github.io/archives/): Published blogs chronologically sorted according to date.
