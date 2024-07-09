@@ -330,3 +330,8 @@ It is apparent that it is capable of handling different data types. The followin
 > - It always prepends a new dimension as the batch dimension.
 > - It automatically converts NumPy arrays and Python numerical values into PyTorch Tensors.
 > - It preserves the data structure, e.g., if each sample is a dictionary, it outputs a dictionary with the same set of keys but batched Tensors as values (or lists if the values can not be converted into Tensors). 
+
+
+## References
+
+1. https://pytorch.org/docs/stable/data.html
