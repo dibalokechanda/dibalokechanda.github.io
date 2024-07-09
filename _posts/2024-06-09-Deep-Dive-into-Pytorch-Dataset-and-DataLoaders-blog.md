@@ -296,3 +296,31 @@ Finally, `yield batch[:idx_in_batch]` actually yields the incomplete batch.
 The job of a collator is to form a batch. To get an intuition let's take a look at the definition given in the documentation for `torch.utils.data.default_collate()`
 
 > Take in a batch of data and put the elements within the batch into a tensor with an additional outer dimension - batch size.
+
+
+I am not going to go into the source code because it is way too complex due to its generalization capability to handle many many types of datasets.
+
+However, we can take a look at the function signatures in the source code to get a feel for it.
+
+
+```python
+
+def collate_tensor_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
+    ...
+
+def collate_numpy_array_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
+   ...
+
+def collate_numpy_scalar_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
+    ...
+
+def collate_float_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
+    ...
+
+def collate_int_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
+    ...
+
+def collate_str_fn(batch, *, collate_fn_map: Optional[Dict[Union[Type, Tuple[Type, ...]], Callable]] = None):
+    ...
+
+```
