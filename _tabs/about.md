@@ -17,7 +17,7 @@ This is a kind of repository of the concepts I learned. I rely mostly on visual 
 
 ## About Me:
 
-I am a CS graduate student at Marquette University, Milwaukee, Wisconsin.
+I am a CS graduate student at Marquette University, Milwaukee, Wisconsin. To know more about me checkout my website [https://dibaloke.github.io/](https://dibaloke.github.io/).
 
 ## What if you find a mistake?
 
