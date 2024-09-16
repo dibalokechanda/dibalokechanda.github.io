@@ -17,7 +17,7 @@ This is a kind of repository of the concepts I learned. I rely mostly on visual 
 
 ## About Me:
 
-I am a CS PhD student at Marquette University, Milwaukee, Wisconsin.
+I am a CS graduate student at Marquette University, Milwaukee, Wisconsin.
 
 ## What if you find a mistake?
 
